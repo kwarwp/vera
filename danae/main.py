@@ -296,11 +296,11 @@ class Jogador(object):
         self.joias += joias
         self.sprite.mostra("{}{}:{}".format(self.nome[:1], self.tesouro, self.joias))
 
-    def joga(self):
+    def joga(self, mesa):
         return self.chance.pop() < 2 if self.chance else True
 
     def decide(self):
-        desiste = self.jogador.joga()
+        desiste = self.jogador.joga(self.mesa)
         if desiste:
             self.tesouro += self.joias
             self.joias = 0
