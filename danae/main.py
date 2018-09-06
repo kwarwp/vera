@@ -385,8 +385,15 @@ class Mesa(object):
         self.acampamento.nome = "Acampa"
         self.labirinto.nome = "Explora"
         self.jogadores_ativos = self.jogadores = [Jogador(jogador, self) for jogador in jogadores]
-        self.perigo = self.salas = []
+        self.salas = []
+        self.perigos = self.artefatos = self.cartas = self.rodadas = self.salas = 0
+        self.tesouros = self.natenda = self.saque = self.maiortenda = self.maiorsaque = 0
         # self.inicia()
+
+    def atualiza(self):
+        self.perigos = sum(1 for carta in self.salas if isinstance(carta, Perigo))
+        self.artefatos = sum(1 for carta in self.salas if isinstance(carta, Artefato))
+        self.cartas = sum(1 for carta in self.salas)
 
     def inicia(self):
         timer.set_timeout(self.rodada, 2000)
@@ -441,6 +448,8 @@ class Mesa(object):
         for jogador in self.jogadores_ativos:
             for carta in self.salas:
                 carta.premia(jogador, ativos)
+        self.atualiza()
+        for jogador in self.jogadores_ativos:
             if jogador.decide() == DESISTE:
                 self.jogadores_ativos.remove(jogador)
                 jogadores_saindo.append(jogador)
