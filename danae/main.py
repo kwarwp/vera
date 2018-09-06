@@ -36,7 +36,7 @@ DESISTE = True
 PERIGOS = "aranha mumia desabe fogo cobra".split()
 ARTEFATOS = "estatua vaso broche colar adorno".split()
 TESOUROS = "1 2 3 3 4 5 7 9 9 11 13 14 14 15 17".split()
-JOGADORES = tuple("Roxanne Stacy Libby Sara Kellee Courtney".split())
+JOGADORES = tuple("Roxanne Libby Sara Kellee Courtney Angie".split())
 SPLASH = "https://activufrj.nce.ufrj.br/studio/Introducao_a_Computacao/" \
          "Untitled_20180828_105833-0.jpg?disp=inline&size=G"
 ACTIVE = "http://activufrj.nce.ufrj.br/studio/"
@@ -263,16 +263,70 @@ class Baralho(object):
 class Jogador(object):
     def __init__(self, jogador, mesa):
         self.sprite = GUI.carta('decide', tit=jogador)
+        self.nome = jogador
+        self.cena = mesa.acampamento
+        self.sprite.mostra("0:0")
+        self.tesouro = 0
+        self.entra(self.cena)
+        #self.jogador = "from {mod}.main import {mod}, self.jogada = {mod}".format(mod=jogador)
+        self.jogador = self
+        self.jogada, self.joias, self.mesa = None, 0, mesa
+        self.chance = list(range(20))
+        self.sprite.mostra("{}{}:{}".format(self.nome[:1], self.tesouro, self.joias))
+        shuffle(self.chance)
+
+    def inicia(self, jogador):
+        try:
+            exec(GET_JOGADOR.format(mod=jogador))
+        except: # TypeError:
+            self.jogador = self
+
+    def entra(self, cena=None):
+        # self.chance = list(range(12))
+        self.joias = 0
+        self.sprite.mostra("{}{}:{}".format(self.nome[:1], self.tesouro, self.joias))
+        self.sprite.face(1)
+        cena = cena if cena else self.cena
+        self.sprite.entra(cena)
+
+    def recebe(self, joias):
+        self.joias += joias
+        self.sprite.mostra("{}{}:{}".format(self.nome[:1], self.tesouro, self.joias))
+
+    def joga(self):
+        return self.chance.pop() < 2 if self.chance else True
+
+    def decide(self):
+        desiste = self.jogador.joga()
+        if desiste:
+            self.tesouro += self.joias
+            self.joias = 0
+            self.sprite.mostra("{}{}:{}".format(self.nome[:1], self.tesouro, self.joias))
+            self.sprite.face(0)
+        return desiste
+
+    def _joga(self):
+        try:
+            return self.jogada(self.mesa)
+        except TypeError:
+            exec(self.jogador)
+            return self.jogada(self.mesa)
+
+
+class _Jogador(object):
+    def __init__(self, jogador, mesa):
+        self.sprite = GUI.carta('decide', tit=jogador)
         self.cena = mesa.acampamento
         self.nome = jogador
-        self.sprite.mostra("0:0")
         self.tesouro = 0
         self.entra(self.cena)
         #self.jogador = "from {mod}.main import {mod}, self.jogador = {mod}()".format(mod=jogador)
         self.jogada, self.joias, self.mesa = None, 0, mesa
         self.chance = list(range(20))
         shuffle(self.chance)
-        self.jogador = self.inicia(jogador)
+        self.sprite.mostra("{}{}:{}".format(self.nome[:2], self.tesouro, self.joias))
+        #self.inicia(jogador)
+        self.jogador = self
 
     def inicia(self, jogador):
         try:
@@ -290,7 +344,7 @@ class Jogador(object):
 
     def recebe(self, joias):
         self.joias += joias
-        self.sprite.mostra("{}{}:{}".format(self.nome[:2], self.joias))
+        self.sprite.mostra("{}{}#{}".format(self.nome[:2], self.joias))
 
     def joga(self, mesa):
         return self.chance.pop() < 2 if self.chance else True
