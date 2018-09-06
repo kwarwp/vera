@@ -267,7 +267,7 @@ class Jogador(object):
         self.sprite.mostra("0:0")
         self.tesouro = 0
         self.entra(self.cena)
-        self.jogador = "from {mod}.main import {mod}, self.jogador = {mod}()".format(mod=jogador)
+        #self.jogador = "from {mod}.main import {mod}, self.jogador = {mod}()".format(mod=jogador)
         self.jogada, self.joias, self.mesa = None, 0, mesa
         self.chance = list(range(20))
         shuffle(self.chance)
@@ -276,13 +276,13 @@ class Jogador(object):
     def inicia(self, jogador):
         try:
             exec(GET_JOGADOR.format(mod=jogador))
-        except TypeError:
+        except: # TypeError:
             self.jogador = self
 
     def entra(self, cena=None):
         # self.chance = list(range(12))
         self.joias = 0
-        self.sprite.mostra("{}:{}".format(self.tesouro, self.joias))
+        self.sprite.mostra("{}:{}:{}".format(self.tesouro, self.joias))
         self.sprite.face(1)
         cena = cena if cena else self.cena
         self.sprite.entra(cena)
