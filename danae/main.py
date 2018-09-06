@@ -291,10 +291,11 @@ class Jogador(object):
         self.joias += joias
         self.sprite.mostra("{}:{}".format(self.tesouro, self.joias))
 
-    def joga(self):
-        desiste = self.chance.pop() < 2 if self.chance else True
+    def joga(self, mesa):
+        return self.chance.pop() < 2 if self.chance else True
 
-    def _joga(self, desiste):
+    def decide(self):
+        desiste = self.jogador.joga(self.mesa)
         if desiste:
             self.tesouro += self.joias
             self.joias = 0
@@ -302,7 +303,7 @@ class Jogador(object):
             self.sprite.face(0)
         return desiste
 
-    def _joga(self):
+    def __joga(self):
         try:
             return self.jogada(self.mesa)
         except TypeError:
@@ -382,7 +383,7 @@ class Mesa(object):
         for jogador in self.jogadores_ativos:
             for carta in self.salas:
                 carta.premia(jogador, ativos)
-            if jogador.joga() == DESISTE:
+            if jogador.decide() == DESISTE:
                 self.jogadores_ativos.remove(jogador)
                 jogadores_saindo.append(jogador)
         carta_corrente.atualiza_saldo(ativos)
