@@ -31,7 +31,7 @@ from browser import timer
 from _spy.vitollino.main import Elemento, Cena, Codigo, STYLE
 
 STYLE["width"] = 800
-
+GET_JOGADOR = "from {mod}.main import {mod}; self.jogador = {mod}()"
 DESISTE = True
 PERIGOS = "aranha mumia desabe fogo cobra".split()
 ARTEFATOS = "estatua vaso broche colar adorno".split()
