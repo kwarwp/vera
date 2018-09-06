@@ -36,7 +36,7 @@ DESISTE = True
 PERIGOS = "aranha mumia desabe fogo cobra".split()
 ARTEFATOS = "estatua vaso broche colar adorno".split()
 TESOUROS = "1 2 3 3 4 5 7 9 9 11 13 14 14 15 17".split()
-JOGADORES = tuple("roxanne libby sara kellee courtney angie".split())
+JOGADORES = tuple("roxanne libby sara kellee courtney angie naomi tracy morgan".split())
 SPLASH = "https://activufrj.nce.ufrj.br/studio/Introducao_a_Computacao/" \
          "Untitled_20180828_105833-0.jpg?disp=inline&size=G"
 ACTIVE = "http://activufrj.nce.ufrj.br/studio/"
@@ -274,11 +274,12 @@ class Jogador(object):
         self.chance = list(range(20))
         self.sprite.mostra("{}{}:{}".format(self.nome[:1], self.tesouro, self.joias))
         shuffle(self.chance)
-        self.inicia()
+        self.inicia(jogador)
 
     def inicia(self, jogador):
         try:
             exec(GET_JOGADOR.format(mod=jogador))
+            self.nome = self.nome.upper()
             self.sprite.mostra("{}{}#{}".format(self.nome[:1], self.tesouro, self.joias))
         except: # TypeError:
             self.jogador = self
