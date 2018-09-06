@@ -6,7 +6,7 @@ class Jogador:
     def __init__(self):
         self.chance = list(range(20))
 
-    def joga(self):
+    def joga(self, mesa):
         desiste = self.chance.pop() < 2 if self.chance else True
         return desiste
 
