@@ -264,6 +264,7 @@ class Jogador(object):
     def __init__(self, jogador, mesa):
         self.sprite = GUI.carta('decide', tit=jogador)
         self.cena = mesa.acampamento
+        self.nome = jogador
         self.sprite.mostra("0:0")
         self.tesouro = 0
         self.entra(self.cena)
@@ -282,14 +283,14 @@ class Jogador(object):
     def entra(self, cena=None):
         # self.chance = list(range(12))
         self.joias = 0
-        self.sprite.mostra("{}:{}:{}".format(self.tesouro, self.joias))
+        self.sprite.mostra("{}{}:{}".format(self.nome[:2], self.tesouro, self.joias))
         self.sprite.face(1)
         cena = cena if cena else self.cena
         self.sprite.entra(cena)
 
     def recebe(self, joias):
         self.joias += joias
-        self.sprite.mostra("{}:{}".format(self.tesouro, self.joias))
+        self.sprite.mostra("{}{}:{}".format(self.nome[:2], self.joias))
 
     def joga(self, mesa):
         return self.chance.pop() < 2 if self.chance else True
