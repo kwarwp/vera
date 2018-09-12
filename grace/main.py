@@ -13,7 +13,7 @@ def main(jogadores=JOGADORES, gui=None):
             self._inicia(nome)
 
         def _inicia(self, jogador):
-            get_joga = "from {mod}.main import {mod}; self.joga = {mod}()"
+            get_joga = "from {mod}.main import {mod}; self.joga = {mod}().joga"
             try:
                 exec(get_joga.format(mod=jogador))
                 self.nome = self.nome.upper()
