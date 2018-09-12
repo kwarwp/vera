@@ -75,3 +75,9 @@ Exception: unexpected token: '.'
   module '$exec_459' line 3
 main()
 '''},
+{'date': 'Wed Sep 12 2018 11:34:22.468 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+Exception: unexpected token: '.'
+  module '$exec_1854' line 4
+main(gui=Gui())
+'''},
