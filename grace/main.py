@@ -1,9 +1,10 @@
 # vera.grace.main.py
-from _spy.tesouro.main import  Gui
+from _spy.tesouro.main import  Gui, JOGADORES
 from _spy.tesouro.tesouro import  Jogo
+from random import shuffle
 
 
-def main(jogadores=JOGADORES, gui=GUI):
+def main(jogadores=JOGADORES, gui=None):
     class JogadorSimples:
         def __init__(self, joga, nome):
             _chance = list(range(20))
