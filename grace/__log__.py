@@ -69,3 +69,9 @@ AttributeError: 'module' object has no attribute '__setitem__'
     return Jogo(gui=gui, jogadores=[JogadorSimples(None, jogador) for jogador in jogadores])
 TypeError: 'module' object is not callable
 '''},
+{'date': 'Wed Sep 12 2018 11:27:42.595 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+Exception: unexpected token: '.'
+  module '$exec_459' line 3
+main()
+'''},
