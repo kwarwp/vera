@@ -135,3 +135,10 @@ NameError: name 'shuffle' is not defined
     gui.inicia()
 AttributeError: 'Gui' object has no attribute 'inicia'
 '''},
+{'date': 'Thu Sep 13 2018 08:05:48.36 GMt-0300 (-03) -X- SuPyGirls -X-',
+'error': '''
+ module roxanne.main line 20
+  cautela self.cartas > 9
+           ^
+SyntaxError: invalid syntax
+'''},
