@@ -1,6 +1,6 @@
 # vera.roxanne.main.py
 from random import shuffle
-
+"0:roxanne 1:libby 3:sara 4:kellee 5:courtney 6:angie 7:naomi 8:tracy 9:morgan"
 
 class Jogador:
     def __init__(self):
