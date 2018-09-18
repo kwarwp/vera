@@ -21,7 +21,7 @@ def main(jogadores=JOGADORES, gui=None):
                 self.joga = self._joga
 
         def _joga(self, _):
-            return self.jogadas.pop() < 2
+            return (self.jogadas.pop() < 2) if self.jogadas else True
             
     gui.inicia()
     return Jogo(gui=gui, jogadores=[JogadorSimples(None, jogador) for jogador in jogadores])
