@@ -890,3 +890,10 @@ SyntaxError: invalid syntax
                                                                    ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Thu Sep 20 2018 09:56:59.796 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 10
+  _chance = list(range(20)
+                                        ^
+SyntaxError: invalid syntax
+'''},
