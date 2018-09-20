@@ -883,3 +883,10 @@ NameError: name 'Jogado278' is not defined
                                                                    ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Thu Sep 20 2018 09:56:05.941 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+'error': '''
+ module angie.main line 10
+  self.perigos, self.artefatos, self.cartas, self.rodada_corrente,\ 
+                                                                   ^
+SyntaxError: invalid syntax
+'''},
