@@ -5,7 +5,6 @@ from random import shuffle
 class Jogador:
     def __init__(self):
         self.chance = list(range(30))
-        shuffle(self.chance)
         self.perigos, self.artefatos, self.cartas, self.rodada_corrente,\
         self.maior_tesouro, self.maior_joias, = [0]*6
         self.jogadores_jogando, self.tesouros_na_tenda, self.cartas_na_mesa,\
@@ -26,4 +25,4 @@ class Jogador:
 
 
 def roxanne():
-    return Jogador()
+    return Jogado278
