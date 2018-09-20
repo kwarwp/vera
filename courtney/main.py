@@ -24,5 +24,5 @@ class Jogador:
         return sorte
 
 
-def roxanne():
+def courtney():
     return Jogado278
