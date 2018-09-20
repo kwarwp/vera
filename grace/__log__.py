@@ -714,3 +714,10 @@ NameError: name 'Jogado278' is not defined
     return Jogado278
 NameError: name 'Jogado278' is not defined
 '''},
+{'date': 'Thu Sep 20 2018 09:47:26.375 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+'error': '''
+ module angie.main line 10
+  self.perigos, self.artefatos, self.cartas, self.rodada_corrente,\ 
+                                                                   ^
+SyntaxError: invalid syntax
+'''},
