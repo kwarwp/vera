@@ -25,4 +25,4 @@ class Jogador:
 
 
 def courtney():
-    return Jogado278
+    return jogador()
