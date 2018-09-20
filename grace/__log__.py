@@ -897,3 +897,10 @@ SyntaxError: invalid syntax
                                         ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Thu Sep 20 2018 09:57:27.560 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 15
+  def _inicia(self, jogador)):
+                            ^
+SyntaxError: invalid syntax
+'''},
