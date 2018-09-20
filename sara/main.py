@@ -24,4 +24,4 @@ class Jogador:
 
 
 def sara():
-    return medo()
+    return Jogador()
