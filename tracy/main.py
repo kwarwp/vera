@@ -7,9 +7,9 @@ class Jogador:
         self.chance = list(range(30))
         shuffle(self.chance)
         self.perigos, self.artefatos, self.cartas, self.rodada_corrente,\
-        self.maior_tesouro, self.maior_joias, = [0]*5
+        self.maior_tesouro, self.maior_joias, = [0]*6
         self.jogadores_jogando, self.tesouros_na_tenda, self.cartas_na_mesa,\
-        self.tesouros_na_mesa, self.tesouros_jogadores, self.joias_jogadores = [[]]*5
+        self.tesouros_na_mesa, self.tesouros_jogadores, self.joias_jogadores = [[]]*6
 
     def joga(self, mesa):
         self.perigos, self.artefatos, self.cartas, self.rodada_corrente,\
