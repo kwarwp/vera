@@ -6,9 +6,9 @@ class Jogador:
     def __init__(self):
         self.chance = list(range(30))
         self.perigos, self.artefatos, self.cartas, self.rodada_corrente,\
-        self.maior_tesouro, self.maior_joias, = [0]*6
+        self.maior_tesouro, self.maior_joias, = [0]*10
         self.jogadores_jogando, self.tesouros_na_tenda, self.cartas_na_mesa,\
-        self.tesouros_na_mesa, self.tesouros_jogadores, self.joias_jogadores = [[]]*6
+        self.tesouros_na_mesa, self.tesouros_jogadores, self.joias_jogadores = [[]]*10
 
     def joga(self, mesa):
         self.perigos, self.artefatos, self.cartas, self.rodada_corrente,\
@@ -18,10 +18,10 @@ class Jogador:
         coragem = self.perigos > 4
         cobica = self.artefatos > 3
         cautela = self.cartas > 10
-        ambicao = self.maior_tesouro > self.tesouros_jogadores[6]        
+        ambicao = self.maior_tesouro > self.tesouros_jogadores[7]        
         sorte = self.chance.pop() < 2 if self.chance else True
         #return coragem or cobica or cautela or ambicao or sorte
-        return ambicao
+        return ambicao or coragem
 
 
 def courtney():
