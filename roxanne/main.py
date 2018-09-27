@@ -19,7 +19,7 @@ class Jogador:
         medo = self.perigos > 6
         cobica = self.artefatos > 1
         cautela = self.cartas > 8
-        ambicao = self.maior_tesouro > self.tesouros_jogadores[0]        
+        ambicao = self.maior_tesouro > self.tesouros_jogadores[4]        
         sorte = self.chance.pop() < 2 if self.chance else True
         #return medo or cobica or cautela or ambicao or sorte
         return sorte
