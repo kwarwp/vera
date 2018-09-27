@@ -18,10 +18,10 @@ class Jogador:
         coragem = self.perigos > 4
         cobica = self.artefatos > 3
         cautela = self.cartas > 10
-        ambicao = self.maior_tesouro > self.tesouros_jogadores[5]        
+        ambicao = self.maior_tesouro > self.tesouros_jogadores[6]        
         sorte = self.chance.pop() < 2 if self.chance else True
         #return coragem or cobica or cautela or ambicao or sorte
-        return ambicao or coragem
+        return ambicao
 
 
 def courtney():
