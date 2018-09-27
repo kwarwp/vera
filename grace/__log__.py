@@ -2125,3 +2125,10 @@ ValueError: need more than 5 values to unpack
     self.perigos, self.artefatos, self.cartas, self.rodada_corrente,\
 ValueError: need more than 5 values to unpack
 '''},
+{'date': 'Thu Sep 27 2018 10:17:52.465 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+'error': '''
+ module naomi.main line 22
+  ambicao = self.maior_tesouro 1 > self.tesouros_jogadores[0]        
+                                ^
+SyntaxError: invalid syntax
+'''},
