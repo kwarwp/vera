@@ -22,7 +22,7 @@ class Jogador:
         ambicao = self.maior_tesouro > self.tesouros_jogadores[3]        
         sorte = self.chance.pop() < 2 if self.chance else True
         #return medo or cobica or cautela or ambicao or sorte
-        return cobica 
+        return cobica and ambicao
 
 
 def roxanne():
