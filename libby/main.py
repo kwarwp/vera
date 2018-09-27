@@ -17,7 +17,7 @@ class Jogador:
         self.tesouros_na_mesa, self.tesouros_jogadores, self.joias_jogadores = mesa.atualiza()
         medo = self.perigos > 2
         cobica = self.artefatos > 3
-        cautela = self.cartas > 11
+        cautela = self.cartas > 9
         ambicao = self.maior_tesouro > self.tesouros_jogadores[0]        
         sorte = self.chance.pop() < 2 if self.chance else True
         return medo or cobica or cautela or ambicao or sorte
