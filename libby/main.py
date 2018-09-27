@@ -15,7 +15,7 @@ class Jogador:
         self.maior_tesouro, self.maior_joias,\
         self.jogadores_jogando, self.tesouros_na_tenda, self.cartas_na_mesa,\
         self.tesouros_na_mesa, self.tesouros_jogadores, self.joias_jogadores = mesa.atualiza()
-        medo = self.perigos > 6
+        medo = self.perigos > 4
         cobica = self.artefatos > 4
         cautela = self.cartas > 11
         ambicao = self.maior_tesouro > self.tesouros_jogadores[0]        
