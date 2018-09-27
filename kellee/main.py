@@ -23,7 +23,7 @@ class Jogador:
         sorte = self.chance.pop() < 2 if self.chance else True
         #return medo or cobica or cautela or ambicao or sorte
         return sorte
-        return cobica
+        return ambicao
 
 
 def kellee():
