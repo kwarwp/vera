@@ -19,12 +19,12 @@ def inicio():
     ehelicoptero=Texto(deserto,"Esse é o deserto de townsville, e dentro desse helicóptero está ngm menos q o super herói MaxSteel, o q ele não sabe eh que uma 10graça tá p acontecer, o helicóptero vai cair!")
     helicoptero.vai=ehelicoptero.vai
     
-    maxsteel=Elemento(img=MAXSTELL,tit="MaxSteel",style=dict(left=150,top=160,width=160,height=200))
+    maxsteel=Elemento(img=MAXSTEEL,tit="MaxSteel",style=dict(left=150,top=160,width=160,height=200))
     maxsteel.entra(deserto1)
     emaxsteel=Texto(deserto1,"Caramba, meu helicoptero caiu, macacos me mordam! Estou perdido nessa caralhaa")
     maxsteel.vai=emaxsteel.vai
     
-    mulan=Elemento(img=MULAM,tit="Mulan",style=dict(left=150,top=160,width=160,height=200))
+    mulan=Elemento(img=MULAN,tit="Mulan",style=dict(left=150,top=160,width=160,height=200))
     mulan.entra(povoado)
     emulan=Texto(povoado,"Pow man, tu eh muito burro, sai de perto dos terroristas que eles vão te meter bala, chegai q vou te ajudar.")
     mulan.vai=mulan.vai
