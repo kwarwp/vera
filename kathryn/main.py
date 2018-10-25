@@ -4,7 +4,6 @@ from callie.main import Perigo
 from callie.main import Tesouro
 from natalia.main import Jogador
 from natalia.main import Mesa
-from kathryn.main import Baralho
 """
 kathryn - Baralho - Joias - Rodada
 callie - Perigo - Perder - Tesouro
