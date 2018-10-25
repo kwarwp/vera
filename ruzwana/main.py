@@ -1,5 +1,5 @@
 # vera.ruzwana.main.py
-from ruzwana.main import Perigo
+from callie.main import Perigo
 """
 kathryn - Baralho - Joias - Rodada
 callie - Perigo - Perder - Tesouro
