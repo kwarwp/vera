@@ -12,6 +12,7 @@ meredith - Universo
 
 class Partida:
     def __init__(self):
+        print("Partida __init__")
         self.rodada = Rodada() 
         
     def inicia(self):     
