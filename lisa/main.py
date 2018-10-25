@@ -16,7 +16,7 @@ class Partida:
         
     def inicia(self):     
         self.rodada.comeca()
-if __lisa__ == "__main__":
+if __name__ == "__main__":
     partida = Partida()
     partida.inicia()
     
