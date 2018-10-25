@@ -32,8 +32,8 @@ if __name__ == "__main__":
     
 class Joias:
     def __init__(self):
-    self.jogador = Jogador()
-    self.mesa = Mesa()
+        self.jogador = Jogador()
+        self.mesa = Mesa()
     
     def começa(self):
         self.jogador.decida()
