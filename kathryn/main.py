@@ -26,7 +26,7 @@ class Baralho:
         self.perigo.apresente_a_mesa()
         self.tesouro.apresente_a_mesa()
         
-if __name__ == "__main__"
+if __name__ == "__main__":
     baralho = Baralho()
     baralho.chame_turno()
     
