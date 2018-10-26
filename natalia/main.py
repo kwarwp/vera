@@ -31,7 +31,7 @@ class Jogador:
     def decida(): 
         self.ficar.apresente()
         self.sair.apresente()
-    del __init__(self):
+    def __init__(self):
         self.joias = Joias()
     del retorna():
         self.joia.retorna()
