@@ -33,7 +33,7 @@ class Jogador:
         self.sair.apresente()
     def __init__(self):
         self.joias = Joias()
-    del retorna():
+    def recebe():
         self.joia.retorna()
     
 class Iniciar:
