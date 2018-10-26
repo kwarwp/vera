@@ -1,4 +1,4 @@
-vera.natalia.main.py
+#vera.natalia.main.py
 
 from kathryn.main import Rodada
 from kathryn.main import Joias
