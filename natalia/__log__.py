@@ -233,3 +233,10 @@ IndentationError: expected an indented block
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Thu Oct 25 2018 21:36:45.223 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 24
+  class Jogador:
+  ^
+IndentationError: expected an indented block
+'''},
