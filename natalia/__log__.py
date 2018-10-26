@@ -219,3 +219,10 @@ ImportError: cannot import name 'Rodada'
     from kathryn.main import Rodada
 ImportError: cannot import name 'Rodada'
 '''},
+{'date': 'Thu Oct 25 2018 21:34:56.628 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 24
+  class Jogador:
+  ^
+IndentationError: expected an indented block
+'''},
