@@ -6,3 +6,10 @@
               ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Fri Nov 09 2018 18:35:54.540 GMt-0200 (Brasilia Summer Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 22
+  if __name__ == "__main__"
+                            ^
+SyntaxError: invalid syntax
+'''},
