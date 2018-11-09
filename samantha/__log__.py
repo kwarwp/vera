@@ -13,3 +13,7 @@ SyntaxError: invalid syntax
                             ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Fri Nov 09 2018 18:36:03.74 GMt-0200 (Brasilia Summer Time) -X- SuPyGirls -X-',
+'error': '''
+Exception: <TypeError: this.boot is undefined>
+'''},
