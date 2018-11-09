@@ -14,9 +14,9 @@ class Main:
     def resize(self):
         window.resize();
     def main(self):
-        game = new Phaser.Game(self.gameConfig);
+        game = PHASER.Game(self.gameConfig).new()
         window.focus()
-        window.addEventListener("resize", self.resize, False);
+        window.addEventListener("resize", self.resize, False)
         
         
 if __name__ == "__main__"
