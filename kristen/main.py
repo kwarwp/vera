@@ -39,5 +39,7 @@ SVG = """
   </g>
 </svg>
 """
-from browser import doc
+from browser import doc, alert
 doc["pydiv"].html = SVG
+puz = doc["imagebot_5"]
+puz.bind("click", lambda *_: alert("OI"))
