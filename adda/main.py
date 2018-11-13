@@ -3,21 +3,21 @@ from browser import window
 Phaser = window.Phaser
 class Main:
     def __init__(self):
-        self.config = {
-              type: Phaser.AUTO,
-              width: 800,
-              height: 600,
-              physics: {
-                        default: 'arcade',
-                        arcade: {
-                                 gravity: { y: 200 }
+        self.config = dict(
+              type= Phaser.AUTO,
+              width= 800,
+              height= 600,
+              physics= {
+                        'default': 'arcade',
+                        'arcade': {
+                                 'gravity': { 'y': 200 }
                                  }
                         },
-              scene: {
-                      preload: preload,
-                      create: create
+              scene= {
+                      'preload': self.preload,
+                      'create': self.create
                       }
-              };
+              )
 
         self.game = Phaser.Game.new(self.config)
     def preload (self):
@@ -47,3 +47,6 @@ class Main:
         logo.setCollideWorldBounds(true);
 
         emitter.startFollow(logo);
+
+if __name__ == "__main__":
+    Main()
