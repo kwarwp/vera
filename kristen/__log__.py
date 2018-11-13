@@ -45,3 +45,10 @@ AttributeError: 'module' object has no attribute 'RECT'
                                                                                              ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Tue Nov 13 2018 10:09:25.134 GMt-0200 (Brasilia Summer Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 43
+  an1 = svg.animate(attributeType="CSS", attributeName="opacity", 
+                                                                             ^
+SyntaxError: invalid syntax
+'''},
