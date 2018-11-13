@@ -35,16 +35,16 @@ class Main:
         particles = this.add.particles('red');
 
         emitter = particles.createEmitter({
-                                               speed: 100,
-                                               scale: { start: 1, end: 0 },
-                                               blendMode: 'ADD'
+                                               'speed': 100,
+                                               'scale': { start: 1, end: 0 },
+                                               'blendMode': 'ADD'
                                                });
 
         logo = this.physics.add.image(400, 100, 'logo');
 
         logo.setVelocity(100, 200);
         logo.setBounce(1, 1);
-        logo.setCollideWorldBounds(true);
+        logo.setCollideWorldBounds(True);
 
         emitter.startFollow(logo);
 
