@@ -38,3 +38,10 @@ AttributeError: 'module' object has no attribute 'RECTANGLE'
     re1 = svg.RECT(x=100, y=100,width=50, height=30, style=dict(fill="#55ff55"))
 AttributeError: 'module' object has no attribute 'RECT'
 '''},
+{'date': 'Tue Nov 13 2018 08:59:43.103 GMt-0200 (Brasilia Summer Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 44
+  pe1 = svg.path(style=dict(fill="#55ff99"), d= "m 100,50 c 100,30 120,50 110,70 100,100 z"
+                                                                                             ^
+SyntaxError: invalid syntax
+'''},
