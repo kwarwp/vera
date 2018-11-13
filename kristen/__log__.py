@@ -52,3 +52,10 @@ SyntaxError: invalid syntax
                                                                              ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Tue Nov 13 2018 10:09:53.954 GMt-0200 (Brasilia Summer Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 44
+  From="1", to="0", dur="5s", repeatCount="indefinite)
+                                                      ^
+SyntaxError: EOL while scanning string literal
+'''},
