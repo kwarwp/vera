@@ -20,7 +20,7 @@ class Main:
               };
 
         self.game = Phaser.Game.new(self.config)
-    def preload (self)
+    def preload (self):
         this = self.game
         this.load.setBaseURL('http://labs.phaser.io')
 
@@ -28,7 +28,7 @@ class Main:
         this.load.image('logo', 'assets/sprites/phaser3-logo.png')
         this.load.image('red', 'assets/particles/red.png')
 
-    def create (self)
+    def create (self):
         this = self.game
         this.add.image(400, 300, 'sky');
 
