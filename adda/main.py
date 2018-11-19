@@ -1,13 +1,15 @@
 # vera.adda.main.py
 from browser import window, doc, alert
+from javascript import this as _this
 Phaser = window.Phaser
 class Main:
     def __init__(self):
         doc["pydiv"].html = ""
         def preload():
-            self.preload()
+            
+            self.preload(_this())
         def create(a):
-            self.create()
+            self.create(_this())
         self.config = dict(
               type= Phaser.AUTO,
               width= 800,
@@ -27,18 +29,17 @@ class Main:
 
         self.game = Phaser.Game.new(self.config)
         window._game = self.game
-    def preload (self):
-        this = self.game
+    def preload (self, _self):
+        this = _self
         this.load.setBaseURL('http://labs.phaser.io')
 
         this.load.image('sky', 'assets/skies/space3.png')
         this.load.image('logo', 'assets/sprites/phaser3-logo.png')
         this.load.image('red', 'assets/particles/red.png')
 
-    def create (self):
-        this = window._game  # self.game
+    def create (self, _self):
+        this = _self
         # this = self.game
-        """
         this.add.image(400, 300, 'sky');
         particles = this.add.particles('red');
 
@@ -54,8 +55,7 @@ class Main:
         logo.setBounce(1, 1);
         logo.setCollideWorldBounds(True);
 
-        #emitter.startFollow(logo);
-        """
+        emitter.startFollow(logo);
 
 if __name__ == "__main__":
     Main()
