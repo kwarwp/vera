@@ -1,9 +1,9 @@
 # vera.adda.main.py
-from browser import window, doc
+from browser import window, doc, alert
 Phaser = window.Phaser
 class Main:
     def __init__(self):
-        doc[""].html = ""
+        doc["pydiv"].html = ""
         self.config = dict(
               type= Phaser.AUTO,
               width= 800,
@@ -22,8 +22,10 @@ class Main:
               )
 
         self.game = Phaser.Game.new(self.config)
+        window._game = self.game
     def preload (self):
-        this = self.game
+        alert("foi")
+        this = window._game  # self.game
         this.load.setBaseURL('http://labs.phaser.io')
 
         this.load.image('sky', 'assets/skies/space3.png')
@@ -31,14 +33,15 @@ class Main:
         this.load.image('red', 'assets/particles/red.png')
 
     def create (self):
-        this = self.game
+        this = window._game  # self.game
+        # this = self.game
         this.add.image(400, 300, 'sky');
 
         particles = this.add.particles('red');
 
         emitter = particles.createEmitter({
                                                'speed': 100,
-                                               'scale': { start: 1, end: 0 },
+                                               'scale': { 'start': 1, 'end': 0 },
                                                'blendMode': 'ADD'
                                                });
 
