@@ -31,17 +31,16 @@ class Main:
 
         self.game = Phaser.Game.new(self.config)
         window._game = self.game
-    def preload (self, _self):
-        this = _self
+    def preload (self, this):
         this.load.setBaseURL('http://labs.phaser.io')
 
         this.load.image('sky', 'assets/skies/space3.png')
         this.load.image('logo', 'assets/sprites/phaser3-logo.png')
         this.load.image('red', 'assets/particles/red.png')
 
-    def create (self, _self):
-        this = _self
-        # this = self.game
+    def update (self, _self):
+
+    def create (self, this):
         this.add.image(400, 300, 'sky');
         particles = this.add.particles('red');
 
