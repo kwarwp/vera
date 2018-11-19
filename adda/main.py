@@ -4,6 +4,10 @@ Phaser = window.Phaser
 class Main:
     def __init__(self):
         doc["pydiv"].html = ""
+        def preload():
+            self.preload()
+        def create(a):
+            self.create()
         self.config = dict(
               type= Phaser.AUTO,
               width= 800,
@@ -16,16 +20,15 @@ class Main:
                                  }
                         },
               scene= {
-                      'preload': self.preload,
-                      'create': self.create
+                      'preload': preload,
+                      'create': create
                       }
               )
 
         self.game = Phaser.Game.new(self.config)
         window._game = self.game
     def preload (self):
-        alert("foi")
-        this = window._game  # self.game
+        this = self.game
         this.load.setBaseURL('http://labs.phaser.io')
 
         this.load.image('sky', 'assets/skies/space3.png')
@@ -35,8 +38,8 @@ class Main:
     def create (self):
         this = window._game  # self.game
         # this = self.game
+        """
         this.add.image(400, 300, 'sky');
-
         particles = this.add.particles('red');
 
         emitter = particles.createEmitter({
@@ -51,7 +54,8 @@ class Main:
         logo.setBounce(1, 1);
         logo.setCollideWorldBounds(True);
 
-        emitter.startFollow(logo);
+        #emitter.startFollow(logo);
+        """
 
 if __name__ == "__main__":
     Main()
