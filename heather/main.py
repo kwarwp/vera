@@ -3,6 +3,11 @@
 from browser import window, doc, alert
 from javascript import this as _this
 Phaser = window.Phaser
+DUDE = "IiClU5D.png"
+BOMB = "8nVPuac.png"
+PLAT = "fI4fviI.png"
+SKY = "qkC2BMI.png"
+STAR = "yS0o6qt.png
 class Main:
     def __init__(self):
         doc["pydiv"].html = ""
@@ -32,12 +37,12 @@ class Main:
         self.game = Phaser.Game.new(self.config)
         window._game = self.game
     def preload (self, this):
-        this.load.setBaseURL('http://labs.phaser.io')
-        this.load.image('sky', 'assets/sky.png')
-        this.load.image('ground', 'assets/platform.png')
-        this.load.image('star', 'assets/star.png')
-        this.load.image('bomb', 'assets/bomb.png')
-        this.load.spritesheet('dude',  'assets/dude.png', { 'frameWidth': 32, 'frameHeight': 48 })
+        this.load.setBaseURL('https://i.imgur.com/')
+        this.load.image('sky', SKY)
+        this.load.image('ground', PLAT)
+        this.load.image('star', STAR)
+        this.load.image('bomb', BOMB)
+        this.load.spritesheet('dude',  DUDE, { 'frameWidth': 32, 'frameHeight': 48 })
 
     def update (self, _self):
         pass
