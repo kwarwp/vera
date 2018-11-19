@@ -1,13 +1,14 @@
 # vera.adda.main.py
-from browser import window
+from browser import window, doc
 Phaser = window.Phaser
 class Main:
     def __init__(self):
+        doc[""].html = ""
         self.config = dict(
               type= Phaser.AUTO,
               width= 800,
               height= 600,
-              parent= "pydiv"
+              parent= "pydiv",
               physics= {
                         'default': 'arcade',
                         'arcade': {
