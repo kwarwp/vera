@@ -7,7 +7,7 @@ DUDE = "IiClU5D.png"
 BOMB = "8nVPuac.png"
 PLAT = "fI4fviI.png"
 SKY = "qkC2BMI.png"
-STAR = "yS0o6qt.png
+STAR = "yS0o6qt.png"
 class Main:
     def __init__(self):
         doc["pydiv"].html = ""
@@ -50,6 +50,13 @@ class Main:
     def create (self, this):
         this.add.image(400, 300, 'sky')
         this.add.image(400, 300, 'star')
+        platforms = this.physics.add.staticGroup()
+
+        platforms.create(400, 568, 'ground').setScale(2).refreshBody()
+
+        platforms.create(600, 400, 'ground')
+        platforms.create(50, 250, 'ground')
+        platforms.create(750, 220, 'ground')
 
 
 if __name__ == "__main__":
