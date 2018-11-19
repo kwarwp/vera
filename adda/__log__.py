@@ -24,3 +24,10 @@ SyntaxError: invalid syntax
     self.config = {
 NameError: name 'width' is not defined
 '''},
+{'date': 'Mon Nov 19 2018 19:06:53.408 GMt-0200 (Horário de Verão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 6
+  self.config = dict(
+                                                                                                                                                         ^
+SyntaxError: invalid syntax
+'''},
