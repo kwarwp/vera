@@ -7,6 +7,7 @@ class Main:
               type= Phaser.AUTO,
               width= 800,
               height= 600,
+              parent= "pydiv"
               physics= {
                         'default': 'arcade',
                         'arcade': {
