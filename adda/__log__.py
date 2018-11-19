@@ -49,3 +49,10 @@ SyntaxError: invalid syntax
     doc[""].html = ""
 KeyError: 
 '''},
+{'date': 'Mon Nov 19 2018 19:30:54.660 GMt-0200 (Horário de Verão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 7
+  def preload();
+               ^
+SyntaxError: invalid syntax
+'''},
