@@ -20,3 +20,10 @@ SyntaxError: EOL while scanning string literal
                                  ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Mon Nov 19 2018 22:16:33.277 GMt-0200 (Horário de Verão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 110
+  {
+  ^
+IndentationError: expected an indented block
+'''},
