@@ -120,8 +120,8 @@ class Magic:
     def __init__(self, masmorra, x, y, vx, vy, d):
         self.masmorra, self.x, self.y, self.d = masmorra, x, y, d
         self.v = vx * 1.5, vy * 1.5
-        masmorra.gamer.subscribe(self)
-        self.game = masmorra.gamer.game
+        # masmorra.gamer.subscribe(self)
+        # self.game = masmorra.gamer.game
         self.sprite = None
         self._create = self.create
 
@@ -155,9 +155,11 @@ class Magic:
 
 class Hero:
     def __init__(self, gamer):
+        """
         self.gamer = gamer.gamer
         self.gamer.subscribe(self)
         self.game = self.gamer.game
+        """
         self.sprite = self.cursors = None
 
     def create(self):
