@@ -1,6 +1,6 @@
 # vera.alexa.main.py
 #circus/desafio_a.py
-from _spy.braser.main import Braser
+from braser.main import Braser
 
 DETAIL, DETAILURL = "dungeon_detail", "http://s19.postimg.org/uoe2ycclv/Dungeon_Wall.jpg"
 MONSTER, MONSTERURL = "monster", "http://s19.postimg.org/fpvo3wxjn/monstersheets.png"
@@ -44,7 +44,7 @@ class DesafioA:
     def preload(self):
         # self.game.load.image(DETAIL, DETAILURL)
 
-        self.game.stage.backgroundColor = "#FFFFFF"
+        # self.game.stage.backgroundColor = "#FFFFFF"
         self.game.load.spritesheet(MONSTER, MONSTERURL, 64, 63, 16*12)
         self.game.load.spritesheet(DETILE, DETAILURL, 128, 128, 12)
 
