@@ -1,7 +1,7 @@
 # vera.braser.main.py
 from browser import window, doc, alert
 from javascript import this as _this
-Phaser = window.Phaser
+Phaser = PHASER = window.Phaser
 class Braser:
     game = None
     subscribers = []
