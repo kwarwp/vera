@@ -5,8 +5,9 @@ Phaser = PHASER = window.Phaser
 class Braser:
     game = None
     subscribers = []
-    def __init__(self, width=800, height=600, parent="pydiv", mode=Phaser.AUTO):
+    def __init__(self, width=800, height=600, subscribers=[], parent="pydiv", mode=Phaser.AUTO):
         doc["pydiv"].html = ""
+        [self.subscribe(subscriber) for subscriber in subscribers]
         self.config = dict(
               type= Phaser.AUTO,
               width= 800,
