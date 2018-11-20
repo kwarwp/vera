@@ -23,7 +23,7 @@ class Masmorra(Braser):
         self.monster_list = []
         self.hero = Hero(self)
         self.sprite = Monster(self)
-        self.gamer = Braser(800, 600, [self.Hero, self.Monster])
+        self.gamer = Braser(800, 600, [self.hero, self.sprite])
         # self.gamer.subscribe(self)
         # self.game = Braser.game
 
@@ -75,9 +75,11 @@ class Masmorra(Braser):
 
 class Monster:
     def __init__(self, masmorra):
+        """
         self.masmorra = masmorra
         masmorra.gamer.subscribe(self)
         self.game = masmorra.gamer.game
+        """
         self.sprite = None
         self.direction = 0
         self.first = True
