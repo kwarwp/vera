@@ -2,24 +2,28 @@
 from browser import window, doc, alert
 from javascript import this as _this
 Phaser = window.Phaser
-PHYSICS = dict(default='arcade', arcade=dict(gravity=dict(y=200)))
 class Braser:
     game = None
     subscribers = []
     def __init__(self, width=800, height=600, parent="pydiv", mode=Phaser.AUTO):
-        scene= {
-                    'preload': lambda *_: self._preload(_this()),
-                    'create': lambda *_: self._create(_this()),
-                    'update': lambda *_: self._update(_this())
-                    }
         doc["pydiv"].html = ""
         self.config = dict(
-              type=mode,
-              width=width,
-              height=height,
-              parent=parent,
-              physics=PHYSICS,
-              scene=scene
+              type= Phaser.AUTO,
+              width= 800,
+              height= 600,
+              parent= "pydiv",
+              physics= {
+                        'default': 'arcade',
+                        'arcade': {
+                                 'gravity': { 'y': 300 },
+                                 'debug': False
+                                 }
+                        },
+              scene= {
+                      'preload': lambda *_: self._preload(_this()),
+                      'create': lambda *_: self._create(_this()),
+                      'update': lambda *_: self._update(_this())
+                      }
               )
 
         Braser.game = Phaser.Game.new(self.config) if not Braser.game else Braser.game
