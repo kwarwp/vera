@@ -109,7 +109,7 @@ class Main:
         def collectStar (player, star):
             star.disableBody(True, True);
             self.score += 10;
-            self.scoreText.setText('Score: ' + self.score);
+            self.scoreText.setText('Score: {}'.format(self.score));
 
 
         #As well as doing this we will also check to see if the player overlaps with a star or not:
