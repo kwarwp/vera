@@ -41,12 +41,14 @@ class Braser:
         self.game = this
         self.preload()
         for subscriber in Braser.subscribers:
+            subscriber.game = this
             subscriber.preload() if hasattr(subscriber, 'preload') else None
 
     def _create (self, this):
         self.game = this
         self.create()
         for subscriber in Braser.subscribers:
+            subscriber.game = this
             subscriber.create() if hasattr(subscriber, 'create') else None
 
     def _update(self, this):
@@ -56,6 +58,7 @@ class Braser:
         """
         self.update()
         for subscriber in Braser.subscribers:
+            subscriber.game = this
             subscriber.update() if hasattr(subscriber, 'update') else None
         
     def preload (self, *_):
