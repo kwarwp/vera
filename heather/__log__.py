@@ -13,3 +13,10 @@ IndentationError: expected an indented block
                      ^
 SyntaxError: EOL while scanning string literal
 '''},
+{'date': 'Mon Nov 19 2018 22:16:21.641 GMt-0200 (Horário de Verão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 109
+  def collectStar (player, star)
+                                 ^
+SyntaxError: invalid syntax
+'''},
