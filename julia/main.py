@@ -15,17 +15,17 @@ DIR = [(1, 0), (1, 1), (0, 1), (-1, 1), (-1, 0), (-1, -1), (0, -1), (1, -1)]
 desafio0 = desafio1 = None
 
 
-class Masmorra:
+class Masmorra(Braser):
     _instance = None
 
     def __init__(self):
-        self.gamer = Braser(800, 600)
-        self.gamer.subscribe(self)
-        self.game = Braser.game
-        self.hero = Hero(self)
-        self.sprite = Monster(self)
         self.monsters = self.magic = None
         self.monster_list = []
+        self.hero = Hero(self)
+        self.sprite = Monster(self)
+        self.gamer = Braser(800, 600, [self.Hero, self.Monster])
+        # self.gamer.subscribe(self)
+        # self.game = Braser.game
 
     @classmethod
     def created(cls):
