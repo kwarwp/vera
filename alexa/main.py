@@ -31,15 +31,15 @@ MASMORRA = [["AN", "AN", "AN", "AN", "AN", "AN"],
             ]
 
 
-class DesafioA:
+class DesafioA(Braser):
     ODD = False
     def __init__(self, masmorra=MASMORRA, off=0):
         self.masmorra = masmorra
         self.off = off
         self.odd = False
         self.gamer = Braser(768, 640)
-        self.gamer.subscribe(self)
-        self.game = self.gamer.game
+        #self.gamer.subscribe(self)
+        #self.game = self.gamer.game
 
     def preload(self):
         # self.game.load.image(DETAIL, DETAILURL)
