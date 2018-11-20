@@ -166,7 +166,14 @@ class Hero:
 
     def create(self):
         sprite = self.game.add.sprite(20, 148, MONSTER)
-        sprite.animations.add('ani', [0, 1, 2, 3], 16, True)
+        self.game.anims.create({
+            'key': 'ani',
+            'frames': this.anims.generateFrameNumbers(MONSTER, { 'start': 0, 'end': 3 }),
+            'frameRate': 16,
+            'repeat': -1
+        });
+
+        # |P2| sprite.animations.add('ani', [0, 1, 2, 3], 16, True)
         sprite.play('ani')
         self.game.physics.arcade.enable(sprite)
         sprite.body.setCircle(28)
