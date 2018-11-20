@@ -46,7 +46,22 @@ class Main:
         this.load.spritesheet('dude',  DUDE, { 'frameWidth': 32, 'frameHeight': 48 })
 
     def update (self, _self):
-        pass
+        player = self.player
+        if (self.cursors.left.isDown):
+            player.setVelocityX(-160);
+
+            player.anims.play('left', True);
+        elif (self.cursors.right.isDown):
+            player.setVelocityX(160);
+
+            player.anims.play('right', True);
+        else:
+            player.setVelocityX(0);
+
+            player.anims.play('turn');
+
+        if (self.cursors.up.isDown and player.body.touching.down):
+            player.setVelocityY(-330);
 
     def create (self, this):
         this.add.image(400, 300, 'sky')
@@ -58,11 +73,11 @@ class Main:
         platforms.create(600, 400, 'ground')
         platforms.create(50, 250, 'ground')
         platforms.create(750, 220, 'ground')
-        player = this.physics.add.sprite(100, 450, 'dude');
+        self.player = player = this.physics.add.sprite(100, 450, 'dude');
 
         player.setBounce(0.2)
         player.setCollideWorldBounds(True)
-
+        this.physics.add.collider(player, platforms);
         this.anims.create({
             'key': 'left',
             'frames': this.anims.generateFrameNumbers('dude', { 'start': 0, 'end': 3 }),
@@ -82,6 +97,7 @@ class Main:
             'frameRate': 10,
             'repeat': -1
         });
+        self.cursors = this.input.keyboard.createCursorKeys();
 
 
 if __name__ == "__main__":
