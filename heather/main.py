@@ -104,15 +104,20 @@ class Main:
             'setXY': { 'x': 12, 'y': 0, 'stepX': 70 }
         });
         this.physics.add.collider(stars, platforms);
+        self.score=0
+        self.scoreText = this.add.text(16, 16, 'score: 0', { 'fontSize': '32px', 'fill': '#000' });
+        def collectStar (player, star):
+            star.disableBody(True, True);
+            self.score += 10;
+            self.scoreText.setText('Score: ' + self.score);
+
 
         #As well as doing this we will also check to see if the player overlaps with a star or not:
 
         this.physics.add.overlap(player, stars, collectStar, None, this);
-        def iterate(child):
+        def iterate(child, _):
 
             child.setBounceY(Phaser.Math.FloatBetween(0.4, 0.8));
-        def collectStar (player, star):
-            star.disableBody(True, True);
         
 
         stars.children.iterate(iterate);
