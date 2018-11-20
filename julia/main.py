@@ -23,7 +23,7 @@ class Masmorra(Braser):
         self.monster_list = []
         self.hero = Hero(self)
         self.sprite = Monster(self)
-        self.gamer = Braser(800, 600, [self.hero, self.sprite])
+        self.gamer = Braser(800, 600)  # , [self.hero, self.sprite])
         # self.gamer.subscribe(self)
         # self.game = Braser.game
 
