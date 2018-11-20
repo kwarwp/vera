@@ -1,6 +1,6 @@
 # vera.julia.main.py
 from random import random, shuffle
-from _spy.braser.main import Braser, PHASER
+from braser.main import Braser, PHASER
 # noinspection PyUnresolvedReferences
 #from _spy.circus.desafio_a import main as desafio0
 #from _spy.circus.desafio_b import main as desafio1
@@ -21,7 +21,7 @@ class Masmorra:
     def __init__(self):
         self.gamer = Braser(800, 600)
         self.gamer.subscribe(self)
-        self.game = self.gamer.game
+        self.game = Braser.game
         self.hero = Hero(self)
         self.sprite = Monster(self)
         self.monsters = self.magic = None
