@@ -2,8 +2,8 @@
 from random import random, shuffle
 from _spy.braser.main import Braser, PHASER
 # noinspection PyUnresolvedReferences
-from _spy.circus.desafio_a import main as desafio0
-from _spy.circus.desafio_b import main as desafio1
+#from _spy.circus.desafio_a import main as desafio0
+#from _spy.circus.desafio_b import main as desafio1
 
 DETAIL, DETAILURL = "dungeon_detail", "http://i-games.readthedocs.io/en/latest/_images/DungeonWall.jpg"
 MONSTER, MONSTERURL = "monster", "http://i-games.readthedocs.io/en/latest/_images/monstersheets.png"
@@ -12,6 +12,7 @@ FIRE, FIREURL = "fire", "http://s19.postimg.org/z9iojs2c3/magicfire.png"
 FSP = 1.5
 MOVES = {0: (0, FSP*150), 90: (FSP*-150, 0), 180: (0, FSP*-150), 270: (FSP*150, 0)}
 DIR = [(1, 0), (1, 1), (0, 1), (-1, 1), (-1, 0), (-1, -1), (0, -1), (1, -1)]
+desafio0 = desafio1 = None
 
 
 class Masmorra:
@@ -342,6 +343,6 @@ def circus(desafio=1, param=MASMORRA):
 
     DES[desafio](param)
 
-print(__name__)
+
 if __name__ == "__main__":
     circus(0)
