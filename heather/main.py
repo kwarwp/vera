@@ -98,6 +98,27 @@ class Main:
             'repeat': -1
         });
         self.cursors = this.input.keyboard.createCursorKeys();
+        stars = this.physics.add.group({
+            'key': 'star',
+            'repeat': 11,
+            'setXY': { 'x': 12, 'y': 0, 'stepX': 70 }
+        });
+        def iterate(child):
+
+            child.setBounceY(Phaser.Math.FloatBetween(0.4, 0.8));
+        def collectStar (player, star)
+        {
+            star.disableBody(True, True);
+        }
+        
+
+        stars.children.iterate(iterate);
+        this.physics.add.collider(stars, platforms);
+
+        #As well as doing this we will also check to see if the player overlaps with a star or not:
+
+        this.physics.add.overlap(player, stars, collectStar, None, this);
+
 
 
 if __name__ == "__main__":
