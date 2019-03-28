@@ -5,7 +5,7 @@ from _spy.vitollino.main import Cena, Elemento
 FLORESTA = "https://i.imgur.com/VHaolvA.jpg"
 BANANA = "https://i.imgur.com/HnIHJd7.png"
 class Florestabanana:
-    def _init_(self):
+    def __init__(self):
         self.floresta_inicio = Cena(FLORESTA)
         banana = Elemento(BANANA, style=dict(left="230px", width="50px"))
         banana.entra(self.floresta_inicio)
