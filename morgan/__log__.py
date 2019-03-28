@@ -22,3 +22,10 @@ SyntaxError: invalid syntax
     floresta_inicio.vai()
 NameError: name 'floresta_inicio' is not defined
 '''},
+{'date': 'Thu Mar 28 2019 11:23:59.839 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 4
+  FLORESTA = https://i.imgur.com/wBw3Lyl.jpg
+                   ^
+SyntaxError: invalid syntax
+'''},
