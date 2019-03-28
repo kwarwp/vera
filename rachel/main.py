@@ -1,12 +1,14 @@
 # vera.rachel.main.py
 "http://supygirls.pythonanywhere.com"
 from _spy.vitollino.main import Cena, Elemento
+from amanda.main import FlorestaFaca
 
 FLORESTA = "https://i.imgur.com/VHaolvA.jpg"
 BANANA = "https://i.imgur.com/HnIHJd7.png"
 class Florestabanana:
     def __init__(self):
-        self.floresta_inicio = Cena(FLORESTA)
+        floresta_faca = FlorestaFaca()
+        self.floresta_inicio = Cena(FLORESTA, direita=floresta_faca)
         banana = Elemento(BANANA, style=dict(left="230px", width="50px"))
         banana.entra(self.floresta_inicio)
         
