@@ -94,3 +94,7 @@ Traceback (most recent call last):
     from amanda.main import FlorestaFaca
 ImportError: cannot import name 'FlorestaFaca'
 '''},
+{'date': 'Thu Mar 28 2019 12:07:43.796 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+RuntimeError: <InternalError: too much recursion>
+'''},
