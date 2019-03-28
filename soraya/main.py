@@ -7,4 +7,4 @@ macaco = "https://i.imgur.com/dIBkMcG.png"
 class florestamacaco:
    def __init__(self):
       self.floresta_inicio = Cena(FLORESTA)
-      macaco = Elemento(MACACO, style
+      macaco = Elemento(MACACO, style=dict(left="200px",width="50px"))
