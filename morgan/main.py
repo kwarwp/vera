@@ -14,5 +14,5 @@ class FlorestaLeao:
 
 if __name__ == "__main__":
    a_floresta = FlorestaLeao()
-   a_floresta_.vai()
+   a_floresta.vai()
 
