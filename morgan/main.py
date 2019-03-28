@@ -2,7 +2,7 @@
 "http://supygirls.pythonanywhere.com"
 from _spy.vitollino.main import Cena, Elemento
 FLORESTA = "https://i.imgur.com/wBw3Lyl.jpg"
-LEAO = "https://i.imgur.com/JXFofUP.jpg"
+LEAO = "https://i.imgur.com/4gXpvfQ.png"
 floresta_inicio = Cena(FLORESTA)
 leao = Elemento(LEAO)
 floresta_inicio.vai()
