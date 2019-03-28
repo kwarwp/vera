@@ -5,7 +5,7 @@ FLORESTA = "https://i.imgur.com/wBw3Lyl.jpg"
 LEAO = "https://i.imgur.com/4gXpvfQ.png"
 class FlorestaLeao:
    def __init__(self):
-       self.floresta_inicio = cena(FLORESTA)
+       self.floresta_inicio = Cena(FLORESTA)
        leao = Elemento(LEAO, style=dict(left="150px",width="100px"))
        leao.entra(self.floresta_inicio)
 
