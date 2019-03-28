@@ -22,3 +22,10 @@ SyntaxError: invalid syntax
     faca_Elemento(FACA)
 NameError: name 'faca_Elemento' is not defined
 '''},
+{'date': 'Thu Mar 28 2019 11:57:54.37 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 10
+  macaco = Elemento(MACACO, style
+                   ^
+SyntaxError: Unbalanced bracket (
+'''},
