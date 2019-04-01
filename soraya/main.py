@@ -14,9 +14,6 @@ class florestamacaco:
         self.floresta_inicio.vai()
         
 if __name__ == "__main__":
-    a_florest = Florestamacaco()
+    a_floresta = Florestamacaco()
     a_floresta.vai()
-
-
-
 
