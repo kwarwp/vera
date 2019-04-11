@@ -15,7 +15,7 @@ class CenaProxy:
         self.floresta_faca.esquerda = self.aqui
         self.floresta_faca.vai()
         
-class Florestabanana:
+class FlorestaBanana:
     def __init__(self):
         # floresta_faca = FlorestaFaca() -XX- ERRO!
         self.floresta_inicio = None
