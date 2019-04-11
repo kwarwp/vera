@@ -23,10 +23,10 @@ class FlorestaBanana:
         self.floresta_inicio = Cena(FLORESTA, direita=floresta_banana)
         banana = Elemento(BANANA, style=dict(left="200px", width="80px"))
         banana.entra(self.floresta_inicio)
-   def vai(self):
-       self.floresta_inicio.vai()
+    def vai(self):
+        self.floresta_inicio.vai()
 
 if __name__ == "__main__":
-   a_floresta = Florestabanana()
-   a_floresta.vai()
+    a_floresta = Florestabanana()
+    a_floresta.vai()
 
