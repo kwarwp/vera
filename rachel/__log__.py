@@ -98,3 +98,10 @@ ImportError: cannot import name 'FlorestaFaca'
 'error': '''
 RuntimeError: <InternalError: too much recursion>
 '''},
+{'date': 'Thu Apr 11 2019 12:05:51.489 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 21
+  self.floresta_inicio = None
+  ^
+IndentationError: expected an indented block
+'''},
