@@ -17,8 +17,8 @@ class CenaProxy:
         
 class Florestabanana:
     def __init__(self):
-    # floresta_faca = FlorestaFaca() -XX- ERRO!
-    self.floresta_inicio = None
+        # floresta_faca = FlorestaFaca() -XX- ERRO!
+        self.floresta_inicio = None
         floresta_faca = CenaProxy(self.floresta_inicio)
         self.floresta_inicio = Cena(FLORESTA, direita=floresta_faca)
         banana = Elemento(BANANA, style=dict(left="230px", width="50px"))
