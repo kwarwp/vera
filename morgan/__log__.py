@@ -95,3 +95,10 @@ NameError: name 'cena' is not defined
     a_floresta_.vai()
 NameError: name 'a_floresta_' is not defined
 '''},
+{'date': 'Thu Apr 11 2019 12:04:35.889 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 26
+  def vai(self):
+  ^
+IndentationError: unexpected indent
+'''},
