@@ -63,5 +63,6 @@ class FlorestaFaca:
         self.floresta_inicio.vai()
         
 if __name__ == "__main__":
+    INVENTARIO.inicia()
     a_floresta = FlorestaFaca()
     a_floresta.vai()
