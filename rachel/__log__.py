@@ -142,3 +142,10 @@ SyntaxError: invalid syntax
                               ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Thu Apr 25 2019 11:22:58.404 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 31
+  self.banana.vai = self.come:
+                              ^
+SyntaxError: invalid syntax
+'''},
