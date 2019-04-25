@@ -121,3 +121,10 @@ IndentationError: expected an indented block
     a_floresta = FlorestaBanana()
 NameError: name 'FlorestaBanana' is not defined
 '''},
+{'date': 'Thu Apr 25 2019 11:19:14.590 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 33
+  def come(self, _)
+                    ^
+SyntaxError: invalid syntax
+'''},
