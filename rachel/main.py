@@ -5,7 +5,7 @@ from _spy.vitollino.main import Cena, Elemento, Texto
 FLORESTA = "https://i.imgur.com/VHaolvA.jpg"
 BANANA = "https://i.imgur.com/HnIHJd7.png"
 TEXTO_BANANA= "O macaquinho pode ficar com fome! Coloque na bolsa!"
-BANANA_FOI= "Hummm, que delÄÂÂ©cia!"
+BANANA_FOI= "Hummm, que delÄÂÂÂ©cia!"
 
 class CenaProxy:
     def __init__(self, aqui=None):
@@ -30,7 +30,7 @@ class Banana:
         self.fala.vai()
         self.banana.vai = self.come
         
-    def come(self, _)
+    def come(self, _):
         self.falou.vai()
         
         
