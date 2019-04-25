@@ -6,6 +6,7 @@ FLORESTA = "https://i.imgur.com/VHaolvA.jpg"
 BANANA = "https://i.imgur.com/HnIHJd7.png"
 TEXTO_BANANA= "O macaquinho pode ficar com fome! Coloque na bolsa!"
 BANANA_FOI= "Hummm, que delícia!"
+BANANA_USA= "Você segura a banana na mão!"
 
 class CenaProxy:
     def __init__(self, aqui=None):
@@ -25,6 +26,7 @@ class Banana:
         self.falou = Texto(self.floresta_inicio, BANANA_FOI)
         self.banana = Elemento(BANANA, style=dict(left="230px", width="50px"), vai=self.pega)
         self.longe = Cena()
+        self.na mao = False
         self.banana.entra(self.floresta_inicio)
         
     def pega(self, _):
@@ -34,10 +36,15 @@ class Banana:
     def guarda(self, _):
         INVENTARIO.bota(self.banana)
         self.falou.vai()
+        self.banana.vai = self.usa
         
     def come(self, _):
         self.banana.entra(self.longe)
         self.falou.vai()
+        
+    def usa(self, _):
+        self.na mao = True
+        self.usar.vai()
         
         
 class FlorestaBanana:
