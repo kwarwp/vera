@@ -18,7 +18,7 @@ class CenaProxy:
 
 class Banana:
     def __init__(self, floresta_inicio):
-        self.floresta_inicio = florest_inicio
+        self.floresta_inicio = floresta_inicio
         self.fala = Texto(self.floresta_inicio, "O macaquinho pode ficar com fome!")
         banana = Elemento(BANANA, style=dict(left="230px", width="50px"), vai=self.pega)
         banana.entra(self.floresta_inicio)
