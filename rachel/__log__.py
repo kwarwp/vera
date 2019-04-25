@@ -183,3 +183,10 @@ NameError: name 'TEXTO_FACA' is not defined
            ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Thu Apr 25 2019 12:11:16.252 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 29
+  self.na mao = False
+           ^
+SyntaxError: invalid syntax
+'''},
