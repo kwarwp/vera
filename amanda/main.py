@@ -24,6 +24,7 @@ class Faca:
         self.fala = Texto(self.floresta_inicio, TEXTO_FACA)
         self.falou = Texto(self.floresta_inicio, FACA_FOI)
         self.faca = Elemento(FACA, style=dict(left="200px", width="80px"), vai=self.pega)
+        self.longe = Cena()
         self.faca.entra(self.floresta_inicio)
     
     def pega(self, _):
@@ -31,6 +32,7 @@ class Faca:
         self.faca.vai = self.chuta
     
     def chuta(self, _):
+        self.faca.entra(self.longe)
         self.falou.vai()
         
         
