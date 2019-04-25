@@ -14,6 +14,14 @@ class CenaProxy:
         self.floresta_faca = FlorestaFaca()
         self.floresta_faca.esquerda = self.aqui
         self.floresta_faca.vai()
+
+
+class Banana:
+    def __init__(self, floresta_inicio):
+        self.floresta_inicio = florest_inicio
+        banana = Elemento(BANANA, style=dict(left="230px", width="50px"))
+        banana.entra(self.floresta_inicio)
+        
         
 class FlorestaBanana:
     def __init__(self):
