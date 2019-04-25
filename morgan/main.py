@@ -4,6 +4,9 @@ from _spy.vitollino.main import Cena, Elemento, Texto
 # from morgan.main import FlorestaBanana
 FLORESTA = "https://i.imgur.com/vlJS7Ry.jpg"
 BANANA = "https://i.imgur.com/HnIHJd7.png"
+TEXTO_FACA= "O leão está com fome, tome cuidado!Se você não correr ele vai te comer"
+FACA_FOI= "GAME OVER"
+
 
 class CenaProxy:
     def __init__(self, aqui=None):
@@ -22,12 +25,17 @@ LEAO = "https://i.imgur.com/4gXpvfQ.png"
 class Leao:
     def __init__(self, floresta_inicio):
         self.floresta_inicio = floresta_inicio
-        self.fala = Texto(self.floresta_inicio, "O leão está com fome, tome cuidado!")
-        leao = Elemento(LEAO, style=dict(left="150px",width="100px"), vai=self.pega)
-        leao.entra(self.floresta_inicio)
+        self.fala = Texto(self.floresta_inicio, TEXTO_FACA)
+        self.falou = Texto(self.floresta_inicio, FACA_FOI)
+        self.leao = Elemento(LEAO, style=dict(left="150px",width="100px"), vai=self.pega)
+        self.leao.entra(self.floresta_inicio)
     
     def pega(self, _): 
        self.fala.vai()
+       self.faca.vai = self.morre
+    
+    def morre(self, _): 
+       self.falou.vai()
         
 class FlorestaLeao:
     def __init__(self):
