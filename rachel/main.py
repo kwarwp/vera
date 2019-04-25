@@ -23,7 +23,7 @@ class Banana:
         banana = Elemento(BANANA, style=dict(left="230px", width="50px"), vai=self.pega)
         banana.entra(self.floresta_inicio)
         
-    def pega(self):
+    def pega(self, _):
         self.fala.vai()
         
         
