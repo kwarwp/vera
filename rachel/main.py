@@ -32,7 +32,7 @@ class Banana:
         self.banana.vai = self.guarda
         
     def guarda(self, _):
-        INVENTARIO.pega(self.banana.entra)
+        INVENTARIO.bota(self.banana)
         self.falou.vai()
         
     def come(self, _):
