@@ -8,6 +8,7 @@ TEXTO_FACA= "A faca está afiada, me cortei! Faca perigosa, melhor chutar para l
 FACA_FOI= "Ainda bem que me livrei daquela coisa perigosa!"
 TEXTO_FACA= "A faca está afiada, me cortei! Faca perigosa, melhor pegar com cuidado"
 FACA_FOI= "Cuidadosamente, você coloca a faca na bolsa!"
+FACA_USA= "Você segura a faca na mão!"
 
 class CenaProxy:
     def __init__(self, aqui=None):
@@ -25,8 +26,10 @@ class Faca:
         self.floresta_inicio = floresta_inicio
         self.fala = Texto(self.floresta_inicio, TEXTO_FACA)
         self.falou = Texto(self.floresta_inicio, FACA_FOI)
+        self.usar = Texto(self.floresta_inicio, FACA_USA)
         self.faca = Elemento(FACA, style=dict(left="200px", width="80px"), vai=self.pega)
         self.longe = Cena()
+        self.na_mao = False
         self.faca.entra(self.floresta_inicio)
     
     def pega(self, _):
@@ -36,10 +39,15 @@ class Faca:
     def guarda(self, _):
         INVENTARIO.bota(self.faca)
         self.falou.vai()
+        self.faca.vai = self.usa
     
     def chuta(self, _):
         self.faca.entra(self.longe)
         self.falou.vai()
+    
+    def usa(self, _):
+        self.na_mao = True
+        self.usar.vai()
         
         
         
