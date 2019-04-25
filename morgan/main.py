@@ -1,6 +1,6 @@
 # vera.morgan.main.py
 "http://supygirls.pythonanywhere.com"
-from _spy.vitollino.main import Cena, Elemento
+from _spy.vitollino.main import Cena, Elemento, Texto
 # from morgan.main import FlorestaBanana
 FLORESTA = "https://i.imgur.com/vlJS7Ry.jpg"
 BANANA = "https://i.imgur.com/HnIHJd7.png"
@@ -22,9 +22,12 @@ LEAO = "https://i.imgur.com/4gXpvfQ.png"
 class Leao:
     def __init__(self, floresta_inicio):
         self.floresta_inicio = floresta_inicio
-        leao = Elemento(LEAO, style=dict(left="150px",width="100px"))
+        self.fala = Texto(self.floresta_inicio, "O leão está com fome, tome cuidado!")
+        leao = Elemento(LEAO, style=dict(left="150px",width="100px"), vai=self.pega)
         leao.entra(self.floresta_inicio)
-        
+    
+    def pega(self): 
+       self.fala.vai()
         
 class FlorestaLeao:
     def __init__(self):
@@ -32,6 +35,8 @@ class FlorestaLeao:
         floresta_banana = CenaProxy(self.floresta_inicio)
         self.floresta_inicio = Cena(FLORESTA, direita=floresta_banana)
         leao = Leao(self.floresta_inicio)
+        
+        
         
     def vai(self):
         self.floresta_inicio.vai()
