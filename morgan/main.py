@@ -34,10 +34,10 @@ class Leao:
     
     def pega(self, _): 
        self.fala.vai()
-       self.leao.vai = self.guarda
+       self.leao.vai = self.foto
        
     def foto(self, _): 
-       INVENTARIO.pega(self.leao.entra)
+       INVENTARIO.bota(self.leao)
        self.falou.vai()
     
     def morre(self, _): 
