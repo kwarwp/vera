@@ -12,7 +12,7 @@ class CenaProxy:
     def vai(self):
         from rachel.main import FlorestaBanana
         self.floresta_banana = FlorestaBanana()
-        self.floresta_Banana.esquerda = self.aqui
+        self.floresta_banana.esquerda = self.aqui
         self.floresta_banana.vai()
 
 FLORESTA = "https://i.imgur.com/wBw3Lyl.jpg"
