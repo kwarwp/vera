@@ -15,14 +15,15 @@ class CenaProxy:
         self.floresta_Banana.esquerda = self.aqui
         self.floresta_banana.vai()
 
-class FlorestaBanana:
+FLORESTA = "https://i.imgur.com/wBw3Lyl.jpg"
+LEAO = "https://i.imgur.com/4gXpvfQ.png"
+class FlorestaLeao:
     def __init__(self):
-        # floresta_banana = FlorestaBanana() -XX- ERRO!
         self.floresta_inicio = None
         floresta_banana = CenaProxy(self.floresta_inicio)
         self.floresta_inicio = Cena(FLORESTA, direita=floresta_banana)
-        banana = Elemento(BANANA, style=dict(left="200px", width="80px"))
-        banana.entra(self.floresta_inicio)
+        leao = Elemento(LEAO, style=dict(left="150px",width="100px"))
+        leao.entra(self.floresta_inicio)
     def vai(self):
         self.floresta_inicio.vai()
 
