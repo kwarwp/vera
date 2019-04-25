@@ -17,13 +17,22 @@ class CenaProxy:
 
 FLORESTA = "https://i.imgur.com/wBw3Lyl.jpg"
 LEAO = "https://i.imgur.com/4gXpvfQ.png"
+
+
+class Leao:
+    def __init__(self, floresta_inicio):
+        self.floresta_inicio = floresta_inicio
+        leao = Elemento(LEAO, style=dict(left="150px",width="100px"))
+        leao.entra(self.floresta_inicio)
+        
+        
 class FlorestaLeao:
     def __init__(self):
         self.floresta_inicio = None
         floresta_banana = CenaProxy(self.floresta_inicio)
         self.floresta_inicio = Cena(FLORESTA, direita=floresta_banana)
-        leao = Elemento(LEAO, style=dict(left="150px",width="100px"))
-        leao.entra(self.floresta_inicio)
+        leao = Leao(self.floresta_inicio)
+        
     def vai(self):
         self.floresta_inicio.vai()
 
