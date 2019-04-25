@@ -152,3 +152,10 @@ NameError: name 'floresta_banana' is not defined
     a_floresta = FlorestaBanana()
 NameError: name 'FlorestaBanana' is not defined
 '''},
+{'date': 'Thu Apr 25 2019 10:37:51.828 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 23
+  def __init__(self floresta_inicio):
+                     ^
+SyntaxError: invalid syntax
+'''},
