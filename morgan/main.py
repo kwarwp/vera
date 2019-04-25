@@ -5,7 +5,7 @@ from _spy.vitollino.main import Cena, Elemento, Texto
 FLORESTA = "https://i.imgur.com/vlJS7Ry.jpg"
 BANANA = "https://i.imgur.com/HnIHJd7.png"
 TEXTO_LEAO= "O leão está com fome, tome cuidado!Se você não correr ele vai te comer"
-FACA_COME= "GAME OVER"
+LEAO_COME= "GAME OVER"
 
 
 class CenaProxy:
