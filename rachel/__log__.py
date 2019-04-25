@@ -176,3 +176,10 @@ SyntaxError: invalid syntax
     self.fala = Texto(self.floresta_inicio, TEXTO_FACA)
 NameError: name 'TEXTO_FACA' is not defined
 '''},
+{'date': 'Thu Apr 25 2019 12:08:26.478 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 29
+  self.na mao = False
+           ^
+SyntaxError: invalid syntax
+'''},
