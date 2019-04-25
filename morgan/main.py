@@ -1,12 +1,13 @@
 # vera.morgan.main.py
 "http://supygirls.pythonanywhere.com"
-from _spy.vitollino.main import Cena, Elemento, Texto
+from _spy.vitollino.main import Cena, Elemento, Texto, INVENTARIO
 # from morgan.main import FlorestaBanana
 FLORESTA = "https://i.imgur.com/vlJS7Ry.jpg"
 BANANA = "https://i.imgur.com/HnIHJd7.png"
 TEXTO_LEAO= "O leão está com fome, tome cuidado!Se você não correr ele vai te comer"
-LEAO_COME= "No céu tem pão? E morreu!"
-
+LEAO_COME= "E morreu!"
+TEXTO_LEAO= "Que belo leão!Vou tirar uma foto"
+LEAO_COME= "Tome cuidado para o leão não se assustar, não faça movimentos bruscos!"
 
 class CenaProxy:
     def __init__(self, aqui=None):
@@ -33,8 +34,11 @@ class Leao:
     
     def pega(self, _): 
        self.fala.vai()
-       self.leao.vai = self.morre
+       self.leao.vai = self.guarda
        
+    def foto(self, _): 
+       INVENTARIO.pega(self.leao.entra)
+       self.falou.vai()
     
     def morre(self, _): 
        self.leao.entra(self.morreu)
