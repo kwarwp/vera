@@ -149,3 +149,10 @@ SyntaxError: invalid syntax
                               ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Thu Apr 25 2019 11:24:06.426 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 33
+  def come(self, _)
+                    ^
+SyntaxError: invalid syntax
+'''},
