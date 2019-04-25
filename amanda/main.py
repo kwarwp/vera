@@ -1,11 +1,13 @@
 # vera.amanda.main.py
 "http://supygirls.pythonanywhere.com"
-from _spy.vitollino.main import Cena, Elemento, Texto
+from _spy.vitollino.main import Cena, Elemento, Texto, INVENTARIO
 # from morgan.main import FlorestaLeao
 FLORESTA = "https://i.imgur.com/vlJS7Ry.jpg"
 FACA = "https://i.imgur.com/H2vMcB4.png"
 TEXTO_FACA= "A faca está afiada, me cortei! Faca perigosa, melhor chutar para longe"
 FACA_FOI= "Ainda bem que me livrei daquela coisa perigosa!"
+TEXTO_FACA= "A faca está afiada, me cortei! Faca perigosa, melhor pegar com cuidado"
+FACA_FOI= "Cuidadosamente, você coloca a faca na bolsa!"
 
 class CenaProxy:
     def __init__(self, aqui=None):
@@ -29,7 +31,11 @@ class Faca:
     
     def pega(self, _):
         self.fala.vai()
-        self.faca.vai = self.chuta
+        self.faca.vai = self.guarda
+    
+    def guarda(self, _):
+        INVENTARIO.pega(self.faca.entra)
+        self.falou.vai()
     
     def chuta(self, _):
         self.faca.entra(self.longe)
