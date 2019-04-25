@@ -1,6 +1,6 @@
 # vera.rachel.main.py
 "http://supygirls.pythonanywhere.com"
-from _spy.vitollino.main import Cena, Elemento
+from _spy.vitollino.main import Cena, Elemento, Texto
 # from amanda.main import FlorestaFaca
 FLORESTA = "https://i.imgur.com/VHaolvA.jpg"
 BANANA = "https://i.imgur.com/HnIHJd7.png"
@@ -19,8 +19,12 @@ class CenaProxy:
 class Banana:
     def __init__(self, floresta_inicio):
         self.floresta_inicio = florest_inicio
-        banana = Elemento(BANANA, style=dict(left="230px", width="50px"))
+        self.fala = Texto(self.floresta_inicio, "O macaquinho pode ficar com fome!")
+        banana = Elemento(BANANA, style=dict(left="230px", width="50px"), vai=self.pega)
         banana.entra(self.floresta_inicio)
+        
+    def pega(self):
+        self.fala.vai()
         
         
 class FlorestaBanana:
