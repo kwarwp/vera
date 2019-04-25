@@ -1,6 +1,6 @@
 # vera.rachel.main.py
 "http://supygirls.pythonanywhere.com"
-from _spy.vitollino.main import Cena, Elemento, Texto
+from _spy.vitollino.main import Cena, Elemento, Texto, INVENTARIO
 # from amanda.main import FlorestaFaca
 FLORESTA = "https://i.imgur.com/VHaolvA.jpg"
 BANANA = "https://i.imgur.com/HnIHJd7.png"
@@ -29,7 +29,11 @@ class Banana:
         
     def pega(self, _):
         self.fala.vai()
-        self.banana.vai = self.come
+        self.banana.vai = self.guarda
+        
+    def guarda(self, _):
+        INVENTARIO.pega(self.banana.entra)
+        self.falou.vai()
         
     def come(self, _):
         self.banana.entra(self.longe)
