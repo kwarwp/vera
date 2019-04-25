@@ -23,7 +23,7 @@ class Faca:
         faca = Elemento(FACA, style=dict(left="200px", width="80px"), vai=self.pega)
         faca.entra(self.floresta_inicio)
     
-    def pega(self):
+    def pega(self, _):
         self.fala.vai()
         
         
