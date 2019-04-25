@@ -28,13 +28,16 @@ class Leao:
         self.fala = Texto(self.floresta_inicio, TEXTO_LEAO)
         self.falou = Texto(self.floresta_inicio, LEAO_COME)
         self.leao = Elemento(LEAO, style=dict(left="150px",width="100px"), vai=self.pega)
+        self.morreu = Cena()
         self.leao.entra(self.floresta_inicio)
     
     def pega(self, _): 
        self.fala.vai()
        self.leao.vai = self.morre
+       
     
     def morre(self, _): 
+       self.leao.entra(self.morreu)
        self.falou.vai()
         
 class FlorestaLeao:
