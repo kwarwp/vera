@@ -33,8 +33,7 @@ class FlorestaBanana:
         self.floresta_inicio = None
         floresta_faca = CenaProxy(self.floresta_inicio)
         self.floresta_inicio = Cena(FLORESTA, direita=floresta_faca)
-        banana = Elemento(BANANA, style=dict(left="230px", width="50px"))
-        banana.entra(self.floresta_inicio)
+        banana = Banana(self.floresta_inicio)
         
     def vai(self):
         self.floresta_inicio.vai()
