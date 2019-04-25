@@ -32,7 +32,7 @@ class Leao:
     
     def pega(self, _): 
        self.fala.vai()
-       self.faca.vai = self.morre
+       self.leao.vai = self.morre
     
     def morre(self, _): 
        self.falou.vai()
