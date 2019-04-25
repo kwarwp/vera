@@ -24,6 +24,7 @@ class Banana:
         self.fala = Texto(self.floresta_inicio, TEXTO_BANANA)
         self.falou = Texto(self.floresta_inicio, BANANA_FOI)
         self.banana = Elemento(BANANA, style=dict(left="230px", width="50px"), vai=self.pega)
+        self.longe = Cena()
         self.banana.entra(self.floresta_inicio)
         
     def pega(self, _):
@@ -31,6 +32,7 @@ class Banana:
         self.banana.vai = self.come
         
     def come(self, _):
+        self.banana.entra(self.longe)
         self.falou.vai()
         
         
