@@ -8,6 +8,8 @@ TEXTO_LEAO= "O leão está com fome, tome cuidado!Se você não correr ele vai t
 LEAO_COME= "E morreu!"
 TEXTO_LEAO= "Que belo leão!Vou tirar uma foto"
 LEAO_COME= "Tome cuidado para o leão não se assustar, não faça movimentos bruscos!"
+LEAO_USA= "Alimente o leão com o macaco!"
+
 
 class CenaProxy:
     def __init__(self, aqui=None):
@@ -28,8 +30,10 @@ class Leao:
         self.floresta_inicio = floresta_inicio
         self.fala = Texto(self.floresta_inicio, TEXTO_LEAO)
         self.falou = Texto(self.floresta_inicio, LEAO_COME)
+        self.falou = Texto(self.floresta_inicio, LEAO_USA)
         self.leao = Elemento(LEAO, style=dict(left="150px",width="100px"), vai=self.pega)
         self.morreu = Cena()
+        self.comeu = False
         self.leao.entra(self.floresta_inicio)
     
     def pega(self, _): 
@@ -39,10 +43,14 @@ class Leao:
     def foto(self, _): 
        INVENTARIO.bota(self.leao)
        self.falou.vai()
+       self.leao.vai = self.usa
+       
+    def usa(self, _): 
+       self.comeu = True
+       self.falou.vai()
     
     def morre(self, _): 
-       self.leao.entra(self.morreu)
-       self.falou.vai()
+       self.usar.vai()
         
 class FlorestaLeao:
     def __init__(self):
@@ -57,6 +65,8 @@ class FlorestaLeao:
         self.floresta_inicio.vai()
 
 if __name__ == "__main__":
+
+    INVENTARIO.inicia()
     a_floresta = FlorestaLeao()
     a_floresta.vai()
 
