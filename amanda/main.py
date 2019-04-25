@@ -34,7 +34,7 @@ class Faca:
         self.faca.vai = self.guarda
     
     def guarda(self, _):
-        INVENTARIO.pega(self.faca.entra)
+        INVENTARIO.bota(self.faca)
         self.falou.vai()
     
     def chuta(self, _):
