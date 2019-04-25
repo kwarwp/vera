@@ -26,7 +26,7 @@ class Leao:
         leao = Elemento(LEAO, style=dict(left="150px",width="100px"), vai=self.pega)
         leao.entra(self.floresta_inicio)
     
-    def pega(self): 
+    def pega(self, _): 
        self.fala.vai()
         
 class FlorestaLeao:
