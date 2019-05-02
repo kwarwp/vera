@@ -52,3 +52,10 @@ Traceback (most recent call last):
     self.elt = html.DIV(Id=tit + drop, title=tit, style=self.style)
 TypeError: Can't convert dict to str implicitely
 '''},
+{'date': 'Thu May 02 2019 08:56:52.160 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 34
+  self.faca = Elemento(FACA, x=800, y=600, w=80 vai=self.pega)
+                                                 ^
+SyntaxError: invalid syntax
+'''},
