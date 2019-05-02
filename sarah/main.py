@@ -80,6 +80,37 @@ class Terra:
         self.na_mao = True
         self.usar.vai()
         
+
+class Estacao:
+    def __init__(self, universo):
+        self.universo = universo
+        """
+        self.fala = Texto(self.universo, TEXTO_FACA)
+        self.falou = Texto(self.universo, FACA_FOI)
+        self.usar = Texto(self.universo, FACA_USA)
+        """
+        self.estacao = Elemento(ESTACAO, style=dict(left="300px", width="200px"), vai=self.pega)
+        self.longe = Cena()
+        self.na_mao = False
+        self.estacao.entra(self.universo)
+    
+    def pega(self, _):
+        self.fala.vai()
+        self.faca.vai = self.guarda
+    
+    def guarda(self, _):
+        INVENTARIO.bota(self.faca)
+        self.falou.vai()
+        self.faca.vai = self.usa
+    
+    def chuta(self, _):
+        self.faca.entra(self.longe)
+        self.falou.vai()
+    
+    def usa(self, _):
+        self.na_mao = True
+        self.usar.vai()
+        
         
         
 class Universo:
@@ -89,6 +120,7 @@ class Universo:
         deserto = CenaProxy(self.universo)
         self.universo = Cena(UNIVERSO)
         terra = Terra(self.universo)
+        estacao = Estacao(self.universo)
         
     def vai(self):
         self.universo.vai()
