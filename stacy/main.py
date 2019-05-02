@@ -134,7 +134,7 @@ class Universo:
         estacao = Estacao(self.universo)
         estacao2 = Estacao(self.universo, left="500px", top="200px")
         estacao3 = Estacao(self.universo, left="800px", top="100px")
-        foguete = foguete(self.universo, left="800px", top="100px")
+        foguete = Foguete(self.universo, left="100px", top="50px")
         
     def vai(self):
         self.universo.vai()
