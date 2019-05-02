@@ -121,7 +121,8 @@ class Universo:
         self.universo = Cena(UNIVERSO)
         terra = Terra(self.universo)
         estacao = Estacao(self.universo)
-        estacao2 = Estacao(self.universo, left="400px", top="200px")
+        estacao2 = Estacao(self.universo, left="500px", top="200px")
+        estacao3 = Estacao(self.universo, left="800px", top="100px")
         
     def vai(self):
         self.universo.vai()
