@@ -22,12 +22,12 @@ class CenaProxy:
 
 """
 class Estacao:
-    def __init__(self, universo):
+    def __init__(self, universo), left="300px", top="300px"):
         self.floresta_inicio = floresta_inicio
         self.fala = Texto(self.floresta_inicio, TEXTO_FACA)
         self.falou = Texto(self.floresta_inicio, FACA_FOI)
         self.usar = Texto(self.floresta_inicio, FACA_USA)
-        # self.faca = Elemento(FACA, style=dict(left="200px", width="80px"), vai=self.pega)
+        # self.faca = Elemento(FACA, style=dict(left=left, top=top, width="80px"), vai=self.pega)
         self.faca = Elemento(FACA, tit="faca", x=600, y=500, w=80, vai=self.pega)
         self.longe = Cena()
         self.na_mao = False
@@ -122,6 +122,7 @@ class Universo:
         self.universo = Cena(UNIVERSO)
         terra = Terra(self.universo)
         estacao = Estacao(self.universo)
+        estacao2 = Estacao(self.uiverso, left="400px", top="200px")
         
     def vai(self):
         self.universo.vai()
