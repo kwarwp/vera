@@ -7,7 +7,7 @@ FOGUETE = "https://i.imgur.com/Q33m8SY.png"
 ESTACAO = "https://i.imgur.com/ybteKID.png"
 TERRA = "https://i.imgur.com/rJJHQJj.png"
 UNIVERSO = "https://i.imgur.com/tjT0IqM.jpg"
-DOCA = "https://i.imgur.com/3GPU73J.jpg"
+DOCA = "https://i.imgur.com/NMLjvWU.png"
 
 
 class CenaProxy:
@@ -148,6 +148,7 @@ class Universo:
         estacao2 = Estacao(self.universo, left="500px", top="200px")
         estacao3 = Estacao(self.universo, left="800px", top="100px")
         foguete = Foguete(self.universo, left="100px", top="50px")
+        doca = Doca(self.universo, left="100px", top="50px")
         
     def vai(self):
         self.universo.vai()
