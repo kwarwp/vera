@@ -9,6 +9,7 @@ ESTACAO = "https://i.imgur.com/ybteKID.png"
 TERRA = "https://i.imgur.com/rJJHQJj.png"
 UNIVERSO = "https://i.imgur.com/tjT0IqM.jpg"
 DOCA = "https://i.imgur.com/NMLjvWU.png"
+PESSOA = "https://i.igmur.com/Mt5juow.png"
 
 
 class CenaProxy:
@@ -107,7 +108,9 @@ class Doca:
         self.doca.vai = self.guarda
 
 class Estacao:
-    def __init__(self, universo, left="300px", top="300px"):
+    def __init__(self, universo, left="300px", top="300px", icone=PESSOA, itens=[]):
+        def add(valor, num):
+            return "{}px". format(int(valor[:-2]) + num)
         self.universo = universo
         """
         self.fala = Texto(self.universo, TEXTO_FACA)
@@ -115,6 +118,7 @@ class Estacao:
         self.usar = Texto(self.universo, FACA_USA)
         """
         self.estacao = Elemento(ESTACAO, style=dict(left=left, top=top, width="200px"), vai=self.pega)
+        self.icone = Elemento(icone, style=dict(left=add(left,50), top=add(top,50), width="50px", height="50px"), vai=self.pega)
         self.longe = Cena()
         self.na_mao = False
         self.estacao.entra(self.universo)
