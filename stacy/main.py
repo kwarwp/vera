@@ -8,7 +8,7 @@ ESTACAO = "https://i.imgur.com/ybteKID.png"
 TERRA = "https://i.imgur.com/rJJHQJj.png"
 UNIVERSO = "https://i.imgur.com/tjT0IqM.jpg"
 DOCA = "https://i.imgur.com/NMLjvWU.png"
-
+PESSOA = "https://i.imgur.com/7mkma3F.png"
 
 class CenaProxy:
     def __init__(self, aqui=None):
@@ -104,6 +104,7 @@ class Doca:
     def pega(self, _):
         self.doca.vai()
         self.doca.vai = self.guarda
+
 
 class Estacao:
     def __init__(self, universo, left="300px", top="300px"):
