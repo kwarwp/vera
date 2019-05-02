@@ -9,7 +9,8 @@ TERRA = "https://i.imgur.com/rJJHQJj.png"
 UNIVERSO = "https://i.imgur.com/tjT0IqM.jpg"
 DOCA = ""
 PESSOA = "https://i.imgur.com/4fCTYyp.png"
-AMINAL = "https://i.imgur.com/falELaz.png"
+ANIMAL = "https://i.imgur.com/falELaz.png"
+OBJETO = "https://i.imgur.com/6N8wYbq.png"
 
 class CenaProxy:
     def __init__(self, aqui=None):
@@ -141,7 +142,7 @@ class Universo:
         terra = Terra(self.universo)
         estacao = Estacao(self.universo)
         estacao2 = Estacao(self.universo, left="500px", top="200px", icone=ANIMAL)
-        estacao3 = Estacao(self.universo, left="800px", top="100px")
+        estacao3 = Estacao(self.universo, left="800px", top="100px", icone=OBJETO)
         foguete = Foguete(self.universo, left="100px", top="50px")
         
     def vai(self):
