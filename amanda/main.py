@@ -1,8 +1,9 @@
 # vera.amanda.main.py
 "http://supygirls.pythonanywhere.com"
-from _spy.vitollino.main import Cena, Texto, INVENTARIO
+from _spy.vitollino.main import Cena, Texto, INVENTARIO, STYLE
 from elemento.main import Elemento
 # from morgan.main import FlorestaLeao
+STYLE["width"], STYLE["height"] = 1400, "650px"
 FLORESTA = "https://i.imgur.com/vlJS7Ry.jpg"
 FACA = "https://i.imgur.com/H2vMcB4.png"
 TEXTO_FACA= "A faca está afiada, me cortei! Faca perigosa, melhor chutar para longe"
@@ -28,7 +29,8 @@ class Faca:
         self.fala = Texto(self.floresta_inicio, TEXTO_FACA)
         self.falou = Texto(self.floresta_inicio, FACA_FOI)
         self.usar = Texto(self.floresta_inicio, FACA_USA)
-        self.faca = Elemento(FACA, style=dict(left="200px", width="80px"), vai=self.pega)
+        # self.faca = Elemento(FACA, style=dict(left="200px", width="80px"), vai=self.pega)
+        self.faca = Elemento(FACA, x=600, y=500, w=80, vai=self.pega)
         self.longe = Cena()
         self.na_mao = False
         self.faca.entra(self.floresta_inicio)
