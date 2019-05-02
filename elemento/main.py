@@ -32,7 +32,7 @@ class Elemento(Element):
                              })
         # self.style["min-width"], self.style["min-height"] = w, h
         self.style.update(**style)
-        self.elt = html.DIV(Id=tit + drop, title=tit, style=self.style)
+        self.elt = html.DIV(Id=tit, title=tit, style=self.style)
         self.xy = (-111, -111)
         self.scorer = dict(ponto=1, valor=cena.nome, carta=tit or img, casa=self.xy, move=None)
         self.scorer.update(score)
@@ -140,7 +140,7 @@ class Elemento(Element):
         ev.stopPropagation()
         src_id = ev.data['text']
         tit = doc[src_id].title
-        self.drop.set_default(tit, lambda *_: None)(ev, tit)
+        self.drop.setdefault(tit, lambda *_: None)(ev, tit)
         '''
         if tit != self.real:
             Texto(self.cena, "Hey, this is not my name: {}.".format(tit)).vai()
