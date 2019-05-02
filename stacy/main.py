@@ -83,7 +83,7 @@ class Terra:
 class Foguete:
     def __init__(self, universo, left="300px", top="300px"):
         self.universo = universo
-        self.foguete = Elemento(FOGUETE, style=dict(left=left, top=top, width="200px"), vai=self.pega)
+        self.foguete = Elemento(FOGUETE, style=dict(left=left, top=top, width="100px", height="250px"), vai=self.pega)
         self.longe = Cena()
         self.na_mao = False
         self.foguete.entra(self.universo)
