@@ -93,3 +93,10 @@ NameError: name 'ANIMAL' is not defined
     estacao2 = Estacao(self.universo, left="500px", top="200px", icone=ANIMAL)
 NameError: name 'ANIMAL' is not defined
 '''},
+{'date': 'Thu May 02 2019 12:00:11.481 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 114
+  self.menu = [
+                                                                                           ^
+SyntaxError: invalid syntax
+'''},
