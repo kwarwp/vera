@@ -1,4 +1,5 @@
 # vera.parisa.main.py
+# vera.sarah.main.py
 from _spy.vitollino.main import Cena, Texto, INVENTARIO, Elemento, STYLE
 # from morgan.main import FlorestaLeao
 STYLE["width"], STYLE["height"] = 1400, "650px"
@@ -19,17 +20,7 @@ class CenaProxy:
         self.floresta_leao.esquerda = self.aqui
         self.floresta_leao.vai()
 
-class Foguete:
-    def __init__(self, universo):
-        self.floresta_inicio = floresta_inicio
-        self.fala = Texto(self.floresta_inicio, TEXTO_FACA)
-        self.falou = Texto(self.floresta_inicio, FACA_FOI)
-        self.usar = Texto(self.floresta_inicio, FACA_USA)
-        self.foguete = Elemento(FOGUET, tit="faca", x=600, y=500, w=80, vai=self.pega)
-        self.longe = Cena()
-        self.na_mao = False
-        self.faca.entra(self.floresta_inicio)"""
-        
+"""
 class Estacao:
     def __init__(self, universo):
         self.floresta_inicio = floresta_inicio
@@ -90,6 +81,17 @@ class Terra:
         self.na_mao = True
         self.usar.vai()
         
+class Foguete:
+    def __init__(self, universo, left="300px", top="300px"):
+        self.universo = universo
+        self.foguete = Elemento(FOGUETE, style=dict(left=left, top=top, width="100px", height="250px"), vai=self.pega)
+        self.longe = Cena()
+        self.na_mao = False
+        self.foguete.entra(self.universo)
+    
+    def pega(self, _):
+        self.foguete.vai()
+        self.foguete.vai = self.guarda
 
 class Estacao:
     def __init__(self, universo, left="300px", top="300px"):
@@ -133,7 +135,8 @@ class Universo:
         estacao = Estacao(self.universo)
         estacao2 = Estacao(self.universo, left="500px", top="200px")
         estacao3 = Estacao(self.universo, left="800px", top="100px")
-        foguete = Foguete(self.universo, left="80px", top="50px")
+        foguete = Foguete(self.universo, left="100px", top="50px")
+        
     def vai(self):
         self.universo.vai()
         
