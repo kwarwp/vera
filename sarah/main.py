@@ -82,14 +82,14 @@ class Terra:
         
 
 class Estacao:
-    def __init__(self, universo):
+    def __init__(self, universo, left="300px", top="300px"):
         self.universo = universo
         """
         self.fala = Texto(self.universo, TEXTO_FACA)
         self.falou = Texto(self.universo, FACA_FOI)
         self.usar = Texto(self.universo, FACA_USA)
         """
-        self.estacao = Elemento(ESTACAO, style=dict(left="300px", width="200px"), vai=self.pega)
+        self.estacao = Elemento(ESTACAO, style=dict(left=left, top=top, width="200px"), vai=self.pega)
         self.longe = Cena()
         self.na_mao = False
         self.estacao.entra(self.universo)
@@ -121,6 +121,7 @@ class Universo:
         self.universo = Cena(UNIVERSO)
         terra = Terra(self.universo)
         estacao = Estacao(self.universo)
+        estacao2 = Estacao(self.universo, left="400px", top="200px")
         
     def vai(self):
         self.universo.vai()
