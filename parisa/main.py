@@ -8,6 +8,7 @@ FOGUETE = "https://i.imgur.com/Q33m8SY.png"
 ESTACAO = "https://i.imgur.com/ybteKID.png"
 TERRA = "https://i.imgur.com/rJJHQJj.png"
 UNIVERSO = "https://i.imgur.com/tjT0IqM.jpg"
+DOCA = "https://i.imgur.com/NMLjvWU.png"
 
 
 class CenaProxy:
@@ -92,6 +93,18 @@ class Foguete:
     def pega(self, _):
         self.foguete.vai()
         self.foguete.vai = self.guarda
+        
+class Doca:
+    def __init__(self, universo, left="300px", top="300px"):
+        self.universo = universo
+        self.doca = Elemento(DOCA, style=dict(left=left, top=top, width="100px", height="250px"), vai=self.pega)
+        self.longe = Cena()
+        self.na_mao = False
+        self.doca.entra(self.universo)
+    
+    def pega(self, _):
+        self.doca.vai()
+        self.doca.vai = self.guarda
 
 class Estacao:
     def __init__(self, universo, left="300px", top="300px"):
@@ -136,6 +149,7 @@ class Universo:
         estacao2 = Estacao(self.universo, left="500px", top="200px")
         estacao3 = Estacao(self.universo, left="800px", top="100px")
         foguete = Foguete(self.universo, left="100px", top="50px")
+        doca = Doca(self.universo, left="200px", top="50px")
         
     def vai(self):
         self.universo.vai()
