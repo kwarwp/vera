@@ -9,7 +9,7 @@ TERRA = "https://i.imgur.com/rJJHQJj.png"
 UNIVERSO = "https://i.imgur.com/tjT0IqM.jpg"
 DOCA = "https://i.imgur.com/NMLjvWU.png"
 PESSOA = "https://i.imgur.com/Mt5juow.png"
-ANIMAL = "https://i.imgur.com/QfFNKWd.png"
+ANIMAL = "https://i.imgur.com/falELaz.png"
 OBJETO = "https://i.imgur.com/iXQYTtn.png"
 class CenaProxy:
     def __init__(self, aqui=None):
