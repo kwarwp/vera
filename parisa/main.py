@@ -9,9 +9,8 @@ ESTACAO = "https://i.imgur.com/ybteKID.png"
 TERRA = "https://i.imgur.com/rJJHQJj.png"
 UNIVERSO = "https://i.imgur.com/tjT0IqM.jpg"
 DOCA = "https://i.imgur.com/NMLjvWU.png"
-PESSOA = "https://i.igmur.com/Mt5juow.png"
-ANIMAL = "https://i.imgur.com/falELaz.png"
-OBJETO = "https://i.imgur.com/iXQYTtn.png"
+PESSOA = "https://i.imgur.com/Mt5juow.png"
+
 
 class CenaProxy:
     def __init__(self, aqui=None):
@@ -123,7 +122,6 @@ class Estacao:
         self.longe = Cena()
         self.na_mao = False
         self.estacao.entra(self.universo)
-        self.icone.entra(self.universo)
     
     def pega(self, _):
         self.fala.vai()
@@ -152,11 +150,10 @@ class Universo:
         self.universo = Cena(UNIVERSO)
         terra = Terra(self.universo)
         estacao = Estacao(self.universo)
-        estacao2 = Estacao(self.universo, left="500px", top="200px", icone=ANIMAL)
-        estacao3 = Estacao(self.universo, left="800px", top="100px", icone=OBJETO)
+        estacao2 = Estacao(self.universo, left="500px", top="200px")
+        estacao3 = Estacao(self.universo, left="800px", top="100px")
         foguete = Foguete(self.universo, left="50px", top="450px")
         doca = Doca(self.universo, left="200px", top="50px")
-        
         
     def vai(self):
         self.universo.vai()
