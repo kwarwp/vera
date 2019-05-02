@@ -35,3 +35,10 @@ AttributeError: 'Universo' object has no attribute 'uiverso'
     estacao2 = Estacao(self.uiverso, left="400px", top="200px")
 AttributeError: 'Universo' object has no attribute 'uiverso'
 '''},
+{'date': 'Thu May 02 2019 10:31:47.652 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 31
+  self.faca.entra(self.floresta_inicio)"""
+                                        ^
+SyntaxError: invalid syntax
+'''},
