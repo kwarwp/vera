@@ -80,6 +80,22 @@ class Terra:
         self.na_mao = True
         self.usar.vai()
         
+class Foguete:
+    def __init__(self, universo, left="300px", top="300px"):
+        self.universo = universo
+        """
+        self.fala = Texto(self.universo, TEXTO_FACA)
+        self.falou = Texto(self.universo, FACA_FOI)
+        self.usar = Texto(self.universo, FACA_USA)
+        """
+        self.foguete = Elemento(FOGUETE, style=dict(left=left, top=top, width="200px"), vai=self.pega)
+        self.longe = Cena()
+        self.na_mao = False
+        self.foguete.entra(self.universo)
+    
+    def pega(self, _):
+        self.foguete.vai()
+        self.foguete.vai = self.guarda
 
 class Estacao:
     def __init__(self, universo, left="300px", top="300px"):
