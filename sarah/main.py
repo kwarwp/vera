@@ -7,7 +7,8 @@ FOGUETE = "https://i.imgur.com/Q33m8SY.png"
 ESTACAO = "https://i.imgur.com/ybteKID.png"
 TERRA = "https://i.imgur.com/rJJHQJj.png"
 UNIVERSO = "https://i.imgur.com/tjT0IqM.jpg"
-
+DOCA = ""
+PESSOA = "https://i.imgur.com/4fCTYyp.png"
 
 class CenaProxy:
     def __init__(self, aqui=None):
@@ -84,12 +85,7 @@ class Terra:
 class Foguete:
     def __init__(self, universo, left="300px", top="300px"):
         self.universo = universo
-        """
-        self.fala = Texto(self.universo, TEXTO_FACA)
-        self.falou = Texto(self.universo, FACA_FOI)
-        self.usar = Texto(self.universo, FACA_USA)
-        """
-        self.foguete = Elemento(FOGUETE, style=dict(left=left, top=top, width="200px"), vai=self.pega)
+        self.foguete = Elemento(FOGUETE, style=dict(left=left, top=top, width="100px", height="280px"), vai=self.pega)
         self.longe = Cena()
         self.na_mao = False
         self.foguete.entra(self.universo)
@@ -100,7 +96,9 @@ class Foguete:
         
 
 class Estacao:
-    def __init__(self, universo, left="300px", top="300px"):
+    def __init__(self, universo, left="300px", top="300px", icone=PESSOA, itens=[]):
+        def add(valor, num):
+            return "{}px".format(int(valor[:-2]) + num)
         self.universo = universo
         """
         self.fala = Texto(self.universo, TEXTO_FACA)
@@ -108,9 +106,11 @@ class Estacao:
         self.usar = Texto(self.universo, FACA_USA)
         """
         self.estacao = Elemento(ESTACAO, style=dict(left=left, top=top, width="200px"), vai=self.pega)
+        self.icone = Elemento(icone, style=dict(left=add(left,50), top=add(top,50), width="50px", height="50px"), vai=self.pega)
         self.longe = Cena()
         self.na_mao = False
         self.estacao.entra(self.universo)
+        self.icone.entra(self.universo)
     
     def pega(self, _):
         self.fala.vai()
@@ -141,6 +141,7 @@ class Universo:
         estacao = Estacao(self.universo)
         estacao2 = Estacao(self.universo, left="500px", top="200px")
         estacao3 = Estacao(self.universo, left="800px", top="100px")
+        foguete = Foguete(self.universo, left="100px", top="50px")
         
     def vai(self):
         self.universo.vai()
