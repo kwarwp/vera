@@ -82,7 +82,7 @@ class Terra:
         
 
 class Estacao:
-    def __init__(self, universo):
+    def __init__(self, universo, left="300px", top="300px"):
         self.universo = universo
         """
         self.fala = Texto(self.universo, TEXTO_FACA)
