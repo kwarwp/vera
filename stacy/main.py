@@ -8,7 +8,7 @@ ESTACAO = "https://i.imgur.com/ybteKID.png"
 TERRA = "https://i.imgur.com/rJJHQJj.png"
 UNIVERSO = "https://i.imgur.com/tjT0IqM.jpg"
 DOCA = "https://i.imgur.com/NMLjvWU.png"
-PESSOA = "https://i.imgur.com/7mkma3F.png"
+PESSOA = "https://i.imgur.com/Mt5juow.png"
 
 class CenaProxy:
     def __init__(self, aqui=None):
