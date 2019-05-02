@@ -1,6 +1,7 @@
 # vera.amanda.main.py
 "http://supygirls.pythonanywhere.com"
-from _spy.vitollino.main import Cena, Elemento, Texto, INVENTARIO
+from _spy.vitollino.main import Cena, Texto, INVENTARIO
+from elemento.main import Elemento
 # from morgan.main import FlorestaLeao
 FLORESTA = "https://i.imgur.com/vlJS7Ry.jpg"
 FACA = "https://i.imgur.com/H2vMcB4.png"
