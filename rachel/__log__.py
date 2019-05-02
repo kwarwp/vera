@@ -197,3 +197,10 @@ SyntaxError: invalid syntax
            ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Thu May 02 2019 09:17:53.162 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 46
+  self.na mao = True
+           ^
+SyntaxError: invalid syntax
+'''},
