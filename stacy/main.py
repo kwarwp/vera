@@ -107,7 +107,7 @@ class Doca:
 
 
 class Estacao:
-    def __init__(self, universo, left="300px", top="300px"):
+    def __init__(self, universo, left="300px", top="300px", icone=PESSOA, ITENS=[]):
         self.universo = universo
         """
         self.fala = Texto(self.universo, TEXTO_FACA)
