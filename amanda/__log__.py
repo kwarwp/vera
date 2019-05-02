@@ -59,3 +59,10 @@ TypeError: Can't convert dict to str implicitely
                                                  ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Thu May 02 2019 09:21:29.640 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 33
+  self.faca = Elemento(FACA, tit="faca" x=600, y=500, w=80, vai=self.pega)
+                                         ^
+SyntaxError: invalid syntax
+'''},
