@@ -19,7 +19,17 @@ class CenaProxy:
         self.floresta_leao.esquerda = self.aqui
         self.floresta_leao.vai()
 
-"""
+class Foguete:
+    def __init__(self, universo):
+        self.floresta_inicio = floresta_inicio
+        self.fala = Texto(self.floresta_inicio, TEXTO_FACA)
+        self.falou = Texto(self.floresta_inicio, FACA_FOI)
+        self.usar = Texto(self.floresta_inicio, FACA_USA)
+        self.foguete = Elemento(FOGUET, tit="faca", x=600, y=500, w=80, vai=self.pega)
+        self.longe = Cena()
+        self.na_mao = False
+        self.faca.entra(self.floresta_inicio)"""
+        
 class Estacao:
     def __init__(self, universo):
         self.floresta_inicio = floresta_inicio
