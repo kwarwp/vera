@@ -1,5 +1,4 @@
 # vera.parisa.main.py
-# vera.sarah.main.py
 from _spy.vitollino.main import Cena, Texto, INVENTARIO, Elemento, STYLE
 # from morgan.main import FlorestaLeao
 STYLE["width"], STYLE["height"] = 1400, "650px"
@@ -22,12 +21,12 @@ class CenaProxy:
 
 """
 class Estacao:
-    def __init__(self, universo), left="300px", top="300px"):
+    def __init__(self, universo):
         self.floresta_inicio = floresta_inicio
         self.fala = Texto(self.floresta_inicio, TEXTO_FACA)
         self.falou = Texto(self.floresta_inicio, FACA_FOI)
         self.usar = Texto(self.floresta_inicio, FACA_USA)
-        # self.faca = Elemento(FACA, style=dict(left=left, top=top, width="80px"), vai=self.pega)
+        # self.faca = Elemento(FACA, style=dict(left="200px", width="80px"), vai=self.pega)
         self.faca = Elemento(FACA, tit="faca", x=600, y=500, w=80, vai=self.pega)
         self.longe = Cena()
         self.na_mao = False
@@ -83,14 +82,14 @@ class Terra:
         
 
 class Estacao:
-    def __init__(self, universo):
+    def __init__(self, universo, left="300px", top="300px"):
         self.universo = universo
         """
         self.fala = Texto(self.universo, TEXTO_FACA)
         self.falou = Texto(self.universo, FACA_FOI)
         self.usar = Texto(self.universo, FACA_USA)
         """
-        self.estacao = Elemento(ESTACAO, style=dict(left="300px", width="200px"), vai=self.pega)
+        self.estacao = Elemento(ESTACAO, style=dict(left=left, top=top, width="200px"), vai=self.pega)
         self.longe = Cena()
         self.na_mao = False
         self.estacao.entra(self.universo)
@@ -122,7 +121,8 @@ class Universo:
         self.universo = Cena(UNIVERSO)
         terra = Terra(self.universo)
         estacao = Estacao(self.universo)
-        estacao2 = Estacao(self.uiverso, left="400px", top="200px")
+        estacao2 = Estacao(self.universo, left="500px", top="200px")
+        estacao3 = Estacao(self.universo, left="800px", top="100px")
         
     def vai(self):
         self.universo.vai()
