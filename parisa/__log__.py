@@ -96,3 +96,10 @@ NameError: name 'PESSOA' is not defined
     def __init__(self, universo, left="300px", top="300px", icone=PESSOA, itens=[]):
 NameError: name 'PESSOA' is not defined
 '''},
+{'date': 'Thu May 02 2019 11:32:35.5 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 158
+  pessoa = Pessoa(self.universo, left="150px" top="25px")
+                                               ^
+SyntaxError: invalid syntax
+'''},
