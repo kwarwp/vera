@@ -1,6 +1,5 @@
 # vera.sarah.main.py
-from _spy.vitollino.main import Cena, Texto, INVENTARIO, STYLE
-from elemento.main import Elemento
+from _spy.vitollino.main import Cena, Texto, INVENTARIO, Elemento, STYLE
 # from morgan.main import FlorestaLeao
 STYLE["width"], STYLE["height"] = 1400, "650px"
 
@@ -59,8 +58,7 @@ class Terra:
         self.falou = Texto(self.universo, FACA_FOI)
         self.usar = Texto(self.universo, FACA_USA)
         """
-        # self.faca = Elemento(FACA, style=dict(left="200px", width="80px"), vai=self.pega)
-        self.terra = Elemento(TERRA, tit="terra", x=600, y=500, w=80, vai=self.pega)
+        self.terra = Elemento(TERRA, style=dict(left="200px", width="80px"), vai=self.pega)
         self.longe = Cena()
         self.na_mao = False
         self.terra.entra(self.universo)
@@ -89,7 +87,7 @@ class Universo:
         # floresta_leao = FlorestaLeao() -XX- ERRO!
         self.universo = None
         deserto = CenaProxy(self.universo)
-        self.universo = Cena(UNIVERSO, direita=floresta_leao)
+        self.universo = Cena(UNIVERSO)
         terra = Terra(self.universo)
         
     def vai(self):
