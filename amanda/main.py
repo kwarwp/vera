@@ -11,6 +11,7 @@ FACA_FOI= "Ainda bem que me livrei daquela coisa perigosa!"
 TEXTO_FACA= "A faca está afiada, me cortei! Faca perigosa, melhor pegar com cuidado"
 FACA_FOI= "Cuidadosamente, você coloca a faca na bolsa!"
 FACA_USA= "Você segura a faca na mão!"
+LEAO = "https://i.imgur.com/4gXpvfQ.png"
 
 class CenaProxy:
     def __init__(self, aqui=None):
@@ -30,7 +31,9 @@ class Faca:
         self.falou = Texto(self.floresta_inicio, FACA_FOI)
         self.usar = Texto(self.floresta_inicio, FACA_USA)
         # self.faca = Elemento(FACA, style=dict(left="200px", width="80px"), vai=self.pega)
-        self.faca = Elemento(FACA, x=600, y=500, w=80, vai=self.pega)
+        drag = dict(faca=lambda *_: self.fala.vai())
+        self.faca = Elemento(FACA, tit="faca", x=600, y=500, w=80, vai=self.pega)
+        self.leao = Elemento(LEAO, tit="leao", x=800, y=500, w=180, drop=drag, cena=floresta_inicio)
         self.longe = Cena()
         self.na_mao = False
         self.faca.entra(self.floresta_inicio)
