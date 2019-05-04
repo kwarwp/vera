@@ -86,3 +86,10 @@ SyntaxError: invalid syntax
     style = {'opacity': "inherited", 'width': 30, 'height': "30px", 'min-height': '30px', 'float': 'left',
 AttributeError: 'Faca' object has no attribute 'img'
 '''},
+{'date': 'Sat May 04 2019 12:26:24.370 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module elemento.main line 27
+  self.style.update(**{'position': 'absolute', 'overflow': 'hidden',
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ^
+SyntaxError: invalid syntax
+'''},
