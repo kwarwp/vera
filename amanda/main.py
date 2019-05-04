@@ -36,7 +36,9 @@ class Faca:
         self.faca.entra(self.floresta_inicio)
     
     def pega(self, _):
-        self.fala.vai()
+        INVENTARIO.bota(self.faca)
+        self.faca.do_drag(True)
+        #self.fala.vai()
         self.faca.vai = self.guarda
     
     def guarda(self, _):
