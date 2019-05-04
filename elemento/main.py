@@ -15,7 +15,7 @@ class Elemento(Element):
                  x=0, y=0, w=100, h=100, texto='',
                  cena=INVENTARIO, score=NDCT, drag=False, drop={}, **kwargs):
         self._auto_score = self.score if score else self._auto_score
-        self.img, self.title, self.drop, self.alt = img, tit, drop, alt
+        self.img, self.title, self.dropper, self.alt = img, tit, drop, alt
         self._drag = self._over = self._drop = self._dover = self.vai = lambda *_: None
         self.cena = cena
         self.opacity = 0
@@ -123,14 +123,14 @@ class Elemento(Element):
             self._drag = self.drag_start
             self._over = self.mouse_over
         else:
-            self._drag = self._over = lambda *_: None
+            self._drag = self._over = self.img_prevent
 
     def do_drop(self, drop=""):
         if drop:
             self._drop = self.drop
             self._dover = self.drag_over
         else:
-            self._drop = self._dover = lambda *_: None
+            self._drop = self._dover = self.img_prevent
 
     def drag_over(self, ev):
         ev.data.dropEffect = 'move'
@@ -142,7 +142,7 @@ class Elemento(Element):
         ev.stopPropagation()
         src_id = ev.data['text']
         tit = doc[src_id].title
-        self.drop.setdefault(tit, lambda *_: None)(ev, tit)
+        self.dropper.setdefault(tit, lambda *_: None)(ev, tit)
         '''
         if tit != self.real:
             Texto(self.cena, "Hey, this is not my name: {}.".format(tit)).vai()
