@@ -30,6 +30,7 @@ class Elemento(Element):
                              'background-position': '{} {}'.format(0, 0),
                              #'background-size': '{}px {}px'.format(w, h)
                              'background-size': 'contain'
+                             'background-repeat': 'no-repeat'
                              })
         # self.style["min-width"], self.style["min-height"] = w, h
         self.style.update(**style)
