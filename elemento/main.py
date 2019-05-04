@@ -29,7 +29,7 @@ class Elemento(Element):
                              'background-image': 'url({})'.format(img),
                              'background-position': '{} {}'.format(0, 0),
                              #'background-size': '{}px {}px'.format(w, h)
-                             'background-size': 'cover'
+                             'background-size': 'contain'
                              })
         # self.style["min-width"], self.style["min-height"] = w, h
         self.style.update(**style)
