@@ -15,7 +15,7 @@ class Peixe:
         
 class PeixeDois:
     def __init__(self, pescaria):
-        peixedois = Elemento(PEIXEDOIS, x=70, y=300, w=60, h=40)
+        peixedois = Elemento(PEIXEDOIS, x=70, y=250, w=60, h=40)
         peixedois.entra(pescaria)
         
 class Crianca:
