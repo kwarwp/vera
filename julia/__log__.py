@@ -236,3 +236,10 @@ NameError: name 'crianca' is not defined
     Crianca(pescaria)
 NameError: name 'Crianca' is not defined
 '''},
+{'date': 'Thu May 23 2019 11:24:03.791 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 17
+  crianca = Elemento(CRIANCA, x=x, y=y, w=60, h=40, style={"opacity:" 0.3})
+                                                                       ^
+SyntaxError: invalid syntax
+'''},
