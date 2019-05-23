@@ -1,6 +1,8 @@
 # vera.alexa.main.py
-from _spy.vitollino.main import Cena
+from _spy.vitollino.main import Cena,STYLE
 from elemento.main import Elemento 
+STYLE["width"] = 600
+STYLE["heigth"] = "600px"
 
 MACA = "https://i.imgur.com/xzBftDW.jpg"
 COELHO = "https://i.imgur.com/yY22qoF.jpg"
