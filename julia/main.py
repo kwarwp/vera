@@ -11,9 +11,7 @@ class Peixe:
     def __init__(self, pescaria):
         peixe = Elemento(PEIXE, x=70, y=200, w=60, h=40)
         peixe.entra(pescaria)
-
-
-        
+       
 class Jarra:
     def __init__(self, pescaria, x=150, y=230):
         jarra = Elemento(JARRA, x=x, y=y, w=60, h=40)
@@ -25,7 +23,6 @@ class jogoPescaria:
         Peixe(pescaria)
         Jarra(pescaria)
         Jarra(pescaria, x=200, y=230)
-        Crianca(pescaria)
         pescaria.vai()
 
 jogoPescaria()
