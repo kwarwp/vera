@@ -4,8 +4,10 @@ from elemento.main import Elemento
 STYLE["width"] = 600
 STYLE["heigth"] = "600px"
 
+LARANJA = "https://i.imgur.com/rrX3OfV.png"
 MACA = "https://i.imgur.com/xzBftDW.jpg"
 COELHO = "https://i.imgur.com/yY22qoF.jpg"
+PASSARINHO = "https://i.imgur.com/HZVP9am.jpg"
 PETECA = "https://i.imgur.com/lkby3FK.jpg"
 BOLA = "https://i.imgur.com/5KDBA8Z.jpg"
 CENA_PARQUE = "https://i.imgur.com/kqWvogN.jpg"
@@ -15,10 +17,11 @@ class Fruta:
     def __init__(self, parque, x=150, y=200):
         maca = Elemento(MACA, x=200, y=200, w=60, h=40)
         maca.entra(parque)
-        
+        laranja = Elemento(LARANJA, x=250, y=280, w=80, h=100)
+        laranja.entra(parque)
 class Esportes:  
     def __init__(self, parque): 
-        peteca = Elemento(PETECA, x=150, y=100, w=60, h=40)
+        peteca = Elemento(PETECA, x=150, y=100, w=50, h=40)
         peteca.entra(parque)
         bola = Elemento(BOLA, x=100, y=200, w=80, h=60)
         bola.entra(parque)
@@ -27,6 +30,8 @@ class Bicho:
     def __init__(self, parque):
         coelho = Elemento(COELHO,  x=100, y=100, w=60, h=40)
         coelho.entra(parque)
+        passarinho = Elemento(PASSARINHO, x=90, y=90, w=70, h=70)
+        passarinho.entra(parque)
         
 class Crianca:
     def __init__(self, parque, tit="maria", x=0, y=210):
