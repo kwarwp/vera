@@ -27,3 +27,10 @@ SyntaxError: invalid syntax
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Thu May 23 2019 13:15:04.147 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 12
+  FALAS = {"maria": {"geleia de uva": "Adoro geléia de uva", "jarra de mel": "Acho mel muito doce"}
+                                                                                                     ^
+SyntaxError: invalid syntax
+'''},
