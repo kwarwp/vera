@@ -82,3 +82,10 @@ SyntaxError: invalid syntax
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Thu May 23 2019 11:12:17.547 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 16
+  def __init__(self, parque, x=0, y= 210
+                                               ^
+SyntaxError: invalid syntax
+'''},
