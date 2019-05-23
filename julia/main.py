@@ -12,10 +12,7 @@ class Peixe:
         peixe = Elemento(PEIXE, x=70, y=200, w=60, h=40)
         peixe.entra(pescaria)
 
-class Crianca:
-    def __init__(self, pescaria,x=0, y=230):
-        crianca.Elemento(CRIANCA, x=x, y=y, w=70, h=140, style ={"opacity:10"}) #mascara tornando a imagem clicavel
-        crianca.entra(pescaria)
+
         
 class Jarra:
     def __init__(self, pescaria, x=150, y=230):
