@@ -47,3 +47,10 @@ SyntaxError: invalid syntax
     letra_b = Elemento(letra_B, x=100, y=100, w=60, h=40)
 NameError: name 'letra_B' is not defined
 '''},
+{'date': 'Thu May 23 2019 10:45:58.404 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 11
+  parque = Cena (CENA_PARQUE)
+  ^
+IndentationError: expected an indented block
+'''},
