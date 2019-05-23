@@ -12,7 +12,7 @@ class Peixe:
         peixe.entra(pescaria)
         
 class Jarra:
-    def __init__(self, pescaria)
+    def __init__(self, pescaria):
         jarra = Elemento(JARRA, x=150, y=230, w=60, h=40)
         jarra.entra(pescaria)
 
