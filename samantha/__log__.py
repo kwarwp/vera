@@ -75,3 +75,10 @@ SyntaxError: invalid syntax
                                      ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Thu May 23 2019 11:08:00.496 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 8
+  LETRA_A = "https://i.imgur.com/sFciRzA.jpg"
+  ^
+IndentationError: expected an indented block
+'''},
