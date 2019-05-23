@@ -13,7 +13,7 @@ class Peixe:
         peixe.entra(pescaria)
 
 class Crianca:
-    def __init__(self, pescaria):
+    def __init__(self, pescaria,x=0, y=230):
         crianca.Elemento(CRIANCA, 200, w=60, h=40)
         crianca.entra(crianca)
         
