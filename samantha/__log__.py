@@ -259,3 +259,10 @@ IndentationError: expected an indented block
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Thu May 23 2019 12:00:17.764 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 32
+  texto = Texto (self.parque, UMTEXTO)
+  ^
+IndentationError: expected an indented block
+'''},
