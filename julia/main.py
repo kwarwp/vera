@@ -1,6 +1,8 @@
 # vera.julia.main.py
-from _spy.vitollino.main import Cena
+from _spy.vitollino.main import Cena, STYLE
 from elemento.main import Elemento #permite a movimentacao
+STYLE["width"] = 300
+STYLE["heigth"] = "300px"
 
 JARRA = "https://i.imgur.com/y2YyMOM.jpg"
 PEIXE = "https://i.imgur.com/4tDY3hD.png"
@@ -10,12 +12,12 @@ CRIANCA = "https://i.imgur.com/U8kaaKl.jpg" #torna a crianca da imagem clicavel
 
 class Peixe:
     def __init__(self, pescaria):
-        peixe = Elemento(PEIXE, x=70, y=200, w=60, h=40)
+        peixe = Elemento(PEIXE, x=60, y=200, w=60, h=40)
         peixe.entra(pescaria)
         
 class PeixeDois:
     def __init__(self, pescaria):
-        peixedois = Elemento(PEIXEDOIS, x=70, y=250, w=60, h=40)
+        peixedois = Elemento(PEIXEDOIS, x=10, y=250, w=60, h=40)
         peixedois.entra(pescaria)
         
 class Crianca:
@@ -25,7 +27,7 @@ class Crianca:
         
 class Jarra:
     def __init__(self, pescaria, x=150, y=230):
-        jarra = Elemento(JARRA, x=x, y=y, w=60, h=40)
+        jarra = Elemento(JARRA, x=x, y=y, w=60, h=40, drag=True) #drag permite arrastar o objeto para outro
         jarra.entra(pescaria)
 
 class jogoPescaria:
