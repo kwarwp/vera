@@ -110,3 +110,10 @@ SyntaxError: invalid syntax
                                             ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Thu May 23 2019 11:17:17.54 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 16
+  def __init__(self, parque, x=0, y= 210)
+                                          ^
+SyntaxError: invalid syntax
+'''},
