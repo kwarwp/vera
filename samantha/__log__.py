@@ -184,3 +184,23 @@ IndentationError: expected an indented block
     Crianca(tit="joana")
 TypeError: __init__ missing 1 positional argument: 'parque'
 '''},
+{'date': 'Thu May 23 2019 11:24:04.497 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 160
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 306
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 278
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 295
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 38
+    JogoLetra()
+  module <module> line 35
+    Crianca(parque, tit="joana")
+  module <module> line 17
+    crianca = Elemento(CRIANCA, tit=tit, x=x, y=y, w=70, h=140, style={"opacity":0.3})
+NameError: name 'CRIANCA' is not defined
+'''},
