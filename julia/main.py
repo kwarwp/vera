@@ -8,6 +8,8 @@ CENA_PESCARIA = "https://imgur.com/GX8p3JC.jpg"
 pescaria = Cena(CENA_PESCARIA)
 peixe1 = Elemento(PEIXE1, x=100, y=100, w=60, h=40)
 peixe1.entra(pescaria)
+jarra = Elemento(JARRA, x=100, y=100, w=60, h=40)
+jarra.entra(pescaria)
 jarra = Elemento(JARRA)
 jarra.entra(pescaria)
 pescaria.vai()
