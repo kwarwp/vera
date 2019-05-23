@@ -10,12 +10,12 @@ CRIANCA = "https://i.imgur.com/U8kaaKl.jpg" #torna a crianca da imagem clicavel
 
 class Peixe:
     def __init__(self, pescaria):
-        peixe = Elemento(PEIXEDOIS, x=70, y=200, w=60, h=40)
+        peixe = Elemento(PEIXE, x=70, y=200, w=60, h=40)
         peixe.entra(pescaria)
         
 class PeixeDois:
     def __init__(self, pescaria):
-        peixedois = Elemento(PEIXE, x=70, y=200, w=60, h=40)
+        peixedois = Elemento(PEIXEDOIS, x=70, y=100, w=60, h=40)
         peixedois.entra(pescaria)
         
 class Crianca:
