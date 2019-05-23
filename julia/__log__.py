@@ -218,3 +218,21 @@ NameError: name 'crianca' is not defined
     crianca.Elemento(CRIANCA, x=x, y=y, w=70, h=140, style ={"opacity:10"}) #mascara tornando a imagem clicavel
 NameError: name 'crianca' is not defined
 '''},
+{'date': 'Thu May 23 2019 11:20:52.773 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 160
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 306
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 278
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 295
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 31
+    jogoPescaria()
+  module <module> line 28
+    Crianca(pescaria)
+NameError: name 'Crianca' is not defined
+'''},
