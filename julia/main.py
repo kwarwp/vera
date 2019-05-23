@@ -10,9 +10,9 @@ CENA_PESCARIA = "https://imgur.com/GX8p3JC.jpg"
 class jogoPescaria:
     def __init__(self):
         pescaria = Cena(CENA_PESCARIA)
-        peixe1 = Elemento(PEIXE1, x=100, y=100, w=60, h=40)
+        peixe1 = Elemento(PEIXE1, x=100, y=200, w=60, h=40)
         peixe1.entra(pescaria)
-        peixe2=Elemento(PEIXE2, x=100, y=120, w=60, h=40)
+        peixe2=Elemento(PEIXE2, x=100, y=220, w=60, h=40)
         peixe2.entra(pescaria)
         jarra = Elemento(JARRA, x=150, y=200, w=60, h=40)
         jarra.entra(pescaria)
