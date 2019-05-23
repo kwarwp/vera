@@ -61,3 +61,10 @@ SyntaxError: invalid syntax
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Thu May 23 2019 11:20:06.499 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 12
+  maca = Elemento(MACA, x=150, y=200, w=60, h=40)
+  ^
+IndentationError: expected an indented block
+'''},
