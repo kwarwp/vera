@@ -14,7 +14,7 @@ class Peixe:
 
 class Crianca:
     def __init__(self, pescaria,x=0, y=230):
-        crianca.Elemento(CRIANCA, x=x, y=y, w=70, h=140, style ={"opacity:40})
+        crianca.Elemento(CRIANCA, x=x, y=y, w=70, h=140, style ={"opacity:10"})
         crianca.entra(pescaria)
         
 class Jarra:
