@@ -105,3 +105,10 @@ NameError: name 'BICHO' is not defined
     imagem, kwargs = (imagem, {}) if isinstance(imagem, str) \
 AttributeError: 'int' object has no attribute '__getitem__'
 '''},
+{'date': 'Thu May 23 2019 10:59:13.954 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 15
+  def __init__(self, pescaria)
+                               ^
+SyntaxError: invalid syntax
+'''},
