@@ -19,3 +19,10 @@
     self.gamer = Braser(768, 640)
 TypeError: 'module' object is not callable
 '''},
+{'date': 'Thu May 23 2019 10:53:44.377 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 11
+  def _init_(self):
+  ^
+IndentationError: expected an indented block
+'''},
