@@ -21,7 +21,7 @@ class jogoPescaria:
         pescaria = Cena(CENA_PESCARIA)
         Peixe(pescaria)
         Jarra(pescaria)
-        Jarra(pescaria, x=220, y=230)
+        Jarra(pescaria, x=290, y=230)
         pescaria.vai()
 
 jogoPescaria()
