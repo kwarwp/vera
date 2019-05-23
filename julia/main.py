@@ -10,13 +10,13 @@ PEIXEDOIS = "https://i.imgur.com/SfOAbaS.png"
 CENA_PESCARIA = "https://imgur.com/GX8p3JC.jpg"
 CRIANCA = "https://i.imgur.com/U8kaaKl.jpg" #torna a crianca da imagem clicavel
 
+
 class Peixe:
     def __init__(self, pescaria):
         peixe = Elemento(PEIXE, x=60, y=200, w=60, h=40)
         peixe.entra(pescaria)
         peixedois = Elemento(PEIXEDOIS, x=10, y=250, w=60, h=40)
-        peixedois.entra(pescaria)
-        
+        peixedois.entra(pescaria)        
         
 class Crianca:
     def __init__(self, pescaria, tit="tiago", x=150, y=90): #tit quando arrastar o mouse em cima, surge o nome
