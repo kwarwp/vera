@@ -16,3 +16,5 @@ class jogoPescaria:
         jarra_b = Elemento(JARRA, x=230, y=230, w=60, h=40)
         jarra_b.entra(pescaria)
         pescaria.vai()
+
+jogoPescaria()
