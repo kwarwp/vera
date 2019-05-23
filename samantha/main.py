@@ -12,8 +12,10 @@ LETRA_F = "https://i.imgur.com/IcWkooX.jpg"
 CENA_PARQUE = "https://i.imgur.com/bPDwwQO.jpg"
 CENA_CRIANCA = "https://i.imgur.com/hKFY2DF.png"
 
-class crianca: 
-    def __init__(self, parque, x=110, y= 210)
+class Crianca: 
+    def __init__(self, parque, tit="joana", x=0, y=210):
+        crianca = Elemento(CENA_CRIANCA, tit=tit, x=x, y=y, w=70, h=140, style={"opacity":0.3})
+        crianca.entra(parque)
     
 class JogoLetra:
     def __init__(self): 
@@ -30,6 +32,7 @@ class JogoLetra:
         letra_e.entra(parque)
         letra_f = Elemento(LETRA_F, x=160, y=105, w=40, h=30)
         letra_f.entra(parque)
+        Crianca(parque, tit="joana")
         parque.vai()
         
 JogoLetra()
