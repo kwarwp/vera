@@ -24,3 +24,10 @@ Exception: <TypeError: this.boot is undefined>
        ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Thu May 23 2019 10:43:33.392 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 6
+  LETRA_b "https://i.imgur.com/IHu7zVe.jpg"
+           ^
+SyntaxError: invalid syntax
+'''},
