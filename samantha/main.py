@@ -1,5 +1,5 @@
 # vera.teacher.main.py
-from _spy.vitollino.main import Cena,STYLE
+from _spy.vitollino.main import Cena,STYLE, Texto
 from elemento.main import Elemento
 STYLE["width"] = 800
 STYLE["height"] = "600px"
@@ -18,26 +18,33 @@ LETRA_L = ""
 
 CENA_PARQUE = "https://i.imgur.com/bPDwwQO.jpg"
 CENA_CRIANCA = "https://i.imgur.com/hKFY2DF.png"
+UMTEXTO = "Monte uma palavra, use sua criatividade"
 
 class Crianca: 
     def __init__(self, parque, tit="joana", x=0, y=210):
-        crianca = Elemento(CENA_CRIANCA, tit=tit, x=x, y=y, w=70, h=140, style={"opacity":0.3})
+        self.parque, self.tit = parque, tit
+        escolhas = {"letra_a" : self.fala, "letra a": self.fala}
+        crianca = Elemento(CENA_CRIANCA, tit=tit, x=x, y=y, w=70, h=140, drop=escolhas, style={"opacity":0.3})
         crianca.entra(parque)
+        
+        def a (self, _):
+        texto = Texto (self.parque, UMTEXTO)
+        texto.vai()
     
 class JogoLetra:
     def __init__(self): 
         parque = Cena (CENA_PARQUE)
-        letra_a = Elemento(LETRA_A, x=255, y=210, w=20, h=30)
+        letra_a = Elemento(LETRA_A, x=540, y=470, w=90, h=20, drag=True)
         letra_a.entra(parque)
-        letra_b = Elemento(LETRA_B, x=250, y=250, w=20, h=30)
+        letra_b = Elemento(LETRA_B, x=250, y=250, w=20, h=30, drag=True)
         letra_b.entra(parque)
-        letra_c = Elemento(LETRA_C, x=190, y=240, w=20, h=30)
+        letra_c = Elemento(LETRA_C, x=190, y=240, w=20, h=30, drag=True)
         letra_c.entra(parque)
-        letra_d = Elemento(LETRA_D, x=140, y=250, w=20, h=30)
+        letra_d = Elemento(LETRA_D, x=140, y=250, w=20, h=30, drag=True)
         letra_d.entra(parque)
-        letra_e = Elemento(LETRA_E, x=20, y=230, w=20, h=30)
+        letra_e = Elemento(LETRA_E, x=20, y=230, w=20, h=30, drag=True)
         letra_e.entra(parque)
-        letra_f = Elemento(LETRA_F, x=40, y=195, w=10, h=30)
+        letra_f = Elemento(LETRA_F, x=40, y=195, w=10, h=30, drag=True)
         letra_f.entra(parque)
         Crianca(parque, tit="joana")
         parque.vai()
