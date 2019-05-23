@@ -28,7 +28,7 @@ class jogoPescaria:
         Peixe(pescaria)
         Jarra(pescaria)
         Jarra(pescaria, x=200, y=230)
-        Crianca(crianca)
+        Crianca(pescaria)
         pescaria.vai()
 
 jogoPescaria()
