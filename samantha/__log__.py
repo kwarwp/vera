@@ -61,3 +61,10 @@ IndentationError: expected an indented block
                                      ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Thu May 23 2019 10:53:32.670 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 12
+  letra_a = Elemento(LETRA_A, x=150 y=250, w=40, h=30)
+                                     ^
+SyntaxError: invalid syntax
+'''},
