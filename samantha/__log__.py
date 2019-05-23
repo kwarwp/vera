@@ -211,3 +211,10 @@ NameError: name 'CRIANCA' is not defined
                      ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Thu May 23 2019 11:42:51.696 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 5
+  STYLE["height] = 600px
+                        ^
+SyntaxError: EOL while scanning string literal
+'''},
