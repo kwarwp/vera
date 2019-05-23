@@ -8,7 +8,7 @@ CENA_PESCARIA = "https://imgur.com/GX8p3JC.jpg"
 
 class jogoPescaria:
     def __init__(self):
-        pescaria = Cena(CENA_PESCARIA)
+        pescaria = Cena(CENA_PESCARIA, x=500, y=500, w=250, h=200)
         peixe1 = Elemento(PEIXE1, x=100, y=100, w=60, h=40)
         peixe1.entra(pescaria)
         jarra = Elemento(JARRA, x=150, y=200, w=60, h=40)
