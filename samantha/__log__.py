@@ -245,3 +245,10 @@ AttributeError: 'Crianca' object has no attribute 'fala'
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Thu May 23 2019 11:58:51.176 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 31
+  texto = Texto (self.parque, UMTEXTO)
+  ^
+IndentationError: expected an indented block
+'''},
