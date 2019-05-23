@@ -238,3 +238,10 @@ SyntaxError: EOL while scanning string literal
     escolhas = {"letra_a" : self.fala, "letra a": self.fala}
 AttributeError: 'Crianca' object has no attribute 'fala'
 '''},
+{'date': 'Thu May 23 2019 11:58:42.489 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 31
+  texto = Texto (self.parque, UMTEXTO)
+  ^
+IndentationError: expected an indented block
+'''},
