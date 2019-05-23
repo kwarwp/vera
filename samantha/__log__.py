@@ -204,3 +204,10 @@ TypeError: __init__ missing 1 positional argument: 'parque'
     crianca = Elemento(CRIANCA, tit=tit, x=x, y=y, w=70, h=140, style={"opacity":0.3})
 NameError: name 'CRIANCA' is not defined
 '''},
+{'date': 'Thu May 23 2019 11:42:23.680 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 5
+  STYLE["height] = "600px"
+                     ^
+SyntaxError: invalid syntax
+'''},
