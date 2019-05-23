@@ -41,6 +41,7 @@ class Conjuntos:
         Crianca(parque, tit="esportes", y=100)
         Crianca(parque, tit="frutas", x=80, y=100)       
         Fruta(parque, x=230, y=230)
+        Esportes(parque)
         parque.vai()
         
 Conjuntos()
