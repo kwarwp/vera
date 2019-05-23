@@ -54,3 +54,10 @@ NameError: name 'letra_B' is not defined
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Thu May 23 2019 10:53:13.914 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 12
+  letra_a = Elemento(LETRA_A, x=100 y=250, w=40, h=30)
+                                     ^
+SyntaxError: invalid syntax
+'''},
