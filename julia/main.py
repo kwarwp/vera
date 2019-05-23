@@ -13,8 +13,8 @@ class Peixe:
         peixe.entra(pescaria)
         
 class Crianca:
-    def __init__(self, pescaria, x=100, y=230):
-        crianca = Elemento(CRIANCA, x=x, y=y, w=60, h=40, style={"opacity": 0.3})
+    def __init__(self, pescaria, x=150, y=90):
+        crianca = Elemento(CRIANCA, x=x, y=y, w=60, h=40, style={"opacity": 0})
         crianca.entra(pescaria)
         
 class Jarra:
