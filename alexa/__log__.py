@@ -82,3 +82,10 @@ IndentationError: expected an indented block
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Thu May 23 2019 11:20:32.889 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 12
+  maca = Elemento(MACA, x=200, y=200, w=60, h=40)
+  ^
+IndentationError: expected an indented block
+'''},
