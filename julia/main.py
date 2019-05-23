@@ -3,7 +3,7 @@ from _spy.vitollino.main import Cena
 from elemento.main import Elemento #permite a movimentacao
 
 JARRA = "https://i.imgur.com/y2YyMOM.jpg"
-PEIXE1 = "https://i.imgur.com/Z1HZhCE.png"
+PEIXE1 = "https://i.imgur.com/4tDY3hD.png"
 PEIXE2 = "https://i.imgur.com/SfOAbaS.png"
 CENA_PESCARIA = "https://imgur.com/GX8p3JC.jpg"
 
