@@ -7,6 +7,8 @@ BANANA = "https://i.imgur.com/HnIHJd7.png"
 TEXTO_BANANA= "O macaquinho pode ficar com fome! Coloque na bolsa!"
 BANANA_FOI= "Hummm, que delícia!"
 BANANA_USA= "Você segura a banana na mão!"
+REDE = "https://i.imgur.com/9Fig2oH.png"
+TEXTO_REDE= "Caí na armadilha!"
 
 class CenaProxy:
     def __init__(self, aqui=None):
@@ -18,6 +20,15 @@ class CenaProxy:
         self.floresta_faca.esquerda = self.aqui
         self.floresta_faca.vai()
 
+class CenaProxy2:
+    def __init__(self, aqui=None):
+        self.aqui = aqui
+        self.floresta_macaco = None
+    def vai(self):
+        from soraya.main import FlorestaMacaco
+        self.floresta_macaco = FlorestaMacaco()
+        self.floresta_macaco.esquerda = self.aqui
+        self.floresta_macaco.vai()
 
 class Banana:
     def __init__(self, floresta_inicio):
@@ -46,6 +57,19 @@ class Banana:
         self.na_mao = True
         self.usar.vai()
         
+class Rede:
+    def __init__(self, floresta_inicio):
+        self.floresta_inicio = floresta_inicio
+        self.fala = Texto(self.floresta_inicio, TEXTO_REDE)
+        self.rede = Elemento(REDE, style=dict(left="450px", width="250px"))
+        self.rede.entra(floresta_inicio)
+        self.rede.vai=self.falarede
+        
+    def vai(self):
+        self.floresta_inicio.vai()
+        
+    def falarede(self,_):
+        self.fala.vai() 
         
 class FlorestaBanana:
     def __init__(self):
@@ -54,6 +78,7 @@ class FlorestaBanana:
         floresta_faca = CenaProxy(self.floresta_inicio)
         self.floresta_inicio = Cena(FLORESTA, direita=floresta_faca)
         banana = Banana(self.floresta_inicio)
+        rede = Rede(self.floresta_inicio)
         
     def vai(self):
         self.floresta_inicio.vai()
