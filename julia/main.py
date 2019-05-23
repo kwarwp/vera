@@ -5,7 +5,7 @@ from elemento.main import Elemento #permite a movimentacao
 JARRA = "https://i.imgur.com/y2YyMOM.jpg"
 PEIXE = "https://i.imgur.com/4tDY3hD.png"
 CENA_PESCARIA = "https://imgur.com/GX8p3JC.jpg"
-CRIANCA = "https://i.imgur.com/U8kaaKl.jpg" #aproveitar os elementos da imagem, oval transparente, finge ser a crianca
+CRIANCA = "https://i.imgur.com/U8kaaKl.jpg"
 
 class Peixe:
     def __init__(self, pescaria):
