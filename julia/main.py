@@ -14,7 +14,7 @@ class Peixe:
 
 class Crianca:
     def __init__(self, pescaria,x=0, y=230):
-        crianca.Elemento(CRIANCA, x=x, y=y, w=70, h=140, style ={"opacity:10"})
+        crianca.Elemento(CRIANCA, x=x, y=y, w=70, h=140, style ={"opacity:10"}) #mascara tornando a imagem clicavel
         crianca.entra(pescaria)
         
 class Jarra:
@@ -28,6 +28,7 @@ class jogoPescaria:
         Peixe(pescaria)
         Jarra(pescaria)
         Jarra(pescaria, x=200, y=230)
+        Crianca(crianca)
         pescaria.vai()
 
 jogoPescaria()
