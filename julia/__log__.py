@@ -369,3 +369,10 @@ TypeError: __init__() got an unexpected keyword argument 'x'
                                             ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Thu May 23 2019 21:17:28.936 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 15
+  def __init__(self, pescaria, x=350, y=200)):
+                                            ^
+SyntaxError: invalid syntax
+'''},
