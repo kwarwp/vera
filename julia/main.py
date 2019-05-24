@@ -5,8 +5,8 @@ STYLE["width"] = 900
 STYLE["heigth"] = "900px"
 
 #JARRA = "https://i.imgur.com/y2YyMOM.jpg"
-PEIXE = "https://i.imgur.com/vZe20Rb.png"
-PEIXEDOIS = "https://i.imgur.com/f6wJlKr.png"
+PEIXE = "https://i.imgur.com/xLW201E.png"
+PEIXEDOIS = "https://i.imgur.com/wxmytp0.png"
 PEIXETRES = "https://i.imgur.com/fgIlSq6.png"
 PEIXEQUATRO = "https://i.imgur.com/Un7iN4l.png"
 PEIXECINCO = "https://i.imgur.com/GmFMkTN.png"
@@ -93,10 +93,10 @@ class jogoPescaria:
         Peixe3(pescaria, x=560, y=430)
         Peixe4(pescaria, x=460, y=430)
         Peixe5(pescaria, x=420, y=470)
-        Peixe6(pescaria, x=280, y=505)
+        Peixe6(pescaria, x=580, y=605)
         Peixe7(pescaria, x=480, y=505)
-        Peixe8(pescaria, x=380, y=400)
-        Peixe9(pescaria, x=620, y=500)
+        Peixe8(pescaria, x=380, y=505)
+        Peixe9(pescaria, x=620, y=465)
         Peixe10(pescaria, x=520, y=455)
         #Jarra(pescaria)
         #Jarra(pescaria, x=200, y=230)
