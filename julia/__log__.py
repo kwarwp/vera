@@ -362,3 +362,10 @@ TypeError: __init__() got an unexpected keyword argument 'w'
     Peixe(pescaria, x=200, y=400)
 TypeError: __init__() got an unexpected keyword argument 'x'
 '''},
+{'date': 'Thu May 23 2019 21:17:18.436 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 15
+  def __init__(self, pescaria, x=350, y=200)):
+                                            ^
+SyntaxError: invalid syntax
+'''},
