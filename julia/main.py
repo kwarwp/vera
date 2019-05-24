@@ -111,7 +111,7 @@ class jogoPescaria:
         Peixe9(pescaria, x=620, y=465)
         Peixe10(pescaria, x=520, y=455)
         Peixe11(pescaria, x=320, y=490)
-        Peixe12(pescaria, x=650, y=500)
+        Peixe12(pescaria, x=650, y=450)
         #Jarra(pescaria)
         #Jarra(pescaria, x=200, y=230)
         Crianca(pescaria, tit="julia", x=720, y=250)
