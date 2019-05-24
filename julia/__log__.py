@@ -383,3 +383,10 @@ SyntaxError: invalid syntax
                         ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Thu May 23 2019 22:27:15.550 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 63
+  peixe.entra(pescaria)25
+                        ^
+SyntaxError: invalid syntax
+'''},
