@@ -5,14 +5,16 @@ STYLE["width"] = 900
 STYLE["heigth"] = "900px"
 
 #JARRA = "https://i.imgur.com/y2YyMOM.jpg"
-PEIXE = "https://i.imgur.com/mZZ1ULg.png"
-PEIXEDOIS = "https://i.imgur.com/Mur0BT8.png"
+PEIXE = "https://i.imgur.com/vZe20Rb.png"
+PEIXEDOIS = "https://i.imgur.com/f6wJlKr.png"
 PEIXETRES = "https://i.imgur.com/fgIlSq6.png"
-PEIXEQUATRO = "https://i.imgur.com/Ekt1dgc.png"
-PEIXECINCO = "https://i.imgur.com/nkdRS8S.png"
-PEIXESEIS = "https://i.imgur.com/K0zlOCGO.png"
-PEIXESETE = "https://i.imgur.com/MifxWFL.png"
-PEIXEOITO = "https://i.imgur.com/piJR4tN.png"
+PEIXEQUATRO = "https://i.imgur.com/Un7iN4l.png"
+PEIXECINCO = "https://i.imgur.com/GmFMkTN.png"
+PEIXESEIS = "https://i.imgur.com/iNLjvGR.png"
+PEIXESETE = "https://i.imgur.com/4S6WTdR.png"
+PEIXEOITO = "https://i.imgur.com/BShIuNz.png"
+PEIXENOVE ="https://i.imgur.com/6oYFYlc.png"
+PEIXEDEZ = "https://i.imgur.com/ykpgYSP.png"
 CENA_PESCARIA = "https://i.imgur.com/KQbnPXQ.jpg"
 CRIANCA = "https://i.imgur.com/U8kaaKl.jpg" #torna a crianca da imagem clicavel
 BALDE = "https://i.imgur.com/U8kaaKl.jpg"
@@ -57,14 +59,15 @@ class Peixe8:
         peixe = Elemento(PEIXEOITO, x=x, y=y, w=60, h=40, drag=True)
         peixe.entra(pescaria)
 
-class Peixe:
+class Peixe9:
     def __init__(self, pescaria, x=350, y=200):
-        peixe = Elemento(PEIXE, x=x, y=y, w=60, h=40, drag=True)
+        peixe = Elemento(PEIXENOVE, x=x, y=y, w=60, h=40, drag=True)
         peixe.entra(pescaria)
 
-class Peixe:
+
+class Peixe10:
     def __init__(self, pescaria, x=350, y=200):
-        peixe = Elemento(PEIXE, x=x, y=y, w=60, h=40, drag=True)
+        peixe = Elemento(PEIXEDEZ, x=x, y=y, w=60, h=40, drag=True)
         peixe.entra(pescaria)
 
 #class Balde: caso precise de um balde clicavel
@@ -86,13 +89,15 @@ class jogoPescaria:
     def __init__(self):
         pescaria = Cena(CENA_PESCARIA)
         Peixe(pescaria, x=550, y=500)
-        Peixe2(pescaria, x=260, y=500)
+        Peixe2(pescaria, x=280, y=505)
         Peixe3(pescaria, x=560, y=430)
         Peixe4(pescaria, x=460, y=430)
         Peixe5(pescaria, x=400, y=470)
         Peixe6(pescaria, x=280, y=505)
         Peixe7(pescaria, x=480, y=505)
-        Peixe8(pescaria, x=380, y=505)
+        Peixe8(pescaria, x=380, y=305)
+        Peixe9(pescaria, x=400, y=405)
+        Peixe10(pescaria, x=450, y=430)
         #Jarra(pescaria)
         #Jarra(pescaria, x=200, y=230)
         Crianca(pescaria, tit="julia", x=720, y=250)
