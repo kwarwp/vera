@@ -5,16 +5,18 @@ STYLE["width"] = 900
 STYLE["heigth"] = "900px"
 
 #JARRA = "https://i.imgur.com/y2YyMOM.jpg"
-PEIXE = "https://i.imgur.com/xLW201E.png"
-PEIXEDOIS = "https://i.imgur.com/wxmytp0.png"
-PEIXETRES = "https://i.imgur.com/fgIlSq6.png"
-PEIXEQUATRO = "https://i.imgur.com/Un7iN4l.png"
-PEIXECINCO = "https://i.imgur.com/GmFMkTN.png"
-PEIXESEIS = "https://i.imgur.com/iNLjvGR.png"
-PEIXESETE = "https://i.imgur.com/4S6WTdR.png"
-PEIXEOITO = "https://i.imgur.com/BShIuNz.png"
-PEIXENOVE ="https://i.imgur.com/6oYFYlc.png"
-PEIXEDEZ = "https://i.imgur.com/ykpgYSP.png"
+PEIXE = "https://i.imgur.com/AcTCoXY.png"
+PEIXEDOIS = "https://i.imgur.com/9Q52391.png"
+PEIXETRES = "https://i.imgur.com/uAjOtz2.png"
+PEIXEQUATRO = "https://i.imgur.com/1JMWIAT.png"
+PEIXECINCO = "https://i.imgur.com/8l90Llu.png"
+PEIXESEIS = "https://i.imgur.com/P75bVuk.png"
+PEIXESETE = "https://i.imgur.com/LQM8xrS.png"
+PEIXEOITO = "https://i.imgur.com/nayN8B4.png"
+PEIXENOVE ="https://i.imgur.com/ObSSnqI.png"
+PEIXEDEZ = "https://i.imgur.com/pq5Xvav.png"
+PEIXEONZE = "https://i.imgur.com/zTPwzkP.png"
+PEIXEDOZE = "https://i.imgur.com/ovGd1gp.png"
 CENA_PESCARIA = "https://i.imgur.com/KQbnPXQ.jpg"
 CRIANCA = "https://i.imgur.com/U8kaaKl.jpg" #torna a crianca da imagem clicavel
 BALDE = "https://i.imgur.com/U8kaaKl.jpg"
@@ -70,6 +72,16 @@ class Peixe10:
         peixe = Elemento(PEIXEDEZ, x=x, y=y, w=60, h=40, drag=True)
         peixe.entra(pescaria)
 
+class Peixe11:
+    def __init__(self, pescaria, x=350, y=200):
+        peixe = Elemento(PEIXEONZE, x=x, y=y, w=60, h=40, drag=True)
+        peixe.entra(pescaria)
+        
+class Peixe12:
+    def __init__(self, pescaria, x=350, y=200):
+        peixe = Elemento(PEIXEDOZE, x=x, y=y, w=60, h=40, drag=True)
+        peixe.entra(pescaria)
+        
 #class Balde: caso precise de um balde clicavel
 #    def __init__(self, pescaria, x=350, y=200): #tit quando arrastar o mouse em cima, surge o nome
 #        balde = Elemento(BALDE, x=x, y=y, w=100, h=100, style={"opacity": 0.3})
@@ -93,11 +105,13 @@ class jogoPescaria:
         Peixe3(pescaria, x=560, y=430)
         Peixe4(pescaria, x=460, y=430)
         Peixe5(pescaria, x=420, y=470)
-        Peixe6(pescaria, x=580, y=605)
+        Peixe6(pescaria, x=415, y=405)
         Peixe7(pescaria, x=480, y=505)
-        Peixe8(pescaria, x=380, y=505)
+        Peixe8(pescaria, x=390, y=505)
         Peixe9(pescaria, x=620, y=465)
         Peixe10(pescaria, x=520, y=455)
+        Peixe11(pescaria, x=320, y=490)
+        Peixe12(pescaria, x=640, y=500)
         #Jarra(pescaria)
         #Jarra(pescaria, x=200, y=230)
         Crianca(pescaria, tit="julia", x=720, y=250)
