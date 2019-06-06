@@ -23,20 +23,20 @@ class Esportes:
     def __init__(self, parque,tit="bola", imagem=BOLA, x=100, y=200): 
         peteca = Elemento(imagem, tit=tit, x=x, y=y, w=50, h=40)
         peteca.entra(parque)
-        bola = Elemento(BOLA, x=100, y=200, w=80, h=60)
-        bola.entra(parque)
+        #bola = Elemento(BOLA, x=100, y=200, w=80, h=60)
+        #bola.entra(parque)
         
 class Bicho:
     def __init__(self, parque, tit="coelho", imagem=COELHO, x=200, y=100):
-        coelho = Elemento(COELHO, x=100, y=100, w=60, h=40)
-        coelho.entra(parque)
+        #coelho = Elemento(COELHO, x=100, y=100, w=60, h=40)
+        #coelho.entra(parque)
         passarinho = Elemento(imagem, tit=tit, x=x, y=y, w=70, h=70)
         passarinho.entra(parque)
         
 class Calcado:
     def __init__(self,parque, tit="tenis", imagem=TENIS, x=300, y=350):
-        tenis = Elemento(TENIS, x=150, y=210, w=50, h=80)
-        tenis.entra(parque)
+        #tenis = Elemento(TENIS, x=150, y=210, w=50, h=80)
+        #tenis.entra(parque)
         galocha = Elemento(imagem, tit=tit, x=x, y=y, w=80, h=50)
         galocha.entra(parque)
         
