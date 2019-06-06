@@ -91,8 +91,6 @@ class FlorestaBanana:
         floresta_faca = CenaProxy(self.floresta_inicio)
         self.floresta_inicio = Cena(FLORESTA, direita=floresta_faca)
         banana = Banana(self.floresta_inicio)
-        rede = Rede(self.floresta_inicio)
-        cobra = Cobra(self.floresta_inicio)
         
     def vai(self):
         self.floresta_inicio.vai()
