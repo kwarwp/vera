@@ -338,3 +338,10 @@ SyntaxError: invalid syntax
                                          ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Thu Jun 06 2019 10:24:43.125 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 40
+  galocha = Elemento(GALOCHA, x=220, w=250, w=80, h=50)
+                                             ^
+SyntaxError: keyword argument repeated
+'''},
