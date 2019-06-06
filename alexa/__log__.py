@@ -331,3 +331,10 @@ SyntaxError: invalid syntax
                                    ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Thu Jun 06 2019 10:03:18.334 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 31
+  passarinho = Elemento(imagem, tit=tit x=x, y=y, w=70, h=70)
+                                         ^
+SyntaxError: invalid syntax
+'''},
