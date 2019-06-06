@@ -63,7 +63,7 @@ class Terra:
         self.falou = Texto(self.universo, FACA_FOI)
         self.usar = Texto(self.universo, FACA_USA)
         """
-        self.terra = Elemento(TERRA, x=800, y=180, w=420, h=380, vai=self.pega)
+        self.terra = Elemento(TERRA, x=800, y=180, w=450, h=380, vai=self.pega)
         self.longe = Cena()
         self.na_mao = False
         self.terra.entra(self.universo)
