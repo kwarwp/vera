@@ -65,13 +65,15 @@ class Biscoito:
     def __init__(self, floresta_inicio):
         self.floresta_inicio = floresta_inicio
         self.biscoito = Elemento(BISCOITO, style=dict(left="850px", width="50px"), vai=self.pega)
+        self.rede = Elemento(REDE, style=dict(left="750px", width="200px"))
+        self.fala = Texto(self.floresta_inicio, TEXTO_REDE)
         self.longe = Cena()
         self.na_mao = False
         self.biscoito.entra(self.floresta_inicio)
         
-    def pega(self, _):
+    def pega(self, *_):
+        self.rede.entra(self.floresta_inicio)
         self.fala.vai()
-        self.biscoito.vai = self.guarda
         
 class Rede:
     def __init__(self, floresta_inicio):
