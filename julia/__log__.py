@@ -611,3 +611,23 @@ NameError: name 'PEIXEDEZ' is not defined
     peixe = Elemento(PEIXEDEZ, x=x, y=y, w=60, h=40, drag=True)
 NameError: name 'PEIXEDEZ' is not defined
 '''},
+{'date': 'Thu Jun 06 2019 10:45:24.999 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 160
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 306
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 278
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 295
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 132
+    jogoPescaria()
+  module <module> line 119
+    Peixe10(pescaria, x=520, y=455)
+  module <module> line 72
+    peixe = Elemento(PEIXEDEZ, x=x, y=y, w=60, h=40, drag=True)
+NameError: name 'PEIXEDEZ' is not defined
+'''},
