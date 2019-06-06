@@ -1,5 +1,6 @@
 # vera.sarah.main.py
-from _spy.vitollino.main import Cena, Texto, INVENTARIO, Elemento, STYLE
+from _spy.vitollino.main import Cena, Texto, INVENTARIO, STYLE
+from elemento.main import Elemento
 # from morgan.main import FlorestaLeao
 STYLE["width"], STYLE["height"] = 1400, "650px"
 
@@ -62,7 +63,7 @@ class Terra:
         self.falou = Texto(self.universo, FACA_FOI)
         self.usar = Texto(self.universo, FACA_USA)
         """
-        self.terra = Elemento(TERRA, style=dict(left="100px", width="250px", Top="800px"), vai=self.pega)
+        self.terra = Elemento(TERRA, x=500, y=250, w=320, h=320, vai=self.pega)
         self.longe = Cena()
         self.na_mao = False
         self.terra.entra(self.universo)
