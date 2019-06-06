@@ -18,17 +18,17 @@ class Fruta:
         maca = Elemento(imagem, tit=tit, x=x, y=y, w=60, h=40)
         maca.entra(parque)
 class Esportes:  
-    def __init__(self, parque): 
-        peteca = Elemento(PETECA, x=150, y=100, w=50, h=40)
+    def __init__(self, parque,tit="bola", imagem=BOLA, x=100, y=200): 
+        peteca = Elemento(imagem, tit=tit, x=x, y=y, w=50, h=40)
         peteca.entra(parque)
         bola = Elemento(BOLA, x=100, y=200, w=80, h=60)
         bola.entra(parque)
         
 class Bicho:
-    def __init__(self, parque):
-        coelho = Elemento(COELHO,  x=100, y=100, w=60, h=40)
+    def __init__(self, parque, tit="coelho", imagem=COELHO, x=200, y=100):
+        coelho = Elemento(COELHO, x=100, y=100, w=60, h=40)
         coelho.entra(parque)
-        passarinho = Elemento(PASSARINHO, x=90, y=90, w=70, h=70)
+        passarinho = Elemento(imagem, tit=tit, x=x, y=y, w=70, h=70)
         passarinho.entra(parque)
         
 class Crianca:
@@ -45,7 +45,9 @@ class Conjuntos:
         Crianca(parque, tit="frutas", x=80, y=100)       
         Fruta(parque, x=230, y=230)
         Fruta(parque, tit="laranja", imagem=LARANJA, x=330, y=230)
-        Esportes(parque)
+        Esportes(parque, x=200, y=150)
+        Esportes(parque, tit="peteca", imagem=PETECA, x=250, y=200) 
+        Bicho(parque, tit="passarinho", imagem=PASSARINHO, x=280, y=200)
         parque.vai()
         
 Conjuntos()
