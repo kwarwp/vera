@@ -155,7 +155,7 @@ class Universo:
         terra = Terra(self.universo)
         estacao = Estacao(self.universo, left="300px", top="150px", icone=PESSOA)
         estacao2 = Estacao(self.universo, left="30px", top="50px", icone=ANIMAL)
-        estacao3 = Estacao(self.universo, left="350px", top="420px", icone=OBJETO)
+        estacao3 = Estacao(self.universo, left="380px", top="410px", icone=OBJETO)
         foguete = Foguete(self.universo, left=20, top=500)
         doca = Doca(self.universo, left="400px", top="150px")
               
