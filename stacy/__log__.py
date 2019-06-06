@@ -127,3 +127,10 @@ NameError: name 'Pessoa' is not defined
     pessoa = PESSOA(self.universo, left="200px", top="30px")
 TypeError: 'str' object is not callable
 '''},
+{'date': 'Thu Jun 06 2019 09:10:32.667 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 15
+  PESSOAS = [IMGUR.format(icone) for icone in "H0sLGRO.png rJXklVA.png WjXPkDj.png 31bHmRB.png kSEbjOG.png " 
+                                                                                                               ^
+SyntaxError: invalid syntax
+'''},
