@@ -352,3 +352,10 @@ SyntaxError: keyword argument repeated
                                                  ^
 SyntaxError: keyword argument repeated
 '''},
+{'date': 'Thu Jun 06 2019 11:05:51.925 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 50
+  crianca = Elemento(CRIANCA, tit=tit, x=x, y=y, w=70, h=140, style={"opacity": 0.3}
+                                                                                              ^
+SyntaxError: invalid syntax
+'''},
