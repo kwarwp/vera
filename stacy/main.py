@@ -156,7 +156,7 @@ class Universo:
         estacao = Estacao(self.universo, left="300px", top="150px", icone=PESSOA)
         estacao2 = Estacao(self.universo, left="30px", top="50px", icone=ANIMAL)
         estacao3 = Estacao(self.universo, left="150px", top="400px", icone=OBJETO)
-        foguete = Foguete(self.universo, left="50px", top="450px")
+        foguete = Foguete(self.universo, left="50px", top="800px")
         doca = Doca(self.universo, left="400px", top="150px")
               
     def vai(self):
