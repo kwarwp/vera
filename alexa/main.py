@@ -30,7 +30,7 @@ class Bicho:
     def __init__(self, parque, tit="coelho", imagem=COELHO, x=30, y=40):
         #coelho = Elemento(COELHO, x=100, y=100, w=60, h=40)
         #coelho.entra(parque)
-        passarinho = Elemento(imagem, tit=tit, x=x, y=y, w=70, h=70)
+        passarinho = Elemento(imagem, tit=tit, x=x, y=y, w=70, h=50)
         passarinho.entra(parque)
         
 class Calcado:
