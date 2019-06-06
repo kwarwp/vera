@@ -20,6 +20,7 @@ PEIXE_COLOR = "https://i.imgur.com/ikkrZ4G.png"
 PEIXE_VERDINHO = "https://i.imgur.com/mJWpSdm.png"
 PEIXE_ROSINHA = "https://i.imgur.com/MU3hEl6.png"
 PEIXE_VERMELHO = "https://i.imgur.com/RQ9ZgEs.png"
+PEIXE_AZULMARINHO = "https://i.imgur.com/tqnZnop.png"
 CENA_PESCARIA = "https://i.imgur.com/KQbnPXQ.jpg"
 CRIANCA = "https://i.imgur.com/U8kaaKl.jpg" #torna a crianca da imagem clicavel
 BALDE = "https://i.imgur.com/H3Hxbz7.png"
@@ -95,6 +96,11 @@ class Peixe14:
         peixe = Elemento(PEIXE_VERMELHO, tit="peixe médio", x=x, y=y, w=60, h=40, drag=True)
         peixe.entra(pescaria)
         
+class Peixe15:
+    def __init__(self, pescaria, x=350, y=200):
+        peixe = Elemento(PEIXE_AZULMARINHO, tit="peixe grande", x=x, y=y, w=60, h=40, drag=True)
+        peixe.entra(pescaria)
+        
 class Balde: #baldes clicáveis
     def __init__(self, pescaria, nome="balde", tipo_peixe="peixe grande", x=350, y=200): #tit quando arrastar o mouse em cima, surge o nome
         balde = Elemento(BALDE, x=x, y=y, tit=nome, w=100, h=100, style={"opacity": 0.3},
@@ -123,9 +129,9 @@ class jogoPescaria:
         Peixe(pescaria, x=550, y=505)
         Peixe2(pescaria, x=280, y=505)
         Peixe3(pescaria, x=590, y=440)
-        Peixe4(pescaria, x=460, y=430)
-        Peixe5(pescaria, x=410, y=480)
-        Peixe6(pescaria, x=415, y=405)
+        Peixe4(pescaria, x=460, y=420)
+        Peixe5(pescaria, x=420, y=490)
+        Peixe6(pescaria, x=400, y=405)
         Peixe7(pescaria, x=480, y=505)
         Peixe8(pescaria, x=390, y=505)
         Peixe9(pescaria, x=620, y=465)
@@ -134,6 +140,7 @@ class jogoPescaria:
         Peixe12(pescaria, x=650, y=440)
         Peixe13(pescaria, x=230, y=510)
         Peixe14(pescaria, x=530, y=425)
+        Peixe15(pescaria, x=420, y=450)
         #Jarra(pescaria)
         #Jarra(pescaria, x=200, y=230)
         Balde(pescaria, nome="balde grande", tipo_peixe="peixe grande", x=285, y=380)
