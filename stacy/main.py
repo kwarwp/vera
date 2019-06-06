@@ -88,7 +88,7 @@ class Terra:
 class Foguete:
     def __init__(self, universo, left="300px", top="300px"):
         self.universo = universo
-        self.foguete = Elemento(FOGUETE, x=800, y=180, w=320, h=280, vai=self.pega)
+        self.foguete = Elemento(FOGUETE, x=800, y=180, w=320, h=100, vai=self.pega)
         self.longe = Cena()
         self.na_mao = False
         self.foguete.entra(self.universo)
