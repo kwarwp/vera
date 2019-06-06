@@ -82,10 +82,10 @@ class Peixe12:
         peixe = Elemento(PEIXEDOZE, x=x, y=y, w=60, h=40, drag=True)
         peixe.entra(pescaria)
         
-#class Balde: caso precise de um balde clicavel
-#    def __init__(self, pescaria, x=350, y=200): #tit quando arrastar o mouse em cima, surge o nome
-#        balde = Elemento(BALDE, x=x, y=y, w=100, h=100, style={"opacity": 0.3})
-#        balde.entra(pescaria)
+class Balde: #baldes clicáveis
+    def __init__(self, pescaria, x=350, y=200): #tit quando arrastar o mouse em cima, surge o nome
+        balde = Elemento(BALDE, x=x, y=y, w=100, h=100, style={"opacity": 0.3}, drag=True)
+        balde.entra(pescaria)
         
 class Crianca:
     def __init__(self, pescaria, tit="tiago", x=350, y=200): #tit quando arrastar o mouse em cima, surge o nome
@@ -114,8 +114,12 @@ class jogoPescaria:
         Peixe12(pescaria, x=650, y=440)
         #Jarra(pescaria)
         #Jarra(pescaria, x=200, y=230)
-        Crianca(pescaria, tit="julia", x=720, y=250)
+        Balde(pescaria, x=285, y=380)
+        Balde(pescaria, x=100, y=100)
+        Balde(pescaria, x=720, y=480)
+        Balde(pescaria, x=790, y=440)
         Crianca(pescaria, tit="marcos", x=180, y=280)
+        Crianca(pescaria, tit="julia", x=720, y=250)
         pescaria.vai()
 
 jogoPescaria()
