@@ -8,7 +8,7 @@ TEXTO_BANANA= "O macaquinho pode ficar com fome! Coloque na bolsa!"
 BANANA_FOI= "Hummm, que delícia!"
 BANANA_USA= "Você segura a banana na mão!"
 REDE = "https://i.imgur.com/9Fig2oH.png"
-TEXTO_REDE= "Caí na armadilha!"
+TEXTO_REDE= "Caí na armadilha! Pegue a faca para cortá-la!"
 COBRA = "https://i.imgur.com/nQ0StLK.png"
 
 class CenaProxy:
