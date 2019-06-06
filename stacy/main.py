@@ -86,7 +86,7 @@ class Terra:
         self.usar.vai()
         
 class Foguete:
-    def __init__(self, universo, left="300px", top="300px"):
+    def __init__(self, universo, left="800px", top="300px"):
         self.universo = universo
         self.foguete = Elemento(FOGUETE, x=800, y=180, w=200, h=200, vai=self.pega)
         self.longe = Cena()
