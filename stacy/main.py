@@ -153,7 +153,7 @@ class Universo:
         deserto = CenaProxy(self.universo)
         self.universo = Cena(UNIVERSO)
         terra = Terra(self.universo)
-        estacao = Estacao(self.universo, left="300px", top="150px", icone=PESSOA)
+        estacao = Estacao(self.universo, left="280px", top="150px", icone=PESSOA)
         estacao2 = Estacao(self.universo, left="30px", top="50px", icone=ANIMAL)
         estacao3 = Estacao(self.universo, left="380px", top="410px", icone=OBJETO)
         foguete = Foguete(self.universo, left=20, top=500)
