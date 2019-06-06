@@ -14,11 +14,9 @@ CENA_PARQUE = "https://i.imgur.com/kqWvogN.jpg"
 CRIANCA = "https://i.imgur.com/j0ETf5x.jpg"
 
 class Fruta:
-    def __init__(self, parque, x=150, y=200):
-        maca = Elemento(MACA, x=200, y=200, w=60, h=40)
+    def __init__(self, parque,tit="maçã", imagem=MACA, x=150, y=200):
+        maca = Elemento(imagem, tit=tit, x=x, y=y, w=60, h=40)
         maca.entra(parque)
-        laranja = Elemento(LARANJA, x=250, y=280, w=80, h=100)
-        laranja.entra(parque)
 class Esportes:  
     def __init__(self, parque): 
         peteca = Elemento(PETECA, x=150, y=100, w=50, h=40)
@@ -34,7 +32,7 @@ class Bicho:
         passarinho.entra(parque)
         
 class Crianca:
-    def __init__(self, parque, tit="maria", x=0, y=210):
+    def __init__(self, parque, tit="bicho", x=0, y=210):
         crianca = Elemento(CRIANCA, tit=tit, x=x, y=y, w=70, h=140, style={"opacity": 0.3})
         crianca.entra(parque)
         
@@ -46,6 +44,7 @@ class Conjuntos:
         Crianca(parque, tit="esportes", y=100)
         Crianca(parque, tit="frutas", x=80, y=100)       
         Fruta(parque, x=230, y=230)
+        Fruta(parque, tit="laranja", imagem=LARANJA, x=330, y=230)
         Esportes(parque)
         parque.vai()
         
