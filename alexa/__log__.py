@@ -379,3 +379,10 @@ SyntaxError: invalid syntax
     COISA[tit] = self
 NameError: name 'COISA' is not defined
 '''},
+{'date': 'Thu Jun 06 2019 11:12:34.974 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 54
+  Crianca(parque, tit="calcado", x=450 y=300)
+                                        ^
+SyntaxError: invalid syntax
+'''},
