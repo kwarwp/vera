@@ -12,6 +12,7 @@ BANANA_USA= "Você segura a banana na mão!"
 REDE = "https://i.imgur.com/9Fig2oH.png"
 TEXTO_REDE= "Caí na armadilha! Pegue a faca para cortá-la!"
 COBRA = "https://i.imgur.com/nQ0StLK.png"
+BISCOITO = "https://i.imgur.com/ywr5b2D.png"
 
 class CenaProxy:
     def __init__(self, aqui=None):
@@ -60,6 +61,18 @@ class Banana:
         self.na_mao = True
         self.usar.vai()
         
+class Biscoito:
+    def __init__(self, floresta_inicio):
+        self.floresta_inicio = floresta_inicio
+        self.biscoito = Elemento(BISCOITO, style=dict(left="850px", width="50px"), vai=self.pega)
+        self.longe = Cena()
+        self.na_mao = False
+        self.biscoito.entra(self.floresta_inicio)
+        
+    def pega(self, _):
+        self.fala.vai()
+        self.biscoito.vai = self.guarda
+        
 class Rede:
     def __init__(self, floresta_inicio):
         self.floresta_inicio = floresta_inicio
@@ -91,6 +104,7 @@ class FlorestaBanana:
         floresta_faca = CenaProxy(self.floresta_inicio)
         self.floresta_inicio = Cena(FLORESTA, direita=floresta_faca)
         banana = Banana(self.floresta_inicio)
+        biscoito = Biscoito(self.floresta_inicio)
         
     def vai(self):
         self.floresta_inicio.vai()
