@@ -16,7 +16,7 @@ class CenaProxy:
         self.aqui = aqui
         self.floresta_banana = None
     def vai(self):
-        from rachel.main import FlorestaBanana
+        from cobra.main import FlorestaBanana
         self.floresta_banana = FlorestaBanana()
         self.floresta_banana.esquerda = self.aqui
         self.floresta_banana.vai()
