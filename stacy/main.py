@@ -5,7 +5,7 @@ from elemento.main import Elemento
 STYLE["width"], STYLE["height"] = 1400, "650px"
 
 FOGUETE = "https://i.imgur.com/Q33m8SY.png" 
-JANELA = "https://i.imgur.com/vCN15DD.jpg"
+JANELA = "https://i.imgur.com/hITHdyc.png"
 ESTACAO = "https://i.imgur.com/ybteKID.png"
 TERRA = "https://i.imgur.com/rJJHQJj.png"
 UNIVERSO = "https://i.imgur.com/tjT0IqM.jpg"
@@ -122,8 +122,8 @@ class Estacao:
         self.usar = Texto(self.universo, FACA_USA)
         """
         self.estacao = Elemento(ESTACAO, x=left, y=top, w=300, h=240, vai=self.pega)
-        self.icone = Elemento(icone, style=dict(left=add(left,50), top=add(top,100), width="500px", height="50px"), vai=self.pega)
-        self.janela = Elemento(JANELA, style=dict(left=add(left,50), top=add(top,100), width="500px", height="50px"), vai=self.pega)
+        self.icone = Elemento(icone, style=dict(left=add(left,55), top=add(top,85), width="400px", height="40px"), vai=self.pega)
+        self.janela = Elemento(JANELA, style=dict(left=add(left,50), top=add(top,80), width="500px", height="50px"), vai=self.pega)
         self.longe = Cena()
         self.na_mao = False
         self.estacao.entra(self.universo)
