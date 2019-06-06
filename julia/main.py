@@ -1,10 +1,11 @@
 # vera.julia.main.py
-from _spy.vitollino.main import Cena, STYLE
+from _spy.vitollino.main import Cena, STYLE, INVENTARIO
 from elemento.main import Elemento #permite a movimentacao
 STYLE["width"] = 900
 STYLE["heigth"] = "900px"
 
 #JARRA = "https://i.imgur.com/y2YyMOM.jpg"
+PEIXE_INV ="https://img2.gratispng.com/20171128/cde/fish-png-clip-art-image-5a1d0ac16b1395.1816909515118527374386.jpg"
 PEIXE = "https://i.imgur.com/AcTCoXY.png"
 PEIXEDOIS = "https://i.imgur.com/9Q52391.png"
 PEIXETRES = "https://i.imgur.com/uAjOtz2.png"
@@ -23,12 +24,12 @@ BALDE = "https://i.imgur.com/U8kaaKl.jpg"
 
 class Peixe:
     def __init__(self, pescaria, x=350, y=200):
-        peixe = Elemento(PEIXE, x=x, y=y, w=60, h=40, drag=True)
+        peixe = Elemento(PEIXE, tit="peixe grande", x=x, y=y, w=60, h=40, drag=True)
         peixe.entra(pescaria)
 
 class Peixe2:
     def __init__(self, pescaria, x=350, y=200):
-        peixe = Elemento(PEIXEDOIS, x=x, y=y, w=60, h=40, drag=True)
+        peixe = Elemento(PEIXEDOIS, tit="peixe grande", x=x, y=y, w=60, h=40, drag=True)
         peixe.entra(pescaria)
 
 class Peixe3:
@@ -83,9 +84,14 @@ class Peixe12:
         peixe.entra(pescaria)
         
 class Balde: #baldes clicáveis
-    def __init__(self, pescaria, x=350, y=200): #tit quando arrastar o mouse em cima, surge o nome
-        balde = Elemento(BALDE, x=x, y=y, w=100, h=100, style={"opacity": 0.3}, drag=True)
+    def __init__(self, pescaria, nome="balde", x=350, y=200): #tit quando arrastar o mouse em cima, surge o nome
+        balde = Elemento(BALDE, x=x, y=y, tit=nome, w=100, h=100, style={"opacity": 0.3},
+        drop = {"peixe grande": self.pesca})
         balde.entra(pescaria)
+        
+    def pesca(self, a, b):
+        peixe = Elemento(PEIXE_INV, tit="peixe grande")
+        INVENTARIO.bota(peixe)
         
 class Crianca:
     def __init__(self, pescaria, tit="tiago", x=350, y=200): #tit quando arrastar o mouse em cima, surge o nome
@@ -100,6 +106,7 @@ class Crianca:
 class jogoPescaria:
     def __init__(self):
         pescaria = Cena(CENA_PESCARIA)
+        INVENTARIO.inicia()
         Peixe(pescaria, x=550, y=500)
         Peixe2(pescaria, x=280, y=505)
         Peixe3(pescaria, x=560, y=430)
@@ -114,8 +121,8 @@ class jogoPescaria:
         Peixe12(pescaria, x=650, y=440)
         #Jarra(pescaria)
         #Jarra(pescaria, x=200, y=230)
-        Balde(pescaria, x=285, y=380)
-        Balde(pescaria, x=100, y=100)
+        Balde(pescaria, nome="balde grande", x=285, y=380)
+        Balde(pescaria, x=10, y=410)
         Balde(pescaria, x=720, y=480)
         Balde(pescaria, x=790, y=440)
         Crianca(pescaria, tit="marcos", x=180, y=280)
