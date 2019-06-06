@@ -100,7 +100,7 @@ class Foguete:
 class Doca:
     def __init__(self, universo, left="300px", top="300px"):
         self.universo = universo
-        self.doca = Elemento(DOCA, x=left, y=top, w=150, h=250, vai=self.pega, style={"transform": "rotate(300deg)"})
+        self.doca = Elemento(DOCA, x=left, y=top, w=150, h=350, vai=self.pega, style={"transform": "rotate(300deg)"})
         self.longe = Cena()
         self.na_mao = False
         self.doca.entra(self.universo)
@@ -157,7 +157,7 @@ class Universo:
         estacao2 = Estacao(self.universo, left="30px", top="50px", icone=ANIMAL)
         estacao3 = Estacao(self.universo, left="380px", top="410px", icone=OBJETO)
         foguete = Foguete(self.universo, left=20, top=500)
-        doca = Doca(self.universo, left="600px", top="250px")
+        doca = Doca(self.universo, left="700px", top="250px")
               
     def vai(self):
         self.universo.vai()
