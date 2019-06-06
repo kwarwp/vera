@@ -21,7 +21,7 @@ PEIXE_VERDINHO = "https://i.imgur.com/mJWpSdm.png"
 PEIXE_ROSINHA = "https://i.imgur.com/MU3hEl6.png"
 CENA_PESCARIA = "https://i.imgur.com/KQbnPXQ.jpg"
 CRIANCA = "https://i.imgur.com/U8kaaKl.jpg" #torna a crianca da imagem clicavel
-BALDE = "https://i.imgur.com/U8kaaKl.jpg"
+BALDE = "https://i.imgur.com/H3Hxbz7.png"
 
 class Peixe:
     def __init__(self, pescaria, x=350, y=200):
@@ -130,9 +130,9 @@ class jogoPescaria:
         #Jarra(pescaria)
         #Jarra(pescaria, x=200, y=230)
         Balde(pescaria, nome="balde grande", tipo_peixe="peixe grande", x=285, y=380)
-        Balde(pescaria, nome="balde pequeno", tipo_peixe="peixe pequeno", x=10, y=410)
-        Balde(pescaria, nome="balde médio", tipo_peixe="peixe médio", x=720, y=480)
-        Balde(pescaria, nome="balde pequeno", tipo_peixe="peixe pequeno", x=790, y=440)
+        Balde(pescaria, nome="balde pequeno", tipo_peixe="peixe pequeno", x=15, y=410)
+        Balde(pescaria, nome="balde médio", tipo_peixe="peixe médio", x=720, y=460)
+        Balde(pescaria, nome="balde pequeno", tipo_peixe="peixe pequeno", x=800, y=415)
         Crianca(pescaria, tit="marcos", x=180, y=280)
         Crianca(pescaria, tit="julia", x=720, y=250)
         pescaria.vai()
