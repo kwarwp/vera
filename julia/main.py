@@ -36,7 +36,7 @@ class Peixe2:
 
 class Peixe3:
     def __init__(self, pescaria, x=350, y=200):
-        peixe = Elemento(PEIXE_VERD2, tit="peixe pequeno", x=x, y=y, w=60, h=40, drag=True)
+        peixe = Elemento(PEIXE_VERD2, tit="peixe médio", x=x, y=y, w=60, h=40, drag=True)
         peixe.entra(pescaria)
 
 class Peixe4:
@@ -92,7 +92,7 @@ class Peixe13:
 
 class Peixe14:
     def __init__(self, pescaria, x=350, y=200):
-        peixe = Elemento(PEIXE_VERMELHO, tit="peixe pequeno", x=x, y=y, w=60, h=40, drag=True)
+        peixe = Elemento(PEIXE_VERMELHO, tit="peixe médio", x=x, y=y, w=60, h=40, drag=True)
         peixe.entra(pescaria)
         
 class Balde: #baldes clicáveis
@@ -120,7 +120,7 @@ class jogoPescaria:
     def __init__(self):
         pescaria = Cena(CENA_PESCARIA)
         INVENTARIO.inicia()
-        Peixe(pescaria, x=550, y=500)
+        Peixe(pescaria, x=550, y=505)
         Peixe2(pescaria, x=280, y=505)
         Peixe3(pescaria, x=590, y=440)
         Peixe4(pescaria, x=460, y=430)
@@ -133,7 +133,7 @@ class jogoPescaria:
         Peixe11(pescaria, x=330, y=500)
         Peixe12(pescaria, x=650, y=440)
         Peixe13(pescaria, x=230, y=510)
-        Peixe14(pescaria, x=230, y=510)
+        Peixe14(pescaria, x=530, y=425)
         #Jarra(pescaria)
         #Jarra(pescaria, x=200, y=230)
         Balde(pescaria, nome="balde grande", tipo_peixe="peixe grande", x=285, y=380)
