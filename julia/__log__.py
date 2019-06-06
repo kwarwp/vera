@@ -404,3 +404,10 @@ IndentationError: expected an indented block
                      ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Thu Jun 06 2019 10:18:55.660 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 89
+  self.tipo = tipo_peixe
+            ^
+SyntaxError: keyword can't be an expression
+'''},
