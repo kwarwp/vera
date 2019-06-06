@@ -55,7 +55,7 @@ class Peixe6:
 
 class Peixe7:
     def __init__(self, pescaria, x=350, y=200):
-        peixe = Elemento(PEIXE_SALM, tit="peixe pequeno", x=x, y=y, w=60, h=40, drag=True)
+        peixe = Elemento(PEIXE_SALM, tit="peixe grande", x=x, y=y, w=60, h=40, drag=True)
         peixe.entra(pescaria)
 
 class Peixe8:
@@ -124,7 +124,7 @@ class jogoPescaria:
         Peixe8(pescaria, x=390, y=505)
         Peixe9(pescaria, x=620, y=465)
         Peixe10(pescaria, x=520, y=455)
-        Peixe11(pescaria, x=320, y=500)
+        Peixe11(pescaria, x=330, y=500)
         Peixe12(pescaria, x=650, y=440)
         Peixe13(pescaria, x=230, y=510)
         #Jarra(pescaria)
