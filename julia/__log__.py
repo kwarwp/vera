@@ -397,3 +397,10 @@ SyntaxError: invalid syntax
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Thu Jun 06 2019 09:42:31.80 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 85
+  class Balde: caso precise de um balde clicavel
+                     ^
+SyntaxError: invalid syntax
+'''},
