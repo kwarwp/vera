@@ -100,7 +100,7 @@ class Foguete:
 class Doca:
     def __init__(self, universo, left="300px", top="300px"):
         self.universo = universo
-        self.doca = Elemento(DOCA, x=left, y=top, w=150, h=350, vai=self.pega, style={"transform": "rotate(300deg)"})
+        self.doca = Elemento(DOCA, x=left, y=top, w=250, h=350, vai=self.pega, style={"transform": "rotate(300deg)"})
         self.longe = Cena()
         self.na_mao = False
         self.doca.entra(self.universo)
