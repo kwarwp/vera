@@ -5,17 +5,16 @@ STYLE["width"] = 900
 STYLE["heigth"] = "900px"
 
 #JARRA = "https://i.imgur.com/y2YyMOM.jpg"
-PEIXE_INV ="https://img2.gratispng.com/20171128/cde/fish-png-clip-art-image-5a1d0ac16b1395.1816909515118527374386.jpg"
-PEIXE = "https://i.imgur.com/AcTCoXY.png"
-PEIXEDOIS = "https://i.imgur.com/9Q52391.png"
-PEIXETRES = "https://i.imgur.com/uAjOtz2.png"
-PEIXEQUATRO = "https://i.imgur.com/1JMWIAT.png"
-PEIXECINCO = "https://i.imgur.com/8l90Llu.png"
-PEIXESEIS = "https://i.imgur.com/P75bVuk.png"
-PEIXESETE = "https://i.imgur.com/LQM8xrS.png"
-PEIXEOITO = "https://i.imgur.com/nayN8B4.png"
-PEIXENOVE ="https://i.imgur.com/ObSSnqI.png"
-PEIXEDEZ = "https://i.imgur.com/pq5Xvav.png"
+PEIXE_INV ="https://i.imgur.com/HXmgNzJ.jpg"
+PEIXE_SALM = "https://i.imgur.com/AcTCoXY.png"
+PEIXE_VERD1 = "https://i.imgur.com/9Q52391.png"
+PEIXE_VERD2 = "https://i.imgur.com/uAjOtz2.png"
+PEIXEROSA = "https://i.imgur.com/1JMWIAT.png"
+PEIXE_AZULROXO = "https://i.imgur.com/8l90Llu.png"
+PEIXE_CINZA = "https://i.imgur.com/P75bVuk.png"
+PEIXE_LARANJA = "https://i.imgur.com/LQM8xrS.png"
+PEIXE_AZULARANJA ="https://i.imgur.com/ObSSnqI.png"
+PEIXE_LARANJINHA = "https://i.imgur.com/pq5Xvav.png"
 PEIXEONZE = "https://i.imgur.com/zTPwzkP.png"
 PEIXEDOZE = "https://i.imgur.com/ovGd1gp.png"
 CENA_PESCARIA = "https://i.imgur.com/KQbnPXQ.jpg"
@@ -24,47 +23,47 @@ BALDE = "https://i.imgur.com/U8kaaKl.jpg"
 
 class Peixe:
     def __init__(self, pescaria, x=350, y=200):
-        peixe = Elemento(PEIXE, tit="peixe grande", x=x, y=y, w=60, h=40, drag=True)
+        peixe = Elemento(PEIXE_SALM, tit="peixe grande", x=x, y=y, w=60, h=40, drag=True)
         peixe.entra(pescaria)
 
 class Peixe2:
     def __init__(self, pescaria, x=350, y=200):
-        peixe = Elemento(PEIXEDOIS, tit="peixe grande", x=x, y=y, w=60, h=40, drag=True)
+        peixe = Elemento(PEIXE_VERD1, tit="peixe grande", x=x, y=y, w=60, h=40, drag=True)
         peixe.entra(pescaria)
 
 class Peixe3:
     def __init__(self, pescaria, x=350, y=200):
-        peixe = Elemento(PEIXETRES, x=x, y=y, w=60, h=40, drag=True)
+        peixe = Elemento(PEIXE_VERD2, tit="peixe pequeno", x=x, y=y, w=60, h=40, drag=True)
         peixe.entra(pescaria)
 
 class Peixe4:
     def __init__(self, pescaria, x=350, y=200):
-        peixe = Elemento(PEIXEQUATRO, x=x, y=y, w=60, h=40, drag=True)
+        peixe = Elemento(PEIXEROSA, x=x, y=y, w=60, h=40, drag=True)
         peixe.entra(pescaria)
 
 class Peixe5:
     def __init__(self, pescaria, x=350, y=200):
-        peixe = Elemento(PEIXECINCO, x=x, y=y, w=60, h=40, drag=True)
+        peixe = Elemento(PEIXE_AZULROXO, x=x, y=y, w=60, h=40, drag=True)
         peixe.entra(pescaria)
 
 class Peixe6:
     def __init__(self, pescaria, x=350, y=200):
-        peixe = Elemento(PEIXESEIS, x=x, y=y, w=60, h=40, drag=True)
+        peixe = Elemento(PEIXE_CINZA, x=x, y=y, w=60, h=40, drag=True)
         peixe.entra(pescaria)
 
 class Peixe7:
     def __init__(self, pescaria, x=350, y=200):
-        peixe = Elemento(PEIXESETE, x=x, y=y, w=60, h=40, drag=True)
+        peixe = Elemento(PEIXE_LARANJA, x=x, y=y, w=60, h=40, drag=True)
         peixe.entra(pescaria)
 
 class Peixe8:
     def __init__(self, pescaria, x=350, y=200):
-        peixe = Elemento(PEIXEOITO, x=x, y=y, w=60, h=40, drag=True)
+        peixe = Elemento(PEIXE_AZULARANJA, x=x, y=y, w=60, h=40, drag=True)
         peixe.entra(pescaria)
 
 class Peixe9:
     def __init__(self, pescaria, x=350, y=200):
-        peixe = Elemento(PEIXENOVE, x=x, y=y, w=60, h=40, drag=True)
+        peixe = Elemento(PEIXE_LARANJINHA, x=x, y=y, w=60, h=40, drag=True)
         peixe.entra(pescaria)
 
 
@@ -84,13 +83,14 @@ class Peixe12:
         peixe.entra(pescaria)
         
 class Balde: #baldes clicáveis
-    def __init__(self, pescaria, nome="balde", x=350, y=200): #tit quando arrastar o mouse em cima, surge o nome
+    def __init__(self, pescaria, nome="balde", tipo_peixe="peixe grande", x=350, y=200): #tit quando arrastar o mouse em cima, surge o nome
         balde = Elemento(BALDE, x=x, y=y, tit=nome, w=100, h=100, style={"opacity": 0.3},
-        drop = {"peixe grande": self.pesca})
+        drop = {tipo_peixe: self.pesca})
+        self.tipo = tipo_peixe
         balde.entra(pescaria)
         
     def pesca(self, a, b):
-        peixe = Elemento(PEIXE_INV, tit="peixe grande")
+        peixe = Elemento(PEIXE_INV, tit=self.tipo)
         INVENTARIO.bota(peixe)
         
 class Crianca:
@@ -121,8 +121,8 @@ class jogoPescaria:
         Peixe12(pescaria, x=650, y=440)
         #Jarra(pescaria)
         #Jarra(pescaria, x=200, y=230)
-        Balde(pescaria, nome="balde grande", x=285, y=380)
-        Balde(pescaria, x=10, y=410)
+        Balde(pescaria, nome="balde grande", tipo_peixe="peixe grande", x=285, y=380)
+        Balde(pescaria, nome="balde pequeno", tipo_peixe="peixe pequeno", x=10, y=410)
         Balde(pescaria, x=720, y=480)
         Balde(pescaria, x=790, y=440)
         Crianca(pescaria, tit="marcos", x=180, y=280)
