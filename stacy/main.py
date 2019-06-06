@@ -121,7 +121,7 @@ class Estacao:
         self.usar = Texto(self.universo, FACA_USA)
         """
         self.estacao = Elemento(ESTACAO, style=dict(left=left, top=top, width="200px"), vai=self.pega)
-        self.icone = Elemento(icone, style=dict(left=add(left,50), top=add(top,100), width="50px", height="50px"), vai=self.pega)
+        self.icone = Elemento(icone, style=dict(left=add(left,50), top=add(top,100), width="500px", height="50px"), vai=self.pega)
         self.longe = Cena()
         self.na_mao = False
         self.estacao.entra(self.universo)
