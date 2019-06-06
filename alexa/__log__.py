@@ -317,3 +317,10 @@ SyntaxError: invalid syntax
                                         ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Thu Jun 06 2019 09:24:35.854 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 20
+  laranja = Elemento(LARANJA, tit="laranja" x=250, y=280, w=80, h=100)
+                                             ^
+SyntaxError: invalid syntax
+'''},
