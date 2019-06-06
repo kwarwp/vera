@@ -324,3 +324,10 @@ SyntaxError: invalid syntax
                                              ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Thu Jun 06 2019 09:31:57.481 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 18
+  maca = Elemento(imagem, tit=tit x=x, y=y, w=60, h=40)
+                                   ^
+SyntaxError: invalid syntax
+'''},
