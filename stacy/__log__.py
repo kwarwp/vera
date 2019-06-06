@@ -141,3 +141,10 @@ SyntaxError: invalid syntax
                                                                                                                ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Thu Jun 06 2019 09:14:38.587 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 15
+  PESSOAS = [IMGUR.format(icone) for icone in "H0sLGRO.png rJXklVA.png WjXPkDj.png 31bHmRB.png kSEbjOG.png " 
+                                                                                                               ^
+SyntaxError: invalid syntax
+'''},
