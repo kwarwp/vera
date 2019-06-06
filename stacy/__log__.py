@@ -187,3 +187,10 @@ SyntaxError: invalid syntax
     estacao = Estacao(self.universo_Estacao.esquerda , left="80px", top="250px", icone=PESSOA)
 AttributeError: 'Universo' object has no attribute 'universo_Estacao'
 '''},
+{'date': 'Thu Jun 06 2019 09:59:33.413 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 155
+  estacao = Estacao(self.universo, left="250px", top="80px", icone=ANIMAL))
+                                                                          ^
+SyntaxError: invalid syntax
+'''},
