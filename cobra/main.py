@@ -1,7 +1,9 @@
 # vera.cobra.main.py
 # vera.rachel.main.py
 "http://supygirls.pythonanywhere.com"
-from _spy.vitollino.main import Cena, Elemento, Texto, INVENTARIO
+from _spy.vitollino.main import Cena, Elemento, Texto, INVENTARIO, STYLE
+STYLE["width"] = 1400
+STYLE["height"] = "650px"
 # from amanda.main import FlorestaFaca
 FLORESTA = "https://i.imgur.com/VHaolvA.jpg"
 BANANA = "https://i.imgur.com/HnIHJd7.png"
@@ -37,7 +39,7 @@ class Banana:
         self.floresta_inicio = floresta_inicio
         self.fala = Texto(self.floresta_inicio, TEXTO_BANANA)
         self.falou = Texto(self.floresta_inicio, BANANA_FOI)
-        self.banana = Elemento(BANANA, style=dict(left="230px", width="50px"), vai=self.pega)
+        self.banana = Elemento(COBRA, style=dict(left="230px", width="50px"), vai=self.pega)
         self.longe = Cena()
         self.na_mao = False
         self.banana.entra(self.floresta_inicio)
@@ -87,10 +89,10 @@ class FlorestaBanana:
     def __init__(self):
         # floresta_faca = FlorestaFaca() -XX- ERRO!
         self.floresta_inicio = None
-        floresta_faca = CenaProxy(self.floresta_inicio)
-        self.floresta_inicio = Cena(FLORESTA, direita=floresta_faca)
-        banana = Banana(self.floresta_inicio)
-        rede = Rede(self.floresta_inicio)
+        floresta_direita = CenaProxy(self.floresta_inicio)
+        self.floresta_inicio = Cena(FLORESTA, direita=floresta_direita)
+        # banana = Banana(self.floresta_inicio)
+        # rede = Rede(self.floresta_inicio)
         cobra = Cobra(self.floresta_inicio)
         
     def vai(self):
