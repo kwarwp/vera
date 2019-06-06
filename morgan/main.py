@@ -6,7 +6,6 @@ FLORESTA = "https://i.imgur.com/vlJS7Ry.jpg"
 BANANA = "https://i.imgur.com/HnIHJd7.png"
 TEXTO_LEAO= "O leão está com fome, tome cuidado!Se você não correr ele vai te comer"
 LEAO_COME= "E morreu!"
-TEXTO_LEAO= "Que belo leão!Vou tirar uma foto"
 LEAO_COME= "Tome cuidado para o leão não se assustar, não faça movimentos bruscos!"
 LEAO_USA= "Alimente o leão com o macaco!"
 
