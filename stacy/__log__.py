@@ -134,3 +134,10 @@ TypeError: 'str' object is not callable
                                                                                                                ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Thu Jun 06 2019 09:12:48.873 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 15
+  PESSOAS = [IMGUR.format(icone) for icone in "H0sLGRO.png rJXklVA.png WjXPkDj.png 31bHmRB.png kSEbjOG.png " 
+                                                                                                               ^
+SyntaxError: invalid syntax
+'''},
