@@ -4,16 +4,16 @@ from elemento.main import Elemento
 STYLE["width"] = 600
 STYLE["heigth"] = "600px"
 
-LARANJA = "https://i.imgur.com/rrX3OfV.png"
-MACA = "https://i.imgur.com/xzBftDW.jpg"
-COELHO = "https://i.imgur.com/yY22qoF.jpg"
-PASSARINHO = "https://i.imgur.com/HZVP9am.jpg"
-PETECA = "https://i.imgur.com/lkby3FK.jpg"
-BOLA = "https://i.imgur.com/5KDBA8Z.jpg"
+LARANJA = "https://i.imgur.com/XXi1abd.png"
+MACA = "https://i.imgur.com/8aCEBLc.png"
+COELHO = "https://i.imgur.com/Tm65bCu.png"
+PASSARINHO = "https://i.imgur.com/0BfAZQo.png"
+PETECA = "https://i.imgur.com/bYAo3kt.png"
+BOLA = "https://i.imgur.com/yUEgszl.png"
 CENA_PARQUE = "https://i.imgur.com/kqWvogN.jpg"
 CRIANCA = "https://i.imgur.com/j0ETf5x.jpg"
-TENIS = "https://i.imgur.com/CZBRVIk.png"
-GALOCHA = "https://i.imgur.com/9JmKVA4.jpg"
+TENIS = "https://i.imgur.com/nwKWo8x.png"
+GALOCHA = "https://i.imgur.com/JlGV4P8.png"
 
 class Fruta:
     def __init__(self, parque,tit="maçã", imagem=MACA, x=200, y=200):
@@ -48,10 +48,10 @@ class Crianca:
 class Conjuntos:
     def __init__(self):
         parque = Cena(CENA_PARQUE)
-        Crianca(parque, tit="bicho", x=60, y=300)
+        Crianca(parque, tit="bicho", x=60, y=400)
         Crianca(parque, tit="esportes", x=150, y=300)
-        Crianca(parque, tit="frutas", x=80, y=100) 
-        Crianca(parque, tit="calcado", y=200)
+        Crianca(parque, tit="frutas", x=400, y=300) 
+        Crianca(parque, tit="calcado", x=500, y=300)
         Fruta(parque, x=100, y=230)
         Fruta(parque, tit="laranja", imagem=LARANJA, x=330, y=90)
         Esportes(parque, x=100, y=150)
