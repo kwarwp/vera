@@ -24,7 +24,7 @@ class FlorestaMacaco:
         floresta_inicio = Cena(FLORESTA, direita=floresta_faca)
         self.floresta_inicio = floresta_inicio
         self.fala = Texto(self.floresta_inicio, TEXTO_MACACO)
-        self.macaco = Elemento(MACACO, style=dict(left="200px", width="50px"))
+        self.macaco = Elemento(MACACO, style=dict(left="700px", width="100px"))
         self.macaco.entra(floresta_inicio)
         self.macaco.vai=self.falamacaco
         floresta_inicio.vai()
