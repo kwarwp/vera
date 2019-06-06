@@ -1,6 +1,8 @@
 # vera.soraya.main.py
 "http://supygirls.pythonanywhere.com"
-from _spy.vitollino.main import Cena, Elemento, Texto
+from _spy.vitollino.main import Cena, Elemento, Texto, STYLE
+STYLE["width"] = 1400
+STYLE["height"] = "650px"
 FLORESTA = "https://i.imgur.com/bfO1gCN.jpg"
 MACACO = "https://i.imgur.com/dIBkMcG.png"
 TEXTO_MACACO= "Estou perdido! Ajude-me a encontrar minha mãe por favor! Mas cuidado, a floresta é perigosa..."
@@ -10,7 +12,7 @@ class CenaProxy:
         self.aqui = aqui
         self.floresta_faca = None
     def vai(self):
-        from amanda.main import FlorestaFaca
+        from rachel.main import FlorestaFaca
         self.floresta_faca = FlorestaFaca()
         self.floresta_faca.esquerda = self.aqui
         self.floresta_faca.vai()
