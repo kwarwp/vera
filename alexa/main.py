@@ -49,7 +49,7 @@ class Conjuntos:
     def __init__(self):
         parque = Cena(CENA_PARQUE)
         Crianca(parque, tit="bicho", x=60, y=300)
-        Crianca(parque, tit="esportes", y=100)
+        Crianca(parque, tit="esportes", x=150, y=300)
         Crianca(parque, tit="frutas", x=80, y=100) 
         Crianca(parque, tit="calcado", y=200)
         Fruta(parque, x=100, y=230)
