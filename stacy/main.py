@@ -86,7 +86,7 @@ class Terra:
         self.usar.vai()
         
 class Foguete:
-    def __init__(self, universo, left="800px", top="300px"):
+    def __init__(self, universo, left=200, top=100):
         self.universo = universo
         self.foguete = Elemento(FOGUETE, x=left, y=top, w=200, h=200, vai=self.pega)
         self.longe = Cena()
@@ -156,7 +156,7 @@ class Universo:
         estacao = Estacao(self.universo, left="300px", top="150px", icone=PESSOA)
         estacao2 = Estacao(self.universo, left="30px", top="50px", icone=ANIMAL)
         estacao3 = Estacao(self.universo, left="150px", top="400px", icone=OBJETO)
-        foguete = Foguete(self.universo, left="50px", top="800px")
+        foguete = Foguete(self.universo, left=50, top=450)
         doca = Doca(self.universo, left="400px", top="150px")
               
     def vai(self):
