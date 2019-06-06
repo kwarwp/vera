@@ -345,3 +345,10 @@ SyntaxError: invalid syntax
                                              ^
 SyntaxError: keyword argument repeated
 '''},
+{'date': 'Thu Jun 06 2019 10:26:32.313 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 40
+  galocha = Elemento(imagem, tit=tit, x=x, w=w, w=80, h=50)
+                                                 ^
+SyntaxError: keyword argument repeated
+'''},
