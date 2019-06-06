@@ -5,7 +5,7 @@ STYLE["width"] = 900
 STYLE["heigth"] = "900px"
 
 #JARRA = "https://i.imgur.com/y2YyMOM.jpg"
-PEIXE_INV ="https://i.imgur.com/HXmgNzJ.jpg"
+PEIXE_INV ="https://i.imgur.com/nZDmsh0.png"
 PEIXE_AMARELO ="https://i.imgur.com/kcPdkmq.png"
 PEIXE_VERD1 = "https://i.imgur.com/9Q52391.png"
 PEIXE_VERD2 = "https://i.imgur.com/uAjOtz2.png"
