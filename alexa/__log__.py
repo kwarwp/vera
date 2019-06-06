@@ -310,3 +310,10 @@ NameError: name 'Bola' is not defined
                                        ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Thu Jun 06 2019 09:10:38.871 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 46
+  Crianca(parque, tit="esportes", x=40 y=85)
+                                        ^
+SyntaxError: invalid syntax
+'''},
