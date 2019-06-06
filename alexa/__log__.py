@@ -303,3 +303,10 @@ TypeError: __init__() got an unexpected keyword argument 'x'
     Bola(parque)
 NameError: name 'Bola' is not defined
 '''},
+{'date': 'Thu Jun 06 2019 09:09:30.123 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 46
+  Crianca(parque, tit="esportes", x=0 y=85)
+                                       ^
+SyntaxError: invalid syntax
+'''},
