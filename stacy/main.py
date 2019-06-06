@@ -97,7 +97,7 @@ class Foguete:
         self.foguete.vai = self.guarda
         
 class Doca:
-    def __init__(self, universo, left="100px", top="300px"):
+    def __init__(self, universo, left="300px", top="300px"):
         self.universo = universo
         self.doca = Elemento(DOCA, style=dict(left=left, top=top, width="150px", height="300px"), vai=self.pega)
         self.longe = Cena()
