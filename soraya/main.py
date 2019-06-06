@@ -1,7 +1,7 @@
 # vera.soraya.main.py
 "http://supygirls.pythonanywhere.com"
 from _spy.vitollino.main import Cena, Elemento, Texto, STYLE
-STYLE["width"] = 1400
+STYLE["width"] = 1200
 STYLE["height"] = "650px"
 FLORESTA = "https://i.imgur.com/bfO1gCN.jpg"
 MACACO = "https://i.imgur.com/dIBkMcG.png"
