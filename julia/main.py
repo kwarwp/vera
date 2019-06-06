@@ -6,30 +6,31 @@ STYLE["heigth"] = "900px"
 
 #JARRA = "https://i.imgur.com/y2YyMOM.jpg"
 PEIXE_INV ="https://i.imgur.com/HXmgNzJ.jpg"
-PEIXE_SALM = "https://i.imgur.com/AcTCoXY.png"
+PEIXE_AMARELO ="https://i.imgur.com/kcPdkmq.png"
 PEIXE_VERD1 = "https://i.imgur.com/9Q52391.png"
 PEIXE_VERD2 = "https://i.imgur.com/uAjOtz2.png"
 PEIXEROSA = "https://i.imgur.com/1JMWIAT.png"
 PEIXE_AZULROXO = "https://i.imgur.com/8l90Llu.png"
 PEIXE_CINZA = "https://i.imgur.com/P75bVuk.png"
-PEIXE_ROSINHA = "https://i.imgur.com/MU3hEl6.png"
+PEIXE_SALM = "https://i.imgur.com/AcTCoXY.png"
 PEIXE_AZULARANJA ="https://i.imgur.com/ObSSnqI.png"
 PEIXE_LARANJINHA = "https://i.imgur.com/pq5Xvav.png"
 PEIXE_PRETOLARANJA = "https://i.imgur.com/zTPwzkP.png"
 PEIXE_COLOR = "https://i.imgur.com/ikkrZ4G.png"
 PEIXE_VERDINHO = "https://i.imgur.com/mJWpSdm.png"
+PEIXE_ROSINHA = "https://i.imgur.com/MU3hEl6.png"
 CENA_PESCARIA = "https://i.imgur.com/KQbnPXQ.jpg"
 CRIANCA = "https://i.imgur.com/U8kaaKl.jpg" #torna a crianca da imagem clicavel
 BALDE = "https://i.imgur.com/U8kaaKl.jpg"
 
 class Peixe:
     def __init__(self, pescaria, x=350, y=200):
-        peixe = Elemento(PEIXE_SALM, tit="peixe grande", x=x, y=y, w=60, h=40, drag=True)
+        peixe = Elemento(PEIXE_AMARELO, tit="peixe grande", x=x, y=y, w=60, h=40, drag=True)
         peixe.entra(pescaria)
 
 class Peixe2:
     def __init__(self, pescaria, x=350, y=200):
-        peixe = Elemento(PEIXE_VERD1, tit="peixe grande", x=x, y=y, w=60, h=40, drag=True)
+        peixe = Elemento(PEIXE_VERD1, tit="peixe pequeno", x=x, y=y, w=60, h=40, drag=True)
         peixe.entra(pescaria)
 
 class Peixe3:
@@ -39,48 +40,53 @@ class Peixe3:
 
 class Peixe4:
     def __init__(self, pescaria, x=350, y=200):
-        peixe = Elemento(PEIXEROSA, x=x, y=y, w=60, h=40, drag=True)
+        peixe = Elemento(PEIXEROSA, tit="peixe grande", x=x, y=y, w=60, h=40, drag=True)
         peixe.entra(pescaria)
 
 class Peixe5:
     def __init__(self, pescaria, x=350, y=200):
-        peixe = Elemento(PEIXE_AZULROXO, x=x, y=y, w=60, h=40, drag=True)
+        peixe = Elemento(PEIXE_AZULROXO, tit="peixe médio", x=x, y=y, w=60, h=40, drag=True)
         peixe.entra(pescaria)
 
 class Peixe6:
     def __init__(self, pescaria, x=350, y=200):
-        peixe = Elemento(PEIXE_CINZA, x=x, y=y, w=60, h=40, drag=True)
+        peixe = Elemento(PEIXE_CINZA, tit="peixe grande", x=x, y=y, w=60, h=40, drag=True)
         peixe.entra(pescaria)
 
 class Peixe7:
     def __init__(self, pescaria, x=350, y=200):
-        peixe = Elemento(PEIXE_ROSINHA, x=x, y=y, w=60, h=40, drag=True)
+        peixe = Elemento(PEIXE_SALM, tit="peixe pequeno", x=x, y=y, w=60, h=40, drag=True)
         peixe.entra(pescaria)
 
 class Peixe8:
     def __init__(self, pescaria, x=350, y=200):
-        peixe = Elemento(PEIXE_AZULARANJA, x=x, y=y, w=60, h=40, drag=True)
+        peixe = Elemento(PEIXE_AZULARANJA, tit="peixe pequeno", x=x, y=y, w=60, h=40, drag=True)
         peixe.entra(pescaria)
 
 class Peixe9:
     def __init__(self, pescaria, x=350, y=200):
-        peixe = Elemento(PEIXE_LARANJINHA, x=x, y=y, w=60, h=40, drag=True)
+        peixe = Elemento(PEIXE_LARANJINHA, tit="peixe pequeno", x=x, y=y, w=60, h=40, drag=True)
         peixe.entra(pescaria)
 
 
 class Peixe10:
     def __init__(self, pescaria, x=350, y=200):
-        peixe = Elemento(PEIXE_PRETOLARANJA, x=x, y=y, w=60, h=40, drag=True)
+        peixe = Elemento(PEIXE_PRETOLARANJA, tit="peixe médio", x=x, y=y, w=60, h=40, drag=True)
         peixe.entra(pescaria)
 
 class Peixe11:
     def __init__(self, pescaria, x=350, y=200):
-        peixe = Elemento(PEIXE_COLOR, x=x, y=y, w=60, h=40, drag=True)
+        peixe = Elemento(PEIXE_COLOR, tit="peixe médio", x=x, y=y, w=60, h=40, drag=True)
         peixe.entra(pescaria)
         
 class Peixe12:
     def __init__(self, pescaria, x=350, y=200):
-        peixe = Elemento(PEIXE_VERDINHO, x=x, y=y, w=60, h=40, drag=True)
+        peixe = Elemento(PEIXE_VERDINHO, tit="peixe pequeno", x=x, y=y, w=60, h=40, drag=True)
+        peixe.entra(pescaria)
+        
+class Peixe13:
+    def __init__(self, pescaria, x=350, y=200):
+        peixe = Elemento(PEIXE_ROSINHA, tit="peixe pequeno", x=x, y=y, w=60, h=40, drag=True)
         peixe.entra(pescaria)
         
 class Balde: #baldes clicáveis
@@ -118,14 +124,15 @@ class jogoPescaria:
         Peixe8(pescaria, x=390, y=505)
         Peixe9(pescaria, x=620, y=465)
         Peixe10(pescaria, x=520, y=455)
-        Peixe11(pescaria, x=320, y=490)
+        Peixe11(pescaria, x=320, y=500)
         Peixe12(pescaria, x=650, y=440)
+        Peixe13(pescaria, x=230, y=510)
         #Jarra(pescaria)
         #Jarra(pescaria, x=200, y=230)
         Balde(pescaria, nome="balde grande", tipo_peixe="peixe grande", x=285, y=380)
         Balde(pescaria, nome="balde pequeno", tipo_peixe="peixe pequeno", x=10, y=410)
-        Balde(pescaria, x=720, y=480)
-        Balde(pescaria, x=790, y=440)
+        Balde(pescaria, nome="balde médio", tipo_peixe="peixe médio", x=720, y=480)
+        Balde(pescaria, nome="balde pequeno", tipo_peixe="peixe pequeno", x=790, y=440)
         Crianca(pescaria, tit="marcos", x=180, y=280)
         Crianca(pescaria, tit="julia", x=720, y=250)
         pescaria.vai()
