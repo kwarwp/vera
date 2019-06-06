@@ -124,7 +124,7 @@ class jogoPescaria:
         Peixe2(pescaria, x=280, y=505)
         Peixe3(pescaria, x=590, y=440)
         Peixe4(pescaria, x=460, y=430)
-        Peixe5(pescaria, x=420, y=470)
+        Peixe5(pescaria, x=410, y=480)
         Peixe6(pescaria, x=415, y=405)
         Peixe7(pescaria, x=480, y=505)
         Peixe8(pescaria, x=390, y=505)
