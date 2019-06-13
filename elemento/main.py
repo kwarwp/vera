@@ -13,7 +13,7 @@ class Elemento(Element):
 
     def __init__(self, img="", vai=None, style=NDCT, tit="", alt="",
                  x=0, y=0, w=100, h=100, texto='',
-                 cena=INVENTARIO, score=NDCT, drag=False, drop={}, **kwargs):
+                 cena=INVENTARIO, score=NDCT, drag=False, drop={}, tipo="contain", **kwargs):
         self._auto_score = self.score if score else self._auto_score
         self.img, self.title, self.dropper, self.alt = img, tit, drop, alt
         self._drag = self._over = self._drop = self._dover = self.vai = lambda *_: None
@@ -29,7 +29,7 @@ class Elemento(Element):
                              'background-image': 'url({})'.format(img),
                              'background-position': '{} {}'.format(0, 0),
                              #'background-size': '{}px {}px'.format(w, h)
-                             'background-size': 'cover',
+                             'background-size': tipo,
                              'background-repeat': 'no-repeat'
                              })
         # self.style["min-width"], self.style["min-height"] = w, h
