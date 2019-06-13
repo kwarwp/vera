@@ -70,3 +70,10 @@ SyntaxError: invalid syntax
                 ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Thu Jun 13 2019 11:53:21.929 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 27
+  def vai(self)
+                ^
+SyntaxError: invalid syntax
+'''},
