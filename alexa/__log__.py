@@ -410,3 +410,10 @@ ValueError: wrong element [object Object]
 'error': '''
 Exception: <TypeError: Cannot read property 'to_js' of undefined>
 '''},
+{'date': 'Thu Jun 13 2019 11:21:46.743 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 51
+  nome = Codigo(codigo="", topo="Ilha da Aventura", style=dict: 0.3left=250, top=220, width=200, height="60px"))
+                                                               ^
+SyntaxError: invalid syntax
+'''},
