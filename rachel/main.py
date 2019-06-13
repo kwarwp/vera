@@ -1,6 +1,7 @@
 # vera.rachel.main.py
 "http://supygirls.pythonanywhere.com"
 from _spy.vitollino.main import Cena, Elemento, Texto, INVENTARIO, STYLE
+CHUVA = "https://i.imgur.com/ubkw6wx.jpg"
 STYLE["width"] = 1400
 STYLE["height"] = "650px"
 # from amanda.main import FlorestaFaca
