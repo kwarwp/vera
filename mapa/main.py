@@ -54,8 +54,8 @@ class mapaParque:
         mapa = Cena(CENA_MAPA)
         mapa.vai()
         areaPescaria(mapa, tit="pescaria", x=150, y=280)
-        areaConjuntos(mapa, tit="tiro ao alvo", x=350, y=280)
-        areaLetras(mapa, tit="carrinho bate bate", x=550, y=280)
+        areaConjuntos(mapa, tit="tiro ao alvo", x=550, y=280)
+        areaLetras(mapa, tit="carrinho bate bate", x=350, y=280)
         
                 
 mapaParque()
