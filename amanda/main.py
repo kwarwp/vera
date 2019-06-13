@@ -19,8 +19,8 @@ class CenaProxy:
         self.floresta_leao = None
     def vai(self):
         from morgan.main import FlorestaLeao
-        self.floresta_leao = FlorestaLeao()
-        self.floresta_leao.esquerda = self.aqui
+        self.floresta_leao = FlorestaLeao(self.aqui)
+        # self.floresta_leao.esquerda = self.aqui
         self.floresta_leao.vai()
 
 
@@ -60,11 +60,13 @@ class Faca:
         
         
 class FlorestaFaca:
-    def __init__(self):
+    def __init__(self, esquerda=None):
         # floresta_leao = FlorestaLeao() -XX- ERRO!
         self.floresta_inicio = None
         floresta_leao = CenaProxy(self.floresta_inicio)
-        self.floresta_inicio = Cena(FLORESTA, direita=floresta_leao)
+        esquerda = esquerda or floresta_banana
+        self.floresta_inicio = Cena(FLORESTA, esquerda=esquerda, direita=floresta_leao)
+        floresta_leao.aqui = self.floresta_inicio
         faca = Faca(self.floresta_inicio)
         
     def vai(self):
