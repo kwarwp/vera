@@ -52,10 +52,11 @@ class Leao:
        self.usar.vai()
         
 class FlorestaLeao:
-    def __init__(self):
+    def __init__(self, esquerda=None):
         self.floresta_inicio = None
         floresta_banana = CenaProxy(self.floresta_inicio)
-        self.floresta_inicio = Cena(FLORESTA, direita=floresta_banana)
+        esquerda = esquerda or floresta_banana
+        self.floresta_inicio = Cena(FLORESTA, esquerda=esquerda, direita=floresta_banana)
         leao = Leao(self.floresta_inicio)
         
         
