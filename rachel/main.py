@@ -13,6 +13,7 @@ REDE = "https://i.imgur.com/9Fig2oH.png"
 TEXTO_REDE= "Caí na armadilha! Pegue a faca para cortá-la!"
 COBRA = "https://i.imgur.com/nQ0StLK.png"
 BISCOITO = "https://i.imgur.com/ywr5b2D.png"
+CAVERNA = "https://i.imgur.com/tlLgrz9.jpg"
 
 class CenaProxy:
     def __init__(self, aqui=None):
