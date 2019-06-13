@@ -5,5 +5,5 @@ from elemento.main import Elemento
 PRAIA = "https://i.imgur.com/slKTEBc.png"
 ILHAMAR = "https://i.imgur.com/YaIP847.jpg"
 ilhamar = Cena(ILHAMAR)
-praia = Elemento(PRAIA, cena=ilhamar, x=300, y=200, h=500, style=dict(width= 700, height="650px"))
+praia = Elemento(PRAIA, cena=ilhamar, x=500, y=400, h=700, style=dict(width= 700, height="650px"))
 ilhamar.vai()
