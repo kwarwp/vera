@@ -14,6 +14,7 @@ TEXTO_REDE= "Caí na armadilha! Pegue a faca para cortá-la!"
 COBRA = "https://i.imgur.com/nQ0StLK.png"
 BISCOITO = "https://i.imgur.com/ywr5b2D.png"
 CAVERNA = "https://i.imgur.com/tlLgrz9.jpg"
+LANTERNA = "https://i.imgur.com/OO5pLxV.png"
 
 class CenaProxy:
     def __init__(self, aqui=None):
@@ -21,7 +22,7 @@ class CenaProxy:
         self.floresta_faca = None
     def vai(self):
         from amanda.main import FlorestaFaca
-        self.floresta_faca = FlorestaFaca()
+        self.floresta_faca = FlorestaFaca(self.aqui)
         self.floresta_faca.esquerda = self.aqui
         self.floresta_faca.vai()
 
@@ -101,11 +102,13 @@ class Cobra:
         self.floresta_inicio.vai()
         
 class FlorestaBanana:
-    def __init__(self):
+    def __init__(self, esquerda=None):
         # floresta_faca = FlorestaFaca() -XX- ERRO!
         self.floresta_inicio = None
         floresta_faca = CenaProxy(self.floresta_inicio)
-        self.floresta_inicio = Cena(FLORESTA, direita=floresta_faca)
+        esquerda = esquerda or floresta_faca
+        self.floresta_inicio = Cena(FLORESTA, esquerda=esquerda, direita=floresta_faca)
+        floresta_faca.aqui = self.floresta_inicio 
         banana = Banana(self.floresta_inicio)
         biscoito = Biscoito(self.floresta_inicio)
         
