@@ -35,3 +35,10 @@ NameError: name 'CENA_PESCARIA' is not defined
     INVENTARIO.inicia()
 NameError: name 'INVENTARIO' is not defined
 '''},
+{'date': 'Thu Jun 13 2019 11:21:46.188 GMt-0300 (Hora oficial do Brasil) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 11
+  def __init__(self, mapa, tit"pescaria", x=350, y=200) 
+                               ^
+SyntaxError: invalid syntax
+'''},
