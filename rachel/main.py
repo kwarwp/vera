@@ -17,6 +17,7 @@ BISCOITO = "https://i.imgur.com/ywr5b2D.png"
 CAVERNA = "https://i.imgur.com/00MjS1k.jpg"
 LANTERNA = "https://i.imgur.com/OO5pLxV.png"
 CAPA DE CHUVA = "https://i.imgur.com/09U7IBK.png"
+RIO = "https://i.imgur.com/uYrWcA2.jpg"
 
 class CenaProxy:
     def __init__(self, aqui=None):
