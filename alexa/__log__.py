@@ -406,3 +406,7 @@ SyntaxError: invalid syntax
     self._code = html.CODE(codigo)
 ValueError: wrong element [object Object]
 '''},
+{'date': 'Thu Jun 13 2019 11:13:54.741 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+Exception: <TypeError: Cannot read property 'to_js' of undefined>
+'''},
