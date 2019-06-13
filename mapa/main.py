@@ -53,9 +53,9 @@ class mapaParque:
     def __init__(self):
         mapa = Cena(CENA_MAPA)
         mapa.vai()
-        areaPescaria(mapa, tit="pescaria", x=150, y=280)
+        areaPescaria(mapa, tit="pescaria", x=150, y=350)
         areaConjuntos(mapa, tit="tiro ao alvo", x=650, y=205)
-        areaLetras(mapa, tit="carrinho bate bate", x=350, y=280)
+        areaLetras(mapa, tit="carrinho bate bate", x=350, y=105)
         
                 
 mapaParque()
