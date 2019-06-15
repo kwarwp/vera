@@ -314,3 +314,21 @@ IndentationError: expected an indented block
     escolhas = {"letra_a" : self.fala, "letra a": self.fala}
 AttributeError: 'Crianca' object has no attribute 'fala'
 '''},
+{'date': 'Sat Jun 15 2019 00:02:57.240 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 160
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 306
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 278
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 295
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 67
+    JogoLetra()
+  module <module> line 62
+    letra_m = Elemento(LETRA_M, x=320, y=180, w=30, h=30, drag=True)
+NameError: name 'LETRA_M' is not defined
+'''},
