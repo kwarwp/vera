@@ -15,16 +15,30 @@ LETRA_I = "https://i.imgur.com/3X7JyD5.jpg"
 LETRA_J = "https://i.imgur.com/N5yr7lF.jpg"
 LETRA_K = "https://i.imgur.com/0PyUE7j.jpg"
 LETRA_L = "https://i.imgur.com/suMPtAA.jpg"
+LETRA_M = ""
+LETRA_N = ""
+LETRA_O = ""
+LETRA_P = ""
+LETRA_Q = ""
+LETRA_R = ""
+LETRA_S = ""
+LETRA_T = ""
+LETRA_U = ""
+LETRA_V = ""
+LETRA_W = ""
+LETRA_X = ""
+LETRA_Y = ""
+LETRA_Z = "https://i.pinimg.com/originals/09/2b/1b/092b1b58139077e41c0b804a61903529.jpg"
 
 CENA_PARQUE = "https://i.imgur.com/bPDwwQO.jpg"
 CENA_CRIANCA = "https://i.imgur.com/hKFY2DF.png"
 UMTEXTO = "Monte uma palavra, use sua criatividade"
 
 class Crianca: 
-    def __init__(self, parque, tit="joana", x=0, y=210):
+    def __init__(self, parque, tit="joana", x=400, y=470):
         self.parque, self.tit = parque, tit
         escolhas = {"letra_a" : self.a, "letra a": self.a}
-        crianca = Elemento(CENA_CRIANCA, tit=tit, x=x, y=y, w=70, h=140, drop=escolhas, style={"opacity":0.3})
+        crianca = Elemento(CENA_CRIANCA, tit=tit, x=x, y=y, w=100, h=100, drop=escolhas, style={"opacity":0.1})
         crianca.entra(parque)
         crianca.vai = self.a
         
@@ -59,6 +73,8 @@ class JogoLetra:
         letra_k.entra(parque)
         letra_l = Elemento(LETRA_L, x=350, y=210, w=20, h=30, drag=True)
         letra_l.entra(parque)
+        letra_m = Elemento(LETRA_M, x=150, y=180, w=30, h=30, drag=True)
+        letra_m.entra(parque)
         Crianca(parque, tit="joana")
         parque.vai()
         
