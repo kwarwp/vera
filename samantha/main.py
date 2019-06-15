@@ -86,7 +86,7 @@ class JogoLetra:
         letra_r = Elemento(LETRA_R, x=150, y=180, w=30, h=30, drag=True)
         letra_r.entra(parque)
         letra_s = Elemento(LETRA_S, x=200, y=220, w=20, h=30, drag=True)
-        letra_s.entr(parque)
+        letra_s.entra(parque)
         letra_t = Elemento(LETRA_T, x=190, y=200, w=25, h=30, drag=True)
         letra_t.entra(parque)
         letra_u = Elemento(LETRA_U, x=250, y=175, w=30, h=30, drag=True)
