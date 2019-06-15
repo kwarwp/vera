@@ -38,7 +38,7 @@ class Crianca:
     def __init__(self, parque, tit="joana", x=400, y=470):
         self.parque, self.tit = parque, tit
         escolhas = {"letra_a" : self.a, "letra a": self.a}
-        crianca = Elemento(CENA_CRIANCA, tit=tit, x=x, y=y, w=100, h=100, drop=escolhas, style={"opacity":0.1})
+        crianca = Elemento(CENA_CRIANCA, tit=tit, x=x, y=y, w=100, h=100, drop=escolhas, style={"opacity":0.2})
         crianca.entra(parque)
         crianca.vai = self.a
         
