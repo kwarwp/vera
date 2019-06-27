@@ -231,3 +231,10 @@ SyntaxError: invalid syntax
     self.rede.entra(florestainicio)
 NameError: name 'florestainicio' is not defined
 '''},
+{'date': 'Thu Jun 27 2019 10:05:48.282 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 19
+  CAPA DE CHUVA = "https://i.imgur.com/09U7IBK.png"
+        ^
+SyntaxError: invalid syntax
+'''},
