@@ -1,6 +1,7 @@
 # vera.rachel.main.py
 "http://supygirls.pythonanywhere.com"
-from _spy.vitollino.main import Cena, Elemento, Texto, INVENTARIO, STYLE
+from _spy.vitollino.main import Cena, Texto, INVENTARIO, STYLE
+from elemento.main import Elemento
 CHUVA = "https://i.imgur.com/ubkw6wx.jpg"
 STYLE["width"] = 1400
 STYLE["height"] = "650px"
@@ -45,7 +46,7 @@ class Banana:
         self.floresta_inicio = floresta_inicio
         self.fala = Texto(self.floresta_inicio, TEXTO_BANANA)
         self.falou = Texto(self.floresta_inicio, BANANA_FOI)
-        self.banana = Elemento(BANANA, style=dict(left="230px", width="50px"), vai=self.pega)
+        self.banana = Elemento(BANANA, x=230, y=500, style=dict(width="50px"), vai=self.pega)
         self.longe = Cena()
         self.na_mao = False
         self.banana.entra(self.floresta_inicio)
@@ -70,8 +71,8 @@ class Banana:
 class Biscoito:
     def __init__(self, floresta_inicio):
         self.floresta_inicio = floresta_inicio
-        self.biscoito = Elemento(BISCOITO, style=dict(left="850px", width="50px"), vai=self.pega)
-        self.rede = Elemento(REDE, style=dict(left="750px", width="200px"))
+        self.biscoito = Elemento(BISCOITO, x=850, y=500, style=dict(width="50px"), vai=self.pega)
+        self.rede = Elemento(REDE,x=750, y=450, w=200, h=200, drop={"faca": self.corta})
         self.fala = Texto(self.floresta_inicio, TEXTO_REDE)
         self.longe = Cena()
         self.na_mao = False
@@ -80,6 +81,9 @@ class Biscoito:
     def pega(self, *_):
         self.rede.entra(self.floresta_inicio)
         self.fala.vai()
+        
+    def corta(self, *_):
+        self.rede.entra(self.longe)
         
 class Rede:
     def __init__(self, floresta_inicio):
