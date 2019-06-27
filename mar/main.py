@@ -17,6 +17,6 @@ boia4 = Elemento(BOIA, cena=ilhamar, x=320, y=600, h=900, style=dict(width= 30, 
 boia5 = Elemento(BOIA, cena=ilhamar, x=440, y=620, h=900, style=dict(width= 30, height="650px"))
 boia6 = Elemento(BOIA, cena=ilhamar, x=150, y=450, h=900, style=dict(width= 30, height="650px"))
 boia7 = Elemento(BOIA, cena=ilhamar, x=300, y=490, h=900, style=dict(width= 30, height="650px"))
-boia8 = Elemento(BOIA, cena=ilhamar, x=500, y=530, h=900, style=dict(width= 30, height="650px"))
-boia9 = Elemento(BOIA, cena=ilhamar, x=650, y=600, h=900, style=dict(width= 30, height="650px"))
+boia8 = Elemento(BOIA, cena=ilhamar, x=450, y=530, h=900, style=dict(width= 30, height="650px"))
+boia9 = Elemento(BOIA, cena=ilhamar, x=600, y=570, h=900, style=dict(width= 30, height="650px"))
 boia10 = Elemento(BOIA, cena=ilhamar, x=750, y=600, h=900, style=dict(width= 30, height="650px"))
