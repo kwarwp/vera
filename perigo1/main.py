@@ -10,7 +10,7 @@ REDEMOINHO = "https://i.imgur.com/pqirFJl.png"
 TUBARAO = "https://i.imgur.com/BLGZGGp.png"
 class Perigo:
     def __init__(self):
-        ilhamar = Cena(ILHAMAR)
+        self.ilhamar =ilhamar = Cena(ILHAMAR)
         # praia = Elemento(PRAIA, cena=ilhamar, x=700, y=398, h=900, style=dict(width= 500, height="650px"))
         ilhamar.vai()
         boia = Elemento(BOIA, cena=ilhamar, x=30, y=100, w=100)
@@ -24,6 +24,6 @@ class Perigo:
         redemoinho = Elemento(REDEMOINHO, cena=ilhamar, x=400, y=300, w=120, tipo="100% 30%")
         self.tubarao = Elemento(TUBARAO, cena=ilhamar, x=700, y= 500, w=150, style={"opacity":0.2}, vai=self.tub)
     def tub(self, _):
-        self.tubarao.style.opacity = 1
+        self.tubarao.elt.style.opacity = 1
         
 ilhamar = Perigo().ilhamar
