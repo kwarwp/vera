@@ -118,3 +118,10 @@ NameError: name 'floresta_banana' is not defined
                                                                                          ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Thu Jun 27 2019 10:56:42.412 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 77
+  self.corda = Elemento (CORDA, tit="corda", cena = self.floresta_inicio, x=650, y=350 vai=self.guardacorda)
+                                                                                        ^
+SyntaxError: invalid syntax
+'''},
