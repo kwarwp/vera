@@ -8,18 +8,22 @@ ILHAMAR = "https://i.imgur.com/ifRjzot.png"
 BOIA = "https://i.imgur.com/GmzOUTL.png"
 REDEMOINHO = "https://i.imgur.com/pqirFJl.png"
 TUBARAO = "https://i.imgur.com/BLGZGGp.png"
-ilhamar = Cena(ILHAMAR)
-# praia = Elemento(PRAIA, cena=ilhamar, x=700, y=398, h=900, style=dict(width= 500, height="650px"))
-ilhamar.vai()
-boia = Elemento(BOIA, cena=ilhamar, x=30, y=100, w=100)
-boia2 = Elemento(BOIA, cena=ilhamar, x=100, y=250, w=100)
-boia3 = Elemento(BOIA, cena=ilhamar, x=200, y=400, w=100)
-boia4 = Elemento(BOIA, cena=ilhamar, x=320, y=550, w=100)
-boia6 = Elemento(BOIA, cena=ilhamar, x=500, y=80, w=100)
-boia7 = Elemento(BOIA, cena=ilhamar, x=700, y=200, w=100)
-boia8 = Elemento(BOIA, cena=ilhamar, x=900, y=300, w=100)
-boia9 = Elemento(BOIA, cena=ilhamar, x=1100, y=400, w=100)
-redemoinho = Elemento(REDEMOINHO, cena=ilhamar, x=400, y=300, w=120, tipo="100% 30%")
-tubarao = Elemento(TUBARAO, cena=ilhamar, x=700, y= 500, w=150, style={"opacity":0.2}, vai=tub)
-def tub(_):
-    tubarao.style.opacity = 1
+class Perigo:
+    def __init__(self):
+        ilhamar = Cena(ILHAMAR)
+        # praia = Elemento(PRAIA, cena=ilhamar, x=700, y=398, h=900, style=dict(width= 500, height="650px"))
+        ilhamar.vai()
+        boia = Elemento(BOIA, cena=ilhamar, x=30, y=100, w=100)
+        boia2 = Elemento(BOIA, cena=ilhamar, x=100, y=250, w=100)
+        boia3 = Elemento(BOIA, cena=ilhamar, x=200, y=400, w=100)
+        boia4 = Elemento(BOIA, cena=ilhamar, x=320, y=550, w=100)
+        boia6 = Elemento(BOIA, cena=ilhamar, x=500, y=80, w=100)
+        boia7 = Elemento(BOIA, cena=ilhamar, x=700, y=200, w=100)
+        boia8 = Elemento(BOIA, cena=ilhamar, x=900, y=300, w=100)
+        boia9 = Elemento(BOIA, cena=ilhamar, x=1100, y=400, w=100)
+        redemoinho = Elemento(REDEMOINHO, cena=ilhamar, x=400, y=300, w=120, tipo="100% 30%")
+        self.tubarao = Elemento(TUBARAO, cena=ilhamar, x=700, y= 500, w=150, style={"opacity":0.2}, vai=self.tub)
+    def tub(self, _):
+        self.tubarao.style.opacity = 1
+        
+ilhamar = Perigo().ilhamar
