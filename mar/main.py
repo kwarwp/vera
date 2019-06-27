@@ -8,4 +8,4 @@ BARCO = "https://i.imgur.com/ckjd6cI.png"
 ilhamar = Cena(ILHAMAR)
 praia = Elemento(PRAIA, cena=ilhamar, x=700, y=398, h=900, style=dict(width= 500, height="650px"))
 ilhamar.vai()
-barco = Elemento(BARCO, cena=ilhamar, x=300, y=475, h=900, style=dict(width= 100, height="650px"))
+barco = Elemento(BARCO, cena=ilhamar, x=300, y=440, h=500, style=dict(width= 80, height="650px"))
