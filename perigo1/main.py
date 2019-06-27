@@ -25,5 +25,6 @@ class Perigo:
         self.tubarao = Elemento(TUBARAO, cena=ilhamar, x=700, y= 500, w=150, style={"opacity":0.2}, vai=self.tub)
     def tub(self, _):
         self.tubarao.elt.style.opacity = 1
+        self.tubarao.elt.style.width = 180
         
 ilhamar = Perigo().ilhamar
