@@ -5,8 +5,6 @@ from elemento.main import Elemento
 # from morgan.main import FlorestaLeao
 STYLE["width"], STYLE["height"] = 1400, "650px"
 FLORESTA = "https://i.imgur.com/vlJS7Ry.jpg"
-
-ANTIDOTO = "https://imgur.com/xkFpBsx.png"
 FACA = "https://i.imgur.com/H2vMcB4.png"
 TEXTO_FACA= "A faca está afiada, me cortei! Faca perigosa, melhor chutar para longe"
 FACA_FOI= "Ainda bem que me livrei daquela coisa perigosa!"
@@ -74,9 +72,9 @@ class FlorestaFaca:
         self.floresta_inicio = Cena(FLORESTA, esquerda=esquerda, direita=floresta_leao)
         floresta_leao.aqui = self.floresta_inicio
         faca = Faca(self.floresta_inicio)
-        self.lanterna = Elemento (LANTERNA,tit="lanterna", cena = self.floresta_inicio, x=300, y=500, vai=self.guarda)
+        self.lanterna = Elemento (LANTERNA,tit="lanterna", cena = self.floresta_inicio, x=1100, y=300, vai=self.guarda)
         self.capa_de_chuva = Elemento (CAPA_DE_CHUVA, tit="capa de chuva", cena = self.floresta_inicio, x=200, y=300, vai=self.guardacapa)
-        self.corda = Elemento (CORDA, tit="corda", cena = self.floresta_inicio, x=850, y=350, vai=self.guardacorda)
+        self.corda = Elemento (CORDA, tit="corda", cena = self.floresta_inicio, x=300, y=500, vai=self.guardacorda)
         
     def guarda(self, _):
         INVENTARIO.bota(self.lanterna)
