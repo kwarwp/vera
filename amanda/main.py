@@ -73,9 +73,13 @@ class FlorestaFaca:
         floresta_leao.aqui = self.floresta_inicio
         faca = Faca(self.floresta_inicio)
         self.lanterna = Elemento (LANTERNA, cena = self.floresta_inicio, x=300, y=500, vai=self.guarda)
+        self.capa_de_chuva = Elemento (CAPA_DE_CHUVA, cena = self.floresta_inicio, x=200, y=400, vai=self.guardacapa)
         
     def guarda(self, _):
         INVENTARIO.bota(self.lanterna)
+        
+    def guardacapa(self, _):
+        INVENTARIO.bota(self.capa_de_chuva)
         
     def vai(self):
         self.floresta_inicio.vai()
