@@ -12,6 +12,10 @@ TEXTO_FACA= "A faca está afiada, me cortei! Faca perigosa, melhor pegar com cui
 FACA_FOI= "Cuidadosamente, você coloca a faca na bolsa!"
 FACA_USA= "Você segura a faca na mão!"
 LEAO = "https://i.imgur.com/4gXpvfQ.png"
+LANTERNA = "https://i.imgur.com/OO5pLxV.png"
+CAPA_DE_CHUVA = "https://i.imgur.com/09U7IBK.png"
+CORDA = "https://i.imgur.com/lCWG2Co.png"
+
 
 class CenaProxy:
     def __init__(self, aqui=None):
@@ -64,10 +68,14 @@ class FlorestaFaca:
         # floresta_leao = FlorestaLeao() -XX- ERRO!
         self.floresta_inicio = None
         floresta_leao = CenaProxy(self.floresta_inicio)
-        esquerda = esquerda or floresta_banana
+        esquerda = esquerda or floresta_leao
         self.floresta_inicio = Cena(FLORESTA, esquerda=esquerda, direita=floresta_leao)
         floresta_leao.aqui = self.floresta_inicio
         faca = Faca(self.floresta_inicio)
+        self.lanterna = Elemento (LANTERNA, cena = self.floresta_inicio, x=300, y=500, vai=self.guarda)
+        
+    def guarda(self, _):
+        INVENTARIO.bota(self.lanterna)
         
     def vai(self):
         self.floresta_inicio.vai()
