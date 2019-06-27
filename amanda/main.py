@@ -5,6 +5,8 @@ from elemento.main import Elemento
 # from morgan.main import FlorestaLeao
 STYLE["width"], STYLE["height"] = 1400, "650px"
 FLORESTA = "https://i.imgur.com/vlJS7Ry.jpg"
+
+ANTIDOTO = "https://imgur.com/xkFpBsx.png"
 FACA = "https://i.imgur.com/H2vMcB4.png"
 TEXTO_FACA= "A faca está afiada, me cortei! Faca perigosa, melhor chutar para longe"
 FACA_FOI= "Ainda bem que me livrei daquela coisa perigosa!"
