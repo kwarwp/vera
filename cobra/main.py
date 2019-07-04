@@ -22,10 +22,10 @@ class CenaProxy:
         self.aqui = aqui
         self.floresta_faca = None
     def vai(self):
-        from caverna.main import Caverna
-        self.caverna = Caverna()
-        self.caverna.esquerda = self.aqui
-        self.caverna.vai()
+        from amanda.main import FlorestaFaca
+        self.floresta_faca = FlorestaFaca()
+        self.floresta_faca.esquerda = self.aqui
+        self.floresta_faca.vai()
 
 class CenaProxy2:
     def __init__(self, aqui=None):
@@ -83,6 +83,8 @@ class Cobra:
         self.floresta_inicio = floresta_inicio
         self.fala = Texto(self.floresta_inicio, TEXTO_COBRA)
         self.cobra = Elemento(COBRA, style=dict(left="800px", width="150px"))
+        if "antidoto" in INVENTARIO.item:
+            INVENTARIO.item["antidoto"].vai = self.antidoto 
         self.cobra.entra(floresta_inicio)
         self.cobra.vai=self.falacobra
         self.mordida = Elem(MORDIDA, x=0, y=0, w=1400, h=650, style={"opacity": 0.5}, tipo="100% 100%") #, vai=self.antidoto)
