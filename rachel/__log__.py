@@ -245,3 +245,10 @@ SyntaxError: invalid syntax
                                                                    ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Thu Jul 04 2019 09:37:14.547 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 123
+  mordida = Elemento(MORDIDA, x=0, y=0 w=1400, y=650, tipo="100% 100%")
+                                        ^
+SyntaxError: invalid syntax
+'''},
