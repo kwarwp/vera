@@ -17,3 +17,10 @@
     caverna = Caverna(self.floresta_inicio)
 NameError: name 'Caverna' is not defined
 '''},
+{'date': 'Thu Jul 04 2019 11:40:33.336 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 120
+  floresta_faca = CenaProxy(self.floresta_inicio)
+  ^
+IndentationError: unexpected indent
+'''},
