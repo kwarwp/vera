@@ -6,6 +6,7 @@ FLORESTA = "https://i.imgur.com/vlJS7Ry.jpg"
 BANANA = "https://i.imgur.com/HnIHJd7.png"
 TEXTO_LEAO= "O leão está com fome, tome cuidado ele pode comer você!"
 LEAO_COME= "Você morreu!"
+MORDIDA = "https://i.imgur.com/EOHbtUB.png"
 
 
 
@@ -33,7 +34,16 @@ class Leao:
         self.morreu = Cena()
         self.comeu = False
         self.leao.entra(self.floresta_inicio)
-    
+        self.leao.vai=self.falaleaocome
+        self.mordida = Elemento(MORDIDA, x=0, y=0, w=1400, h=650, style={"opacity": 0.5}, tipo="100% 100%") #, vai=self.antidoto)
+        
+    def vai(self):
+        self.floresta_inicio.vai()
+        
+    def falaleaocome(self,_):
+        self.mordida.entra(self.floresta_inicio)
+        self.fala.vai()   
+        
     def pega(self, _): 
         self.fala.vai()
         self.leao.vai = self.foto
