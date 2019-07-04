@@ -4,10 +4,10 @@ from _spy.vitollino.main import Cena, Elemento, Texto, INVENTARIO
 # from morgan.main import FlorestaBanana
 FLORESTA = "https://i.imgur.com/vlJS7Ry.jpg"
 BANANA = "https://i.imgur.com/HnIHJd7.png"
-TEXTO_LEAO= "O leão está com fome, tome cuidado!Se você não correr ele vai te comer"
-LEAO_COME= "E morreu!"
-LEAO_COME= "Tome cuidado para o leão não se assustar, não faça movimentos bruscos!"
-LEAO_USA= "Alimente o leão com o macaco!"
+TEXTO_LEAO= "O leão está com fome, tome cuidado ele pode comer você!"
+LEAO_COME= "Você morreu!"
+
+
 
 
 class CenaProxy:
@@ -29,7 +29,6 @@ class Leao:
         self.floresta_inicio = floresta_inicio
         self.fala = Texto(self.floresta_inicio, TEXTO_LEAO)
         self.falou = Texto(self.floresta_inicio, LEAO_COME)
-        self.falou = Texto(self.floresta_inicio, LEAO_USA)
         self.leao = Elemento(LEAO, style=dict(left="150px",width="100px"), vai=self.pega)
         self.morreu = Cena()
         self.comeu = False
