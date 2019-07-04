@@ -35,20 +35,16 @@ class Leao:
         self.leao.entra(self.floresta_inicio)
     
     def pega(self, _): 
-       self.fala.vai()
-       self.leao.vai = self.foto
-       
-    def foto(self, _): 
-       INVENTARIO.bota(self.leao)
-       self.falou.vai()
-       self.leao.vai = self.usa
-       
+        self.fala.vai()
+        self.leao.vai = self.foto
+
+          
     def usa(self, _): 
-       self.comeu = True
-       self.falou.vai()
+        self.comeu = True
+        self.falou.vai()
     
     def morre(self, _): 
-       self.usar.vai()
+        self.usar.vai()
         
 class FlorestaLeao:
     def __init__(self, esquerda=None):
@@ -65,7 +61,7 @@ class FlorestaLeao:
 
 if __name__ == "__main__":
 
-    INVENTARIO.inicia()
+    
     a_floresta = FlorestaLeao()
     a_floresta.vai()
 
