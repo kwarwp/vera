@@ -2,6 +2,7 @@
 # vera.rachel.main.py
 "http://supygirls.pythonanywhere.com"
 from _spy.vitollino.main import Cena, Elemento, Texto, INVENTARIO, STYLE
+from elemento.main import Elemento as Elem
 STYLE["width"] = 1400
 STYLE["height"] = "650px"
 # from amanda.main import FlorestaFaca
@@ -14,6 +15,7 @@ REDE = "https://i.imgur.com/9Fig2oH.png"
 TEXTO_REDE= "Caí na armadilha! Pegue a faca para cortá-la!"
 COBRA = "https://i.imgur.com/nQ0StLK.png"
 TEXTO_COBRA = "Fui picado! Preciso do antídoto!"
+MORDIDA = "https://i.imgur.com/EOHbtUB.png"
 
 class CenaProxy:
     def __init__(self, aqui=None):
@@ -83,12 +85,18 @@ class Cobra:
         self.cobra = Elemento(COBRA, style=dict(left="800px", width="150px"))
         self.cobra.entra(floresta_inicio)
         self.cobra.vai=self.falacobra
+        self.mordida = Elem(MORDIDA, x=0, y=0, w=1400, h=650, style={"opacity": 0.5}, tipo="100% 100%") #, vai=self.antidoto)
         
     def vai(self):
         self.floresta_inicio.vai()
         
     def falacobra(self,_):
+        self.mordida.entra(self.floresta_inicio)
         self.fala.vai()
+        
+    def antidoto(self,_):
+        self.mordida.entra(Cena())
+        Texto(self.floresta_inicio, "Você toma o antídoto e fica curado").vai()
         
 class FlorestaBanana:
     def __init__(self):
