@@ -2,6 +2,7 @@
 "http://supygirls.pythonanywhere.com"
 from _spy.vitollino.main import Cena, Texto, INVENTARIO, STYLE
 from elemento.main import Elemento
+from cobra.main import Cobra
 CHUVA = "https://i.imgur.com/ubkw6wx.jpg"
 STYLE["width"] = 1400
 STYLE["height"] = "650px"
@@ -17,6 +18,7 @@ COBRA = "https://i.imgur.com/nQ0StLK.png"
 BISCOITO = "https://i.imgur.com/ywr5b2D.png"
 CAVERNA = "https://i.imgur.com/00MjS1k.jpg"
 LANTERNA = "https://i.imgur.com/OO5pLxV.png"
+FLORESTA_CHUVA = "https://i.imgur.com/sDQ5r36.jpg"
 CAPA_DE_CHUVA = "https://i.imgur.com/09U7IBK.png"
 RIO = "https://i.imgur.com/uYrWcA2.jpg"
 CORDA = "https://i.imgur.com/lCWG2Co.png"
