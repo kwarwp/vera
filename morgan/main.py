@@ -2,6 +2,7 @@
 "http://supygirls.pythonanywhere.com"
 from _spy.vitollino.main import Cena, Elemento, Texto, INVENTARIO
 # from morgan.main import FlorestaBanana
+from elemento.main import Elemento as Elem
 FLORESTA = "https://i.imgur.com/vlJS7Ry.jpg"
 BANANA = "https://i.imgur.com/HnIHJd7.png"
 TEXTO_LEAO= "O leão está com fome, tome cuidado ele pode comer você!"
@@ -34,15 +35,19 @@ class Leao:
         self.morreu = Cena()
         self.comeu = False
         self.leao.entra(self.floresta_inicio)
-        self.leao.vai=self.falaleaocome
-        self.mordida = Elemento(MORDIDA, x=0, y=0, w=1400, h=650, style={"opacity": 0.5}, tipo="100% 100%") #, vai=self.antidoto)
+        self.leao.vai=self.falaleaofome
+        self.mordida = Elem(MORDIDA, x=0, y=0, w=1400, h=650, style={"opacity": 0.5}, tipo="100% 100%") #, vai=self.antidoto)
         
     def vai(self):
         self.floresta_inicio.vai()
         
+    def falaleaofome(self,_):
+        self.leao.vai=self.falaleaocome
+        self.fala.vai()   
+        
     def falaleaocome(self,_):
         self.mordida.entra(self.floresta_inicio)
-        self.fala.vai()   
+        self.falou.vai()
         
     def pega(self, _): 
         self.fala.vai()
