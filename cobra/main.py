@@ -13,6 +13,7 @@ BANANA_USA= "Você segura a banana na mão!"
 REDE = "https://i.imgur.com/9Fig2oH.png"
 TEXTO_REDE= "Caí na armadilha! Pegue a faca para cortá-la!"
 COBRA = "https://i.imgur.com/nQ0StLK.png"
+TEXTO_COBRA = "Fui picado! Preciso do antídoto!"
 
 class CenaProxy:
     def __init__(self, aqui=None):
@@ -78,12 +79,16 @@ class Rede:
 class Cobra:
     def __init__(self, floresta_inicio):
         self.floresta_inicio = floresta_inicio
+        self.fala = Texto(self.floresta_inicio, TEXTO_COBRA)
         self.cobra = Elemento(COBRA, style=dict(left="800px", width="150px"))
         self.cobra.entra(floresta_inicio)
-        self.cobra.vai()
+        self.cobra.vai=self.falacobra
         
     def vai(self):
         self.floresta_inicio.vai()
+        
+    def falacobra(self,_):
+        self.fala.vai()
         
 class FlorestaBanana:
     def __init__(self):
