@@ -17,11 +17,11 @@ GALOCHA = "https://i.imgur.com/JlGV4P8.png"
 
 class Fruta:
     def __init__(self, parque,tit="maçã", imagem=MACA, x=200, y=200):
-        maca = Elemento(imagem, tit=tit, x=x, y=y, w=70, h=40)
+        maca = Elemento(imagem, tit=tit, x=x, y=y, w=70, h=40, drag=True)
         maca.entra(parque)
 class Esportes:  
     def __init__(self, parque,tit="bola", imagem=BOLA, x=100, y=200): 
-        peteca = Elemento(imagem, tit=tit, x=x, y=y, w=50, h=50)
+        peteca = Elemento(imagem, tit=tit, x=x, y=y, w=50, h=50, drag=True)
         peteca.entra(parque)
         #bola = Elemento(BOLA, x=100, y=200, w=80, h=60)
         #bola.entra(parque)
@@ -30,7 +30,7 @@ class Bicho:
     def __init__(self, parque, tit="coelho", imagem=COELHO, x=40, y=40):
         #coelho = Elemento(COELHO, x=100, y=100, w=60, h=40)
         #coelho.entra(parque)
-        passarinho = Elemento(imagem, tit=tit, x=x, y=y, w=70, h=50)
+        passarinho = Elemento(imagem, tit=tit, x=x, y=y, w=70, h=50, drag=True)
         passarinho.entra(parque)
         
 class Calcado:
