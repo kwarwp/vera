@@ -49,3 +49,4 @@
   {'doc_id': '4f200def', 'carta': 'coelho', 'casa': [111, 445], 'move': 'DROP', 'ponto': True, 'valor': 'b', '_level': 1, 'tempo': 1565353277520},
   {'doc_id': '4f200def', 'carta': 'passarinho', 'casa': [82, 432], 'move': 'DROP', 'ponto': True, 'valor': 'b', '_level': 1, 'tempo': 1565353286658},
 {'doc_id': 'a3bd8524', 'carta': 'Pedro Henrique', 'casa': [], 'move': 'ID', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1565357973278},
+{'doc_id': 'a3bd8524', 'carta': 'Pedro Henrique', 'casa': [], 'move': 'ID', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1565357987950},
