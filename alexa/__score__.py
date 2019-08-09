@@ -6,3 +6,4 @@
   {'doc_id': '3a91188c', 'carta': 'coelho', 'casa': [626, 429], 'move': 'DROP', 'ponto': False, 'valor': 'p', '_level': 1, 'tempo': 1565319412338},
   {'doc_id': '3a91188c', 'carta': 'coelho', 'casa': [504, 436], 'move': 'DROP', 'ponto': False, 'valor': 'e', '_level': 1, 'tempo': 1565319416118},
   {'doc_id': '3a91188c', 'carta': 'coelho', 'casa': [415, 443], 'move': 'DROP', 'ponto': True, 'valor': 'b', '_level': 1, 'tempo': 1565319419255},
+{'doc_id': '3a91188c', 'carta': 'Teste Zero', 'casa': [], 'move': 'ID', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1565319525214},
