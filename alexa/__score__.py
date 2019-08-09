@@ -7,3 +7,4 @@
 {'doc_id': '276b89cd', 'carta': 'Outro Teste', 'casa': [], 'move': 'ID', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1565319126251},
   {'doc_id': '276b89cd', 'carta': 'tenis', 'casa': [800, 231], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'COISA', '_level': 1, 'tempo': 1565319129478},
   {'doc_id': '276b89cd', 'carta': 'coelho', 'casa': [493, 209], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'COISA', '_level': 1, 'tempo': 1565319133522},
+  {'doc_id': '276b89cd', 'carta': 'bola', 'casa': [499, 448], 'move': 'DROP', 'ponto': True, 'valor': 'e', '_level': 1, 'tempo': 1565319143591},
