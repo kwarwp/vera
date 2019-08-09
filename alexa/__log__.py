@@ -460,3 +460,10 @@ SyntaxError: invalid syntax
     self.coisas[tit] = elm
 AttributeError: 'Conjuntos' object has no attribute 'coisas'
 '''},
+{'date': 'Thu Aug 08 2019 22:33:50.328 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 85
+  INVENTARIO.elt.html = dict(casa=[ev.x, ev.y], carta=[tit], move="DROP", ponto="OK", valor=cria[9], _level=1):
+                                                                                                               ^
+SyntaxError: invalid syntax
+'''},
