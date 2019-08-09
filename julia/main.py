@@ -28,11 +28,21 @@ CENA_PESCARIA = "https://i.imgur.com/KQbnPXQ.jpg"
 CRIANCA = "https://i.imgur.com/U8kaaKl.jpg" #torna a crianca da imagem clicavel
 BALDE = "https://i.imgur.com/H3Hxbz7.png"
 
-class Peixe:
-    def __init__(self, pescaria, x=350, y=200):
-        peixe = Elemento(PEIXE_AMARELO, tit="peixe grande", x=x, y=y, w=60, h=40, drag=True)
+class Peixe(Elemento):
+    def __init__(self, pescaria, peixe, tit="peixe grande", x=x, y=y, w=60, h=40, drag=True):
+        super().__init__(peixe, tit="peixe grande", x=x, y=y, w=60, h=40, drag=True)
+        peixe = self
         peixe.entra(pescaria)
         pescaria.cadastra(peixe.tit, peixe)
+        nome = tit
+        self.texto = Texto(pescaria, f"Eu sou um {nome}")
+        
+    def olha(self.ev):
+        self.texto.vai()
+
+class Peixe1:
+    def __init__(self, pescaria, x=350, y=200):
+        super().__init__(pescaria, PEIXE_AMARELO, tit="peixe grande", x=x, y=y, w=60, h=40, drag=True)
 
 class Peixe2:
     def __init__(self, pescaria, x=350, y=200):
