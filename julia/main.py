@@ -40,90 +40,90 @@ class Peixe(Elemento):
     def olha(self.ev):
         self.texto.vai()
 
-class Peixe1:
+class Peixe1(Peixe):
     def __init__(self, pescaria, x=350, y=200):
         super().__init__(pescaria, PEIXE_AMARELO, tit="peixe grande", x=x, y=y, w=60, h=40, drag=True)
 
-class Peixe2:
+class Peixe2(Peixe):
     def __init__(self, pescaria, x=350, y=200):
         peixe = Elemento(PEIXE_VERD1, tit="peixe pequeno", x=x, y=y, w=60, h=40, drag=True)
         peixe.entra(pescaria)
         pescaria.cadastra(peixe.tit, peixe)
 
-class Peixe3:
+class Peixe3(Peixe):
     def __init__(self, pescaria, x=350, y=200):
         peixe = Elemento(PEIXE_VERD2, tit="peixe médio", x=x, y=y, w=60, h=40, drag=True)
         peixe.entra(pescaria)
         pescaria.cadastra(peixe.tit, peixe)
 
-class Peixe4:
+class Peixe4(Peixe):
     def __init__(self, pescaria, x=350, y=200):
         peixe = Elemento(PEIXEROSA, tit="peixegrande", x=x, y=y, w=60, h=40, drag=True)
         peixe.entra(pescaria)
         pescaria.cadastra(peixe.tit, peixe)
 
-class Peixe5:
+class Peixe5(Peixe):
     def __init__(self, pescaria, x=350, y=200):
         peixe = Elemento(PEIXE_AZULROXO, tit="peixe médio", x=x, y=y, w=60, h=40, drag=True)
         peixe.entra(pescaria)
         pescaria.cadastra(peixe.tit, peixe)
 
-class Peixe6:
+class Peixe6(Peixe):
     def __init__(self, pescaria, x=350, y=200):
         peixe = Elemento(PEIXE_CINZA, tit="peixe grande", x=x, y=y, w=60, h=40, drag=True)
         peixe.entra(pescaria)
         pescaria.cadastra(peixe.tit, peixe)
 
-class Peixe7:
+class Peixe7(Peixe):
     def __init__(self, pescaria, x=350, y=200):
         peixe = Elemento(PEIXE_SALM, tit="peixegrande", x=x, y=y, w=60, h=40, drag=True)
         peixe.entra(pescaria)
         pescaria.cadastra(peixe.tit, peixe)
 
-class Peixe8:
+class Peixe8(Peixe):
     def __init__(self, pescaria, x=350, y=200):
         peixe = Elemento(PEIXE_AZULARANJA, tit="peixe pequeno", x=x, y=y, w=60, h=40, drag=True)
         peixe.entra(pescaria)
         pescaria.cadastra(peixe.tit, peixe)
 
-class Peixe9:
+class Peixe9(Peixe):
     def __init__(self, pescaria, x=350, y=200):
         peixe = Elemento(PEIXE_LARANJINHA, tit="peixepequeno", x=x, y=y, w=60, h=40, drag=True)
         peixe.entra(pescaria)
         pescaria.cadastra(peixe.tit, peixe)
 
 
-class Peixe10:
+class Peixe10(Peixe):
     def __init__(self, pescaria, x=350, y=200):
         peixe = Elemento(PEIXE_PRETOLARANJA, tit="peixemédio", x=x, y=y, w=60, h=40, drag=True)
         peixe.entra(pescaria)
         pescaria.cadastra(peixe.tit, peixe)
 
-class Peixe11:
+class Peixe11(Peixe):
     def __init__(self, pescaria, x=350, y=200):
         peixe = Elemento(PEIXE_COLOR, tit="peixe médio", x=x, y=y, w=60, h=40, drag=True)
         peixe.entra(pescaria)
         pescaria.cadastra(peixe.tit, peixe)
         
-class Peixe12:
+class Peixe12(Peixe):
     def __init__(self, pescaria, x=350, y=200):
         peixe = Elemento(PEIXE_VERDINHO, tit="peixepequeno", x=x, y=y, w=60, h=40, drag=True)
         peixe.entra(pescaria)
         pescaria.cadastra(peixe.tit, peixe)
         
-class Peixe13:
+class Peixe13(Peixe):
     def __init__(self, pescaria, x=350, y=200):
         peixe = Elemento(PEIXE_ROSINHA, tit="peixe pequeno", x=x, y=y, w=60, h=40, drag=True)
         peixe.entra(pescaria)
         pescaria.cadastra(peixe.tit, peixe)
 
-class Peixe14:
+class Peixe14(Peixe):
     def __init__(self, pescaria, x=350, y=200):
         peixe = Elemento(PEIXE_VERMELHO, tit="peixemédio", x=x, y=y, w=60, h=40, drag=True)
         peixe.entra(pescaria)
         pescaria.cadastra(peixe.tit, peixe)
         
-class Peixe15:
+class Peixe15(Peixe):
     def __init__(self, pescaria, x=350, y=200):
         peixe = Elemento(PEIXE_AZULMARINHO, tit="peixegrande", x=x, y=y, w=60, h=40, drag=True)
         peixe.entra(pescaria)
