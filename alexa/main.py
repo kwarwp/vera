@@ -17,7 +17,7 @@ GALOCHA = "https://i.imgur.com/JlGV4P8.png"
 
 class Fruta:
     def __init__(self, parque,tit="maçã", imagem=MACA, x=200, y=200):
-        maca = Elemento(imagem, tit=tit, x=x, y=y, w=70, h=40, drag=True)
+        maca = Elemento(imagem, tit=tit, x=x, y=y, w=50, h=40, drag=True, tipo="100% 100%")
         maca.entra(parque)
         parque.cadastra(tit, maca)
 class Esportes:  
@@ -40,14 +40,14 @@ class Calcado:
     def __init__(self,parque, tit="tenis", imagem=TENIS, x=300, y=350):
         #tenis = Elemento(TENIS, x=150, y=210, w=50, h=80)
         #tenis.entra(parque)
-        galocha = Elemento(imagem, tit=tit, x=x, y=y, w=60, h=50)
+        galocha = Elemento(imagem, tit=tit, x=x, y=y, w=60, h=50, drag=True)
         galocha.entra(parque)
         parque.cadastra(tit, galocha)
         
 class Crianca:
     def __init__(self, parque, tit="crianca", x=0, y=210, gosta=""):
         dragger = {tit: parque.gostou for tit in gosta.split()}
-        crianca = Elemento(CRIANCA, tit=tit, x=x-10, y=y-10, w=90, h=140, style={"opacity": 0.3}, drag=dragger)
+        crianca = Elemento(CRIANCA, tit=tit, x=x-10, y=y-10, w=90, h=140, style={"opacity": 0.3}, drop=dragger)
         crianca.entra(parque)
         
 class Conjuntos(Cena):
@@ -55,6 +55,8 @@ class Conjuntos(Cena):
         super().__init__(CENA_PARQUE)
         self.coisas = {}
         parque = self  # Cena(CENA_PARQUE)
+        INVENTARIO.inicia()
+        #INVENTARIO.elt.html = "PARQUE"
         nome = Codigo(codigo="", topo="PARQUE", style=dict(left=250, top=220, width=100, height="60px"))
         nome.entra(parque)
         Crianca(parque, tit="gosto de bicho", x=60, y=300, gosta="coelho passarinho")
@@ -75,6 +77,7 @@ class Conjuntos(Cena):
         self.coisas[tit] = elm
         
     def gostou(self, ev, tit):
+        #INVENTARIO.elt.html = tit
         INVENTARIO.bota(self.coisas[tit])
         
         
