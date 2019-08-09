@@ -36,3 +36,4 @@
 {'doc_id': '4f200def', 'carta': 'Andressa ', 'casa': [], 'move': 'ID', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1565353023868},
 {'doc_id': '4f200def', 'carta': 'Andressa', 'casa': [], 'move': 'ID', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1565353035114},
   {'doc_id': '4f200def', 'carta': 'c', 'casa': [531, 410], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'GENTE', '_level': 1, 'tempo': 1565353117755},
+  {'doc_id': '4f200def', 'carta': 'tenis', 'casa': [535, 418], 'move': 'DROP', 'ponto': True, 'valor': 'c', '_level': 1, 'tempo': 1565353149194},
