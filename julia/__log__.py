@@ -709,3 +709,10 @@ NameError: name 'cena' is not defined
     self.peixe[tipo][nome] = peixe
 NameError: name 'tipo' is not defined
 '''},
+{'date': 'Fri Aug 09 2019 11:43:24.997 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 40
+  def olha(self, ev)
+                     ^
+SyntaxError: invalid syntax
+'''},
