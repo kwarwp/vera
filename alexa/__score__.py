@@ -40,3 +40,4 @@
   {'doc_id': '4f200def', 'carta': 'f', 'casa': [456, 429], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'GENTE', '_level': 1, 'tempo': 1565353159513},
   {'doc_id': '4f200def', 'carta': 'laranja', 'casa': [459, 427], 'move': 'DROP', 'ponto': True, 'valor': 'f', '_level': 1, 'tempo': 1565353180121},
   {'doc_id': '4f200def', 'carta': 'p', 'casa': [318, 428], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'GENTE', '_level': 1, 'tempo': 1565353184659},
+  {'doc_id': '4f200def', 'carta': 'galocha', 'casa': [516, 452], 'move': 'DROP', 'ponto': True, 'valor': 'c', '_level': 1, 'tempo': 1565353214051},
