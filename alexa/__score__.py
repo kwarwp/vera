@@ -89,3 +89,4 @@
   {'doc_id': '90edc2df', 'carta': 'peteca', 'casa': [218, 421], 'move': 'DROP', 'ponto': True, 'valor': 'e', '_level': 1, 'tempo': 1565373444783},
   {'doc_id': '90edc2df', 'carta': 'passarinho', 'casa': [109, 448], 'move': 'DROP', 'ponto': True, 'valor': 'b', '_level': 1, 'tempo': 1565373449712},
   {'doc_id': '90edc2df', 'carta': 'maçã', 'casa': [436, 453], 'move': 'DROP', 'ponto': True, 'valor': 'f', '_level': 1, 'tempo': 1565373454693},
+{'doc_id': '299d88d7', 'carta': 'Davi Augusto', 'casa': [], 'move': 'ID', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1565378895963},
