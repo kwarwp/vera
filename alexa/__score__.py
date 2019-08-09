@@ -7,3 +7,4 @@
   {'doc_id': '3a91188c', 'carta': 'coelho', 'casa': [504, 436], 'move': 'DROP', 'ponto': False, 'valor': 'e', '_level': 1, 'tempo': 1565319416118},
   {'doc_id': '3a91188c', 'carta': 'coelho', 'casa': [415, 443], 'move': 'DROP', 'ponto': True, 'valor': 'b', '_level': 1, 'tempo': 1565319419255},
 {'doc_id': '3a91188c', 'carta': 'Teste Zero', 'casa': [], 'move': 'ID', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1565319525214},
+  {'doc_id': '3a91188c', 'carta': 'p', 'casa': [615, 438], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'GENTE', '_level': 1, 'tempo': 1565319530238},
