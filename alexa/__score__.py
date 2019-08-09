@@ -79,3 +79,4 @@
 {'doc_id': '90edc2df', 'carta': 'Joao Paulo', 'casa': [], 'move': 'ID', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1565373293608},
 {'doc_id': '90edc2df', 'carta': 'Joao Paulo', 'casa': [], 'move': 'ID', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1565373347462},
   {'doc_id': '90edc2df', 'carta': 'bola', 'casa': [207, 449], 'move': 'DROP', 'ponto': True, 'valor': 'e', '_level': 1, 'tempo': 1565373383162},
+  {'doc_id': '90edc2df', 'carta': 'coelho', 'casa': [99, 447], 'move': 'DROP', 'ponto': True, 'valor': 'b', '_level': 1, 'tempo': 1565373389820},
