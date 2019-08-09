@@ -25,3 +25,4 @@
   {'doc_id': '1a18dc4f', 'carta': 'peixe médio', 'casa': [622, 549], 'move': 'OLHA', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1565379834346},
   {'doc_id': '1a18dc4f', 'carta': 'peixe médio  ', 'casa': [577, 572], 'move': 'OLHA', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1565379850732},
   {'doc_id': '1a18dc4f', 'carta': 'peixe médio  ', 'casa': [580, 573], 'move': 'OLHA', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1565379852891},
+  {'doc_id': '1a18dc4f', 'carta': 'peixe médio  ', 'casa': [576, 568], 'move': 'OLHA', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1565379856209},
