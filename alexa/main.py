@@ -15,43 +15,58 @@ CRIANCA = "https://i.imgur.com/j0ETf5x.jpg"
 TENIS = "https://i.imgur.com/nwKWo8x.png"
 GALOCHA = "https://i.imgur.com/JlGV4P8.png"
 ALL = "coelho passarinho bola peteca maçã laranja tenis galocha".split()
+def score(casa=[], carta="", move="DROP", ponto="OK", valor="", _level=1):
+        INVENTARIO.elt.html = f"casa={[ev.x, ev.y]}, carta={tit}, move=DROP, ponto={ok}, valor={cria[9]}"
 
-class Fruta:
+
+class Coisa:
+    def __init__(self):
+        pass
+    def click(self, ev):
+        score(casa=[ev.x, ev.y], carta=self.tit[0], move="CLICK", ponto="OK", valor="COISA", _level=1)
+
+class Fruta(Coisa):
     def __init__(self, parque,tit="maçã", imagem=MACA, x=200, y=200):
-        maca = Elemento(imagem, tit=tit, x=x, y=y, w=50, h=40, drag=True, tipo="100% 100%")
+        self.tit = tit
+        maca = Elemento(imagem, tit=tit, x=x, y=y, w=50, h=40, drag=True, tipo="100% 100%", vai=self.click)
         maca.entra(parque)
         parque.cadastra(tit, maca)
-class Esportes:  
+class Esportes(Coisa):  
     def __init__(self, parque,tit="bola", imagem=BOLA, x=100, y=200): 
-        peteca = Elemento(imagem, tit=tit, x=x, y=y, w=50, h=50, drag=True)
+        self.tit = tit
+        peteca = Elemento(imagem, tit=tit, x=x, y=y, w=50, h=50, drag=True, vai=self.click)
         peteca.entra(parque)
         parque.cadastra(tit, peteca)
         #bola = Elemento(BOLA, x=100, y=200, w=80, h=60)
         #bola.entra(parque)
         
-class Bicho:
+class Bicho(Coisa):
     def __init__(self, parque, tit="coelho", imagem=COELHO, x=40, y=40):
         #coelho = Elemento(COELHO, x=100, y=100, w=60, h=40)
         #coelho.entra(parque)
-        passarinho = Elemento(imagem, tit=tit, x=x, y=y, w=70, h=50, drag=True)
+        self.tit = tit
+        passarinho = Elemento(imagem, tit=tit, x=x, y=y, w=70, h=50, drag=True, vai=self.click)
         passarinho.entra(parque)
         parque.cadastra(tit, passarinho)
         
-class Calcado:
+class Calcado(Coisa):
     def __init__(self,parque, tit="tenis", imagem=TENIS, x=300, y=350):
         #tenis = Elemento(TENIS, x=150, y=210, w=50, h=80)
         #tenis.entra(parque)
-        galocha = Elemento(imagem, tit=tit, x=x, y=y, w=60, h=50, drag=True)
+        self.tit = tit
+        galocha = Elemento(imagem, tit=tit, x=x, y=y, w=60, h=50, drag=True, vai=self.click)
         galocha.entra(parque)
         parque.cadastra(tit, galocha)
         
 class Crianca:
     def __init__(self, parque, tit="crianca", x=0, y=210, gosta=""):
-        dragger = {tit: lambda e,t: parque.gostou(e, t, tit)
-            if tit in gosta.split() 
-            else lambda e,t: parque.desgostou(e, t, tit) for tit in ALL}
+        self.tit = tit
+        dragger = {ti: lambda e,t: parque.gostou(e, t, tit, ok=ti in gosta.split()) for ti in ALL}
         crianca = Elemento(CRIANCA, tit=tit, x=x-10, y=y-10, w=90, h=140, style={"opacity": 0.3}, drop=dragger)
         crianca.entra(parque)
+        
+    def click(self, ev):
+        score(casa=[ev.x, ev.y], carta=self.tit[9], move="CLICK", ponto="OK", valor="GENTE", _level=1)
         
 class Conjuntos(Cena):
     def __init__(self):
@@ -79,16 +94,12 @@ class Conjuntos(Cena):
     def cadastra(self, tit, elm):
         self.coisas[tit] = elm
         
-    def gostou(self, ev, tit, cria):
+    def gostou(self, ev, tit, cria, ok):
         #INVENTARIO.elt.html = tit
         #INVENTARIO.score(casa=[ev.x, ev.y], carta=[tit], move="DROP", ponto="OK", valor=cria[9], _level=1):
-        INVENTARIO.elt.html = dict(casa=[ev.x, ev.y], carta=[tit], move="DROP", ponto="OK", valor=cria[9], _level=1):
-        #INVENTARIO.bota(self.coisas[tit])
-        
-    def desgostou(self, ev, tit, cria):
-        #INVENTARIO.elt.html = tit
-        #INVENTARIO.score(casa=[ev.x, ev.y], carta=[tit], move="DROP", ponto="OK", valor=cria[9], _level=1):
-        INVENTARIO.elt.html = dict(casa=[ev.x, ev.y], carta=[tit], move="DROP", ponto="NO", valor=cria[9], _level=1):
+        #INVENTARIO.elt.html = dict(casa=[ev.x, ev.y], carta=tit, move="DROP", ponto=ok, valor=cria[9], _level=1)
+        INVENTARIO.elt.html = f"casa={[ev.x, ev.y]}, carta={tit}, move=DROP, ponto={ok}, valor={cria[9]}"
+        #INVENTARIO.bota(self.coisas[tit]) if ok else None
         
         
 Conjuntos()
