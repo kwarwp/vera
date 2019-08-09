@@ -27,3 +27,4 @@
   {'doc_id': '9b328050', 'carta': 'p', 'casa': [331, 433], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'GENTE', '_level': 1, 'tempo': 1565352261085},
   {'doc_id': '9b328050', 'carta': 'p', 'casa': [330, 433], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'GENTE', '_level': 1, 'tempo': 1565352261878},
   {'doc_id': '9b328050', 'carta': 'p', 'casa': [330, 433], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'GENTE', '_level': 1, 'tempo': 1565352262624},
+  {'doc_id': '9b328050', 'carta': 'peteca', 'casa': [209, 445], 'move': 'DROP', 'ponto': True, 'valor': 'e', '_level': 1, 'tempo': 1565352305571},
