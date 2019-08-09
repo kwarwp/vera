@@ -35,3 +35,4 @@
   {'doc_id': '9b328050', 'carta': 'galocha', 'casa': [245, 116], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'COISA', '_level': 1, 'tempo': 1565352434741},
 {'doc_id': '4f200def', 'carta': 'Andressa ', 'casa': [], 'move': 'ID', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1565353023868},
 {'doc_id': '4f200def', 'carta': 'Andressa', 'casa': [], 'move': 'ID', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1565353035114},
+  {'doc_id': '4f200def', 'carta': 'c', 'casa': [531, 410], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'GENTE', '_level': 1, 'tempo': 1565353117755},
