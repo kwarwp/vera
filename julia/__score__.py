@@ -18,3 +18,4 @@
 {'doc_id': '1a18dc4f', 'carta': 'davi augusto', 'casa': 'pescaria', 'move': 'JULIA', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1565379575649},
 {'doc_id': '1a18dc4f', 'carta': 'davi augusto', 'casa': 'pescaria', 'move': 'JULIA', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1565379596688},
   {'doc_id': '1a18dc4f', 'carta': ' peixe grande  ', 'casa': [461, 560], 'move': 'OLHA', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1565379631639},
+  {'doc_id': '1a18dc4f', 'carta': ' peixe grande  ', 'casa': [461, 560], 'move': 'OLHA', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1565379633472},
