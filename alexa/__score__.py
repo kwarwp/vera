@@ -68,3 +68,4 @@
   {'doc_id': '2e769b89', 'carta': 'laranja', 'casa': [367, 183], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'COISA', '_level': 1, 'tempo': 1565370157316},
   {'doc_id': '2e769b89', 'carta': 'laranja', 'casa': [448, 440], 'move': 'DROP', 'ponto': True, 'valor': 'f', '_level': 1, 'tempo': 1565370188152},
   {'doc_id': '2e769b89', 'carta': 'maçã', 'casa': [456, 428], 'move': 'DROP', 'ponto': True, 'valor': 'f', '_level': 1, 'tempo': 1565370198395},
+  {'doc_id': '2e769b89', 'carta': 'tenis', 'casa': [543, 428], 'move': 'DROP', 'ponto': True, 'valor': 'c', '_level': 1, 'tempo': 1565370219240},
