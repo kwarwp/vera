@@ -54,3 +54,4 @@
   {'doc_id': 'a3bd8524', 'carta': 'laranja', 'casa': [459, 439], 'move': 'DROP', 'ponto': True, 'valor': 'f', '_level': 1, 'tempo': 1565358046800},
   {'doc_id': 'a3bd8524', 'carta': 'p', 'casa': [330, 431], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'GENTE', '_level': 1, 'tempo': 1565358050075},
   {'doc_id': 'a3bd8524', 'carta': 'c', 'casa': [526, 428], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'GENTE', '_level': 1, 'tempo': 1565358082059},
+  {'doc_id': 'a3bd8524', 'carta': 'c', 'casa': [526, 428], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'GENTE', '_level': 1, 'tempo': 1565358083717},
