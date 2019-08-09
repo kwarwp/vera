@@ -47,3 +47,4 @@
   {'doc_id': '4f200def', 'carta': 'coelho', 'casa': [192, 435], 'move': 'DROP', 'ponto': False, 'valor': 'e', '_level': 1, 'tempo': 1565353262846},
   {'doc_id': '4f200def', 'carta': 'coelho', 'casa': [193, 439], 'move': 'DROP', 'ponto': False, 'valor': 'e', '_level': 1, 'tempo': 1565353270910},
   {'doc_id': '4f200def', 'carta': 'coelho', 'casa': [111, 445], 'move': 'DROP', 'ponto': True, 'valor': 'b', '_level': 1, 'tempo': 1565353277520},
+  {'doc_id': '4f200def', 'carta': 'passarinho', 'casa': [82, 432], 'move': 'DROP', 'ponto': True, 'valor': 'b', '_level': 1, 'tempo': 1565353286658},
