@@ -7,3 +7,4 @@
   {'doc_id': '2f0e1903', 'carta': 'marcos', 'casa': [545, 420], 'move': 'CRIA', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1565367376114},
   {'doc_id': '2f0e1903', 'carta': 'peixe pequeno', 'casa': [618, 623], 'move': 'OLHA', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1565367379455},
   {'doc_id': '2f0e1903', 'carta': 'peixe pequeno', 'casa': [661, 531], 'move': 'PESCA', 'ponto': False, 'valor': 'g', '_level': 1, 'tempo': 1565367383442},
+  {'doc_id': '2f0e1903', 'carta': 'peixe pequeno', 'casa': [396, 570], 'move': 'PESCA', 'ponto': True, 'valor': 'p', '_level': 1, 'tempo': 1565367386126},
