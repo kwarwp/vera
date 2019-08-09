@@ -4,3 +4,4 @@
   {'doc_id': '2f0e1903', 'carta': 'pequeno', 'casa': [1173, 561], 'move': 'BALDE', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1565367273214},
   {'doc_id': '2f0e1903', 'carta': 'peixe grande ', 'casa': [811, 535], 'move': 'OLHA', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1565367276616},
 {'doc_id': '2f0e1903', 'carta': 'Carlo Terste 2', 'casa': 'pescaria', 'move': 'JULIA', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1565367372901},
+  {'doc_id': '2f0e1903', 'carta': 'marcos', 'casa': [545, 420], 'move': 'CRIA', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1565367376114},
