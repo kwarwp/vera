@@ -1,11 +1,11 @@
 # vera.julia.main.py
-from _spy.vitollino.main import Cena, STYLE, INVENTARIO
+from _spy.vitollino.main import Cena, STYLE, INVENTARIO, Texto
 from elemento.main import Elemento #permite a movimentacao
 STYLE["width"] = 900
 STYLE["heigth"] = "900px"
 def score(casa=[], carta="", move="ID", ponto="OK", valor="", _level=1):
-    INVENTARIO.elt.html = f"casa={casa}, carta={carta}, move={move}, ponto={ponto}, valor={valor}, level={_level}"
-    #INVENTARIO.score(casa=casa, carta=carta, move=move, ponto=ponto, valor=valor, _level=_level)
+    #INVENTARIO.elt.html = f"casa={casa}, carta={carta}, move={move}, ponto={ponto}, valor={valor}, level={_level}"
+    INVENTARIO.score(casa=casa, carta=carta, move=move, ponto=ponto, valor=valor, _level=_level)
 
 #JARRA = "https://i.imgur.com/y2YyMOM.jpg"
 PEIXE_INV ="https://i.imgur.com/nZDmsh0.png"
@@ -29,15 +29,16 @@ CRIANCA = "https://i.imgur.com/U8kaaKl.jpg" #torna a crianca da imagem clicavel
 BALDE = "https://i.imgur.com/H3Hxbz7.png"
 
 class Peixe(Elemento):
-    def __init__(self, pescaria, peixe, tit="peixe grande", x=x, y=y, w=60, h=40, drag=True):
-        super().__init__(peixe, tit="peixe grande", x=x, y=y, w=60, h=40, drag=True)
+    def __init__(self, pescaria, peixe, tit="peixe grande", x=0, y=0, w=60, h=40, drag=True):
+        super().__init__(peixe, tit=tit, x=x, y=y, w=60, h=40, drag=True, vai=self.olha)
         peixe = self
         peixe.entra(pescaria)
         pescaria.cadastra(peixe.tit, peixe)
         nome = tit
         self.texto = Texto(pescaria, f"Eu sou um {nome}")
         
-    def olha(self.ev):
+    def olha(self, ev):
+        score(casa=[ev.x, ev.y], carta=self.tit, move="OLHA", ponto=True, valor=0, _level=1)
         self.texto.vai()
 
 class Peixe1(Peixe):
@@ -46,108 +47,92 @@ class Peixe1(Peixe):
 
 class Peixe2(Peixe):
     def __init__(self, pescaria, x=350, y=200):
-        peixe = Elemento(PEIXE_VERD1, tit="peixe pequeno", x=x, y=y, w=60, h=40, drag=True)
-        peixe.entra(pescaria)
-        pescaria.cadastra(peixe.tit, peixe)
+        super().__init__(pescaria, PEIXE_VERD1, tit="peixe pequeno", x=x, y=y, w=60, h=40, drag=True)
 
 class Peixe3(Peixe):
     def __init__(self, pescaria, x=350, y=200):
-        peixe = Elemento(PEIXE_VERD2, tit="peixe médio", x=x, y=y, w=60, h=40, drag=True)
-        peixe.entra(pescaria)
-        pescaria.cadastra(peixe.tit, peixe)
+        super().__init__(pescaria, PEIXE_VERD2, tit="peixe médio", x=x, y=y, w=60, h=40, drag=True)
 
 class Peixe4(Peixe):
     def __init__(self, pescaria, x=350, y=200):
-        peixe = Elemento(PEIXEROSA, tit="peixegrande", x=x, y=y, w=60, h=40, drag=True)
-        peixe.entra(pescaria)
-        pescaria.cadastra(peixe.tit, peixe)
+        super().__init__(pescaria, PEIXEROSA, tit="peixe grande ", x=x, y=y, w=60, h=40, drag=True)
 
 class Peixe5(Peixe):
     def __init__(self, pescaria, x=350, y=200):
-        peixe = Elemento(PEIXE_AZULROXO, tit="peixe médio", x=x, y=y, w=60, h=40, drag=True)
-        peixe.entra(pescaria)
-        pescaria.cadastra(peixe.tit, peixe)
+        super().__init__(pescaria, PEIXE_AZULROXO, tit="peixe médio ", x=x, y=y, w=60, h=40, drag=True)
 
 class Peixe6(Peixe):
     def __init__(self, pescaria, x=350, y=200):
-        peixe = Elemento(PEIXE_CINZA, tit="peixe grande", x=x, y=y, w=60, h=40, drag=True)
-        peixe.entra(pescaria)
-        pescaria.cadastra(peixe.tit, peixe)
+        super().__init__(pescaria, PEIXE_CINZA, tit="peixe grande  ", x=x, y=y, w=60, h=40, drag=True)
 
 class Peixe7(Peixe):
     def __init__(self, pescaria, x=350, y=200):
-        peixe = Elemento(PEIXE_SALM, tit="peixegrande", x=x, y=y, w=60, h=40, drag=True)
-        peixe.entra(pescaria)
-        pescaria.cadastra(peixe.tit, peixe)
+        super().__init__(pescaria, PEIXE_SALM, tit=" peixe grande", x=x, y=y, w=60, h=40, drag=True)
 
 class Peixe8(Peixe):
     def __init__(self, pescaria, x=350, y=200):
-        peixe = Elemento(PEIXE_AZULARANJA, tit="peixe pequeno", x=x, y=y, w=60, h=40, drag=True)
-        peixe.entra(pescaria)
-        pescaria.cadastra(peixe.tit, peixe)
+        super().__init__(pescaria, PEIXE_AZULARANJA, tit="peixe pequeno ", x=x, y=y, w=60, h=40, drag=True)
 
 class Peixe9(Peixe):
     def __init__(self, pescaria, x=350, y=200):
-        peixe = Elemento(PEIXE_LARANJINHA, tit="peixepequeno", x=x, y=y, w=60, h=40, drag=True)
-        peixe.entra(pescaria)
-        pescaria.cadastra(peixe.tit, peixe)
+        super().__init__(pescaria, PEIXE_LARANJINHA, tit="peixe pequeno  ", x=x, y=y, w=60, h=40, drag=True)
 
 
 class Peixe10(Peixe):
     def __init__(self, pescaria, x=350, y=200):
-        peixe = Elemento(PEIXE_PRETOLARANJA, tit="peixemédio", x=x, y=y, w=60, h=40, drag=True)
-        peixe.entra(pescaria)
-        pescaria.cadastra(peixe.tit, peixe)
+        super().__init__(pescaria, PEIXE_PRETOLARANJA, tit="peixe médio  ", x=x, y=y, w=60, h=40, drag=True)
 
 class Peixe11(Peixe):
     def __init__(self, pescaria, x=350, y=200):
-        peixe = Elemento(PEIXE_COLOR, tit="peixe médio", x=x, y=y, w=60, h=40, drag=True)
-        peixe.entra(pescaria)
-        pescaria.cadastra(peixe.tit, peixe)
+        super().__init__(pescaria, PEIXE_COLOR, tit=" peixe médio", x=x, y=y, w=60, h=40, drag=True)
         
 class Peixe12(Peixe):
     def __init__(self, pescaria, x=350, y=200):
-        peixe = Elemento(PEIXE_VERDINHO, tit="peixepequeno", x=x, y=y, w=60, h=40, drag=True)
-        peixe.entra(pescaria)
-        pescaria.cadastra(peixe.tit, peixe)
+        super().__init__(pescaria, PEIXE_VERDINHO, tit="peixe pequeno    ", x=x, y=y, w=60, h=40, drag=True)
         
 class Peixe13(Peixe):
     def __init__(self, pescaria, x=350, y=200):
-        peixe = Elemento(PEIXE_ROSINHA, tit="peixe pequeno", x=x, y=y, w=60, h=40, drag=True)
-        peixe.entra(pescaria)
-        pescaria.cadastra(peixe.tit, peixe)
+        super().__init__(pescaria, PEIXE_ROSINHA, tit="peixe pequeno     ", x=x, y=y, w=60, h=40, drag=True)
 
 class Peixe14(Peixe):
     def __init__(self, pescaria, x=350, y=200):
-        peixe = Elemento(PEIXE_VERMELHO, tit="peixemédio", x=x, y=y, w=60, h=40, drag=True)
-        peixe.entra(pescaria)
-        pescaria.cadastra(peixe.tit, peixe)
+        super().__init__(pescaria, PEIXE_VERMELHO, tit=" peixe grande ", x=x, y=y, w=60, h=40, drag=True)
         
 class Peixe15(Peixe):
     def __init__(self, pescaria, x=350, y=200):
-        peixe = Elemento(PEIXE_AZULMARINHO, tit="peixegrande", x=x, y=y, w=60, h=40, drag=True)
-        peixe.entra(pescaria)
-        pescaria.cadastra(peixe.tit, peixe)
+        super().__init__(pescaria, PEIXE_AZULMARINHO, tit=" peixe grande  ", x=x, y=y, w=60, h=40, drag=True)
         
 class Balde: #baldes clicáveis
     def __init__(self, pescaria, nome="balde", tipo_peixe="grande", x=350, y=200): #tit quando arrastar o mouse em cima, surge o nome
         self.peixes = pescaria.peixes(tipo_peixe).keys()
         todos = [peixe for tam in "pequno médio grande".split() for peixe in pescaria.peixes(tam).keys()]
-        balde = Elemento(BALDE, x=x, y=y, tit=nome, w=100, h=100, style={"opacity": 0.3},
-        drop = {peixe: self.pesca for peixe in todos})
+        balde = Elemento(BALDE, x=x, y=y, tit=nome, w=100, h=100, style={"opacity": 0},
+        drop = {peixe: self.pesca for peixe in todos}, vai=self.olha)
         self.tipo = tipo_peixe
         balde.entra(pescaria)
         self.pescaria = pescaria
+        self.texto = Texto(pescaria, f"Eu sou um {nome}")
+        
+    def olha(self, ev):
+        score(casa=[ev.x, ev.y], carta=self.tipo, move="BALDE", ponto=True, valor=0, _level=1)
+        self.texto.vai()
         
     def pesca(self, ev, peixe):
         #peixe = Elemento(PEIXE_INV, tit=self.tipo)
-        score(casa=[ev.x, ev.y], carta=peixe, move="PESCA", ponto=ok, valor=self.tipo[0], _level=1)
-        INVENTARIO.bota(self.pescaria.encontra(peixe)) if peixe in self.peixes else None
+        ok = self.tipo in peixe
+        #score(casa=[ev.x, ev.y], carta=peixe, move="PESCA", ponto=ok, valor=self.tipo[0], _level=1)
+        INVENTARIO.bota(self.pescaria.encontra(peixe)) if ok else None
         
 class Crianca:
     def __init__(self, pescaria, tit="tiago", x=350, y=200): #tit quando arrastar o mouse em cima, surge o nome
-        crianca = Elemento(CRIANCA, tit=tit, x=x, y=y, w=100, h=100, style={"opacity": 0})
+        crianca = Elemento(CRIANCA, tit=tit, x=x, y=y, w=100, h=100, style={"opacity": 0}, vai=self.olha)
         crianca.entra(pescaria)
+        self.tit = tit
+        self.texto = Texto(pescaria, f"Olá, eu sou {tit}")
+        
+    def olha(self, ev):
+        score(casa=[ev.x, ev.y], carta=self.tit, move="CRIA", ponto=True, valor=0, _level=1)
+        self.texto.vai()
         
 #class Jarra:
 #    def __init__(self, pescaria, x=150, y=230):
@@ -160,7 +145,10 @@ class jogoPescaria(Cena):
         pescaria = self
         self.peixe=[{}]*3
         INVENTARIO.inicia()
-        Peixe(pescaria, x=550, y=505)
+        participante = input("diga seu nome")
+        score(carta=participante, casa="pescaria", move="JULIA", _level=0)
+
+        Peixe1(pescaria, x=550, y=505)
         Peixe2(pescaria, x=280, y=505)
         Peixe3(pescaria, x=590, y=440)
         Peixe4(pescaria, x=460, y=420)
