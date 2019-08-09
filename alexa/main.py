@@ -46,7 +46,7 @@ class Calcado:
         
 class Crianca:
     def __init__(self, parque, tit="crianca", x=0, y=210, gosta=""):
-        dragger = {tit: parque.gostou for tit in gosta.split()}
+        dragger = {tit: lambda e,t: parque.gostou(e, t, tit) for tit in gosta.split()}
         crianca = Elemento(CRIANCA, tit=tit, x=x-10, y=y-10, w=90, h=140, style={"opacity": 0.3}, drop=dragger)
         crianca.entra(parque)
         
@@ -76,8 +76,9 @@ class Conjuntos(Cena):
     def cadastra(self, tit, elm):
         self.coisas[tit] = elm
         
-    def gostou(self, ev, tit):
+    def gostou(self, ev, tit, cria):
         #INVENTARIO.elt.html = tit
+        INVENTARIO.score(casa=[ev.x, ev.y], carta=[tit], move="DROP", ponto="OK", valor=cria[9], _level=1):
         INVENTARIO.bota(self.coisas[tit])
         
         
