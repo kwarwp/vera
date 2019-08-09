@@ -45,8 +45,9 @@ class Calcado:
         parque.cadastra(tit, galocha)
         
 class Crianca:
-    def __init__(self, parque, tit="crianca", x=0, y=210):
-        crianca = Elemento(CRIANCA, tit=tit, x=x-10, y=y-10, w=90, h=140, style={"opacity": 0.3})
+    def __init__(self, parque, tit="crianca", x=0, y=210, gosta=""):
+        dragger = {tit: parque.gostou for tit in gosta.split()}
+        crianca = Elemento(CRIANCA, tit=tit, x=x-10, y=y-10, w=90, h=140, style={"opacity": 0.3}, drag=dragger)
         crianca.entra(parque)
         
 class Conjuntos(Cena):
@@ -56,10 +57,10 @@ class Conjuntos(Cena):
         parque = self  # Cena(CENA_PARQUE)
         nome = Codigo(codigo="", topo="PARQUE", style=dict(left=250, top=220, width=100, height="60px"))
         nome.entra(parque)
-        Crianca(parque, tit="gosto de bicho", x=60, y=300)
-        Crianca(parque, tit="gosto de esportes", x=150, y=300)
-        Crianca(parque, tit="gosto de frutas", x=400, y=300) 
-        Crianca(parque, tit="gosto de calçado", x=480, y=300)
+        Crianca(parque, tit="gosto de bicho", x=60, y=300, gosta="coelho passarinho")
+        Crianca(parque, tit="gosto de esportes", x=150, y=300, gosta="bola peteca")
+        Crianca(parque, tit="gosto de frutas", x=400, y=300, gosta="maçã laranja") 
+        Crianca(parque, tit="gosto de calçado", x=480, y=300, gosta="tenis galocha")
         Fruta(parque, x=30, y=90)
         Fruta(parque, tit="laranja", imagem=LARANJA, x=330, y=60)
         Esportes(parque, x=100, y=150)
