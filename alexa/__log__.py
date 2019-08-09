@@ -523,3 +523,10 @@ NameError: name 'level' is not defined
     score(carta=gosta, casa=ALL, move={ti: (e, t, tit, ti in gosta) for ti in ALL})
 NameError: name 'e' is not defined
 '''},
+{'date': 'Thu Aug 08 2019 23:48:26.73 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 20
+  INVENTARIO.score(casa=casa, carta=carta, move=move, ponto=ponto, valor=valor, _level=_level):
+                                                                                               ^
+SyntaxError: invalid syntax
+'''},
