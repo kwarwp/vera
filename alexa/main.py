@@ -1,5 +1,5 @@
 # vera.alexa.main.py
-from _spy.vitollino.main import Cena,STYLE,Codigo
+from _spy.vitollino.main import Cena,STYLE,Codigo, INVENTARIO
 from elemento.main import Elemento 
 STYLE["width"] = 600
 STYLE["heigth"] = "600px"
@@ -19,10 +19,12 @@ class Fruta:
     def __init__(self, parque,tit="maçã", imagem=MACA, x=200, y=200):
         maca = Elemento(imagem, tit=tit, x=x, y=y, w=70, h=40, drag=True)
         maca.entra(parque)
+        parque.cadastra(tit, maca)
 class Esportes:  
     def __init__(self, parque,tit="bola", imagem=BOLA, x=100, y=200): 
         peteca = Elemento(imagem, tit=tit, x=x, y=y, w=50, h=50, drag=True)
         peteca.entra(parque)
+        parque.cadastra(tit, peteca)
         #bola = Elemento(BOLA, x=100, y=200, w=80, h=60)
         #bola.entra(parque)
         
@@ -32,6 +34,7 @@ class Bicho:
         #coelho.entra(parque)
         passarinho = Elemento(imagem, tit=tit, x=x, y=y, w=70, h=50, drag=True)
         passarinho.entra(parque)
+        parque.cadastra(tit, passarinho)
         
 class Calcado:
     def __init__(self,parque, tit="tenis", imagem=TENIS, x=300, y=350):
@@ -39,21 +42,24 @@ class Calcado:
         #tenis.entra(parque)
         galocha = Elemento(imagem, tit=tit, x=x, y=y, w=60, h=50)
         galocha.entra(parque)
+        parque.cadastra(tit, galocha)
         
 class Crianca:
     def __init__(self, parque, tit="crianca", x=0, y=210):
-        crianca = Elemento(CRIANCA, tit=tit, x=x, y=y, w=70, h=140, style={"opacity": 0.3})
+        crianca = Elemento(CRIANCA, tit=tit, x=x-10, y=y-10, w=90, h=140, style={"opacity": 0.3})
         crianca.entra(parque)
         
-class Conjuntos:
+class Conjuntos(Cena):
     def __init__(self):
-        parque = Cena(CENA_PARQUE)
+        super().__init__(CENA_PARQUE)
+        self.coisas = {}
+        parque = self  # Cena(CENA_PARQUE)
         nome = Codigo(codigo="", topo="PARQUE", style=dict(left=250, top=220, width=100, height="60px"))
         nome.entra(parque)
-        Crianca(parque, tit="bicho", x=60, y=300)
-        Crianca(parque, tit="esportes", x=150, y=300)
-        Crianca(parque, tit="frutas", x=400, y=300) 
-        Crianca(parque, tit="calcado", x=500, y=300)
+        Crianca(parque, tit="gosto de bicho", x=60, y=300)
+        Crianca(parque, tit="gosto de esportes", x=150, y=300)
+        Crianca(parque, tit="gosto de frutas", x=400, y=300) 
+        Crianca(parque, tit="gosto de calçado", x=480, y=300)
         Fruta(parque, x=30, y=90)
         Fruta(parque, tit="laranja", imagem=LARANJA, x=330, y=60)
         Esportes(parque, x=100, y=150)
@@ -63,5 +69,12 @@ class Conjuntos:
         Calcado(parque, x=450, y=100) 
         Calcado(parque, tit="galocha", imagem=GALOCHA, x=200, y=50) 
         parque.vai()
+        
+    def cadastra(self, tit, elm):
+        self.coisas[tit] = elm
+        
+    def gostou(self, ev, tit):
+        INVENTARIO.bota(self.coisas[tit])
+        
         
 Conjuntos()
