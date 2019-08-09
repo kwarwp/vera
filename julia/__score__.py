@@ -8,3 +8,4 @@
 {'doc_id': '092c19ea', 'carta': 'Joao Paulo', 'casa': 'pescaria', 'move': 'JULIA', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1565373070608},
 {'doc_id': '092c19ea', 'carta': 'Joao Paulo', 'casa': 'pescaria', 'move': 'JULIA', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1565373090448},
   {'doc_id': '092c19ea', 'carta': 'peixe grande ', 'casa': [516, 528], 'move': 'OLHA', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1565373115963},
+  {'doc_id': '092c19ea', 'carta': 'peixe grande ', 'casa': [521, 558], 'move': 'OLHA', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1565373135392},
