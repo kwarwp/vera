@@ -736,3 +736,10 @@ SyntaxError: invalid syntax
     super().__init__(pescaria, PEIXE_VERD1, tit="peixe pequeno", x=x, y=y, w=60, h=40, drag=True)
 TypeError: __init__() got an unexpected keyword argument 'w'
 '''},
+{'date': 'Fri Aug 09 2019 12:18:00.365 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 40
+  def olha(self.ev):
+                ^
+SyntaxError: invalid syntax
+'''},
