@@ -503,3 +503,23 @@ SyntaxError: EOL while scanning string literal
     (level)
 NameError: name 'level' is not defined
 '''},
+{'date': 'Thu Aug 08 2019 23:40:12.288 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 160
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 306
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 278
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 295
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 112
+    Conjuntos()
+  module <module> line 85
+    Crianca(parque, tit="gosto de bicho", x=60, y=300, gosta="coelho passarinho")
+  module <module> line 65
+    score(carta=gosta, casa=ALL, move={ti: (e, t, tit, ti in gosta) for ti in ALL})
+NameError: name 'e' is not defined
+'''},
