@@ -16,3 +16,4 @@
   {'doc_id': '092c19ea', 'carta': 'peixe pequeno     ', 'casa': [282, 618], 'move': 'OLHA', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1565373165740},
   {'doc_id': '092c19ea', 'carta': 'grande', 'casa': [361, 521], 'move': 'BALDE', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1565373205994},
 {'doc_id': '1a18dc4f', 'carta': 'davi augusto', 'casa': 'pescaria', 'move': 'JULIA', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1565379575649},
+{'doc_id': '1a18dc4f', 'carta': 'davi augusto', 'casa': 'pescaria', 'move': 'JULIA', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1565379596688},
