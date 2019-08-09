@@ -467,3 +467,10 @@ AttributeError: 'Conjuntos' object has no attribute 'coisas'
                                                                                                                ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Thu Aug 08 2019 22:44:21.22 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 92
+  Conjuntos()
+  ^
+IndentationError: expected an indented block
+'''},
