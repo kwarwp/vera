@@ -474,3 +474,10 @@ SyntaxError: invalid syntax
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Thu Aug 08 2019 23:23:10.129 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 79
+  participante = input("diga seu nome)
+                                      ^
+SyntaxError: EOL while scanning string literal
+'''},
