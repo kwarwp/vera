@@ -8,3 +8,4 @@
   {'doc_id': '276b89cd', 'carta': 'tenis', 'casa': [800, 231], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'COISA', '_level': 1, 'tempo': 1565319129478},
   {'doc_id': '276b89cd', 'carta': 'coelho', 'casa': [493, 209], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'COISA', '_level': 1, 'tempo': 1565319133522},
   {'doc_id': '276b89cd', 'carta': 'bola', 'casa': [499, 448], 'move': 'DROP', 'ponto': True, 'valor': 'e', '_level': 1, 'tempo': 1565319143591},
+  {'doc_id': '276b89cd', 'carta': 'laranja', 'casa': [749, 435], 'move': 'DROP', 'ponto': True, 'valor': 'f', '_level': 1, 'tempo': 1565319150783},
