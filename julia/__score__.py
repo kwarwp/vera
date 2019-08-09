@@ -13,3 +13,4 @@
   {'doc_id': '2f0e1903', 'carta': ' peixe médio', 'casa': [661, 525], 'move': 'PESCA', 'ponto': False, 'valor': 'g', '_level': 1, 'tempo': 1565367396188},
   {'doc_id': '2f0e1903', 'carta': ' peixe médio', 'casa': [1101, 618], 'move': 'PESCA', 'ponto': True, 'valor': 'm', '_level': 1, 'tempo': 1565367399154},
   {'doc_id': '2f0e1903', 'carta': 'peixe pequeno ', 'casa': [1184, 576], 'move': 'PESCA', 'ponto': True, 'valor': 'p', '_level': 1, 'tempo': 1565367403157},
+  {'doc_id': '2f0e1903', 'carta': 'peixe médio ', 'casa': [1076, 618], 'move': 'PESCA', 'ponto': True, 'valor': 'm', '_level': 1, 'tempo': 1565367407342},
