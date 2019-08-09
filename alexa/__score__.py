@@ -82,3 +82,4 @@
   {'doc_id': '90edc2df', 'carta': 'coelho', 'casa': [99, 447], 'move': 'DROP', 'ponto': True, 'valor': 'b', '_level': 1, 'tempo': 1565373389820},
   {'doc_id': '90edc2df', 'carta': 'laranja', 'casa': [457, 430], 'move': 'DROP', 'ponto': True, 'valor': 'f', '_level': 1, 'tempo': 1565373411435},
   {'doc_id': '90edc2df', 'carta': 'galocha', 'casa': [538, 428], 'move': 'DROP', 'ponto': True, 'valor': 'c', '_level': 1, 'tempo': 1565373416889},
+  {'doc_id': '90edc2df', 'carta': 'tenis', 'casa': [538, 423], 'move': 'DROP', 'ponto': True, 'valor': 'c', '_level': 1, 'tempo': 1565373419908},
