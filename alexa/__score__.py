@@ -75,3 +75,4 @@
   {'doc_id': '2e769b89', 'carta': 'peteca', 'casa': [209, 437], 'move': 'DROP', 'ponto': True, 'valor': 'e', '_level': 1, 'tempo': 1565370282230},
   {'doc_id': '2e769b89', 'carta': 'b', 'casa': [121, 432], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'GENTE', '_level': 1, 'tempo': 1565370285642},
   {'doc_id': '2e769b89', 'carta': 'passarinho', 'casa': [104, 422], 'move': 'DROP', 'ponto': True, 'valor': 'b', '_level': 1, 'tempo': 1565370298879},
+  {'doc_id': '2e769b89', 'carta': 'coelho', 'casa': [91, 457], 'move': 'DROP', 'ponto': True, 'valor': 'b', '_level': 1, 'tempo': 1565370304170},
