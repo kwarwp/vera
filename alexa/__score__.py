@@ -96,3 +96,4 @@
   {'doc_id': '299d88d7', 'carta': 'laranja', 'casa': [397, 192], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'COISA', '_level': 1, 'tempo': 1565379008902},
   {'doc_id': '299d88d7', 'carta': 'laranja', 'casa': [362, 175], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'COISA', '_level': 1, 'tempo': 1565379027004},
   {'doc_id': '299d88d7', 'carta': 'f', 'casa': [469, 470], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'GENTE', '_level': 1, 'tempo': 1565379055829},
+  {'doc_id': '299d88d7', 'carta': 'f', 'casa': [469, 470], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'GENTE', '_level': 1, 'tempo': 1565379057394},
