@@ -440,3 +440,19 @@ TypeError: 'module' object is not callable
     letra_a = Elemento() #LETRA_A, x=540, y=470, w=90, h=20, drag=True)
 TypeError: 'module' object is not callable
 '''},
+{'date': 'Fri Aug 09 2019 10:17:09.643 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 160
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 306
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 278
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 295
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 37
+    Elemento(LETRA_B, x=500, y=250, w=20, h=30, drag=True)
+TypeError: 'module' object is not callable
+'''},
