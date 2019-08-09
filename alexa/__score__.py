@@ -32,3 +32,4 @@
   {'doc_id': '9b328050', 'carta': 'bola', 'casa': [201, 457], 'move': 'DROP', 'ponto': True, 'valor': 'e', '_level': 1, 'tempo': 1565352376458},
   {'doc_id': '9b328050', 'carta': 'galocha', 'casa': [269, 187], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'COISA', '_level': 1, 'tempo': 1565352403065},
   {'doc_id': '9b328050', 'carta': 'galocha', 'casa': [531, 443], 'move': 'DROP', 'ponto': True, 'valor': 'c', '_level': 1, 'tempo': 1565352413424},
+  {'doc_id': '9b328050', 'carta': 'galocha', 'casa': [245, 116], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'COISA', '_level': 1, 'tempo': 1565352434741},
