@@ -92,3 +92,4 @@
 {'doc_id': '299d88d7', 'carta': 'Davi Augusto', 'casa': [], 'move': 'ID', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1565378895963},
 {'doc_id': '299d88d7', 'carta': 'Davi Augusto', 'casa': [], 'move': 'ID', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1565378927170},
   {'doc_id': '299d88d7', 'carta': 'tenis', 'casa': [496, 209], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'COISA', '_level': 1, 'tempo': 1565378976290},
+  {'doc_id': '299d88d7', 'carta': 'tenis', 'casa': [532, 407], 'move': 'DROP', 'ponto': True, 'valor': 'c', '_level': 1, 'tempo': 1565378999031},
