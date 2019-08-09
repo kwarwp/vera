@@ -20,3 +20,4 @@
   {'doc_id': '1a18dc4f', 'carta': ' peixe grande  ', 'casa': [461, 560], 'move': 'OLHA', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1565379631639},
   {'doc_id': '1a18dc4f', 'carta': ' peixe grande  ', 'casa': [461, 560], 'move': 'OLHA', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1565379633472},
   {'doc_id': '1a18dc4f', 'carta': ' peixe grande  ', 'casa': [476, 550], 'move': 'OLHA', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1565379636251},
+  {'doc_id': '1a18dc4f', 'carta': 'peixe médio  ', 'casa': [570, 573], 'move': 'OLHA', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1565379667370},
