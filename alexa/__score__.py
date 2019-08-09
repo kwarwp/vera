@@ -10,3 +10,4 @@
   {'doc_id': '3a91188c', 'carta': 'p', 'casa': [615, 438], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'GENTE', '_level': 1, 'tempo': 1565319530238},
   {'doc_id': '3a91188c', 'carta': 'f', 'casa': [746, 436], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'GENTE', '_level': 1, 'tempo': 1565319534523},
   {'doc_id': '3a91188c', 'carta': 'f', 'casa': [751, 483], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'GENTE', '_level': 1, 'tempo': 1565319537766},
+  {'doc_id': '3a91188c', 'carta': 'coelho', 'casa': [488, 213], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'COISA', '_level': 1, 'tempo': 1565319544526},
