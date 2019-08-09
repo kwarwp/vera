@@ -52,3 +52,4 @@
 {'doc_id': 'a3bd8524', 'carta': 'Pedro Henrique', 'casa': [], 'move': 'ID', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1565357987950},
   {'doc_id': 'a3bd8524', 'carta': 'f', 'casa': [445, 442], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'GENTE', '_level': 1, 'tempo': 1565358011356},
   {'doc_id': 'a3bd8524', 'carta': 'laranja', 'casa': [459, 439], 'move': 'DROP', 'ponto': True, 'valor': 'f', '_level': 1, 'tempo': 1565358046800},
+  {'doc_id': 'a3bd8524', 'carta': 'p', 'casa': [330, 431], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'GENTE', '_level': 1, 'tempo': 1565358050075},
