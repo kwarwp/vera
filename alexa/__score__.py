@@ -8,3 +8,4 @@
   {'doc_id': '9b328050', 'carta': 'f', 'casa': [463, 424], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'GENTE', '_level': 1, 'tempo': 1565351852431},
   {'doc_id': '9b328050', 'carta': 'f', 'casa': [463, 424], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'GENTE', '_level': 1, 'tempo': 1565351853273},
   {'doc_id': '9b328050', 'carta': 'laranja', 'casa': [450, 449], 'move': 'DROP', 'ponto': True, 'valor': 'f', '_level': 1, 'tempo': 1565351871422},
+  {'doc_id': '9b328050', 'carta': 'p', 'casa': [317, 519], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'GENTE', '_level': 1, 'tempo': 1565351896653},
