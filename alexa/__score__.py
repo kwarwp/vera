@@ -4,3 +4,4 @@
   {'doc_id': '276b89cd', 'carta': 'peteca', 'casa': [508, 445], 'move': 'DROP', 'ponto': True, 'valor': 'e', '_level': 1, 'tempo': 1565318954697},
   {'doc_id': '276b89cd', 'carta': 'e', 'casa': [508, 445], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'GENTE', '_level': 1, 'tempo': 1565318957547},
   {'doc_id': '276b89cd', 'carta': 'c', 'casa': [489, 211], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'COISA', '_level': 1, 'tempo': 1565318961046},
+{'doc_id': '276b89cd', 'carta': 'Outro Teste', 'casa': [], 'move': 'ID', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1565319126251},
