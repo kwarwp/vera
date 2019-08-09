@@ -481,3 +481,25 @@ IndentationError: expected an indented block
                                       ^
 SyntaxError: EOL while scanning string literal
 '''},
+{'date': 'Thu Aug 08 2019 23:25:48.626 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 160
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 306
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 278
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 295
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 110
+    Conjuntos()
+  module <module> line 80
+    score(carta=participante, _level=0)
+  module <module> line 19
+    INVENTARIO.elt.html = f"casa={casa}, carta={carta}, move={move}, ponto={ponto}, valor={valor}, level={level}"
+  module <module> line 1
+    (level)
+NameError: name 'level' is not defined
+'''},
