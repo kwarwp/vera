@@ -58,3 +58,4 @@
   {'doc_id': 'a3bd8524', 'carta': 'tenis', 'casa': [543, 424], 'move': 'DROP', 'ponto': True, 'valor': 'c', '_level': 1, 'tempo': 1565358109035},
   {'doc_id': 'a3bd8524', 'carta': 'e', 'casa': [203, 449], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'GENTE', '_level': 1, 'tempo': 1565358112284},
   {'doc_id': 'a3bd8524', 'carta': 'peteca', 'casa': [549, 160], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'COISA', '_level': 1, 'tempo': 1565358118765},
+  {'doc_id': 'a3bd8524', 'carta': 'peteca', 'casa': [547, 169], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'COISA', '_level': 1, 'tempo': 1565358132343},
