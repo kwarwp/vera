@@ -45,3 +45,4 @@
   {'doc_id': '4f200def', 'carta': 'maçã', 'casa': [446, 443], 'move': 'DROP', 'ponto': True, 'valor': 'f', '_level': 1, 'tempo': 1565353240509},
   {'doc_id': '4f200def', 'carta': 'bola', 'casa': [203, 423], 'move': 'DROP', 'ponto': True, 'valor': 'e', '_level': 1, 'tempo': 1565353253828},
   {'doc_id': '4f200def', 'carta': 'coelho', 'casa': [192, 435], 'move': 'DROP', 'ponto': False, 'valor': 'e', '_level': 1, 'tempo': 1565353262846},
+  {'doc_id': '4f200def', 'carta': 'coelho', 'casa': [193, 439], 'move': 'DROP', 'ponto': False, 'valor': 'e', '_level': 1, 'tempo': 1565353270910},
