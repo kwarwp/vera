@@ -76,3 +76,4 @@
   {'doc_id': '2e769b89', 'carta': 'b', 'casa': [121, 432], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'GENTE', '_level': 1, 'tempo': 1565370285642},
   {'doc_id': '2e769b89', 'carta': 'passarinho', 'casa': [104, 422], 'move': 'DROP', 'ponto': True, 'valor': 'b', '_level': 1, 'tempo': 1565370298879},
   {'doc_id': '2e769b89', 'carta': 'coelho', 'casa': [91, 457], 'move': 'DROP', 'ponto': True, 'valor': 'b', '_level': 1, 'tempo': 1565370304170},
+{'doc_id': '90edc2df', 'carta': 'Joao Paulo', 'casa': [], 'move': 'ID', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1565373293608},
