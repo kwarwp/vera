@@ -41,3 +41,4 @@
   {'doc_id': '46b843bc', 'carta': 'médio', 'casa': [849, 640], 'move': 'BALDE', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1565636783220},
   {'doc_id': '46b843bc', 'carta': ' peixe grande ', 'casa': [661, 537], 'move': 'OLHA', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1565636916744},
   {'doc_id': '46b843bc', 'carta': ' peixe médio', 'casa': [444, 614], 'move': 'OLHA', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1565636979476},
+  {'doc_id': '46b843bc', 'carta': 'peixe médio ', 'casa': [543, 601], 'move': 'OLHA', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1565637033164},
