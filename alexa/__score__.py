@@ -127,3 +127,4 @@
 {'doc_id': '66a37e46', 'carta': 'arthur mares', 'casa': [], 'move': 'ID', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1565633729618},
   {'doc_id': '66a37e46', 'carta': 'galocha', 'casa': [617, 458], 'move': 'DROP', 'ponto': True, 'valor': 'c', '_level': 1, 'tempo': 1565633831870},
   {'doc_id': '66a37e46', 'carta': 'tenis', 'casa': [608, 439], 'move': 'DROP', 'ponto': True, 'valor': 'c', '_level': 1, 'tempo': 1565633848028},
+  {'doc_id': '66a37e46', 'carta': 'laranja', 'casa': [525, 437], 'move': 'DROP', 'ponto': True, 'valor': 'f', '_level': 1, 'tempo': 1565633865331},
