@@ -133,3 +133,4 @@
   {'doc_id': '66a37e46', 'carta': 'b', 'casa': [201, 450], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'GENTE', '_level': 1, 'tempo': 1565633918135},
   {'doc_id': '66a37e46', 'carta': 'coelho', 'casa': [188, 434], 'move': 'DROP', 'ponto': True, 'valor': 'b', '_level': 1, 'tempo': 1565633944378},
   {'doc_id': '66a37e46', 'carta': 'passarinho', 'casa': [189, 446], 'move': 'DROP', 'ponto': True, 'valor': 'b', '_level': 1, 'tempo': 1565633959951},
+  {'doc_id': '66a37e46', 'carta': 'e', 'casa': [278, 430], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'GENTE', '_level': 1, 'tempo': 1565633967781},
