@@ -39,3 +39,4 @@
 {'doc_id': '46b843bc', 'carta': 'Jonathan Soares', 'casa': 'pescaria', 'move': 'JULIA', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1565636687262},
   {'doc_id': '46b843bc', 'carta': 'médio', 'casa': [885, 595], 'move': 'BALDE', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1565636781742},
   {'doc_id': '46b843bc', 'carta': 'médio', 'casa': [849, 640], 'move': 'BALDE', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1565636783220},
+  {'doc_id': '46b843bc', 'carta': ' peixe grande ', 'casa': [661, 537], 'move': 'OLHA', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1565636916744},
