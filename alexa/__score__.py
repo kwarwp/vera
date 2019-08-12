@@ -135,3 +135,4 @@
   {'doc_id': '66a37e46', 'carta': 'passarinho', 'casa': [189, 446], 'move': 'DROP', 'ponto': True, 'valor': 'b', '_level': 1, 'tempo': 1565633959951},
   {'doc_id': '66a37e46', 'carta': 'e', 'casa': [278, 430], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'GENTE', '_level': 1, 'tempo': 1565633967781},
   {'doc_id': '66a37e46', 'carta': 'bola', 'casa': [282, 441], 'move': 'DROP', 'ponto': True, 'valor': 'e', '_level': 1, 'tempo': 1565633978640},
+{'doc_id': 'c7cbbc56', 'carta': 'jonathan soares', 'casa': [], 'move': 'ID', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1565637149291},
