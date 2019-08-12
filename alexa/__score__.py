@@ -150,3 +150,4 @@
   {'doc_id': 'c7cbbc56', 'carta': 'galocha', 'casa': [640, 440], 'move': 'DROP', 'ponto': True, 'valor': 'c', '_level': 1, 'tempo': 1565637274079},
   {'doc_id': 'c7cbbc56', 'carta': 'laranja', 'casa': [534, 437], 'move': 'DROP', 'ponto': True, 'valor': 'f', '_level': 1, 'tempo': 1565637282753},
   {'doc_id': 'c7cbbc56', 'carta': 'peteca', 'casa': [247, 430], 'move': 'DROP', 'ponto': True, 'valor': 'e', '_level': 1, 'tempo': 1565637290873},
+  {'doc_id': 'c7cbbc56', 'carta': 'e', 'casa': [247, 430], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'GENTE', '_level': 1, 'tempo': 1565637291338},
