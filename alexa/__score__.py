@@ -111,3 +111,4 @@
   {'doc_id': '6bd8c796', 'carta': 'passarinho', 'casa': [98, 424], 'move': 'DROP', 'ponto': True, 'valor': 'b', '_level': 1, 'tempo': 1565379479715},
   {'doc_id': '6bd8c796', 'carta': 'galocha', 'casa': [513, 449], 'move': 'DROP', 'ponto': True, 'valor': 'c', '_level': 1, 'tempo': 1565379488154},
 {'doc_id': 'a59e6885', 'carta': '', 'casa': [], 'move': 'ID', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1565570622219},
+{'doc_id': '9b350e2d', 'carta': 'kaua jacintho', 'casa': [], 'move': 'ID', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1565631719860},
