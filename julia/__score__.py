@@ -31,3 +31,4 @@
 {'doc_id': '8359060f', 'carta': '', 'casa': 'pescaria', 'move': 'JULIA', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1565633109151},
 {'doc_id': '8359060f', 'carta': 'Arthur Mares', 'casa': 'pescaria', 'move': 'JULIA', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1565633151960},
   {'doc_id': '8359060f', 'carta': ' peixe médio', 'casa': [446, 602], 'move': 'OLHA', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1565633220181},
+  {'doc_id': '8359060f', 'carta': ' peixe médio', 'casa': [446, 602], 'move': 'OLHA', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1565633220921},
