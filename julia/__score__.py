@@ -28,3 +28,4 @@
   {'doc_id': '1a18dc4f', 'carta': 'peixe médio  ', 'casa': [576, 568], 'move': 'OLHA', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1565379856209},
 {'doc_id': 'fe076b29', 'carta': 'kaua jacintho', 'casa': 'pescaria', 'move': 'JULIA', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1565631878253},
   {'doc_id': 'fe076b29', 'carta': 'pequeno', 'casa': [166, 588], 'move': 'BALDE', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1565631912779},
+{'doc_id': '8359060f', 'carta': '', 'casa': 'pescaria', 'move': 'JULIA', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1565633109151},
