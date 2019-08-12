@@ -138,3 +138,4 @@
 {'doc_id': 'c7cbbc56', 'carta': 'jonathan soares', 'casa': [], 'move': 'ID', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1565637149291},
   {'doc_id': 'c7cbbc56', 'carta': 'tenis', 'casa': [627, 475], 'move': 'DROP', 'ponto': True, 'valor': 'c', '_level': 1, 'tempo': 1565637177513},
   {'doc_id': 'c7cbbc56', 'carta': 'passarinho', 'casa': [369, 464], 'move': 'DROP', 'ponto': False, 'valor': 'p', '_level': 1, 'tempo': 1565637186527},
+  {'doc_id': 'c7cbbc56', 'carta': 'passarinho', 'casa': [236, 414], 'move': 'DROP', 'ponto': True, 'valor': 'b', '_level': 1, 'tempo': 1565637189979},
