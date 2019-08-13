@@ -44,3 +44,4 @@
   {'doc_id': '46b843bc', 'carta': 'peixe médio ', 'casa': [543, 601], 'move': 'OLHA', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1565637033164},
   {'doc_id': '46b843bc', 'carta': 'peixe médio ', 'casa': [525, 121], 'move': 'OLHA', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1565637054150},
 {'doc_id': 'f454de81', 'carta': 'maria claudia', 'casa': 'pescaria', 'move': 'JULIA', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1565695700139},
+{'doc_id': '1d164fe8', 'carta': 'Erick Pinheiro', 'casa': 'pescaria', 'move': 'JULIA', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1565704340939},
