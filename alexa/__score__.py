@@ -172,3 +172,4 @@
   {'doc_id': '77b31008', 'carta': 'galocha', 'casa': [632, 466], 'move': 'DROP', 'ponto': True, 'valor': 'c', '_level': 1, 'tempo': 1565695605341},
   {'doc_id': '77b31008', 'carta': 'peteca', 'casa': [400, 430], 'move': 'DROP', 'ponto': False, 'valor': 'p', '_level': 1, 'tempo': 1565695660476},
   {'doc_id': '77b31008', 'carta': 'peteca', 'casa': [280, 455], 'move': 'DROP', 'ponto': True, 'valor': 'e', '_level': 1, 'tempo': 1565695670602},
+{'doc_id': '4df491c5', 'carta': '', 'casa': [], 'move': 'ID', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1565704068372},
