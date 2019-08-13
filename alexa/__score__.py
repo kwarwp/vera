@@ -164,3 +164,4 @@
   {'doc_id': '77b31008', 'carta': 'bola', 'casa': [286, 441], 'move': 'DROP', 'ponto': True, 'valor': 'e', '_level': 1, 'tempo': 1565695409598},
   {'doc_id': '77b31008', 'carta': 'tenis', 'casa': [567, 223], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'COISA', '_level': 1, 'tempo': 1565695450497},
   {'doc_id': '77b31008', 'carta': 'tenis', 'casa': [265, 418], 'move': 'DROP', 'ponto': False, 'valor': 'e', '_level': 1, 'tempo': 1565695461549},
+  {'doc_id': '77b31008', 'carta': 'maçã', 'casa': [154, 207], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'COISA', '_level': 1, 'tempo': 1565695556816},
