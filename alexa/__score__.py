@@ -154,3 +154,4 @@
 {'doc_id': '77b31008', 'carta': 'Maria Claudia', 'casa': [], 'move': 'ID', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1565695115040},
   {'doc_id': '77b31008', 'carta': 'coelho', 'casa': [255, 198], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'COISA', '_level': 1, 'tempo': 1565695144615},
   {'doc_id': '77b31008', 'carta': 'coelho', 'casa': [267, 201], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'COISA', '_level': 1, 'tempo': 1565695167378},
+  {'doc_id': '77b31008', 'carta': 'coelho', 'casa': [260, 186], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'COISA', '_level': 1, 'tempo': 1565695178815},
