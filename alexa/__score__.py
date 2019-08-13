@@ -151,3 +151,4 @@
   {'doc_id': 'c7cbbc56', 'carta': 'laranja', 'casa': [534, 437], 'move': 'DROP', 'ponto': True, 'valor': 'f', '_level': 1, 'tempo': 1565637282753},
   {'doc_id': 'c7cbbc56', 'carta': 'peteca', 'casa': [247, 430], 'move': 'DROP', 'ponto': True, 'valor': 'e', '_level': 1, 'tempo': 1565637290873},
   {'doc_id': 'c7cbbc56', 'carta': 'e', 'casa': [247, 430], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'GENTE', '_level': 1, 'tempo': 1565637291338},
+{'doc_id': '77b31008', 'carta': 'Maria Claudia', 'casa': [], 'move': 'ID', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1565695115040},
