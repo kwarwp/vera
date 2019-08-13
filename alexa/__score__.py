@@ -176,3 +176,4 @@
 {'doc_id': '4df491c5', 'carta': 'Erick Pinheiro', 'casa': [], 'move': 'ID', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1565704082115},
   {'doc_id': '4df491c5', 'carta': 'passarinho', 'casa': [181, 434], 'move': 'DROP', 'ponto': True, 'valor': 'b', '_level': 1, 'tempo': 1565704133511},
   {'doc_id': '4df491c5', 'carta': 'bola', 'casa': [298, 441], 'move': 'DROP', 'ponto': True, 'valor': 'e', '_level': 1, 'tempo': 1565704147312},
+  {'doc_id': '4df491c5', 'carta': 'laranja', 'casa': [549, 443], 'move': 'DROP', 'ponto': True, 'valor': 'f', '_level': 1, 'tempo': 1565704186149},
