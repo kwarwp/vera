@@ -159,3 +159,4 @@
   {'doc_id': '77b31008', 'carta': 'coelho', 'casa': [158, 437], 'move': 'DROP', 'ponto': True, 'valor': 'b', '_level': 1, 'tempo': 1565695268559},
   {'doc_id': '77b31008', 'carta': 'passarinho', 'casa': [169, 454], 'move': 'DROP', 'ponto': True, 'valor': 'b', '_level': 1, 'tempo': 1565695300474},
   {'doc_id': '77b31008', 'carta': 'e', 'casa': [269, 416], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'GENTE', '_level': 1, 'tempo': 1565695314958},
+  {'doc_id': '77b31008', 'carta': 'bola', 'casa': [244, 264], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'COISA', '_level': 1, 'tempo': 1565695360322},
