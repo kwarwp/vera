@@ -180,3 +180,4 @@
   {'doc_id': '4df491c5', 'carta': 'galocha', 'casa': [624, 438], 'move': 'DROP', 'ponto': True, 'valor': 'c', '_level': 1, 'tempo': 1565704202515},
   {'doc_id': '4df491c5', 'carta': 'tenis', 'casa': [630, 433], 'move': 'DROP', 'ponto': True, 'valor': 'c', '_level': 1, 'tempo': 1565704215431},
   {'doc_id': '4df491c5', 'carta': 'peteca', 'casa': [290, 466], 'move': 'DROP', 'ponto': True, 'valor': 'e', '_level': 1, 'tempo': 1565704226307},
+  {'doc_id': '4df491c5', 'carta': 'coelho', 'casa': [182, 436], 'move': 'DROP', 'ponto': True, 'valor': 'b', '_level': 1, 'tempo': 1565704235013},
