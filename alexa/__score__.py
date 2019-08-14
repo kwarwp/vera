@@ -182,3 +182,4 @@
   {'doc_id': '4df491c5', 'carta': 'peteca', 'casa': [290, 466], 'move': 'DROP', 'ponto': True, 'valor': 'e', '_level': 1, 'tempo': 1565704226307},
   {'doc_id': '4df491c5', 'carta': 'coelho', 'casa': [182, 436], 'move': 'DROP', 'ponto': True, 'valor': 'b', '_level': 1, 'tempo': 1565704235013},
   {'doc_id': '4df491c5', 'carta': 'maçã', 'casa': [533, 430], 'move': 'DROP', 'ponto': True, 'valor': 'f', '_level': 1, 'tempo': 1565704244280},
+{'doc_id': '873f7d4d', 'carta': 'Gabryel ', 'casa': [], 'move': 'ID', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1565789575059},
