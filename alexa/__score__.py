@@ -188,3 +188,4 @@
   {'doc_id': '873f7d4d', 'carta': 'passarinho', 'casa': [525, 181], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'COISA', '_level': 1, 'tempo': 1565789637476},
   {'doc_id': '873f7d4d', 'carta': 'passarinho', 'casa': [506, 185], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'COISA', '_level': 1, 'tempo': 1565789646780},
   {'doc_id': '873f7d4d', 'carta': 'passarinho', 'casa': [201, 424], 'move': 'DROP', 'ponto': True, 'valor': 'b', '_level': 1, 'tempo': 1565789655895},
+  {'doc_id': '873f7d4d', 'carta': 'coelho', 'casa': [176, 450], 'move': 'DROP', 'ponto': True, 'valor': 'b', '_level': 1, 'tempo': 1565789671334},
