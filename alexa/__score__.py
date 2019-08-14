@@ -191,3 +191,4 @@
   {'doc_id': '873f7d4d', 'carta': 'coelho', 'casa': [176, 450], 'move': 'DROP', 'ponto': True, 'valor': 'b', '_level': 1, 'tempo': 1565789671334},
   {'doc_id': '873f7d4d', 'carta': 'tenis', 'casa': [633, 438], 'move': 'DROP', 'ponto': True, 'valor': 'c', '_level': 1, 'tempo': 1565789721874},
   {'doc_id': '873f7d4d', 'carta': 'laranja', 'casa': [626, 436], 'move': 'DROP', 'ponto': False, 'valor': 'c', '_level': 1, 'tempo': 1565789751403},
+  {'doc_id': '873f7d4d', 'carta': 'laranja', 'casa': [618, 448], 'move': 'DROP', 'ponto': False, 'valor': 'c', '_level': 1, 'tempo': 1565789770965},
