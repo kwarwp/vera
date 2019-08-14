@@ -199,3 +199,4 @@
   {'doc_id': '873f7d4d', 'carta': 'maçã', 'casa': [534, 450], 'move': 'DROP', 'ponto': True, 'valor': 'f', '_level': 1, 'tempo': 1565789893990},
   {'doc_id': '873f7d4d', 'carta': 'galocha', 'casa': [280, 456], 'move': 'DROP', 'ponto': False, 'valor': 'e', '_level': 1, 'tempo': 1565789906526},
   {'doc_id': '873f7d4d', 'carta': 'galocha', 'casa': [184, 438], 'move': 'DROP', 'ponto': False, 'valor': 'b', '_level': 1, 'tempo': 1565789924222},
+  {'doc_id': '873f7d4d', 'carta': 'galocha', 'casa': [608, 429], 'move': 'DROP', 'ponto': True, 'valor': 'c', '_level': 1, 'tempo': 1565789939160},
