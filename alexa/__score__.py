@@ -185,3 +185,4 @@
 {'doc_id': '873f7d4d', 'carta': 'Gabryel ', 'casa': [], 'move': 'ID', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1565789575059},
   {'doc_id': '873f7d4d', 'carta': 'c', 'casa': [591, 454], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'GENTE', '_level': 1, 'tempo': 1565789596157},
   {'doc_id': '873f7d4d', 'carta': 'passarinho', 'casa': [517, 180], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'COISA', '_level': 1, 'tempo': 1565789624195},
+  {'doc_id': '873f7d4d', 'carta': 'passarinho', 'casa': [525, 181], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'COISA', '_level': 1, 'tempo': 1565789637476},
