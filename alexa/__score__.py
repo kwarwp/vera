@@ -201,3 +201,4 @@
   {'doc_id': '873f7d4d', 'carta': 'galocha', 'casa': [184, 438], 'move': 'DROP', 'ponto': False, 'valor': 'b', '_level': 1, 'tempo': 1565789924222},
   {'doc_id': '873f7d4d', 'carta': 'galocha', 'casa': [608, 429], 'move': 'DROP', 'ponto': True, 'valor': 'c', '_level': 1, 'tempo': 1565789939160},
 {'doc_id': '164e4ae7', 'carta': 'teste', 'casa': [], 'move': 'ID', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1565922368507},
+{'doc_id': '9b82a699', 'carta': 'Miguel Maciel', 'casa': [], 'move': 'ID', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1565957948904},
