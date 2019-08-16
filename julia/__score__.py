@@ -52,3 +52,4 @@
 {'doc_id': '3facefd0', 'carta': '', 'casa': 'pescaria', 'move': 'JULIA', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1565922703591},
 {'doc_id': '9c6f12f7', 'carta': 'teste', 'casa': 'pescaria', 'move': 'JULIA', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1565923711274},
 {'doc_id': 'fffe2c66', 'carta': 'miguel maciel', 'casa': 'pescaria', 'move': 'JULIA', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1565958398253},
+  {'doc_id': 'fffe2c66', 'carta': 'pequeno', 'casa': [114, 562], 'move': 'BALDE', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1565958631960},
