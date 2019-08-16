@@ -204,3 +204,4 @@
 {'doc_id': '9b82a699', 'carta': 'Miguel Maciel', 'casa': [], 'move': 'ID', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1565957948904},
 {'doc_id': '9b82a699', 'carta': 'Miguel Maciel', 'casa': [], 'move': 'ID', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1565957960704},
   {'doc_id': '9b82a699', 'carta': 'coelho', 'casa': [190, 198], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'COISA', '_level': 1, 'tempo': 1565958018471},
+  {'doc_id': '9b82a699', 'carta': 'coelho', 'casa': [100, 432], 'move': 'DROP', 'ponto': True, 'valor': 'b', '_level': 1, 'tempo': 1565958027948},
