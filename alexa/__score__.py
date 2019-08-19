@@ -214,3 +214,4 @@
   {'doc_id': '9b82a699', 'carta': 'tenis', 'casa': [537, 442], 'move': 'DROP', 'ponto': True, 'valor': 'c', '_level': 1, 'tempo': 1565958207306},
   {'doc_id': '9b82a699', 'carta': 'bola', 'casa': [204, 440], 'move': 'DROP', 'ponto': True, 'valor': 'e', '_level': 1, 'tempo': 1565958284554},
   {'doc_id': '9b82a699', 'carta': 'peteca', 'casa': [217, 452], 'move': 'DROP', 'ponto': True, 'valor': 'e', '_level': 1, 'tempo': 1565958318253},
+{'doc_id': '34675950', 'carta': 'arthur mares guia', 'casa': [], 'move': 'ID', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1566237935389},
