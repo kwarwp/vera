@@ -219,3 +219,4 @@
   {'doc_id': '3b240435', 'carta': 'galocha', 'casa': [613, 408], 'move': 'DROP', 'ponto': True, 'valor': 'c', '_level': 1, 'tempo': 1566394161600},
   {'doc_id': '3b240435', 'carta': 'laranja', 'casa': [620, 429], 'move': 'DROP', 'ponto': False, 'valor': 'c', '_level': 1, 'tempo': 1566394181185},
   {'doc_id': '3b240435', 'carta': 'laranja', 'casa': [612, 414], 'move': 'DROP', 'ponto': False, 'valor': 'c', '_level': 1, 'tempo': 1566394184446},
+  {'doc_id': '3b240435', 'carta': 'tenis', 'casa': [614, 431], 'move': 'DROP', 'ponto': True, 'valor': 'c', '_level': 1, 'tempo': 1566394215674},
