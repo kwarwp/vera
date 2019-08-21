@@ -217,3 +217,4 @@
 {'doc_id': '34675950', 'carta': 'arthur mares guia', 'casa': [], 'move': 'ID', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1566237935389},
 {'doc_id': '3b240435', 'carta': 'Gabryel Arthur', 'casa': [], 'move': 'ID', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1566394118329},
   {'doc_id': '3b240435', 'carta': 'galocha', 'casa': [613, 408], 'move': 'DROP', 'ponto': True, 'valor': 'c', '_level': 1, 'tempo': 1566394161600},
+  {'doc_id': '3b240435', 'carta': 'laranja', 'casa': [620, 429], 'move': 'DROP', 'ponto': False, 'valor': 'c', '_level': 1, 'tempo': 1566394181185},
