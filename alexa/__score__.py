@@ -223,3 +223,4 @@
   {'doc_id': '3b240435', 'carta': 'laranja', 'casa': [528, 432], 'move': 'DROP', 'ponto': True, 'valor': 'f', '_level': 1, 'tempo': 1566394231536},
   {'doc_id': '3b240435', 'carta': 'bola', 'casa': [289, 427], 'move': 'DROP', 'ponto': True, 'valor': 'e', '_level': 1, 'tempo': 1566394257992},
   {'doc_id': '3b240435', 'carta': 'peteca', 'casa': [296, 428], 'move': 'DROP', 'ponto': True, 'valor': 'e', '_level': 1, 'tempo': 1566394273679},
+  {'doc_id': '3b240435', 'carta': 'passarinho', 'casa': [191, 425], 'move': 'DROP', 'ponto': True, 'valor': 'b', '_level': 1, 'tempo': 1566394291005},
