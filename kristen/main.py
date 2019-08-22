@@ -29,5 +29,5 @@ cobra.direita = tesouro
 tesouro.vai()
 desabamento = Cena(DESABAMENTO, esquerda=tesouro)
 tesouro.direita = desabamento
-desabamento.vai
+desabamento.vai()
 
