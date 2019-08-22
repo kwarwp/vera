@@ -32,12 +32,12 @@ tesouro.vai()
 desabamento = Cena(DESABAMENTO, esquerda=tesouro)
 tesouro.direita = desabamento
 desabamento.vai()
-tesouro = Cena(TESOURO, esquerda=desabamento)
-desabamento.direita = tesouro
-tesouro.vai()
-tesouro = Cena(TESOURO, esquerda=tesouro)
-tesouro.direita = tesouro
-terouro.vai()
+tesouro1 = Cena(TESOURO, esquerda=desabamento)
+desabamento.direita = tesouro1
+tesouro1.vai()
+tesouro2 = Cena(TESOURO, esquerda=tesouro1)
+tesouro1.direita = tesouro2
+terouro2.vai()
 mumia = Cena(MUMIA, esquerda=tesouro)
 tesouro.direita = mumia
 mumia.vai()
