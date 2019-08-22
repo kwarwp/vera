@@ -1,7 +1,7 @@
 # vera.teacher.main.py
 from _spy.vitollino.main import Cena,STYLE, Texto,INVENTARIO
 from elemento.main import Elemento
-STYLE["width"] = 800
+STYLE["width"] = 1000
 STYLE["height"] = "600px"
 LETRA_A = "https://i.imgur.com/sFciRzA.jpg"
 LETRA_B = "https://i.imgur.com/IHu7zVe.jpg"
