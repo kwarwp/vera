@@ -113,6 +113,7 @@ class JogoLetra:
         parque.vai()
         self.palavramontada=""
     def clicounaletra(self,ev):
-        INVENTARIO.bota(self.mapa[ev.target.id])
+        #INVENTARIO.bota(self.mapa[ev.target.id])
+        INVENTARIO.bota(Elemento(globals()[f"LETRA_{ev.target.id}"]))
         self.palavramontada+=ev.target.id
 JogoLetra()
