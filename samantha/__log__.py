@@ -560,3 +560,10 @@ AttributeError: 'JogoLetra' object has no attribute 'letra_h'
     self.mapa=dict(A=self.letra_a,B=self.letra_b,C=self.letra_c,D=self.letra_d,E=self.letra_e,F=self.letra_f,
 AttributeError: 'JogoLetra' object has no attribute 'letra_h'
 '''},
+{'date': 'Thu Aug 22 2019 10:52:34.289 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 106
+  self.letra_z = LETRA_Z,tit="Z", x=250, y=105, w=35, h=30, drag=True,vai=self.clicounaletra)
+                                                                                ^
+SyntaxError: invalid syntax
+'''},
