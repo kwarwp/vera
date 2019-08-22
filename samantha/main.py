@@ -45,7 +45,7 @@ class Crianca:
         crianca.vai = self.a
         
     def a (self, _):
-        texto = Texto (self.parque, UMTEXTO)
+        texto = Texto (self.parque, f"voce escreveu {self.parque.palavramontada}")
         texto.vai()
     
 class JogoLetra:
@@ -110,6 +110,8 @@ class JogoLetra:
           M=self.letra_m,N=self.letra_n,O=self.letra_o,P=self.letra_p,Q=self.letra_q,R=self.letra_r,
           S=self.letra_s,T=self.letra_t,U=self.letra_u,V=self.letra_v,W=self.letra_w,X=self.letra_x,Y=self.letra_y,Z=self.letra_z)
         parque.vai()
+        self.palavramontada=""
     def clicounaletra(self,ev):
         INVENTARIO.bota(self.mapa[ev.target.id])
+        self.palavramontada+=ev.target.id
 JogoLetra()
