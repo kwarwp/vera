@@ -42,9 +42,9 @@ mumia = Cena(MUMIA, esquerda=tesouro2)
 tesouro2.direita = mumia
 mumia.vai()
 tesouro3 = Cena(TESOURO, esquerda=mumia)
-munia.direita = tesouro3
+mumia.direita = tesouro3
 tesouro3.vai()
-fogo = Cena(FOGO, esquerda=tesouro3)
-tesouro3.direita = fogo
-fogo.vai()
+fogo2 = Cena(FOGO, esquerda=tesouro3)
+tesouro3.direita = fogo2
+fogo2.vai()
 
