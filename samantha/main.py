@@ -32,7 +32,7 @@ LETRA_Z = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAPDxAPDx
 
 CENA_PARQUE = "https://i.imgur.com/bPDwwQO.jpg"
 CENA_CRIANCA = "https://i.imgur.com/hKFY2DF.png"
-UMTEXTO = "Monte uma palavra, use sua criatividade"
+UMTEXTO = "Monte uma palavra, use a criatividade"
 
 class Crianca: 
     def __init__(self, parque, jogo, tit="joana", x=400, y=470):
