@@ -1,5 +1,5 @@
 # vera.teacher.main.py
-from _spy.vitollino.main import Cena,STYLE, Texto
+from _spy.vitollino.main import Cena,STYLE, Texto,INVENTARIO
 from elemento.main import Elemento
 STYLE["width"] = 800
 STYLE["height"] = "600px"
@@ -50,7 +50,7 @@ class Crianca:
 class JogoLetra:
     def __init__(self): 
         parque = Cena (CENA_PARQUE)
-        letra_a = Elemento(LETRA_A, x=540, y=470, w=90, h=20, drag=True)
+        self.letra_a = Elemento(LETRA_A,tit="A", x=540, y=470, w=90, h=20, drag=True)
         letra_a.entra(parque)
         letra_b = Elemento(LETRA_B, x=500, y=250, w=20, h=30, drag=True)
         letra_b.entra(parque)
@@ -104,5 +104,6 @@ class JogoLetra:
         letra_z.entra(parque)
         Crianca(parque, tit="joana")
         parque.vai()
-        
+    def clicounaletra(self,ev):
+        INVENTARIO.bota(self.letra_a)
 JogoLetra()
