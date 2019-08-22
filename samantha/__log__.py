@@ -492,3 +492,10 @@ NameError: name 'letra_a' is not defined
     self.mapa=dict(A=self.letra_a,B=self.letra_b)
 AttributeError: 'JogoLetra' object has no attribute 'letra_b'
 '''},
+{'date': 'Thu Aug 22 2019 09:10:49.33 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 55
+  self.letra_b = Elemento(LETRA_B,tit="B" x=500, y=250, w=20, h=30, drag=True,vai=self.clicounaletra)
+                                           ^
+SyntaxError: invalid syntax
+'''},
