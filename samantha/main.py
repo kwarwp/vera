@@ -105,6 +105,9 @@ class JogoLetra:
         letra_z.entra(parque)
         Crianca(parque, tit="joana")
         self.mapa=dict(A=self.letra_a,B=self.letra_b,C=self.letra_c,D=self.letra_d,E=self.letra_e,F=self.letra_f)
+        self.mapa=dict(G=self.letra_g,H=self.letra_h,I=self.letra_i,J=self.letra_j,K=self.letra_k,L=self.letra_l)
+        self.mapa=dict(M=self.letra_m,N=self.letra_n,O=self.letra_o,P=self.letra_p,Q=self.letra_q,R=self.letra_r)
+        self.mapa=dict(S=self.letra_s)
         parque.vai()
     def clicounaletra(self,ev):
         INVENTARIO.bota(self.mapa[ev.target.id])
