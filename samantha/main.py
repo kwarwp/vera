@@ -50,10 +50,11 @@ class Crianca:
 class JogoLetra:
     def __init__(self): 
         parque = Cena (CENA_PARQUE)
+        INVENTARIO.inicia()
         self.letra_a = Elemento(LETRA_A,tit="A", x=540, y=470, w=90, h=20, drag=True,vai=self.clicounaletra)
         self.letra_a.entra(parque)
-        letra_b = Elemento(LETRA_B, x=500, y=250, w=20, h=30, drag=True)
-        letra_b.entra(parque)
+        self.letra_b = Elemento(LETRA_B,tit="B", x=500, y=250, w=20, h=30, drag=True,vai=self.clicounaletra)
+        self.letra_b.entra(parque)
         letra_c = Elemento(LETRA_C, x=400, y=240, w=20, h=30, drag=True)
         letra_c.entra(parque)
         letra_d = Elemento(LETRA_D, x=250, y=250, w=20, h=30, drag=True)
@@ -103,7 +104,8 @@ class JogoLetra:
         letra_z = Elemento(LETRA_Z, x=250, y=105, w=35, h=30, drag=True)
         letra_z.entra(parque)
         Crianca(parque, tit="joana")
+        self.mapa=dict(A=self.letra_a,B=self.letra_b)
         parque.vai()
     def clicounaletra(self,ev):
-        INVENTARIO.bota(self.letra_a)
+        INVENTARIO.bota(self.mapa[ev.target.id])
 JogoLetra()
