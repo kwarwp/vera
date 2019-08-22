@@ -26,8 +26,8 @@ artefato.direita = cobra
 cobra.vai()
 tesouro = Cena(TESOURO, esquerda=cobra)
 cobra.direita = tesouro
-tesouro,vai()
+tesouro.vai()
 desabamento = Cena(DESABAMENTO, esquerda=tesouro)
 tesouro.direita = desabamento
-desabamento.vai()
+desabamento.vai
 
