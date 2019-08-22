@@ -35,8 +35,9 @@ CENA_CRIANCA = "https://i.imgur.com/hKFY2DF.png"
 UMTEXTO = "Monte uma palavra, use sua criatividade"
 
 class Crianca: 
-    def __init__(self, parque, tit="joana", x=400, y=470):
+    def __init__(self, parque, jogo, tit="joana", x=400, y=470):
         tit=input("escreva seu nome")
+        self.jogo = jogo
         Texto(parque,UMTEXTO).vai()
         self.parque, self.tit = parque, tit
         escolhas = {"letra_a" : self.a, "letra a": self.a}
@@ -45,7 +46,7 @@ class Crianca:
         crianca.vai = self.a
         
     def a (self, _):
-        texto = Texto (self.parque, f"voce escreveu {self.parque.palavramontada}")
+        texto = Texto (self.parque, f"voce escreveu {self.jogo.palavramontada}")
         texto.vai()
     
 class JogoLetra:
@@ -104,7 +105,7 @@ class JogoLetra:
         self.letra_y.entra(parque)
         self.letra_z = Elemento(LETRA_Z,tit="Z", x=250, y=105, w=35, h=30, drag=True,vai=self.clicounaletra)
         self.letra_z.entra(parque)
-        Crianca(parque, tit="joana")
+        Crianca(parque, self, tit="joana")
         self.mapa=dict(A=self.letra_a,B=self.letra_b,C=self.letra_c,D=self.letra_d,E=self.letra_e,F=self.letra_f,
           G=self.letra_g,H=self.letra_h,I=self.letra_i,J=self.letra_j,K=self.letra_k,L=self.letra_l,
           M=self.letra_m,N=self.letra_n,O=self.letra_o,P=self.letra_p,Q=self.letra_q,R=self.letra_r,
