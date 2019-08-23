@@ -233,3 +233,10 @@ SyntaxError: invalid syntax
         ^
 SyntaxError: missing parenthesis in call to 'print'
 '''},
+{'date': 'Fri Aug 23 2019 00:28:32.642 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 15
+  def embaralhar(self):
+  ^
+IndentationError: unexpected indent
+'''},
