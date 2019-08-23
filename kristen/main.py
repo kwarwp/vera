@@ -10,10 +10,8 @@ COBRA = "https://i.imgur.com/MydpgBT.jpg"
 DESABAMENTO = "https://i.imgur.com/jnxWklS.jpg"
 MUMIA = "https://i.imgur.com/3215w01.jpg" 
 ARANHA = "http://varg.wdfiles.com/local--files/sr-annals-1/Spiders.jpg"
-print ("Primeira rodada")
 templo = Cena(TEMPLO)
 templo.vai()
-input("Você descobriu uma câmara do templo. Você entra nela ou sai?")
 acampamento = Cena(ACAMPAMENTO, esquerda=templo)
 templo.direita = acampamento
 acampamento.vai()
