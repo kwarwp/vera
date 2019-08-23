@@ -45,7 +45,10 @@ mumia.vai()
 tesouro3 = Cena(TESOURO, esquerda=mumia)
 mumia.direita = tesouro3
 tesouro3.vai()
-fogo2 = Cena(FOGO, esquerda=tesouro3)
-tesouro3.direita = fogo2
+aranha = Cena(ARANHA, esquerda=tesouro3)
+tesouro3.direita = aranha
+aranha.vai()
+fogo2 = Cena(FOGO, esquerda=aranha)
+aranha.direita = fogo2
 fogo2.vai()
 
