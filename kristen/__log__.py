@@ -219,3 +219,10 @@ NameError: name 'terouro2' is not defined
     munia.direita = tesouro3
 NameError: name 'munia' is not defined
 '''},
+{'date': 'Thu Aug 22 2019 23:58:15.493 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 12
+  print (Primeira rodada)
+                   ^
+SyntaxError: invalid syntax
+'''},
