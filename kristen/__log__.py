@@ -226,3 +226,10 @@ NameError: name 'munia' is not defined
                    ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Fri Aug 23 2019 00:15:02.389 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 13
+  print "Primeira rodada"
+        ^
+SyntaxError: missing parenthesis in call to 'print'
+'''},
