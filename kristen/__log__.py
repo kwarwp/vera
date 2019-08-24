@@ -240,3 +240,10 @@ SyntaxError: missing parenthesis in call to 'print'
   ^
 IndentationError: unexpected indent
 '''},
+{'date': 'Sat Aug 24 2019 13:49:54.988 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 3
+  from 
+       ^
+SyntaxError: invalid syntax
+'''},
