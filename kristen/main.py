@@ -10,6 +10,13 @@ COBRA = "https://i.imgur.com/MydpgBT.jpg"
 DESABAMENTO = "https://i.imgur.com/jnxWklS.jpg"
 MUMIA = "https://i.imgur.com/3215w01.jpg" 
 ARANHA = "http://varg.wdfiles.com/local--files/sr-annals-1/Spiders.jpg"
+def decisao (carta,anterior):
+	input ("Você descobriu uma câmara do templo. Você entra nela ou sai?")
+	if resposta == "entro": 
+		carta.vai() 
+	elif resposta == "saio":
+		anterior.vai()
+RODADA = "Primeira Rodada"
 templo = Cena(TEMPLO)
 templo.vai()
 acampamento = Cena(ACAMPAMENTO, esquerda=templo)
@@ -18,6 +25,7 @@ acampamento.vai()
 tesouro = Cena(TESOURO, esquerda=acampamento)
 acampamento.direita = tesouro
 tesouro.vai()
+decisao(tesouro,fogo)
 fogo = Cena(FOGO, esquerda=tesouro)
 tesouro.direita = fogo
 fogo.vai()
