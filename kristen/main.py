@@ -10,7 +10,7 @@ COBRA = "https://i.imgur.com/MydpgBT.jpg"
 DESABAMENTO = "https://i.imgur.com/jnxWklS.jpg"
 MUMIA = "https://i.imgur.com/3215w01.jpg" 
 ARANHA = "http://varg.wdfiles.com/local--files/sr-annals-1/Spiders.jpg"
-def decisao (carta,anterior):
+def decisao (anterior,carta):
 	input ("Você descobriu uma câmara do templo. Você entra nela ou sai?")
 	if resposta == "entro": 
 		carta.vai() 
