@@ -1,5 +1,6 @@
 # vera.kristen.main.py
 from _spy.vitollino.main import Cena
+from random import shuffle
 TEMPLO ="https://i.imgur.com/dQqwYul.jpg"
 ACAMPAMENTO = "https://i.imgur.com/ba43tjx.jpg"
 MOCHILA = "https://i.imgur.com/sTWdwDV.png"
@@ -18,45 +19,35 @@ def decisao (anterior,carta):
         anterior.vai()
 RODADA = "Primeira Rodada"
 templo = Cena(TEMPLO)
-templo.vai()
 acampamento = Cena(ACAMPAMENTO, esquerda=templo)
 templo.direita = acampamento
-acampamento.vai()
 tesouro = Cena(TESOURO, esquerda=acampamento)
 acampamento.direita = tesouro
-tesouro.vai()
-decisao(tesouro,fogo)
 fogo = Cena(FOGO, esquerda=tesouro)
+# decisao(tesouro, fogo)
 tesouro.direita = fogo
-fogo.vai()
 artefato = Cena(ARTEFATO1, esquerda=fogo)
 fogo.direita = artefato
-artefato.vai()
 cobra = Cena(COBRA, esquerda=artefato)
 artefato.direita = cobra
-cobra.vai()
 tesouro0 = Cena(TESOURO, esquerda=cobra)
 cobra.direita = tesouro0
-tesouro0.vai()
 desabamento = Cena(DESABAMENTO, esquerda=tesouro0)
 tesouro0.direita = desabamento
-desabamento.vai()
 tesouro1 = Cena(TESOURO, esquerda=desabamento)
 desabamento.direita = tesouro1
-tesouro1.vai()
 tesouro2 = Cena(TESOURO, esquerda=tesouro1)
 tesouro1.direita = tesouro2
-tesouro2.vai()
 mumia = Cena(MUMIA, esquerda=tesouro2)
 tesouro2.direita = mumia
-mumia.vai()
 tesouro3 = Cena(TESOURO, esquerda=mumia)
 mumia.direita = tesouro3
-tesouro3.vai()
 aranha = Cena(ARANHA, esquerda=tesouro3)
 tesouro3.direita = aranha
-aranha.vai()
 fogo2 = Cena(FOGO, esquerda=aranha)
 aranha.direita = fogo2
-fogo2.vai()
+baralho = [fogo, tesouro, aranha, mumia, artefato, desabamento]
+shuffle(baralho)
+umacarta = baralho[0]
+umacarta.vai()
 
