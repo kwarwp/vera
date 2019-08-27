@@ -779,3 +779,10 @@ IndentationError: expected an indented block
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Tue Aug 27 2019 20:48:35.565 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 15
+  tesouro = Cena(TESOURO)
+  ^
+IndentationError: expected an indented block
+'''},
