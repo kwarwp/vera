@@ -772,3 +772,10 @@ AttributeError: 'list' object has no attribute 'vai'
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Tue Aug 27 2019 20:44:43.558 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 15
+  templo = Cena(TEMPLO)
+  ^
+IndentationError: expected an indented block
+'''},
