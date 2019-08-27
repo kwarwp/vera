@@ -765,3 +765,10 @@ AttributeError: 'list' object has no attribute 'vai'
     baralho.vai()
 AttributeError: 'list' object has no attribute 'vai'
 '''},
+{'date': 'Tue Aug 27 2019 20:43:49.88 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 15
+  templo = Cena(TEMPLO)
+  ^
+IndentationError: expected an indented block
+'''},
