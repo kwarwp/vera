@@ -668,3 +668,20 @@ NameError: name 'templo' is not defined
     baralho = [templo, tesouro, fogo, artefato1, cobra, desabamento, mumia, aranha]
 NameError: name 'tesouro' is not defined
 '''},
+{'date': 'Tue Aug 27 2019 20:31:56.832 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''['mumia', 'tesouro', 'templo', 'fogo', 'cobra', 'desabamento', 'aranha', 'artefato1']
+Traceback (most recent call last):
+  module _core.main line 160
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 306
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 278
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 295
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 34
+    baralho.vai()
+AttributeError: 'list' object has no attribute 'vai'
+'''},
