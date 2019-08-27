@@ -613,3 +613,10 @@ AttributeError: 'function' object has no attribute '__getitem__'
            ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Tue Aug 27 2019 19:48:10.876 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 37
+  shuffle(class Inca)
+                     ^
+SyntaxError: invalid syntax
+'''},
