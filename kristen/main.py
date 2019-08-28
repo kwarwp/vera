@@ -46,10 +46,8 @@ aranha = Cena(ARANHA, esquerda=tesouro3)
 tesouro3.direita = aranha
 fogo2 = Cena(FOGO, esquerda=aranha)
 aranha.direita = fogo2
-baralho = [fogo, tesouro, aranha, mumia, artefato, desabamento]
+baralho = [fogo, tesouro, aranha, mumia, artefato, desabamento, cobra]
 shuffle(baralho)
 umacarta = baralho[0]
 umacarta.vai()
-
-
 
