@@ -232,3 +232,4 @@
   {'doc_id': '7f534ed0', 'carta': 'coelho', 'casa': [185, 412], 'move': 'DROP', 'ponto': True, 'valor': 'b', '_level': 1, 'tempo': 1567004132950},
   {'doc_id': '7f534ed0', 'carta': 'passarinho', 'casa': [177, 435], 'move': 'DROP', 'ponto': True, 'valor': 'b', '_level': 1, 'tempo': 1567004146699},
   {'doc_id': '7f534ed0', 'carta': 'tenis', 'casa': [194, 459], 'move': 'DROP', 'ponto': False, 'valor': 'b', '_level': 1, 'tempo': 1567004159677},
+  {'doc_id': '7f534ed0', 'carta': 'bola', 'casa': [286, 441], 'move': 'DROP', 'ponto': True, 'valor': 'e', '_level': 1, 'tempo': 1567004244379},
