@@ -227,3 +227,4 @@
   {'doc_id': '3b240435', 'carta': 'coelho', 'casa': [201, 436], 'move': 'DROP', 'ponto': True, 'valor': 'b', '_level': 1, 'tempo': 1566394300442},
   {'doc_id': '3b240435', 'carta': 'maçã', 'casa': [397, 420], 'move': 'DROP', 'ponto': False, 'valor': 'p', '_level': 1, 'tempo': 1566394311980},
   {'doc_id': '3b240435', 'carta': 'maçã', 'casa': [528, 435], 'move': 'DROP', 'ponto': True, 'valor': 'f', '_level': 1, 'tempo': 1566394324121},
+{'doc_id': '7f534ed0', 'carta': 'eduardo braga de assis', 'casa': [], 'move': 'ID', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1567004066293},
