@@ -238,3 +238,4 @@
   {'doc_id': '7f534ed0', 'carta': 'maçã', 'casa': [516, 422], 'move': 'DROP', 'ponto': True, 'valor': 'f', '_level': 1, 'tempo': 1567004318212},
   {'doc_id': '7f534ed0', 'carta': 'laranja', 'casa': [521, 420], 'move': 'DROP', 'ponto': True, 'valor': 'f', '_level': 1, 'tempo': 1567004321619},
   {'doc_id': '7f534ed0', 'carta': 'tenis', 'casa': [622, 429], 'move': 'DROP', 'ponto': True, 'valor': 'c', '_level': 1, 'tempo': 1567004338771},
+  {'doc_id': '7f534ed0', 'carta': 'galocha', 'casa': [609, 428], 'move': 'DROP', 'ponto': True, 'valor': 'c', '_level': 1, 'tempo': 1567004345025},
