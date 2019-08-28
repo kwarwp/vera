@@ -55,3 +55,4 @@
   {'doc_id': 'fffe2c66', 'carta': 'pequeno', 'casa': [114, 562], 'move': 'BALDE', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1565958631960},
 {'doc_id': '7df4d597', 'carta': 'arthur mares guia', 'casa': 'pescaria', 'move': 'JULIA', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1566238016238},
 {'doc_id': 'e8b44628', 'carta': 'eduardo braga de assis', 'casa': 'pescaria', 'move': 'JULIA', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1567004419745},
+  {'doc_id': 'e8b44628', 'carta': ' peixe grande ', 'casa': [648, 544], 'move': 'OLHA', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1567004526934},
