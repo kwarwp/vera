@@ -190,3 +190,26 @@ class Menudeanimais:
     def pega(self, _):
         self.menudeanimais.vai()
         self.menudeaminais.vai = self.guarda
+        
+        
+        
+class Menudeobjetos:
+    def __init__(self, universo, left=200, top=50):
+        self.universo = universo
+        self.menudeobjetos = Elemento(MENUDEOBJETOS[0], x=left, y=top, w=150, h=150, vai=self.pega)
+        self.entra()
+        self.menudeobjetos = Elemento(MENUDEOBJETOS[1], x=left, y=top, w=150, h=150, vai=self.pega)
+        self.entra()
+        self.menudeobjetos = Elemento(MENUDEOBJETOS[2], x=left, y=top, w=150, h=150, vai=self.pega)
+        self.entra()
+        self.menudeobjetos = Elemento(MENUDEOBJETOS[3], x=left, y=top, w=150, h=150, vai=self.pega)
+        self.entra()
+        self.menudeobjetos = Elemento(MENUDEOBJETOS[4], x=left, y=top, w=150, h=150, vai=self.pega)
+        self.entra()
+        self.longe = Cena()
+        self.na_mao = False
+        self.menudeanimais.entra(self.universo)
+    
+    def pega(self, _):
+        self.menudeanimais.vai()
+        self.menudeaminais.vai = self.guarda
