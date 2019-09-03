@@ -48,7 +48,7 @@ def decisao (anterior,carta):
     elif resposta == "saio":
         anterior.vai()
 
-baralho = [DI["FOGO"](), DI["TESOURO"](), DI["ARANHA"], DI["MUMIA"], DI["ARTEFATO1"], DI["DESABAMENTO"], DI["COBRA"]]
+baralho = (DI["FOGO"](), DI["TESOURO"](), DI["ARANHA"], DI["MUMIA"], DI["ARTEFATO1"], DI["DESABAMENTO"], DI["COBRA"])
 shuffle(baralho)
 umacarta = baralho[0]
 umacarta.vai()
