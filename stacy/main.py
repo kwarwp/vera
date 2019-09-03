@@ -15,7 +15,8 @@ ANIMAL = "https://i.imgur.com/falELaz.png"
 OBJETO = "https://i.imgur.com/iXQYTtn.png"
 IMGUR = "https://i.imgur.com/{}.png"
 PESSOAS = [IMGUR.format(icone) for icone in "H0sLGRO.png rJXklVA.png WjXPkDj.png 31bHmRB.png kSEbjOG.png "]
-MENUDEANIMAIS = [IMGUR.format(icone) for icone in ["vsFMB8U.jpg","6LKzi5g.jpg","eE9SXr2.png,UvMSgka.png"]]
+IMGUR = "https://i.imgur.com/{}"
+MENUDEANIMAIS = [IMGUR.format(icone) for icone in ["vsFMB8U.jpg","6LKzi5g.jpg","eE9SXr2.png","UvMSgka.png"]]
 MENUDEOBJETOS = [IMGUR.format(icone) for icone in ["mwzJSyB.jpg","AZCRF7a.png","X2nJzqY.png","P3FmARs.png","3p3erLe.png"]]
 MENUDEPESSOAS = [IMGUR.format(icone) for icone in ["3WAuJEJ.jpg","b9qGgwO.jpg","wdFwoKb.png","wdFwoKb.png","UJeIu1G.png","MItp8Gn.png","msjPkhL.png","8THmFvb.png","TjouWWp.jpg","6tM3VXW.jpg"]]
 class CenaProxy:
@@ -172,3 +173,20 @@ if __name__ == "__main__":
     INVENTARIO.inicia()
     o_universo = Universo()
     o_universo.vai()
+    
+    
+    
+class Menudeanimais:
+    def __init__(self, universo, left=200, top=50):
+        self.universo = universo
+        self.menudeanimais = Elemento(MENUDEANIMAIS[0], x=left, y=top, w=150, h=150, vai=self.pega)
+        self.menudeanimais = Elemento(MENUDEANIMAIS[1], x=left, y=top, w=150, h=150, vai=self.pega)
+        self.menudeanimais = Elemento(MENUDEANIMAIS[2], x=left, y=top, w=150, h=150, vai=self.pega)
+        self.menudeanimais = Elemento(MENUDEANIMAIS[3], x=left, y=top, w=150, h=150, vai=self.pega)
+        self.longe = Cena()
+        self.na_mao = False
+        self.menudeanimais.entra(self.universo)
+    
+    def pega(self, _):
+        self.menudeanimais.vai()
+        self.menudeaminais.vai = self.guarda
