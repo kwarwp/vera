@@ -29,57 +29,28 @@ inca = Inca()
 if __name__ == "__main__":
     inca.inicia()
 
-
+class Cartas:
+    def baralho(self):
+        return []
+    pass
+    
+class Jogo:
+    def __init__(self):
+        self.baralho = Cartas().baralho()
+        self.templo = Cena(DI["TEMPLO"])
+    pass 
+    
 def decisao (anterior,carta):
     resposta = input ("Você descobriu uma câmara do templo. Você entra nela ou sai?")
     if resposta == "entro": 
         carta.vai() 
     elif resposta == "saio":
         anterior.vai()
-RODADA = "Primeira Rodada"
-templo = Cena(TEMPLO)
-acampamento = Cena(ACAMPAMENTO, esquerda=templo)
-templo.direita = acampamento
-tesouro = Cena(TESOURO, esquerda=acampamento)
-acampamento.direita = tesouro
-fogo = Cena(FOGO, esquerda=tesouro)
-# decisao(tesouro, fogo)
-tesouro.direita = fogo
-artefato = Cena(ARTEFATO1, esquerda=fogo)
-fogo.direita = artefato
-cobra = Cena(COBRA, esquerda=artefato)
-artefato.direita = cobra
-tesouro0 = Cena(TESOURO, esquerda=cobra)
-cobra.direita = tesouro0
-desabamento = Cena(DESABAMENTO, esquerda=tesouro0)
-tesouro0.direita = desabamento
-tesouro1 = Cena(TESOURO, esquerda=desabamento)
-desabamento.direita = tesouro1
-tesouro2 = Cena(TESOURO, esquerda=tesouro1)
-tesouro1.direita = tesouro2
-mumia = Cena(MUMIA, esquerda=tesouro2)
-tesouro2.direita = mumia
-tesouro3 = Cena(TESOURO, esquerda=mumia)
-mumia.direita = tesouro3
-aranha = Cena(ARANHA, esquerda=tesouro3)
-tesouro3.direita = aranha
-fogo2 = Cena(FOGO, esquerda=aranha)
-aranha.direita = fogo2
 
 baralho = [fogo, tesouro, aranha, mumia, artefato, desabamento, cobra]
 shuffle(baralho)
 umacarta = baralho[0]
 umacarta.vai()
-
-# templo = Cena(TEMPLO)
-#templo.vai()
-#tesouro = Cena(TESOURO)
-#fogo = Cena(FOGO)
-#artefato1 = Cena(ARTEFATO1)
-#cobra = Cena(COBRA)
-#desabamento = Cena(DESABAMENTO)
-#mumia = Cena(MUMIA)
-#aranha = Cena(ARANHA)
 
 #cartas = [TESOURO(), ARTEFATO1(), FOGO(), MUMIA(), DESABAMENTO(), ARANHA(), COBRA()]
 #baralho = cartas[:] # Copy cartas
@@ -87,12 +58,5 @@ umacarta.vai()
 #for elemento in cartas:
  #   elemento.vai()
 
-def decisao (anterior,carta):
-    resposta = input ("Você descobriu uma câmara do templo. Você entra nela ou sai?")
-    if resposta == "entro": 
-        carta.vai() 
-    elif resposta == "saio":
-        anterior.vai()
 
-# decisao(tesouro, fogo)
 
