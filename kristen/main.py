@@ -38,7 +38,8 @@ class Jogo:
     def __init__(self):
         self.baralho = Cartas().baralho()
         self.templo = Cena(DI["TEMPLO"])
-    pass 
+    def inicia(self):
+        self.templo.vai()
     
 def decisao (anterior,carta):
     resposta = input ("Você descobriu uma câmara do templo. Você entra nela ou sai?")
