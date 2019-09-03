@@ -17,7 +17,7 @@ IMGUR = "https://i.imgur.com/{}.png"
 PESSOAS = [IMGUR.format(icone) for icone in "H0sLGRO.png rJXklVA.png WjXPkDj.png 31bHmRB.png kSEbjOG.png "]
 MENUDEANIMAIS = [IMGUR.format(icone) for icone in ["vsFMB8U.jpg","6LKzi5g.jpg","eE9SXr2.png,UvMSgka.png"]]
 MENUDEOBJETOS = [IMGUR.format(icone) for icone in ["mwzJSyB.jpg","AZCRF7a.png","X2nJzqY.png","P3FmARs.png","3p3erLe.png"]]
-MENUDEPESSOAS = [IMGUR.format(icone) for icone in ["","","","",""]]
+MENUDEPESSOAS = [IMGUR.format(icone) for icone in ["3WAuJEJ.jpg","b9qGgwO.jpg","wdFwoKb.png","wdFwoKb.png","UJeIu1G.png","MItp8Gn.png","msjPkhL.png","8THmFvb.png","TjouWWp.jpg","6tM3VXW.jpg"]]
 class CenaProxy:
     def __init__(self, aqui=None):
         self.aqui = aqui
