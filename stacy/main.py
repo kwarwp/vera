@@ -126,7 +126,8 @@ class Estacao:
         self.usar = Texto(self.universo, FACA_USA)
         """
         self.estacao = Elemento(ESTACAO, x=left, y=top, w=300, h=240, vai=self.pega)
-        self.icone = Elemento(icone, style=dict(left=add(left,55), top=add(top,85), width="400px", height="40px"), vai=self.pega)
+        self.icone = Elemento(icone, style=dict(left=add(left,55),
+            top=add(top,85), width="400px", height="40px"), vai=self.pega)
         self.janela = Elemento(JANELA, style=dict(left=add(left,50), top=add(top,80), width="500px", height="50px"), vai=self.pega)
         self.longe = Cena()
         self.na_mao = False
@@ -135,8 +136,9 @@ class Estacao:
         self.icone.entra(self.universo)
     
     def pega(self, _):
-        self.fala.vai()
-        self.faca.vai = self.guarda
+        #self.fala.vai()
+        #self.faca.vai = self.guarda
+        Menudeanimais(self.universo)
     
     def guarda(self, _):
         INVENTARIO.bota(self.faca)
@@ -178,14 +180,14 @@ if __name__ == "__main__":
     
 class Menudeanimais:
     def __init__(self, universo, left=200, top=50):
-        self.universo = universo
-        self.menudeanimais = Elemento(MENUDEANIMAIS[0], x=left, y=top, w=150, h=150, vai=self.pega)
+        self.universo = u = universo
+        self.menudeanimais = Elemento(MENUDEANIMAIS[0], x=left, y=top, w=150, h=150, vai=self.pega, cena=u)
         self.menudeanimais = Elemento(MENUDEANIMAIS[1], x=left, y=top, w=150, h=150, vai=self.pega)
         self.menudeanimais = Elemento(MENUDEANIMAIS[2], x=left, y=top, w=150, h=150, vai=self.pega)
         self.menudeanimais = Elemento(MENUDEANIMAIS[3], x=left, y=top, w=150, h=150, vai=self.pega)
         self.longe = Cena()
         self.na_mao = False
-        self.menudeanimais.entra(self.universo)
+        #self.menudeanimais.entra(self.universo)
     
     def pega(self, _):
         self.menudeanimais.vai()
