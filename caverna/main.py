@@ -119,7 +119,10 @@ class Cobra:
 class EntradaCaverna:
     def __init__(self, caverna=None):
         legenda = "A entrada da caverna escura"
-        self.entrada = Elemento(ENTRADA, tit=legenda, x=320, y=80, w=600, h=400, style={"opacity": 0.1} cena=caverna)
+        atores = dict(lanterna=self.ilumina_caverna)
+        self.entrada = Elemento(ENTRADA, tit=legenda, x=340, y=80, w=600, h=600, style={"opacity": 0.02}, cena=caverna)
+    def ilumina_caverna(self, evento, objeto):
+        self.entrada.style.opacity=0.2
         
 class Caverna:
     def __init__(self, esquerda=None):
