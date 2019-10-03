@@ -1,8 +1,8 @@
 # vera.caverna.main.py
 # vera.rachel.main.py
 "http://supygirls.pythonanywhere.com"
-from _spy.vitollino.main import Cena, Texto, INVENTARIO, STYLE
-from elemento.main import Elemento
+from _spy.vitollino.main import Cena, Texto, INVENTARIO, STYLE, Elemento
+# from elemento.main import Elemento
 from cobra.main import Cobra
 CHUVA = "https://i.imgur.com/ubkw6wx.jpg"
 STYLE["width"] = 1400
