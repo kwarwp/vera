@@ -80,3 +80,10 @@ NameError: name 'NDCT' is not defined
     class Elemento(Element_):
 NameError: name 'Element_' is not defined
 '''},
+{'date': 'Thu Oct 03 2019 11:40:06.962 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 122
+  self.entrada = Elemento(ENTRADA, tit=legenda, x=320, y=80, w=600, h=400, style={"opacity": 0.1} cena=caverna)
+                                                                                                   ^
+SyntaxError: invalid syntax
+'''},
