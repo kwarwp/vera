@@ -52,11 +52,13 @@ class EntradaCaverna:
         legenda = "A entrada da caverna escura"
         self.caverna = caverna
         atores = dict(lanterna=self.ilumina_caverna)
-        self.entrada = Elemento(ENTRADA, tit=legenda, x=340, y=80, w=600, h=600, style={"opacity": 0.02},
+        self.entrada = Elemento(ENTRADA, tit=legenda, x=340, y=80, w=600, h=600, style={"opacity": 0.004},
             drop=atores, cena=caverna)
     def ilumina_caverna(self, evento, objeto):
-        self.entrada.style.opacity=0.2
-        Texto(self.caverna, "fiat lux").vai()
+        style = self.entrada.style
+        #style.opacity=0.06
+        self.entrada.elt.style.opacity=0.06
+        #Texto(self.caverna, "fiat lux").vai()
         
 class Caverna:
     def __init__(self, esquerda=None):
