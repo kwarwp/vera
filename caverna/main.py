@@ -1,8 +1,8 @@
 # vera.caverna.main.py
 # vera.rachel.main.py
 "http://supygirls.pythonanywhere.com"
-from _spy.vitollino.main import Cena, Texto, INVENTARIO, STYLE, Elemento
-# from elemento.main import Elemento
+from _spy.vitollino.main import Cena, Texto, INVENTARIO, STYLE #, Elemento
+from elemento.main import Elemento
 from cobra.main import Cobra
 CHUVA = "https://i.imgur.com/ubkw6wx.jpg"
 STYLE["width"] = 1400
@@ -120,19 +120,21 @@ class EntradaCaverna:
     def __init__(self, caverna=None):
         legenda = "A entrada da caverna escura"
         atores = dict(lanterna=self.ilumina_caverna)
-        self.entrada = Elemento(ENTRADA, tit=legenda, x=340, y=80, w=600, h=600, style={"opacity": 0.02}, cena=caverna)
+        self.entrada = Elemento(ENTRADA, tit=legenda, x=340, y=80, w=600, h=600, style={"opacity": 0.02},
+            drop=atores, cena=caverna)
     def ilumina_caverna(self, evento, objeto):
         self.entrada.style.opacity=0.2
         
 class Caverna:
     def __init__(self, esquerda=None):
         # floresta_faca = FlorestaFaca() -XX- ERRO!
-        l = Elemento("https://i.imgur.com/Z4DAh02.png", tit="lanterna", drag=True)
-        INVENTARIO.bota(l)
+        #INVENTARIO.bota(l)
         self.floresta_inicio = None
         floresta_faca = CenaProxy(self.floresta_inicio)
         esquerda = esquerda or floresta_faca
         self.floresta_inicio = Cena(CAVERNA, esquerda=esquerda)
+        l = Elemento("https://i.imgur.com/Z4DAh02.png",x=100, w=100,  tit="lanterna", drag=True, cena=self.floresta_inicio)
+        l.do_drag = True
         self.entrada = EntradaCaverna(self.floresta_inicio)
         self.cavernatexto = Texto(self.floresta_inicio, TEXTO_CAVERNA)
         self.floresta_inicio.meio=self.cavernatexto
