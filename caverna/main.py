@@ -24,6 +24,7 @@ FLORESTA_CHUVA = "https://i.imgur.com/sDQ5r36.jpg"
 CAPA_DE_CHUVA = "https://i.imgur.com/09U7IBK.png"
 RIO = "https://i.imgur.com/uYrWcA2.jpg"
 CORDA = "https://i.imgur.com/lCWG2Co.png"
+ENTRADA = "https://i.imgur.com/6e096Va.png"
 
 class CenaProxy:
     def __init__(self, aqui=None):
@@ -115,6 +116,11 @@ class Cobra:
     def vai(self):
         self.floresta_inicio.vai()
         
+class EntradaCaverna:
+    def __init__(self, caverna=None):
+        legenda = "A entrada da caverna escura"
+        self.entrada = Elemento(ENTRADA, tit=legenda, x=320, y=80, w=600, h=400, style={"opacity": 0.1} cena=caverna)
+        
 class Caverna:
     def __init__(self, esquerda=None):
         # floresta_faca = FlorestaFaca() -XX- ERRO!
@@ -122,6 +128,7 @@ class Caverna:
         floresta_faca = CenaProxy(self.floresta_inicio)
         esquerda = esquerda or floresta_faca
         self.floresta_inicio = Cena(CAVERNA, esquerda=esquerda)
+        self.entrada = EntradaCaverna(self.floresta_inicio)
         self.cavernatexto = Texto(self.floresta_inicio, TEXTO_CAVERNA)
         self.floresta_inicio.meio=self.cavernatexto
         # banana = Banana(self.floresta_inicio)
