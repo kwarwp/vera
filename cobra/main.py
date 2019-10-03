@@ -20,12 +20,12 @@ MORDIDA = "https://i.imgur.com/EOHbtUB.png"
 class CenaProxy:
     def __init__(self, aqui=None):
         self.aqui = aqui
-        self.floresta_faca = None
+        self.caverna = None
     def vai(self):
-        from amanda.main import FlorestaFaca
-        self.floresta_faca = FlorestaFaca()
-        self.floresta_faca.esquerda = self.aqui
-        self.floresta_faca.vai()
+        from caverna.main import Caverna
+        self.caverna = Caverna()
+        self.caverna.esquerda = self.aqui
+        self.caverna.vai()
 
 class CenaProxy2:
     def __init__(self, aqui=None):
