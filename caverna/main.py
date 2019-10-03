@@ -127,6 +127,8 @@ class EntradaCaverna:
 class Caverna:
     def __init__(self, esquerda=None):
         # floresta_faca = FlorestaFaca() -XX- ERRO!
+        l = Elemento("https://i.imgur.com/Z4DAh02.png", tit="lanterna", drag=True)
+        INVENTARIO.bota(l)
         self.floresta_inicio = None
         floresta_faca = CenaProxy(self.floresta_inicio)
         esquerda = esquerda or floresta_faca
