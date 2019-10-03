@@ -121,7 +121,7 @@ class Caverna:
         esquerda = esquerda or floresta_faca
         self.floresta_inicio = Cena(CAVERNA)
         self.cavernatexto = Texto(self.floresta_inicio, TEXTO_CAVERNA)
-        self.floresta_inicio.esquerda=self.cavernatexto
+        self.floresta_inicio.meio=self.cavernatexto
         # banana = Banana(self.floresta_inicio)
         # rede = Rede(self.floresta_inicio)
         
