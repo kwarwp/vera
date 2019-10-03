@@ -34,7 +34,7 @@ class CenaProxy:
         self.floresta_faca = FlorestaFaca(self.aqui)
         self.floresta_faca.esquerda = self.aqui
         self.floresta_faca.vai()
-
+'''
 class CenaProxy2:
     def __init__(self, aqui=None):
         self.aqui = aqui
@@ -102,7 +102,9 @@ class Rede:
         
     def falarede(self,_):
         self.fala.vai() 
-        
+'''
+
+
 class Cobra:
     def __init__(self, floresta_inicio):
         self.floresta_inicio = floresta_inicio
@@ -119,7 +121,7 @@ class Caverna:
         self.floresta_inicio = None
         floresta_faca = CenaProxy(self.floresta_inicio)
         esquerda = esquerda or floresta_faca
-        self.floresta_inicio = Cena(CAVERNA)
+        self.floresta_inicio = Cena(CAVERNA, esquerda=esquerda)
         self.cavernatexto = Texto(self.floresta_inicio, TEXTO_CAVERNA)
         self.floresta_inicio.meio=self.cavernatexto
         # banana = Banana(self.floresta_inicio)
