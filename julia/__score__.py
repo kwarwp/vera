@@ -58,3 +58,4 @@
   {'doc_id': 'e8b44628', 'carta': ' peixe grande ', 'casa': [648, 544], 'move': 'OLHA', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1567004526934},
   {'doc_id': 'e8b44628', 'carta': ' peixe grande ', 'casa': [634, 553], 'move': 'OLHA', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1567004559429},
   {'doc_id': 'e8b44628', 'carta': 'peixe médio', 'casa': [701, 549], 'move': 'OLHA', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1567004571182},
+{'doc_id': '63d3a6d8', 'carta': 'Julia de Almeida Couto', 'casa': 'pescaria', 'move': 'JULIA', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1570187564098},
