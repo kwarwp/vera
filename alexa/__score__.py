@@ -255,3 +255,4 @@
   {'doc_id': '74270114', 'carta': 'tenis', 'casa': [607, 445], 'move': 'DROP', 'ponto': True, 'valor': 'c', '_level': 1, 'tempo': 1570188197357},
   {'doc_id': '74270114', 'carta': 'laranja', 'casa': [524, 449], 'move': 'DROP', 'ponto': True, 'valor': 'f', '_level': 1, 'tempo': 1570188215189},
   {'doc_id': '74270114', 'carta': 'galocha', 'casa': [382, 516], 'move': 'DROP', 'ponto': False, 'valor': 'p', '_level': 1, 'tempo': 1570188233152},
+  {'doc_id': '74270114', 'carta': 'bola', 'casa': [298, 470], 'move': 'DROP', 'ponto': True, 'valor': 'e', '_level': 1, 'tempo': 1570188247472},
