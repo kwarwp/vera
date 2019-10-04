@@ -248,3 +248,4 @@
   {'doc_id': '74270114', 'carta': 'b', 'casa': [201, 419], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'GENTE', '_level': 1, 'tempo': 1570188095365},
   {'doc_id': '74270114', 'carta': 'b', 'casa': [201, 470], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'GENTE', '_level': 1, 'tempo': 1570188108237},
   {'doc_id': '74270114', 'carta': 'p', 'casa': [412, 495], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'GENTE', '_level': 1, 'tempo': 1570188121124},
+  {'doc_id': '74270114', 'carta': 'p', 'casa': [380, 425], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'GENTE', '_level': 1, 'tempo': 1570188125141},
