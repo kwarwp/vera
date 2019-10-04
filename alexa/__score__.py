@@ -266,3 +266,4 @@
   {'doc_id': '74270114', 'carta': 'galocha', 'casa': [361, 452], 'move': 'DROP', 'ponto': False, 'valor': 'p', '_level': 1, 'tempo': 1570188314943},
   {'doc_id': '74270114', 'carta': 'galocha', 'casa': [394, 470], 'move': 'DROP', 'ponto': False, 'valor': 'p', '_level': 1, 'tempo': 1570188322336},
   {'doc_id': '74270114', 'carta': 'galocha', 'casa': [391, 436], 'move': 'DROP', 'ponto': False, 'valor': 'p', '_level': 1, 'tempo': 1570188330487},
+  {'doc_id': '74270114', 'carta': 'galocha', 'casa': [520, 491], 'move': 'DROP', 'ponto': False, 'valor': 'f', '_level': 1, 'tempo': 1570188337952},
