@@ -244,3 +244,4 @@
   {'doc_id': 'a71ca5af', 'carta': 'laranja', 'casa': [724, 438], 'move': 'DROP', 'ponto': True, 'valor': 'f', '_level': 1, 'tempo': 1569963193139},
 {'doc_id': '74270114', 'carta': 'julia almeida couto', 'casa': [], 'move': 'ID', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1570188004237},
   {'doc_id': '74270114', 'carta': 'f', 'casa': [530, 461], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'GENTE', '_level': 1, 'tempo': 1570188052742},
+  {'doc_id': '74270114', 'carta': 'b', 'casa': [214, 464], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'GENTE', '_level': 1, 'tempo': 1570188091182},
