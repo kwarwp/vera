@@ -262,3 +262,4 @@
   {'doc_id': '74270114', 'carta': 'coelho', 'casa': [187, 472], 'move': 'DROP', 'ponto': True, 'valor': 'b', '_level': 1, 'tempo': 1570188280208},
   {'doc_id': '74270114', 'carta': 'galocha', 'casa': [433, 474], 'move': 'DROP', 'ponto': False, 'valor': 'p', '_level': 1, 'tempo': 1570188285825},
   {'doc_id': '74270114', 'carta': 'galocha', 'casa': [408, 495], 'move': 'DROP', 'ponto': False, 'valor': 'p', '_level': 1, 'tempo': 1570188291815},
+  {'doc_id': '74270114', 'carta': 'galocha', 'casa': [396, 463], 'move': 'DROP', 'ponto': False, 'valor': 'p', '_level': 1, 'tempo': 1570188302023},
