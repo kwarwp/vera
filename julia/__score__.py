@@ -65,3 +65,4 @@
   {'doc_id': '718fcb57', 'carta': 'peixe médio', 'casa': [751, 557], 'move': 'OLHA', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1570401937073},
   {'doc_id': '718fcb57', 'carta': 'peixe médio  ', 'casa': [686, 577], 'move': 'OLHA', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1570401938411},
   {'doc_id': '718fcb57', 'carta': 'peixe grande ', 'casa': [633, 540], 'move': 'OLHA', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1570401941786},
+  {'doc_id': '718fcb57', 'carta': 'peixe pequeno ', 'casa': [551, 621], 'move': 'OLHA', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1570401947300},
