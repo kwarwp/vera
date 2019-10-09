@@ -69,3 +69,4 @@
   {'doc_id': '718fcb57', 'carta': 'pequeno', 'casa': [992, 574], 'move': 'BALDE', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1570401950555},
   {'doc_id': '718fcb57', 'carta': 'grande', 'casa': [481, 518], 'move': 'BALDE', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1570401955770},
   {'doc_id': '718fcb57', 'carta': 'pequeno', 'casa': [214, 558], 'move': 'BALDE', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1570401960898},
+{'doc_id': '08b01d19', 'carta': 'hh', 'casa': 'pescaria', 'move': 'JULIA', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1570647709024},
