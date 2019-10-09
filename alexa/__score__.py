@@ -289,3 +289,4 @@
   {'doc_id': 'b70428da', 'carta': 'laranja', 'casa': [508, 449], 'move': 'DROP', 'ponto': True, 'valor': 'f', '_level': 1, 'tempo': 1570646500760},
   {'doc_id': 'b70428da', 'carta': 'tenis', 'casa': [600, 433], 'move': 'DROP', 'ponto': True, 'valor': 'c', '_level': 1, 'tempo': 1570646511019},
   {'doc_id': 'b70428da', 'carta': 'bola', 'casa': [246, 441], 'move': 'DROP', 'ponto': True, 'valor': 'e', '_level': 1, 'tempo': 1570646522737},
+  {'doc_id': 'b70428da', 'carta': 'coelho', 'casa': [155, 427], 'move': 'DROP', 'ponto': True, 'valor': 'b', '_level': 1, 'tempo': 1570646529522},
