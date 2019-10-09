@@ -282,3 +282,4 @@
   {'doc_id': 'b70428da', 'carta': 'tenis', 'casa': [551, 222], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'COISA', '_level': 1, 'tempo': 1570646461413},
   {'doc_id': 'b70428da', 'carta': 'laranja', 'casa': [411, 180], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'COISA', '_level': 1, 'tempo': 1570646465203},
   {'doc_id': 'b70428da', 'carta': 'galocha', 'casa': [292, 171], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'COISA', '_level': 1, 'tempo': 1570646469505},
+  {'doc_id': 'b70428da', 'carta': 'coelho', 'casa': [225, 210], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'COISA', '_level': 1, 'tempo': 1570646474907},
