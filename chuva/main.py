@@ -56,16 +56,21 @@ class FlorestaChuva:
     def __init__(self, esquerda=None):
         # floresta_faca = FlorestaFaca() -XX- ERRO!
         self.floresta_inicio = None
-        floresta_faca = CenaProxy(self.floresta_inicio)
-        esquerda = esquerda or floresta_faca
+        self.floresta_rio = floresta_rio = CenaProxy(self.floresta_inicio)
+        esquerda = esquerda or floresta_rio
         self.floresta_inicio = Cena(FLORESTA_CHUVA, esquerda=esquerda)
         self.floresta_inicio.meio = self.floresta_inicio.direita = Molhado(self.floresta_inicio) 
-        floresta_faca.aqui = self.floresta_inicio 
+        floresta_rio.aqui = self.floresta_inicio 
         
     def vai(self):
         if "capa de chuva" in INVENTARIO.item:
-            Texto(self.floresta_inicio, "Você se protege").vai()
+            INVENTARIO.item["capa de chuva"].vai = self.protege
         self.floresta_inicio.vai()
+        
+    def protege(self):
+        Texto(self.floresta_inicio, "Você se protege").vai()
+        self.floresta_inicio.direita = self.floresta_rio
+        self.floresta_inicio.meio = self.floresta_rio
                
 if __name__ == "__main__":
     INVENTARIO.inicia()
