@@ -34,16 +34,6 @@ class CenaProxy:
         self.floresta_faca.esquerda = self.aqui
         self.floresta_faca.vai()
 
-class CenaProxy2:
-    def __init__(self, aqui=None):
-        self.aqui = aqui
-        self.floresta_macaco = None
-    def vai(self):
-        from soraya.main import FlorestaMacaco
-        self.floresta_macaco = FlorestaMacaco()
-        self.floresta_macaco.esquerda = self.aqui
-        self.floresta_macaco.vai()
-
 class Banana:
     def __init__(self, floresta_inicio):
         self.floresta_inicio = floresta_inicio
@@ -87,31 +77,8 @@ class Biscoito:
         
     def corta(self, *_):
         self.rede.entra(self.longe)
-        
-class Rede:
-    def __init__(self, floresta_inicio):
-        self.floresta_inicio = floresta_inicio
-        self.fala = Texto(self.floresta_inicio, TEXTO_REDE)
-        self.rede = Elemento(REDE, style=dict(left="450px", width="250px"))
-        self.rede.entra(floresta_inicio)
-        self.rede.vai=self.falarede
-        
-    def vai(self):
-        self.floresta_inicio.vai()
-        
-    def falarede(self,_):
-        self.fala.vai() 
-        
-class Cobra:
-    def __init__(self, floresta_inicio):
-        self.floresta_inicio = floresta_inicio
-        self.cobra = Elemento(COBRA, style=dict(left="800px", width="150px"))
-        self.cobra.entra(floresta_inicio)
-        self.cobra.vai()
-        
-    def vai(self):
-        self.floresta_inicio.vai()
-        
+
+
 class FlorestaBanana:
     def __init__(self, esquerda=None):
         # floresta_faca = FlorestaFaca() -XX- ERRO!
