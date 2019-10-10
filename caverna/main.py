@@ -67,10 +67,8 @@ class Caverna:
         floresta_chuva = CenaProxy(self.floresta_inicio)
         esquerda = esquerda or floresta_chuva
         self.floresta_inicio = Cena(CAVERNA, esquerda=esquerda, direita=floresta_chuva)
-        #l = Elemento("https://i.imgur.com/Z4DAh02.png",x=100, w=100,  tit="lanterna", drag=True, cena=self.floresta_inicio)
-        #INVENTARIO.bota(l)
-        INVENTARIO.bota("lanterna","https://i.imgur.com/Z4DAh02.png",drag=True)
-        INVENTARIO.bota("capa de chuva",CAPA_DE_CHUVA)
+        # INVENTARIO.bota("lanterna","https://i.imgur.com/Z4DAh02.png",drag=True)
+        # INVENTARIO.bota("capa de chuva",CAPA_DE_CHUVA)
         self.entrada = EntradaCaverna(self.floresta_inicio)
         self.cavernatexto = Texto(self.floresta_inicio, TEXTO_CAVERNA)
         self.floresta_inicio.meio=self.cavernatexto
