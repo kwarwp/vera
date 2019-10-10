@@ -28,20 +28,12 @@ CORDA = "https://i.imgur.com/lCWG2Co.png"
 class CenaProxy:
     def __init__(self, aqui=None):
         self.aqui = aqui
-        self.floresta_faca = None
+        self.floresta_rio = None
     def vai(self):
-        from amanda.main import FlorestaFaca
-        self.floresta_faca = FlorestaFaca(self.aqui)
-        self.floresta_faca.esquerda = self.aqui
-        self.floresta_faca.vai()
-
-
-    def pega(self, *_):
-        self.rede.entra(self.floresta_inicio)
-        self.fala.vai()
-        
-    def corta(self, *_):
-        self.rede.entra(self.longe)
+        from rio.main import FlorestaRio
+        self.floresta_rio = FlorestaRio(self.aqui)
+        self.floresta_rio.esquerda = self.aqui
+        self.floresta_rio.vai()
 
 
 class Molhado:
