@@ -16,12 +16,12 @@ MORDIDA = "https://i.imgur.com/EOHbtUB.png"
 class CenaProxy:
     def __init__(self, aqui=None):
         self.aqui = aqui
-        self.floresta_banana = None
+        self.floresta_cobra = None
     def vai(self):
-        from cobra.main import FlorestaBanana
-        self.floresta_banana = FlorestaBanana()
-        self.floresta_banana.esquerda = self.aqui
-        self.floresta_banana.vai()
+        from cobra.main import FlorestaCobra
+        self.floresta_cobra = FlorestaCobra()
+        self.floresta_cobra.esquerda = self.aqui
+        self.floresta_cobra.vai()
 
 FLORESTA = "https://i.imgur.com/wBw3Lyl.jpg"
 LEAO = "https://i.imgur.com/4gXpvfQ.png"
