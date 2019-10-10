@@ -67,7 +67,7 @@ class FlorestaChuva:
             INVENTARIO.item["capa de chuva"].vai = self.protege
         self.floresta_inicio.vai()
         
-    def protege(self):
+    def protege(self, _):
         Texto(self.floresta_inicio, "Você se protege").vai()
         self.floresta_inicio.direita = self.floresta_rio
         self.floresta_inicio.meio = self.floresta_rio
