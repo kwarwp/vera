@@ -24,7 +24,8 @@ CAPA_DE_CHUVA = "https://i.imgur.com/09U7IBK.png"
 RIO = "https://i.imgur.com/uYrWcA2.jpg"
 CORDA = "https://i.imgur.com/lCWG2Co.png"
 FLORESTA_FINAL = "https://i.imgur.com/rA40ylS.jpg"
-MACACA_MAE ="https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=2ahUKEwiwn_Xd85HlAhUkDrkGHUfACMAQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.emaze.com%2F%40AQFFOTRZ&psig=AOvVaw1wcwdIapjrkb09gMPmS9WL&ust=1570804178775183"
+MACACA_MAE = "https://i.imgur.com/mLv0OVD.png"
+
 class CenaProxy:
     def __init__(self, aqui=None):
         self.aqui = aqui
