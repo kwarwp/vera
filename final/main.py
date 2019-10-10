@@ -23,6 +23,8 @@ FLORESTA_CHUVA = "https://i.imgur.com/sDQ5r36.jpg"
 CAPA_DE_CHUVA = "https://i.imgur.com/09U7IBK.png"
 RIO = "https://i.imgur.com/uYrWcA2.jpg"
 CORDA = "https://i.imgur.com/lCWG2Co.png"
+FLORESTA_FINAL = "https://i.imgur.com/rA40ylS.jpg"
+MACACA_MAE = "https://i.imgur.com/mLv0OVD.png"
 
 class CenaProxy:
     def __init__(self, aqui=None):
@@ -35,33 +37,30 @@ class CenaProxy:
         self.floresta_rio.vai()
 
 
-class Molhado:
+class Macaca:
     def __init__(self, aqui):
         self.aqui = aqui
+        self.macaca = Elemento(MACACA_MAE)
         
     def vai(self):
-        Texto(self.aqui, "Você fica muito molhado e não consegue continuar").vai()
+        self.macaca.entra(self.aqui)
+        Texto(self.aqui, "Você encontra a mãe do macaquinho e finaliza sua aventura! Parabéns!").vai()
+        
 
 
 class FlorestaFinal:
     def __init__(self, esquerda=None):
         # floresta_faca = FlorestaFaca() -XX- ERRO!
         self.floresta_inicio = None
-        self.floresta_rio = floresta_rio = CenaProxy(self.floresta_inicio)
+        self.floresta_final = floresta_final = CenaProxy(self.floresta_inicio)
+        self.macaca_mae = Macaca()
         esquerda = esquerda or floresta_rio
         self.floresta_inicio = Cena(FLORESTA_CHUVA, esquerda=esquerda)
-        self.floresta_inicio.meio = self.floresta_inicio.direita = Molhado(self.floresta_inicio) 
+        self.floresta_inicio.meio = self.floresta_inicio.direita = Macaca(self.floresta_inicio) 
         floresta_rio.aqui = self.floresta_inicio 
         
     def vai(self):
-        if "capa de chuva" in INVENTARIO.item:
-            INVENTARIO.item["capa de chuva"].vai = self.protege
         self.floresta_inicio.vai()
-        
-    def protege(self, _):
-        Texto(self.floresta_inicio, "Você se protege").vai()
-        self.floresta_inicio.direita = self.floresta_rio
-        self.floresta_inicio.meio = self.floresta_rio
                
 if __name__ == "__main__":
     INVENTARIO.inicia()
