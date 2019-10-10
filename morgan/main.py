@@ -1,8 +1,9 @@
 # vera.morgan.main.py
 "http://supygirls.pythonanywhere.com"
-from _spy.vitollino.main import Cena, Elemento, Texto, INVENTARIO
+from _spy.vitollino.main import Cena, Elemento, Texto, INVENTARIO, STYLE
 # from morgan.main import FlorestaBanana
 from elemento.main import Elemento as Elem
+STYLE["width"], STYLE["height"] = 1400, "650px"
 FLORESTA = "https://i.imgur.com/vlJS7Ry.jpg"
 BANANA = "https://i.imgur.com/HnIHJd7.png"
 TEXTO_LEAO= "O leão está com fome, tome cuidado ele pode comer você!"
@@ -31,7 +32,8 @@ class Leao:
         self.floresta_inicio = floresta_inicio
         self.fala = Texto(self.floresta_inicio, TEXTO_LEAO)
         self.falou = Texto(self.floresta_inicio, LEAO_COME)
-        self.leao = Elemento(LEAO, style=dict(left="150px",width="100px"), vai=self.pega)
+        #self.leao = Elemento(LEAO, style=dict(left="150px",width="200px", top="480px"), vai=self.pega)
+        self.leao = Elemento(LEAO, x=150, y=400, w=200, h=200, vai=self.pega)
         self.morreu = Cena()
         self.comeu = False
         self.leao.entra(self.floresta_inicio)
