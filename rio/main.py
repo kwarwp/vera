@@ -29,10 +29,10 @@ class CenaProxy:
         self.aqui = aqui
         self.floresta_faca = None
     def vai(self):
-        from amanda.main import FlorestaFaca
-        self.floresta_faca = FlorestaFaca(self.aqui)
-        self.floresta_faca.esquerda = self.aqui
-        self.floresta_faca.vai()
+        from final.main import FlorestaFinal
+        self.floresta_final = FlorestaFinal(self.aqui)
+        self.floresta_final.esquerda = self.aqui
+        self.floresta_final.vai()
 
 
 class Molhado:
