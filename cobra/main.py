@@ -26,7 +26,7 @@ class CenaProxy:
         self.caverna = Caverna()
         self.caverna.esquerda = self.aqui
         self.caverna.vai()
-
+'''
 class CenaProxy2:
     def __init__(self, aqui=None):
         self.aqui = aqui
@@ -77,12 +77,12 @@ class Rede:
         
     def falarede(self,_):
         self.fala.vai() 
-        
+'''        
 class Cobra:
     def __init__(self, floresta_inicio):
         self.floresta_inicio = floresta_inicio
         self.fala = Texto(self.floresta_inicio, TEXTO_COBRA)
-        self.cobra = Elemento(COBRA, style=dict(left="800px", width="150px"))
+        self.cobra = Elemento(COBRA, style=dict(left="800px", top="400px", width="150px"))
         if "antidoto" in INVENTARIO.item:
             INVENTARIO.item["antidoto"].vai = self.antidoto 
         self.cobra.entra(floresta_inicio)
@@ -100,7 +100,7 @@ class Cobra:
         self.mordida.entra(Cena())
         Texto(self.floresta_inicio, "Você toma o antídoto e fica curado").vai()
         
-class FlorestaBanana:
+class FlorestaCobra:
     def __init__(self):
         # floresta_faca = FlorestaFaca() -XX- ERRO!
         self.floresta_inicio = None
@@ -115,5 +115,5 @@ class FlorestaBanana:
                 
 if __name__ == "__main__":
     INVENTARIO.inicia()
-    a_floresta = FlorestaBanana()
+    a_floresta = FlorestaCobra()
     a_floresta.vai()
