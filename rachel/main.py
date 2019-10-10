@@ -23,7 +23,7 @@ FLORESTA_CHUVA = "https://i.imgur.com/sDQ5r36.jpg"
 CAPA_DE_CHUVA = "https://i.imgur.com/09U7IBK.png"
 RIO = "https://i.imgur.com/uYrWcA2.jpg"
 CORDA = "https://i.imgur.com/lCWG2Co.png"
-FLORETA_FINAL = "https://i.imgur.com/rA40ylS.jpg"
+FLORESTA_FINAL = "https://i.imgur.com/rA40ylS.jpg"
 
 class CenaProxy:
     def __init__(self, aqui=None):
