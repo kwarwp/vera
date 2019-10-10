@@ -26,58 +26,8 @@ class CenaProxy:
         self.caverna = Caverna()
         self.caverna.esquerda = self.aqui
         self.caverna.vai()
-'''
-class CenaProxy2:
-    def __init__(self, aqui=None):
-        self.aqui = aqui
-        self.floresta_macaco = None
-    def vai(self):
-        from soraya.main import FlorestaMacaco
-        self.floresta_macaco = FlorestaMacaco()
-        self.floresta_macaco.esquerda = self.aqui
-        self.floresta_macaco.vai()
 
-class Banana:
-    def __init__(self, floresta_inicio):
-        self.floresta_inicio = floresta_inicio
-        self.fala = Texto(self.floresta_inicio, TEXTO_BANANA)
-        self.falou = Texto(self.floresta_inicio, BANANA_FOI)
-        self.banana = Elemento(COBRA, style=dict(left="230px", width="50px"), vai=self.pega)
-        self.longe = Cena()
-        self.na_mao = False
-        self.banana.entra(self.floresta_inicio)
-        
-    def pega(self, _):
-        self.fala.vai()
-        self.banana.vai = self.guarda
-        
-    def guarda(self, _):
-        INVENTARIO.bota(self.banana)
-        self.falou.vai()
-        self.banana.vai = self.usa
-        
-    def come(self, _):
-        self.banana.entra(self.longe)
-        self.falou.vai()
-        
-    def usa(self, _):
-        self.na_mao = True
-        self.usar.vai()
-        
-class Rede:
-    def __init__(self, floresta_inicio):
-        self.floresta_inicio = floresta_inicio
-        self.fala = Texto(self.floresta_inicio, TEXTO_REDE)
-        self.rede = Elemento(REDE, style=dict(left="450px", width="250px"))
-        self.rede.entra(floresta_inicio)
-        self.rede.vai=self.falarede
-        
-    def vai(self):
-        self.floresta_inicio.vai()
-        
-    def falarede(self,_):
-        self.fala.vai() 
-'''        
+
 class Cobra:
     def __init__(self, floresta_inicio):
         self.floresta_inicio = floresta_inicio
