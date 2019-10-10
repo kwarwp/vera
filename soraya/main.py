@@ -13,8 +13,8 @@ class CenaProxy:
         self.floresta_faca = None
     def vai(self):
         from rachel.main import FlorestaBanana
-        self.floresta_faca = FlorestaBanana()
-        self.floresta_faca.esquerda = self.aqui
+        self.floresta_faca = FlorestaBanana(self.aqui)
+        #self.floresta_faca.esquerda = self.aqui
         self.floresta_faca.vai()
 
 
