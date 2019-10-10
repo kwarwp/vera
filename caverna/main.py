@@ -77,7 +77,7 @@ class Caverna:
         
         
     def vai(self):
-        Texto(self.caverna, "Aqui tem uma caverna muito escura, será que a mãe do macaquinho está aqui?").vai()
+        Texto(self.floresta_inicio, "Aqui tem uma caverna muito escura, será que a mãe do macaquinho está aqui?").vai()
         self.floresta_inicio.vai()
                 
 if __name__ == "__main__":
