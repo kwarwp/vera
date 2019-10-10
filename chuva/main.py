@@ -64,8 +64,8 @@ class FlorestaChuva:
         
     def vai(self):
         if "capa de chuva" in INVENTARIO.item:
+            Texto(self.aqui, "Você se protege").vai()
         self.floresta_inicio.vai()
-        Texto(self.aqui, "Você se protege").vai()
                
 if __name__ == "__main__":
     INVENTARIO.inicia()
