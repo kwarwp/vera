@@ -56,7 +56,9 @@ class EntradaCaverna:
             drop=atores, cena=caverna)
     def ilumina_caverna(self, evento, objeto):
         self.entrada.elt.style.opacity=0.05
-        Texto(self.caverna, "Você ilumina a caverna").vai()
+        Texto(self.caverna, "Você ilumina a caverna, mas não encontra a mãe do macaquinho").vai()
+    def vai(self, evento, objeto):
+        Texto(self.caverna, "A caverna é muito escura, você precisa iluminar a caverna").vai()
         
 class Caverna:
     def __init__(self, esquerda=None):
@@ -77,6 +79,7 @@ class Caverna:
         
         
     def vai(self):
+        Texto(self.caverna, "Aqui tem uma caverna muito escura, será que a mãe do macaquinho está aqui?").vai()
         self.floresta_inicio.vai()
                 
 if __name__ == "__main__":
