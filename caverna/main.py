@@ -29,12 +29,12 @@ ENTRADA = "https://i.imgur.com/6e096Va.png"
 class CenaProxy:
     def __init__(self, aqui=None):
         self.aqui = aqui
-        self.floresta_faca = None
+        self.floresta_chuva = None
     def vai(self):
-        from amanda.main import FlorestaFaca
-        self.floresta_faca = FlorestaFaca(self.aqui)
-        self.floresta_faca.esquerda = self.aqui
-        self.floresta_faca.vai()
+        from chuva.main import FlorestaChuva
+        self.floresta_chuva = FlorestaChuva(self.aqui)
+        self.floresta_chuva.esquerda = self.aqui
+        self.floresta_chuva.vai()
 
 
 class Cobra:
