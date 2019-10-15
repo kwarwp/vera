@@ -5,7 +5,6 @@ from elemento.main import Elemento
 CAVERNATESOURO = "https://i.imgur.com/RgatDJ4.jpg"
 TESOURO = "https://i.imgur.com/8YK3cfO.png"
 cavernatesouro = Cena(CAVERNATESOURO)
-cavernatesouro.vai()
 codigo = Codigo ("", "",cena = cavernatesouro, style = dict( x= 400, y= 300))
 tesouro = Elemento (TESOURO, x= 245, y= 200, w= 700, h= 400)
 tesouro.vai = lambda *_: tesouro.entra(cavernatesouro)
@@ -15,3 +14,7 @@ codigo = Texto (cavernatesouro, "Opa!! Você achou o tesouro!!",
 "Mas, cuidado: ao decidir pegar o tesouro, seu amigo não poderá ser salvo",
 style = dict( x= 400, y= 300), foi=troca)
 cavernatesouro.meio = codigo
+
+if __name__ == "__main__":
+    cavernatesouro.vai()
+    
