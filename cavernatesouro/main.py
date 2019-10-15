@@ -6,5 +6,5 @@ CAVERNATESOURO = "https://i.imgur.com/RgatDJ4.jpg"
 TESOURO = "https://i.imgur.com/FqtXDXb.jpg"
 cavernatesouro = Cena(CAVERNATESOURO)
 cavernatesouro.vai()
-codigo = Codigo ("alo", "um texto maior",cena = cavernaamigo, x= 600, y= 320, w= 200, h= 200)
+codigo = Codigo ("alo", "um texto maior",cena = cavernatesouro)
 cavernatesouro.meio = codigo
