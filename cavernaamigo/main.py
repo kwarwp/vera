@@ -10,9 +10,10 @@ cavernaamigo = Cena(CAVERNAAMIGO)
 cavernaamigo.vai()
 class Prisao:
     def __init__(self):
+        ativa = dict(chave=self.abre)
         amigo = Elemento (AMIGO, cena = cavernaamigo, x= 600, y= 320, w= 200, h= 200)
         self.grade = Elemento (GRADE, cena = cavernaamigo, x= 510, y= 240, w= 300, h= 300)
-        self.cadeado = Elemento (CADEADO, cena = cavernaamigo, x= 510, y= 240, w= 50, h= 50)
+        self.cadeado = Elemento (CADEADO, cena = cavernaamigo, drop=ativa, x= 510, y= 240, w= 50, h= 50)
         
     def abre(self, *_):
         limbo = Cena()
