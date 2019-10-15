@@ -3,9 +3,10 @@ from _spy.vitollino.main import Cena, STYLE, Codigo, Texto
 STYLE["width"], STYLE["height"] = 1200, "650px"
 from elemento.main import Elemento
 CAVERNATESOURO = "https://i.imgur.com/RgatDJ4.jpg"
-TESOURO = "https://i.imgur.com/FqtXDXb.jpg"
+TESOURO = "https://i.imgur.com/8YK3cfO.png"
 cavernatesouro = Cena(CAVERNATESOURO)
 cavernatesouro.vai()
-codigo = Codigo ("alo", "um texto maior",cena = cavernatesouro, style = dict( x= 400, y= 300))
-codigo = Texto (cena = cavernatesouro, "alo", "um texto maior",style = dict( x= 400, y= 300))
+codigo = Codigo ("", "",cena = cavernatesouro, style = dict( x= 400, y= 300))
+codigo = Texto (cavernatesouro, "Opa!! Você achou o tesouro!!", "Mas, cuidado: ao decidir pegar o tesouro, seu amigo não poderá ser salvo",style = dict( x= 400, y= 300))
 cavernatesouro.meio = codigo
+tesouro = Elemento (TESOURO, cena = cavernatesouro, x= 600, y= 320, w= 200, h= 200)
