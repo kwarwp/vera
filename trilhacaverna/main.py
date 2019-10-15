@@ -11,6 +11,7 @@ SETADIREITA = "https://i.imgur.com/HiCksFh.png"
 SETAESQUERDA = "https://i.imgur.com/zpPeaMk.png"
 CHAVE = "https://i.imgur.com/O3oqeU0.png"
 trilhacaverna = Cena(TRILHACAVERNA)
+INVENTARIO.inicia()
 trilhacaverna.vai()
 aranha = Elemento (ARANHA, cena = trilhacaverna, x= 400, y= 150, w= 200, h= 200)
 cobra = Elemento (COBRA, cena = trilhacaverna, x= 800, y= 450, w= 400, h= 200)
