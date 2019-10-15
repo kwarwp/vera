@@ -6,3 +6,4 @@ CAVERNAAMIGO = "https://i.imgur.com/rHNPcSh.jpg"
 AMIGO = "https://i.imgur.com/T9EbLID.png"
 cavernaamigo = Cena(CAVERNAAMIGO)
 cavernaamigo.vai()
+amigo = Elemento (AMIGO, cena = cavernaamigo, x= 600, y= 320, w= 200, h= 200)
