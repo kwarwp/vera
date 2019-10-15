@@ -47,3 +47,10 @@ NameError: name 'cavernaamigo' is not defined
     codigo = Codigo ("alo", "um texto maior",cena = cavernatesouro, x= 600, y= 320, w= 200, h= 200)
 TypeError: __init__() got an unexpected keyword argument 'x'
 '''},
+{'date': 'Tue Oct 15 2019 13:35:37.890 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 10
+  codigo = Texto (cena = cavernatesouro, "alo", "um texto maior",style = dict( x= 400, y= 300))
+                                              ^
+SyntaxError: non-keyword arg after keyword arg
+'''},
