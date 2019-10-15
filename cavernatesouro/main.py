@@ -7,6 +7,7 @@ TESOURO = "https://i.imgur.com/8YK3cfO.png"
 cavernatesouro = Cena(CAVERNATESOURO)
 cavernatesouro.vai()
 codigo = Codigo ("", "",cena = cavernatesouro, style = dict( x= 400, y= 300))
-codigo = Texto (cavernatesouro, "Opa!! Você achou o tesouro!!", "Mas, cuidado: ao decidir pegar o tesouro, seu amigo não poderá ser salvo",style = dict( x= 400, y= 300))
+tesouro = Elemento (TESOURO, cena = cavernatesouro, x= 600, y= 320, w= 200, h= 200)codigo = Texto (cavernatesouro, "Opa!! Você achou o tesouro!!",
+"Mas, cuidado: ao decidir pegar o tesouro, seu amigo não poderá ser salvo",
+style = dict( x= 400, y= 300), foi=tesouro.vai)
 cavernatesouro.meio = codigo
-tesouro = Elemento (TESOURO, cena = cavernatesouro, x= 600, y= 320, w= 200, h= 200)
