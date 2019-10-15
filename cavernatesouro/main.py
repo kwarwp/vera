@@ -6,5 +6,5 @@ CAVERNATESOURO = "https://i.imgur.com/RgatDJ4.jpg"
 TESOURO = "https://i.imgur.com/FqtXDXb.jpg"
 cavernatesouro = Cena(CAVERNATESOURO)
 cavernatesouro.vai()
-codigo = Codigo ("alo", "um texto maior",cena = cavernatesouro)
+codigo = Codigo ("alo", "um texto maior",cena = cavernatesouro, style = dict( x= 400, y= 300))
 cavernatesouro.meio = codigo
