@@ -7,7 +7,6 @@ AMIGO = "https://i.imgur.com/T9EbLID.png"
 GRADE = "https://i.imgur.com/B8tB6cK.png"
 CADEADO = "https://i.imgur.com/4qa6rC6.png"
 cavernaamigo = Cena(CAVERNAAMIGO)
-cavernaamigo.vai()
 class Prisao:
     def __init__(self):
         ativa = dict(chave=self.abre)
@@ -21,3 +20,7 @@ class Prisao:
         self.cadeado.entra(limbo)
         
 Prisao()
+
+if __name__ == "__main__":
+    cavernaamigo.vai()
+    
