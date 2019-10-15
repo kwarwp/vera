@@ -19,7 +19,7 @@ setadireita = Elemento (SETADIREITA, cena = trilhacaverna, x= 1100, y= 450, w= 2
 setaesquerda = Elemento (SETAESQUERDA, cena = trilhacaverna, x= 30, y= 480, w= 100, h= 100)
 setadireita.vai = cavernatesouro.vai
 setaesquerda.vai = cavernaamigo.vai
-chave = Elemento (CHAVE, cena = trilhacaverna, tit="chave", drag = True,  x= 800, y= 450, w= 400, h= 200)
+chave = Elemento (CHAVE, cena = trilhacaverna, tit="chave", drag = True,  x= 500, y= 450, w= 100, h= 50)
 chave.vai = lambda *_: INVENTARIO.bota(chave)
 
 
