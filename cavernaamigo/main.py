@@ -6,6 +6,7 @@ CAVERNAAMIGO = "https://i.imgur.com/rHNPcSh.jpg"
 AMIGO = "https://i.imgur.com/T9EbLID.png"
 GRADE = "https://i.imgur.com/B8tB6cK.png"
 CADEADO = "https://i.imgur.com/4qa6rC6.png"
+ESMERALDA = "https://i.imgur.com/Fkqy62G.jpg"
 cavernaamigo = Cena(CAVERNAAMIGO)
 class Prisao:
     def __init__(self):
@@ -23,4 +24,8 @@ Prisao()
 
 if __name__ == "__main__":
     cavernaamigo.vai()
+    
+esmeralda = Elemento (ESMERALDA, x= 100, y= 200, w= 300, h= 400)
+esmeralda.entra(cavrnaamigo)
+
     
