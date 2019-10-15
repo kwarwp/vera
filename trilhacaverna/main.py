@@ -16,7 +16,7 @@ cobra = Elemento (COBRA, cena = trilhacaverna, x= 800, y= 450, w= 400, h= 200)
 setadireita = Elemento (SETADIREITA, cena = trilhacaverna, x= 1100, y= 450, w= 200, h= 100)
 setaesquerda = Elemento (SETAESQUERDA, cena = trilhacaverna, x= 30, y= 480, w= 100, h= 100)
 setadireita.vai = cavernatesouro.vai
-chave = Elemento (CHAVE, cena = trilhacaverna, x= 800, y= 450, w= 400, h= 200)
+chave = Elemento (CHAVE, cena = trilhacaverna,drag = True,  x= 800, y= 450, w= 400, h= 200)
 chave.vai = lambda *_: INVENTARIO.bota(chave)
 
 
