@@ -7,7 +7,7 @@ TESOURO = "https://i.imgur.com/8YK3cfO.png"
 cavernatesouro = Cena(CAVERNATESOURO)
 cavernatesouro.vai()
 codigo = Codigo ("", "",cena = cavernatesouro, style = dict( x= 400, y= 300))
-tesouro = Elemento (TESOURO, x= 600, y= 320, w= 200, h= 200)
+tesouro = Elemento (TESOURO, x= 245, y= 200, w= 700, h= 400)
 tesouro.vai = lambda *_: tesouro.entra(cavernatesouro)
 def troca(*_):
     cavernatesouro.meio = tesouro
