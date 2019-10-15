@@ -11,7 +11,7 @@ trilhacaverna = Cena(TRILHACAVERNA)
 trilhacaverna.vai()
 aranha = Elemento (ARANHA, cena = trilhacaverna, x= 800, y= 200, w= 200, h= 200)
 cobra = Elemento (COBRA, cena = trilhacaverna, x= 300, y= 450, w= 400, h= 200)
-setadireita = Elemento (SETADIREITA, cena = trilhacaverna, x= 800, y= 450, w= 400, h= 200)
+setadireita = Elemento (SETADIREITA, cena = trilhacaverna, x= 950, y= 450, w= 400, h= 200)
 setaesquerda = Elemento (SETAESQUERDA, cena = trilhacaverna, x= 50, y= 550, w= 400, h= 200)
 
 
