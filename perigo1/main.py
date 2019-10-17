@@ -24,10 +24,10 @@ class Perigo:
         redemoinho = Elemento(REDEMOINHO, cena=ilhamar, x=400, y=300, w=120, tipo="100% 30%",
         vai=self.vai_fundo)
         self.tubarao = Elemento(TUBARAO, cena=ilhamar, x=700, y= 500, w=150, style={"opacity":0.2}, vai=self.tub)
-    def tub(self, _):
+    def tub(self, *_):
         self.tubarao.elt.style.opacity = 1
         self.tubarao.elt.style.width = 180
-    def vai(self, _):
+    def vai(self, *_):
         self.ilhamar.vai()
     def vai_fundo(self, *_):
         import fundodomar.main
