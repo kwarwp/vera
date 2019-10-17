@@ -17,10 +17,11 @@ class CenaProxy:
     def __init__(self, aqui=None):
         self.aqui = aqui
         self.floresta_macaco = None
-    def vai(self):
+    def vai(self, *_):
         from soraya.main import FlorestaMacaco
         self.floresta_macaco = FlorestaMacaco()
-        self.aqui.esquerda = self.aqui.meio = self.aqui.direita = self.floresta_macaco
+        #self.aqui.esquerda = self.aqui.meio = self.aqui.direita = self.aqui.mordida.vai = self.floresta_macaco
+        self.floresta_macaco.vai()
 
 FLORESTA = "https://i.imgur.com/wBw3Lyl.jpg"
 LEAO = "https://i.imgur.com/4gXpvfQ.png"
@@ -48,7 +49,7 @@ class Leao:
         
     def falaleaocome(self,_):
         self.mordida.entra(self.floresta_inicio)
-        CenaProxy(self.floresta_inicio).vai()
+        self.mordida.vai = CenaProxy(self.floresta_inicio).vai
         self.falou.vai()
         
     def pega(self, _): 
