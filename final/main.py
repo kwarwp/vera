@@ -40,7 +40,7 @@ class CenaProxy:
 class Macaca:
     def __init__(self, aqui):
         self.aqui = aqui
-        self.macaca = Elemento(MACACA_MAE, x=600, y=300, w=200)
+        self.macaca = Elemento(MACACA_MAE, x=600, y=480, w=200, h=200)
         
     def vai(self):
         self.macaca.entra(self.aqui)
@@ -54,7 +54,7 @@ class FlorestaFinal:
         self.floresta_inicio = None
         self.floresta_final = floresta_final = CenaProxy(self.floresta_inicio)
         esquerda = esquerda or floresta_final
-        self.floresta_inicio = Cena(FLORESTA_CHUVA, esquerda=esquerda)
+        self.floresta_inicio = Cena(FLORESTA_FINAL, esquerda=esquerda)
         self.macaca_mae = Macaca(self.floresta_inicio)
         self.floresta_inicio.meio = self.floresta_inicio.direita = Macaca(self.floresta_inicio) 
         floresta_final.aqui = self.floresta_inicio 
