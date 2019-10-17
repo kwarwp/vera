@@ -9,7 +9,6 @@ ESMERALDA = "https://imgur.com/SuPb9Wa.png"
 PERGAMINHO = "https://i.imgur.com/6pz0aHn.png"
 AGUAVIVA = "https://i.imgur.com/7aIQZcW.png"
 PEIXE = "https://i.imgur.com/toGygPm.gif"
-codigo = Codigo ("", "",cena = fundodomar, style = dict( x= 400, y= 300))
 fundodomar = Cena(FUNDODOMAR)
 fundodomar.vai()
 esmeralda = Elemento (ESMERALDA, cena = fundodomar, x= 600, y= 500, w= 50, h= 50)
