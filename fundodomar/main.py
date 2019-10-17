@@ -4,7 +4,7 @@
 from _spy.vitollino.main import Cena, STYLE, INVENTARIO
 STYLE["width"], STYLE["height"] = 1200, "650px"
 from elemento.main import Elemento
-from fundodomar.main import fundodomar
+#from fundodomar.main import fundodomar
 from perigo1.main import perigo1
 class CenaProxy:
     def __init__(self, aqui=None):
