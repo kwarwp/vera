@@ -198,7 +198,25 @@ class Menudeobjetos:
         self.menudeobjetos.vai()
         #self.menudeobjetos.vai = self.guarda
         
-        
+class Menudepessoas:
+    def __init__(self, universo, left=200, top=50):
+        self.universo = universo
+        self.left, self.top = left, top
+            
+    def abre(self):        
+        left, top, u = self.left, self.top, self.universo
+        self.menudepessoas = Elemento(MENUDEPESSOAS[0], x=left -170, y=top +50, w=60, h=60, vai=self.pega,cena=self.universo)
+        self.menudepessoas = Elemento(MENUDEPESSOAS[1], x=left +30, y=top +50, w=60, h=60, vai=self.pega,cena=self.universo)
+        self.menudepessoas = Elemento(MENUDEPESSOAS[2], x=left -40, y=top +50, w=60, h=60, vai=self.pega,cena=self.universo)
+        self.menudepessoas = Elemento(MENUDEPESSOAS[3], x=left -260, y=top +50, w=80, h=80, vai=self.pega,cena=self.universo)
+        self.menudepessoas = Elemento(MENUDEPESSOAS[4], x=left -110, y=top +50, w=60, h=60, vai=self.pega,cena=self.universo)
+        self.longe = Cena()
+        self.na_mao = False
+        # self.menudeobjetos.entra(self.universo)
+    
+    def pega(self, _):
+        self.menudepessoas.vai()
+        #self.menudeobjetos.vai = self.guarda
         
 class Universo:
     def __init__(self):
