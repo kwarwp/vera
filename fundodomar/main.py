@@ -5,13 +5,6 @@ from _spy.vitollino.main import Cena, STYLE, INVENTARIO
 STYLE["width"], STYLE["height"] = 1200, "650px"
 from elemento.main import Elemento
 #from fundodomar.main import fundodomar
-from perigo1.main import perigo1
-class CenaProxy:
-    def __init__(self, aqui=None):
-        self.aqui = aqui
-    def vai(self, *_):
-        from perigo1.main import perigo1
-        perigo1.vai()
 #from _spy.vitollino.main import Cena, STYLE, Codigo
 #STYLE["width"], STYLE["height"] = 1200, "650px"
 #from elemento.main import Elemento
@@ -26,5 +19,5 @@ esmeralda = Elemento (ESMERALDA, cena = fundodomar, x= 600, y= 500, w= 50, h= 50
 pergaminho = Elemento (PERGAMINHO, cena = fundodomar, x= 1000, y= 100, w= 100, h= 100)
 aguaviva = Elemento (AGUAVIVA, cena = fundodomar, x= 200, y= 250, w= 300, h= 200)
 peixe = Elemento (PEIXE, cena = fundodomar, x= 700, y= 250, w= 200, h= 100)
-pergaminho.vai = CenaProxy().vai
+pergaminho.vai = perigo1.vai
 
