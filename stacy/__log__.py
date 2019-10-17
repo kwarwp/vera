@@ -311,3 +311,7 @@ NameError: name 'ANIMAL' is not defined
                                                               ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Thu Oct 17 2019 10:58:09.666 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+Exception: <TypeError: $locals_$exec_6747.Menudeanimais is not a function>
+'''},
