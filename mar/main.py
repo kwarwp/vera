@@ -1,5 +1,5 @@
 # vera.mar.main.py
-from _spy.vitollino.main import Cena, STYLE
+from _spy.vitollino.main import Cena, STYLE, Texto
 STYLE["width"], STYLE["height"] = 1200, "650px"
 from elemento.main import Elemento
 PRAIA = "https://i.imgur.com/slKTEBc.png"
@@ -7,7 +7,11 @@ ILHAMAR = "https://i.imgur.com/3FUDzbn.jpg"
 BARCO = "https://i.imgur.com/ckjd6cI.png"
 BOIA = "https://i.imgur.com/GmzOUTL.png"
 ilhamar = Cena(ILHAMAR)
-praia = Elemento(PRAIA, cena=ilhamar, x=700, y=398, h=900, style=dict(width= 500, height="650px"))
+def vai_trilha(*_):
+    import trilhacaverna.main
+praia = Elemento(PRAIA, cena=ilhamar, x=700, y=398, h=900, style=dict(width= 500, height="650px"),
+vai=vai_trilha)
+Texto(ilhamar, "mimi").vai()
 ilhamar.vai()
 def vai_fundo(*_):
     from perigo1.main import Perigo
