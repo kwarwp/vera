@@ -78,19 +78,6 @@ class Terra:
     def pega(self, _):
         self.fala.vai()
         self.faca.vai = self.guarda
-    
-    def guarda(self, _):
-        INVENTARIO.bota(self.faca)
-        self.falou.vai()
-        self.faca.vai = self.usa
-    
-    def chuta(self, _):
-        self.faca.entra(self.longe)
-        self.falou.vai()
-    
-    def usa(self, _):
-        self.na_mao = True
-        self.usar.vai()
         
 class Foguete:
     def __init__(self, universo, left=200, top=50):
