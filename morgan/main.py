@@ -19,7 +19,7 @@ class CenaProxy:
         self.floresta_macaco = None
     def vai(self, *_):
         from soraya.main import FlorestaMacaco
-        self.floresta_macaco = FlorestaMacaco()
+        self.floresta_macaco = FlorestaMacaco(vida=2)
         #self.aqui.esquerda = self.aqui.meio = self.aqui.direita = self.aqui.mordida.vai = self.floresta_macaco
         self.floresta_macaco.vai()
 
