@@ -165,7 +165,7 @@ class Menudeanimais:
         self.left, self.top = left, top
             
     def abre(self):        
-        left, top = self.left, self.top
+        left, top, u = self.left, self.top, self.universo
         self.menudeanimais = Elemento(MENUDEANIMAIS[0], x=left -170, y=top, w=60, h=60, vai=self.pega, cena=u)
         self.menudeanimais = Elemento(MENUDEANIMAIS[1], x=left +40, y=top +1, w=60, h=60, vai=self.pega, cena=u)
         self.menudeanimais = Elemento(MENUDEANIMAIS[2], x=left-30, y=top +1, w=60, h=60, vai=self.pega, cena=u)
