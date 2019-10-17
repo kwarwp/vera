@@ -116,7 +116,7 @@ class Doca:
 
 
 class Estacao:
-    def __init__(self, universo, left="300px", top="300px", icone=PESSOA, ITENS=[]):
+    def __init__(self, universo, menu, left="300px", top="300px", icone=PESSOA, ITENS=[]):
         def add(valor, num):
             return "{}px".format(int(valor[:-2]) + num)
         self.universo = universo
@@ -134,11 +134,13 @@ class Estacao:
         self.estacao.entra(self.universo)
         self.janela.entra(self.universo)
         self.icone.entra(self.universo)
+        self.menu =menu
     
     def pega(self, _):
         #self.fala.vai()
         #self.faca.vai = self.guarda
-        Menudeanimais(self.universo)
+        #Menudeanimais(self.universo)
+        self.menu.abre()
     
     def guarda(self, _):
         INVENTARIO.bota(self.faca)
@@ -162,9 +164,10 @@ class Universo:
         deserto = CenaProxy(self.universo)
         self.universo = Cena(UNIVERSO)
         terra = Terra(self.universo)
-        estacao = Estacao(self.universo, left="280px", top="150px", icone=PESSOA)
-        estacao2 = Estacao(self.universo, left="30px", top="50px", icone=ANIMAL)
-        estacao3 = Estacao(self.universo, left="380px", top="410px", icone=OBJETO)
+        menu = Menudeanimais(self.universo)
+        estacao = Estacao(self.universo, menu, left="280px", top="150px", icone=PESSOA)
+        estacao2 = Estacao(self.universo, menu, left="30px", top="50px", icone=ANIMAL)
+        estacao3 = Estacao(self.universo, menu, left="380px", top="410px", icone=OBJETO)
         foguete = Foguete(self.universo, left=20, top=500)
         doca = Doca(self.universo, left="650px", top="250px")
               
@@ -181,12 +184,14 @@ if __name__ == "__main__":
 class Menudeanimais:
     def __init__(self, universo, left=200, top=50):
         self.universo = u = universo
+        self.longe = Cena()
+        self.na_mao = False
+            
+    def abre(self):        
         self.menudeanimais = Elemento(MENUDEANIMAIS[0], x=left -170, y=top, w=60, h=60, vai=self.pega, cena=u)
         self.menudeanimais = Elemento(MENUDEANIMAIS[1], x=left +40, y=top +1, w=60, h=60, vai=self.pega, cena=u)
         self.menudeanimais = Elemento(MENUDEANIMAIS[2], x=left-30, y=top +1, w=60, h=60, vai=self.pega, cena=u)
         self.menudeanimais = Elemento(MENUDEANIMAIS[3], x=left -100, y=top, w=60, h=60, vai=self.pega, cena=u)
-        self.longe = Cena()
-        self.na_mao = False
         #self.menudeanimais.entra(self.universo)
     
     def pega(self, _):
@@ -205,7 +210,7 @@ class Menudeobjetos:
         self.menudeobjetos = Elemento(MENUDEOBJETOS[4], x=left -50, y=top, w=150, h=150, vai=self.pega,cena=self.universo)
         self.longe = Cena()
         self.na_mao = False
-        self.menudeobjetos.entra(self.universo)
+        # self.menudeobjetos.entra(self.universo)
     
     def pega(self, _):
         self.menudeobjetos.vai()
