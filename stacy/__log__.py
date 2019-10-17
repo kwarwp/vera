@@ -351,3 +351,25 @@ NameError: name 'Universo' is not defined
     o_universo.vai()
 AttributeError: 'Universo' object has no attribute 'vai'
 '''},
+{'date': 'Thu Oct 17 2019 11:16:29.827 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 160
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 306
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 278
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 295
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 225
+    o_universo = Universo()
+  module <module> line 214
+    estacao3 = Estacao(self.universo, menuo, left=380, top=410, icone=OBJETO)
+  module <module> line 129
+    self.icone = Elemento(icone, style=dict(left=add(left,55),
+  module <module> line 121
+    return "{}px".format(int(valor[:-2]) + num)
+AttributeError: 'int' object has no attribute '__getitem__'
+'''},
