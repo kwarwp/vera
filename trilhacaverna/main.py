@@ -2,7 +2,7 @@
 from _spy.vitollino.main import Cena, STYLE, INVENTARIO
 STYLE["width"], STYLE["height"] = 1200, "650px"
 from elemento.main import Elemento
-from cavernatesouro.main import cavernatesouro
+from cavernatesouro.main import Caverna
 from cavernaamigo.main import cavernaamigo
 TRILHACAVERNA = "https://i.imgur.com/bNEzuBs.jpg"
 ARANHA = "https://i.imgur.com/xXPifks.png"
@@ -19,12 +19,14 @@ class Caverna:
         cobra = Elemento (COBRA, cena = trilhacaverna, x= 800, y= 450, w= 400, h= 200)
         setadireita = Elemento (SETADIREITA, cena = trilhacaverna, x= 1100, y= 450, w= 200, h= 100)
         setaesquerda = Elemento (SETAESQUERDA, cena = trilhacaverna, x= 30, y= 480, w= 100, h= 100)
-        setadireita.vai = cavernatesouro.vai
+        setadireita.vai = self.dir_vai
         setaesquerda.vai = cavernaamigo.vai
         chave = Elemento (CHAVE, cena = trilhacaverna, tit="chave", drag = True,  x= 500, y= 450, w= 100, h= 50)
         chave.vai = lambda *_: INVENTARIO.bota(chave)
     def vai(self, *_):
         self.trilha.vai()
+    def dir_vai(self, *_):
+        Caverna().vai()
 
 
 if __name__ == "__main__":
