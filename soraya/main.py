@@ -27,7 +27,7 @@ class FlorestaMacaco:
         self.macaco = Elemento(MACACO, style=dict(left="700px", top="400px", width="100px"))
         self.macaco.entra(floresta_inicio)
         self.macaco.vai=self.falamacaco
-        floresta_inicio.vai()
+        #floresta_inicio.vai()
         
     def vai(self):
         self.floresta_inicio.vai()
