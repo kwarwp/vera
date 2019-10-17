@@ -1,8 +1,12 @@
 # vera.perigo1.main.py
 # vera.mar.main.py
-from _spy.vitollino.main import Cena, STYLE
+from _spy.vitollino.main import Cena, STYLE, INVENTARIO
 STYLE["width"], STYLE["height"] = 1200, "650px"
 from elemento.main import Elemento
+from fundodomar.main import fundodomar
+#from _spy.vitollino.main import Cena, STYLE
+#STYLE["width"], STYLE["height"] = 1200, "650px"
+#from elemento.main import Elemento
 PRAIA = "https://i.imgur.com/slKTEBc.png"
 ILHAMAR = "https://i.imgur.com/ifRjzot.png"
 BOIA = "https://i.imgur.com/GmzOUTL.png"
@@ -23,6 +27,7 @@ class Perigo:
         boia9 = Elemento(BOIA, cena=ilhamar, x=1100, y=400, w=100)
         redemoinho = Elemento(REDEMOINHO, cena=ilhamar, x=400, y=300, w=120, tipo="100% 30%")
         self.tubarao = Elemento(TUBARAO, cena=ilhamar, x=700, y= 500, w=150, style={"opacity":0.2}, vai=self.tub)
+        redemoinho.vai = fundodomar.vai
     def tub(self, _):
         self.tubarao.elt.style.opacity = 1
         self.tubarao.elt.style.width = 180
