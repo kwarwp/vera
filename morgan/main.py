@@ -16,12 +16,11 @@ MORDIDA = "https://i.imgur.com/EOHbtUB.png"
 class CenaProxy:
     def __init__(self, aqui=None):
         self.aqui = aqui
-        self.floresta_cobra = None
+        self.floresta_macaco = None
     def vai(self):
-        from cobra.main import FlorestaCobra
-        self.floresta_cobra = FlorestaCobra()
-        self.floresta_cobra.esquerda = self.aqui
-        self.floresta_cobra.vai()
+        from soraya.main import FlorestaMacaco
+        self.floresta_macaco = FlorestaMacaco()
+        self.aqui.esquerda = self.aqui.meio = self.aqui.direita = self.floresta_macaco
 
 FLORESTA = "https://i.imgur.com/wBw3Lyl.jpg"
 LEAO = "https://i.imgur.com/4gXpvfQ.png"
@@ -49,8 +48,7 @@ class Leao:
         
     def falaleaocome(self,_):
         self.mordida.entra(self.floresta_inicio)
-        from soraia.main import FlorestaMacaco
-        self.floresta_inicio.esquerda = self.floresta_inicio.meio = self.floresta_inicio.direita = FlorestaMacaco()
+        CenaProxy(self.floresta_inicio).vai()
         self.falou.vai()
         
     def pega(self, _): 
