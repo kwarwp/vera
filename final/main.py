@@ -53,7 +53,7 @@ class FlorestaFinal:
         # floresta_faca = FlorestaFaca() -XX- ERRO!
         self.floresta_inicio = None
         self.floresta_final = floresta_final = CenaProxy(self.floresta_inicio)
-        self.macaca_mae = Macaca()
+        self.macaca_mae = Macaca(self.floresta_inicio)
         esquerda = esquerda or floresta_rio
         self.floresta_inicio = Cena(FLORESTA_CHUVA, esquerda=esquerda)
         self.floresta_inicio.meio = self.floresta_inicio.direita = Macaca(self.floresta_inicio) 
