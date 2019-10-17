@@ -1,7 +1,7 @@
 # vera.fundodomar.main.py
 # vera.perigo1.main.py
 # vera.mar.main.py
-from _spy.vitollino.main import Cena, STYLE
+from _spy.vitollino.main import Cena, STYLE, Codigo
 STYLE["width"], STYLE["height"] = 1200, "650px"
 from elemento.main import Elemento
 FUNDODOMAR = "https://imgur.com/Mc6ktz2.png"
@@ -9,6 +9,7 @@ ESMERALDA = "https://imgur.com/SuPb9Wa.png"
 PERGAMINHO = "https://i.imgur.com/6pz0aHn.png"
 AGUAVIVA = "https://i.imgur.com/7aIQZcW.png"
 PEIXE = "https://i.imgur.com/toGygPm.gif"
+codigo = Codigo ("", "",cena = fundodomar, style = dict( x= 400, y= 300))
 fundodomar = Cena(FUNDODOMAR)
 fundodomar.vai()
 esmeralda = Elemento (ESMERALDA, cena = fundodomar, x= 600, y= 500, w= 50, h= 50)
