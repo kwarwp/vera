@@ -26,5 +26,9 @@ class Perigo:
     def tub(self, _):
         self.tubarao.elt.style.opacity = 1
         self.tubarao.elt.style.width = 180
-        
+    def vai(self, _):
+        self.ilhamar.vai()
+
+if __name__ == "__main__":
+    Perigo().vai()
 #ilhamar = Perigo().ilhamar
