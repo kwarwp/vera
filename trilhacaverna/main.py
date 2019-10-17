@@ -2,7 +2,7 @@
 from _spy.vitollino.main import Cena, STYLE, INVENTARIO
 STYLE["width"], STYLE["height"] = 1200, "650px"
 from elemento.main import Elemento
-from cavernatesouro.main import Caverna
+from cavernatesouro.main import Tesouro
 from cavernaamigo.main import cavernaamigo
 TRILHACAVERNA = "https://i.imgur.com/bNEzuBs.jpg"
 ARANHA = "https://i.imgur.com/xXPifks.png"
@@ -26,7 +26,8 @@ class Caverna:
     def vai(self, *_):
         self.trilha.vai()
     def dir_vai(self, *_):
-        Caverna().vai()
+        from cavernatesouro.main import Tesouro
+        Tesouro().vai()
 
 
 if __name__ == "__main__":
