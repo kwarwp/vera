@@ -182,7 +182,7 @@ class Menudeanimais:
     def __init__(self, universo, left=200, top=50):
         self.universo = u = universo
         self.menudeanimais = Elemento(MENUDEANIMAIS[0], x=left -170, y=top, w=60, h=60, vai=self.pega, cena=u)
-        self.menudeanimais = Elemento(MENUDEANIMAIS[1], x=left -1, y=top +1, w=60, h=60, vai=self.pega, cena=u)
+        self.menudeanimais = Elemento(MENUDEANIMAIS[1], x=left +40, y=top +1, w=60, h=60, vai=self.pega, cena=u)
         self.menudeanimais = Elemento(MENUDEANIMAIS[2], x=left-30, y=top +1, w=60, h=60, vai=self.pega, cena=u)
         self.menudeanimais = Elemento(MENUDEANIMAIS[3], x=left -100, y=top, w=60, h=60, vai=self.pega, cena=u)
         self.longe = Cena()
@@ -198,11 +198,11 @@ class Menudeanimais:
 class Menudeobjetos:
     def __init__(self, universo, left=200, top=50):
         self.universo = universo
-        self.menudeobjetos = Elemento(MENUDEOBJETOS[0], x=left, y=top, w=100, h=100, vai=self.pega,cena=self.universo)
-        self.menudeobjetos = Elemento(MENUDEOBJETOS[1], x=left, y=top, w=150, h=150, vai=self.pega,cena=self.universo)
-        self.menudeobjetos = Elemento(MENUDEOBJETOS[2], x=left, y=top, w=150, h=150, vai=self.pega,cena=self.universo)
-        self.menudeobjetos = Elemento(MENUDEOBJETOS[3], x=left, y=top, w=150, h=150, vai=self.pega,cena=self.universo)
-        self.menudeobjetos = Elemento(MENUDEOBJETOS[4], x=left, y=top, w=150, h=150, vai=self.pega,cena=self.universo)
+        self.menudeobjetos = Elemento(MENUDEOBJETOS[0], x=left -170, y=top, w=100, h=100, vai=self.pega,cena=self.universo)
+        self.menudeobjetos = Elemento(MENUDEOBJETOS[1], x=left +40, y=top, w=150, h=150, vai=self.pega,cena=self.universo)
+        self.menudeobjetos = Elemento(MENUDEOBJETOS[2], x=left -30, y=top, w=150, h=150, vai=self.pega,cena=self.universo)
+        self.menudeobjetos = Elemento(MENUDEOBJETOS[3], x=left -100, y=top, w=150, h=150, vai=self.pega,cena=self.universo)
+        self.menudeobjetos = Elemento(MENUDEOBJETOS[4], x=left -50, y=top, w=150, h=150, vai=self.pega,cena=self.universo)
         self.longe = Cena()
         self.na_mao = False
         self.menudeobjetos.entra(self.universo)
