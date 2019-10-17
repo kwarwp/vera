@@ -315,3 +315,7 @@ SyntaxError: invalid syntax
 'error': '''
 Exception: <TypeError: $locals_$exec_6747.Menudeanimais is not a function>
 '''},
+{'date': 'Thu Oct 17 2019 10:58:45.361 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+Exception: <TypeError: $locals_$exec_6796.Menudeanimais is not a function>
+'''},
