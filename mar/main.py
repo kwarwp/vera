@@ -8,7 +8,8 @@ BARCO = "https://i.imgur.com/ckjd6cI.png"
 BOIA = "https://i.imgur.com/GmzOUTL.png"
 ilhamar = Cena(ILHAMAR)
 def vai_trilha(*_):
-    import trilhacaverna.main
+    from trilhacaverna.main import Caverna
+    Caverna().vai()
 praia = Elemento(PRAIA, cena=ilhamar, x=700, y=398, h=900, style=dict(width= 500, height="650px"),
 vai=vai_trilha)
 Texto(ilhamar, "mimi").vai()
