@@ -49,6 +49,8 @@ class Leao:
         
     def falaleaocome(self,_):
         self.mordida.entra(self.floresta_inicio)
+        from soraia.main import FlorestaMacaco
+        self.floresta_inicio.esquerda = self.floresta_inicio.meio = self.floresta_inicio.direita = FlorestaMacaco()
         self.falou.vai()
         
     def pega(self, _): 
