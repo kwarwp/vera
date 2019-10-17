@@ -185,11 +185,11 @@ class Menudeobjetos:
             
     def abre(self):        
         left, top, u = self.left, self.top, self.universo
-        self.menudeobjetos = Elemento(MENUDEOBJETOS[0], x=left -170, y=top, w=100, h=100, vai=self.pega,cena=self.universo)
-        self.menudeobjetos = Elemento(MENUDEOBJETOS[1], x=left +40, y=top, w=150, h=150, vai=self.pega,cena=self.universo)
-        self.menudeobjetos = Elemento(MENUDEOBJETOS[2], x=left -30, y=top, w=150, h=150, vai=self.pega,cena=self.universo)
-        self.menudeobjetos = Elemento(MENUDEOBJETOS[3], x=left -100, y=top, w=150, h=150, vai=self.pega,cena=self.universo)
-        self.menudeobjetos = Elemento(MENUDEOBJETOS[4], x=left -50, y=top, w=150, h=150, vai=self.pega,cena=self.universo)
+        self.menudeobjetos = Elemento(MENUDEOBJETOS[0], x=left -170, y=top +50, w=100, h=100, vai=self.pega,cena=self.universo)
+        self.menudeobjetos = Elemento(MENUDEOBJETOS[1], x=left +40, y=top +50, w=150, h=150, vai=self.pega,cena=self.universo)
+        self.menudeobjetos = Elemento(MENUDEOBJETOS[2], x=left -30, y=top +50, w=150, h=150, vai=self.pega,cena=self.universo)
+        self.menudeobjetos = Elemento(MENUDEOBJETOS[3], x=left -100, y=top +50, w=150, h=150, vai=self.pega,cena=self.universo)
+        self.menudeobjetos = Elemento(MENUDEOBJETOS[4], x=left -50, y=top +50, w=150, h=150, vai=self.pega,cena=self.universo)
         self.longe = Cena()
         self.na_mao = False
         # self.menudeobjetos.entra(self.universo)
@@ -208,7 +208,8 @@ class Universo:
         self.universo = Cena(UNIVERSO)
         terra = Terra(self.universo)
         menu = Menudeanimais(self.universo)
-        menuo = Menudeobjetos(self.universo)
+        menuo = Menudeobjetos(self.universo, left=380, top=410)
+        #menup = Menudepessoas(self.universo, left=280, top=150)
         estacao = Estacao(self.universo, menu, left="280px", top="150px", icone=PESSOA)
         estacao2 = Estacao(self.universo, menu, left="30px", top="50px", icone=ANIMAL)
         estacao3 = Estacao(self.universo, menuo, left="380px", top="410px", icone=OBJETO)
