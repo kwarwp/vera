@@ -141,7 +141,7 @@ class Estacao:
         #self.faca.vai = self.guarda
         #Menudeanimais(self.universo)
         self.menu.abre()
-    
+"""    
     def guarda(self, _):
         INVENTARIO.bota(self.faca)
         self.falou.vai()
@@ -154,31 +154,7 @@ class Estacao:
     def usa(self, _):
         self.na_mao = True
         self.usar.vai()
-        
-        
-        
-class Universo:
-    def __init__(self):
-        # floresta_leao = FlorestaLeao() -XX- ERRO!
-        self.universo = None
-        deserto = CenaProxy(self.universo)
-        self.universo = Cena(UNIVERSO)
-        terra = Terra(self.universo)
-        menu = Menudeanimais(self.universo)
-        estacao = Estacao(self.universo, menu, left="280px", top="150px", icone=PESSOA)
-        estacao2 = Estacao(self.universo, menu, left="30px", top="50px", icone=ANIMAL)
-        estacao3 = Estacao(self.universo, menu, left="380px", top="410px", icone=OBJETO)
-        foguete = Foguete(self.universo, left=20, top=500)
-        doca = Doca(self.universo, left="650px", top="250px")
-              
-    def vai(self):
-        self.universo.vai()
-        
-if __name__ == "__main__":
-    INVENTARIO.inicia()
-    o_universo = Universo()
-    o_universo.vai()
-    
+"""    
     
     
 class Menudeanimais:
@@ -215,3 +191,29 @@ class Menudeobjetos:
     def pega(self, _):
         self.menudeobjetos.vai()
         self.menudeobjetos.vai = self.guarda
+        
+        
+        
+class Universo:
+    def __init__(self):
+        # floresta_leao = FlorestaLeao() -XX- ERRO!
+        self.universo = None
+        deserto = CenaProxy(self.universo)
+        self.universo = Cena(UNIVERSO)
+        terra = Terra(self.universo)
+        menu = Menudeanimais(self.universo)
+        estacao = Estacao(self.universo, menu, left="280px", top="150px", icone=PESSOA)
+        estacao2 = Estacao(self.universo, menu, left="30px", top="50px", icone=ANIMAL)
+        estacao3 = Estacao(self.universo, menu, left="380px", top="410px", icone=OBJETO)
+        foguete = Foguete(self.universo, left=20, top=500)
+        doca = Doca(self.universo, left="650px", top="250px")
+        
+              
+    def vai(self):
+        self.universo.vai()
+
+        
+if __name__ == "__main__":
+    INVENTARIO.inicia()
+    o_universo = Universo()
+    o_universo.vai()
