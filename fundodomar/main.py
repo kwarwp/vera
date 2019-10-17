@@ -4,6 +4,8 @@
 from _spy.vitollino.main import Cena, STYLE, INVENTARIO
 STYLE["width"], STYLE["height"] = 1200, "650px"
 from elemento.main import Elemento
+
+
 #from fundodomar.main import fundodomar
 #from _spy.vitollino.main import Cena, STYLE, Codigo
 #STYLE["width"], STYLE["height"] = 1200, "650px"
@@ -24,5 +26,9 @@ aguaviva = Elemento (AGUAVIVA, cena = fundodomar, x= 200, y= 250, w= 300, h= 200
 peixe = Elemento (PEIXE, cena = fundodomar, x= 700, y= 250, w= 200, h= 100)
 def mostra_mapa(*_):
     mapa.entra(fundodomar)
+def vai_perigo(*_):
+    from perigo1.main import Perigo
+    Perigo().vai()
+mapa.vai = vai_perigo
 pergaminho.vai = mostra_mapa
 
