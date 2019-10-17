@@ -187,7 +187,7 @@ class Menudeobjetos:
         left, top, u = self.left, self.top, self.universo
         self.menudeobjetos = Elemento(MENUDEOBJETOS[0], x=left -170, y=top +50, w=60, h=60, vai=self.pega,cena=self.universo)
         self.menudeobjetos = Elemento(MENUDEOBJETOS[1], x=left +30, y=top +50, w=60, h=60, vai=self.pega,cena=self.universo)
-        self.menudeobjetos = Elemento(MENUDEOBJETOS[2], x=left -50, y=top +50, w=60, h=60, vai=self.pega,cena=self.universo)
+        self.menudeobjetos = Elemento(MENUDEOBJETOS[2], x=left -40, y=top +50, w=60, h=60, vai=self.pega,cena=self.universo)
         self.menudeobjetos = Elemento(MENUDEOBJETOS[3], x=left -260, y=top +50, w=80, h=80, vai=self.pega,cena=self.universo)
         self.menudeobjetos = Elemento(MENUDEOBJETOS[4], x=left -110, y=top +50, w=60, h=60, vai=self.pega,cena=self.universo)
         self.longe = Cena()
