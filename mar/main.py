@@ -10,7 +10,7 @@ BOIA = "https://i.imgur.com/GmzOUTL.png"
 ilhamar = Cena(ILHAMAR, esquerda=perigo)
 praia = Elemento(PRAIA, cena=ilhamar, x=700, y=398, h=900, style=dict(width= 500, height="650px"))
 ilhamar.vai()
-barco = Elemento(BARCO, cena=ilhamar, x=300, y=440, h=500, style=dict(width= 80, height="650px"))
+barco = Elemento(BARCO, cena=ilhamar, x=70, y=430, h=500, style=dict(width= 80, height="650px"))
 boia = Elemento(BOIA, cena=ilhamar, x=30, y=440, h=900, style=dict(width= 30, height="650px"))
 boia2 = Elemento(BOIA, cena=ilhamar, x=100, y=500, h=900, style=dict(width= 30, height="650px"))
 boia3 = Elemento(BOIA, cena=ilhamar, x=200, y=550, h=900, style=dict(width= 30, height="650px"))
