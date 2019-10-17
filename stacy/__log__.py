@@ -304,3 +304,10 @@ TypeError: 'module' object is not callable
     estacao2 = Estacao(self.universo, left="30px", top="50px", icone=ANIMAL)
 NameError: name 'ANIMAL' is not defined
 '''},
+{'date': 'Thu Oct 17 2019 10:21:02.966 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 186
+  self.menudeanimais = Elemento(MENUDEANIMAIS[2], x=left,-40 y=top +40, w=80, h=80, vai=self.pega, cena=u)
+                                                              ^
+SyntaxError: invalid syntax
+'''},
