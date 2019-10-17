@@ -181,10 +181,10 @@ if __name__ == "__main__":
 class Menudeanimais:
     def __init__(self, universo, left=200, top=50):
         self.universo = u = universo
-        self.menudeanimais = Elemento(MENUDEANIMAIS[0], x=left, y=top, w=60, h=60, vai=self.pega, cena=u)
-        self.menudeanimais = Elemento(MENUDEANIMAIS[1], x=left -20, y=top +20, w=60, h=60, vai=self.pega, cena=u)
-        self.menudeanimais = Elemento(MENUDEANIMAIS[2], x=left-40, y=top +40, w=60, h=60, vai=self.pega, cena=u)
-        self.menudeanimais = Elemento(MENUDEANIMAIS[3], x=left -60, y=top, w=60, h=60, vai=self.pega, cena=u)
+        self.menudeanimais = Elemento(MENUDEANIMAIS[0], x=left -170, y=top, w=60, h=60, vai=self.pega, cena=u)
+        self.menudeanimais = Elemento(MENUDEANIMAIS[1], x=left -1, y=top +1, w=60, h=60, vai=self.pega, cena=u)
+        self.menudeanimais = Elemento(MENUDEANIMAIS[2], x=left-30, y=top +1, w=60, h=60, vai=self.pega, cena=u)
+        self.menudeanimais = Elemento(MENUDEANIMAIS[3], x=left -100, y=top, w=60, h=60, vai=self.pega, cena=u)
         self.longe = Cena()
         self.na_mao = False
         #self.menudeanimais.entra(self.universo)
