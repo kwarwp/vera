@@ -300,3 +300,4 @@
   {'doc_id': '35e2882b', 'carta': 'f', 'casa': [602, 457], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'GENTE', '_level': 1, 'tempo': 1571670250626},
   {'doc_id': '35e2882b', 'carta': 'f', 'casa': [608, 445], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'GENTE', '_level': 1, 'tempo': 1571670251548},
   {'doc_id': '35e2882b', 'carta': 'f', 'casa': [606, 450], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'GENTE', '_level': 1, 'tempo': 1571670258558},
+  {'doc_id': '35e2882b', 'carta': 'laranja', 'casa': [511, 192], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'COISA', '_level': 1, 'tempo': 1571670759315},
