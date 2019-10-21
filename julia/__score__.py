@@ -73,3 +73,4 @@
   {'doc_id': '08b01d19', 'carta': 'pequeno', 'casa': [143, 557], 'move': 'BALDE', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1570647761836},
 {'doc_id': '9f8855f8', 'carta': 'Teste', 'casa': 'pescaria', 'move': 'JULIA', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1571622801965},
   {'doc_id': '9f8855f8', 'carta': 'marcos', 'casa': [335, 468], 'move': 'CRIA', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1571622806896},
+  {'doc_id': '9f8855f8', 'carta': 'julia', 'casa': [860, 428], 'move': 'CRIA', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1571622811381},
