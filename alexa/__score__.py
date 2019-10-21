@@ -317,3 +317,4 @@
 {'doc_id': 'd927afaf', 'carta': '', 'casa': [], 'move': 'ID', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1571672630691},
   {'doc_id': 'd927afaf', 'carta': 'galocha', 'casa': [391, 177], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'COISA', '_level': 1, 'tempo': 1571672635149},
   {'doc_id': 'd927afaf', 'carta': 'galocha', 'casa': [681, 432], 'move': 'DROP', 'ponto': True, 'valor': 'c', '_level': 1, 'tempo': 1571672649230},
+  {'doc_id': 'd927afaf', 'carta': 'laranja', 'casa': [683, 446], 'move': 'DROP', 'ponto': False, 'valor': 'c', '_level': 1, 'tempo': 1571672654702},
