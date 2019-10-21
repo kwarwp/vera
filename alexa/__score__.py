@@ -314,3 +314,4 @@
   {'doc_id': '35e2882b', 'carta': 'peteca', 'casa': [378, 420], 'move': 'DROP', 'ponto': True, 'valor': 'e', '_level': 1, 'tempo': 1571670815641},
   {'doc_id': '35e2882b', 'carta': 'tenis', 'casa': [687, 427], 'move': 'DROP', 'ponto': True, 'valor': 'c', '_level': 1, 'tempo': 1571670831978},
   {'doc_id': '35e2882b', 'carta': 'galocha', 'casa': [677, 438], 'move': 'DROP', 'ponto': True, 'valor': 'c', '_level': 1, 'tempo': 1571670835400},
+{'doc_id': 'd927afaf', 'carta': '', 'casa': [], 'move': 'ID', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1571672630691},
