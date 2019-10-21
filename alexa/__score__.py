@@ -320,3 +320,4 @@
   {'doc_id': 'd927afaf', 'carta': 'laranja', 'casa': [683, 446], 'move': 'DROP', 'ponto': False, 'valor': 'c', '_level': 1, 'tempo': 1571672654702},
   {'doc_id': 'd927afaf', 'carta': 'laranja', 'casa': [518, 171], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'COISA', '_level': 1, 'tempo': 1571672657502},
   {'doc_id': 'd927afaf', 'carta': 'laranja', 'casa': [350, 433], 'move': 'DROP', 'ponto': False, 'valor': 'e', '_level': 1, 'tempo': 1571672663953},
+  {'doc_id': 'd927afaf', 'carta': 'passarinho', 'casa': [357, 422], 'move': 'DROP', 'ponto': False, 'valor': 'e', '_level': 1, 'tempo': 1571672667517},
