@@ -297,3 +297,4 @@
 {'doc_id': 'e40e5578', 'carta': '', 'casa': [], 'move': 'ID', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1571665566087},
   {'doc_id': 'e40e5578', 'carta': 'passarinho', 'casa': [265, 437], 'move': 'DROP', 'ponto': True, 'valor': 'b', '_level': 1, 'tempo': 1571665594594},
 {'doc_id': '35e2882b', 'carta': '', 'casa': [], 'move': 'ID', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1571669260338},
+  {'doc_id': '35e2882b', 'carta': 'f', 'casa': [602, 457], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'GENTE', '_level': 1, 'tempo': 1571670250626},
