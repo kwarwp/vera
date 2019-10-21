@@ -311,3 +311,4 @@
   {'doc_id': '35e2882b', 'carta': 'galocha', 'casa': [483, 420], 'move': 'DROP', 'ponto': False, 'valor': 'p', '_level': 1, 'tempo': 1571670801562},
   {'doc_id': '35e2882b', 'carta': 'galocha', 'casa': [473, 396], 'move': 'DROP', 'ponto': False, 'valor': 'p', '_level': 1, 'tempo': 1571670803160},
   {'doc_id': '35e2882b', 'carta': 'passarinho', 'casa': [261, 421], 'move': 'DROP', 'ponto': True, 'valor': 'b', '_level': 1, 'tempo': 1571670809327},
+  {'doc_id': '35e2882b', 'carta': 'peteca', 'casa': [378, 420], 'move': 'DROP', 'ponto': True, 'valor': 'e', '_level': 1, 'tempo': 1571670815641},
