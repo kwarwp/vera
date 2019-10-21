@@ -76,3 +76,4 @@
   {'doc_id': '9f8855f8', 'carta': 'julia', 'casa': [860, 428], 'move': 'CRIA', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1571622811381},
   {'doc_id': '9f8855f8', 'carta': ' peixe grande', 'casa': [607, 624], 'move': 'OLHA', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1571622814624},
 {'doc_id': 'adfcb32e', 'carta': '', 'casa': 'pescaria', 'move': 'JULIA', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1571661313294},
+{'doc_id': 'adfcb32e', 'carta': '', 'casa': 'pescaria', 'move': 'JULIA', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1571661354435},
