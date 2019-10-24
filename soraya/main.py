@@ -19,7 +19,7 @@ class CenaProxy:
 
 
 class FlorestaMacaco:
-    def __init__(self, floresta_inicio=0):
+    def __init__(self, floresta_inicio=0, vida=3):
         floresta_faca = CenaProxy()
         floresta_inicio = Cena(FLORESTA, direita=floresta_faca)
         self.floresta_inicio = floresta_inicio
