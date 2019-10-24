@@ -13,6 +13,18 @@ MORDIDA = "https://i.imgur.com/EOHbtUB.png"
 
 
 
+class CenaProxyCobra:
+    def __init__(self, aqui=None):
+        self.aqui = aqui
+        self.floresta_macaco = None
+    def vai(self, *_):
+        from cobra.main import FlorestaCobra
+        self.floresta_cobra = FlorestaCobra()
+        #self.aqui.esquerda = self.aqui.meio = self.aqui.direita = self.aqui.mordida.vai = self.floresta_macaco
+        self.floresta_cobra.vai()
+
+
+
 class CenaProxy:
     def __init__(self, aqui=None):
         self.aqui = aqui
@@ -67,7 +79,7 @@ class Leao:
 class FlorestaLeao:
     def __init__(self, esquerda=None):
         self.floresta_inicio = None
-        floresta_banana = CenaProxy(self.floresta_inicio)
+        floresta_banana = CenaProxyCobra(self.floresta_inicio)
         esquerda = esquerda or floresta_banana
         self.floresta_inicio = Cena(FLORESTA, esquerda=esquerda, direita=floresta_banana)
         leao = Leao(self.floresta_inicio)
