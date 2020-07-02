@@ -323,3 +323,4 @@
   {'doc_id': 'd927afaf', 'carta': 'passarinho', 'casa': [357, 422], 'move': 'DROP', 'ponto': False, 'valor': 'e', '_level': 1, 'tempo': 1571672667517},
 {'doc_id': 'cf68bea6', 'carta': '', 'casa': [], 'move': 'ID', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1593707249375},
   {'doc_id': 'cf68bea6', 'carta': 'tenis', 'casa': [691, 432], 'move': 'DROP', 'ponto': True, 'valor': 'c', '_level': 1, 'tempo': 1593707273187},
+  {'doc_id': 'cf68bea6', 'carta': 'galocha', 'casa': [700, 422], 'move': 'DROP', 'ponto': True, 'valor': 'c', '_level': 1, 'tempo': 1593707278102},
