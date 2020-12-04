@@ -387,3 +387,27 @@ SyntaxError: invalid syntax
                                                               ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Fri Dec 04 2020 13:16:31.325 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 180
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 310
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 282
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 299
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 233
+    o_universo = Universo()
+  module <module> line 216
+    terra = Terra(self.universo)
+  module <module> line 73
+    self.terra = Elemento(TERRA, x=800, y=180, w=450, h=400, vai=self.pega)
+  module elemento.main line 18
+    self.img, self.title, self.dropper, self.alt = img, tit, drop, alt
+  module _spy.vitollino.main line 668
+    self.elt.style.backgroundImage = "url({})".format(value)
+AttributeError: 'Elemento' object has no attribute 'elt'
+'''},
