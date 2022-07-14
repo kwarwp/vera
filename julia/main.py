@@ -1,6 +1,6 @@
 # vera.julia.main.py
-from _spy.vitollino.main import Cena, STYLE, INVENTARIO, Texto
-from elemento.main import Elemento #permite a movimentacao
+from _spy.vitollino.main import Cena, STYLE, INVENTARIO, Texto, Elemento
+#from elemento.main import Elemento #permite a movimentacao
 STYLE["width"] = 900
 STYLE["heigth"] = "900px"
 def score(casa=[], carta="", move="ID", ponto="OK", valor="", _level=1):
