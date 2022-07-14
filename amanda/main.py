@@ -1,7 +1,7 @@
 # vera.amanda.main.py
 "http://supygirls.pythonanywhere.com"
-from _spy.vitollino.main import Cena, Texto, INVENTARIO, STYLE
-from elemento.main import Elemento
+from _spy.vitollino.main import Cena, Texto, INVENTARIO, STYLE, EEleento
+#from elemento.main import Elemento
 # from morgan.main import FlorestaLeao
 STYLE["width"], STYLE["height"] = 1400, "650px"
 FLORESTA = "https://i.imgur.com/vlJS7Ry.jpg"
