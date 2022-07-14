@@ -82,3 +82,4 @@
 {'doc_id': '6eca6c82', 'carta': 'oli', 'casa': 'pescaria', 'move': 'JULIA', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1657806141345},
   {'doc_id': '6eca6c82', 'carta': 'julia', 'casa': [893, 393], 'move': 'CRIA', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1657806155011},
   {'doc_id': '6eca6c82', 'carta': 'marcos', 'casa': [378, 400], 'move': 'CRIA', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1657806158672},
+  {'doc_id': '6eca6c82', 'carta': 'pequeno', 'casa': [971, 578], 'move': 'BALDE', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1657806162044},
