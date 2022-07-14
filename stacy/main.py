@@ -1,6 +1,6 @@
 # vera.sarah.main.py
-from _spy.vitollino.main import Cena, Texto, INVENTARIO, STYLE
-from elemento.main import Elemento
+from _spy.vitollino.main import Cena, Texto, INVENTARIO, STYLE, Elemento
+# from elemento.main import Elemento
 # from morgan.main import FlorestaLeao
 STYLE["width"], STYLE["height"] = 1400, "650px"
 
