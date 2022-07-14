@@ -85,3 +85,4 @@
   {'doc_id': '6eca6c82', 'carta': 'pequeno', 'casa': [971, 578], 'move': 'BALDE', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1657806162044},
   {'doc_id': '6eca6c82', 'carta': 'médio', 'casa': [906, 602], 'move': 'BALDE', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1657806166296},
   {'doc_id': '6eca6c82', 'carta': 'grande', 'casa': [476, 538], 'move': 'BALDE', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1657806169979},
+  {'doc_id': '6eca6c82', 'carta': 'pequeno', 'casa': [200, 545], 'move': 'BALDE', 'ponto': True, 'valor': 0, '_level': 1, 'tempo': 1657806175425},
