@@ -1,6 +1,6 @@
 # vera.heather.main.py
-from _spy.vitollino.main import Cena, STYLE, Texto
-from elemento.main import Elemento
+from _spy.vitollino.main import Cena, STYLE, Texto, Elemento
+#from elemento.main import Elemento
 STYLE["width"] = 600
 STYLE["height"] = "600px"
 JARRA = "https://i.imgur.com/gdiuQ9G.jpg"
