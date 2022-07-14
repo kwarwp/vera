@@ -1,8 +1,9 @@
 # vera.morgan.main.py
 "http://supygirls.pythonanywhere.com"
 from _spy.vitollino.main import Cena, Elemento, Texto, INVENTARIO, STYLE
+Elem = Elemento
 # from morgan.main import FlorestaBanana
-from elemento.main import Elemento as Elem
+# from elemento.main import Elemento as Elem
 STYLE["width"], STYLE["height"] = 1400, "650px"
 FLORESTA = "https://i.imgur.com/vlJS7Ry.jpg"
 BANANA = "https://i.imgur.com/HnIHJd7.png"
