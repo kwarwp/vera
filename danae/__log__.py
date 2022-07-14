@@ -75,3 +75,33 @@ TypeError: inicia() missing 1 positional argument: jogador
     self.img.style.marginLeft = "-{}px".format(index * w)
 AttributeError: 'str' object has no attribute 'style'
 '''},
+{'date': 'Thu Jul 14 2022 10:56:24.629 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 180
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 310
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 282
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 299
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 473
+    Jogo().inicia()
+  module <module> line 466
+    self.mesa = Mesa(jogadores)
+  module <module> line 381
+    self.baralho = Baralho()
+  module <module> line 242
+    self.monta_baralho()
+  module <module> line 255
+    self.cartas.append(Perigo(face=perigo))
+  module <module> line 159
+    self.elt = GUI.carta(face)
+  module <module> line 145
+    self._carta[imagem] = carta = Sprite(**sprite)
+  module <module> line 82
+    self.img.style.marginLeft = "-{}px".format(index * w)
+AttributeError: 'str' object has no attribute 'style'
+'''},
