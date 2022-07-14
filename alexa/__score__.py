@@ -342,3 +342,4 @@
   {'doc_id': 'e262fbc5', 'carta': 'bola', 'casa': [443, 468], 'move': 'DROP', 'ponto': False, 'valor': 'p', '_level': 1, 'tempo': 1657805989277},
   {'doc_id': 'e262fbc5', 'carta': 'bola', 'casa': [311, 464], 'move': 'DROP', 'ponto': True, 'valor': 'e', '_level': 1, 'tempo': 1657805993828},
   {'doc_id': 'e262fbc5', 'carta': 'galocha', 'casa': [647, 465], 'move': 'DROP', 'ponto': True, 'valor': 'c', '_level': 1, 'tempo': 1657805998642},
+  {'doc_id': 'e262fbc5', 'carta': 'laranja', 'casa': [566, 428], 'move': 'DROP', 'ponto': True, 'valor': 'f', '_level': 1, 'tempo': 1657806002749},
