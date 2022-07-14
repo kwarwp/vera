@@ -345,3 +345,4 @@
   {'doc_id': 'e262fbc5', 'carta': 'laranja', 'casa': [566, 428], 'move': 'DROP', 'ponto': True, 'valor': 'f', '_level': 1, 'tempo': 1657806002749},
   {'doc_id': 'e262fbc5', 'carta': 'passarinho', 'casa': [236, 455], 'move': 'DROP', 'ponto': True, 'valor': 'b', '_level': 1, 'tempo': 1657806009629},
   {'doc_id': 'e262fbc5', 'carta': 'maçã', 'casa': [566, 470], 'move': 'DROP', 'ponto': True, 'valor': 'f', '_level': 1, 'tempo': 1657806023310},
+  {'doc_id': 'e262fbc5', 'carta': 'peteca', 'casa': [224, 463], 'move': 'DROP', 'ponto': False, 'valor': 'b', '_level': 1, 'tempo': 1657806031627},
