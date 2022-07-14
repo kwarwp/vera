@@ -338,3 +338,4 @@
   {'doc_id': 'e262fbc5', 'carta': 'f', 'casa': [549, 450], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'GENTE', '_level': 1, 'tempo': 1657805964857},
   {'doc_id': 'e262fbc5', 'carta': 'c', 'casa': [659, 451], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'GENTE', '_level': 1, 'tempo': 1657805968718},
   {'doc_id': 'e262fbc5', 'carta': 'tenis', 'casa': [651, 474], 'move': 'DROP', 'ponto': True, 'valor': 'c', '_level': 1, 'tempo': 1657805973875},
+  {'doc_id': 'e262fbc5', 'carta': 'coelho', 'casa': [217, 452], 'move': 'DROP', 'ponto': True, 'valor': 'b', '_level': 1, 'tempo': 1657805983028},
