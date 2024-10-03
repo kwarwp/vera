@@ -348,3 +348,4 @@
   {'doc_id': 'e262fbc5', 'carta': 'peteca', 'casa': [224, 463], 'move': 'DROP', 'ponto': False, 'valor': 'b', '_level': 1, 'tempo': 1657806031627},
   {'doc_id': 'e262fbc5', 'carta': 'peteca', 'casa': [310, 445], 'move': 'DROP', 'ponto': True, 'valor': 'e', '_level': 1, 'tempo': 1657806037322},
 {'doc_id': '4515ff5c', 'carta': 'carlo', 'casa': [], 'move': 'ID', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1727964534496},
+  {'doc_id': '4515ff5c', 'carta': 'bola', 'casa': [387, 443], 'move': 'DROP', 'ponto': False, 'valor': 'b', '_level': 1, 'tempo': 1727964547181},
