@@ -355,3 +355,4 @@
   {'doc_id': '4515ff5c', 'carta': 'bola', 'casa': [418, 291], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'COISA', '_level': 1, 'tempo': 1727964566569},
   {'doc_id': '4515ff5c', 'carta': 'bola', 'casa': [410, 281], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'COISA', '_level': 1, 'tempo': 1727964575018},
   {'doc_id': '4515ff5c', 'carta': 'b', 'casa': [388, 467], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'GENTE', '_level': 1, 'tempo': 1727964582653},
+  {'doc_id': '4515ff5c', 'carta': 'coelho', 'casa': [376, 456], 'move': 'DROP', 'ponto': True, 'valor': 'b', '_level': 1, 'tempo': 1727964590798},
