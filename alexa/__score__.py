@@ -350,3 +350,4 @@
 {'doc_id': '4515ff5c', 'carta': 'carlo', 'casa': [], 'move': 'ID', 'ponto': 'OK', 'valor': '', '_level': 0, 'tempo': 1727964534496},
   {'doc_id': '4515ff5c', 'carta': 'bola', 'casa': [387, 443], 'move': 'DROP', 'ponto': False, 'valor': 'b', '_level': 1, 'tempo': 1727964547181},
   {'doc_id': '4515ff5c', 'carta': 'bola', 'casa': [411, 272], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'COISA', '_level': 1, 'tempo': 1727964551922},
+  {'doc_id': '4515ff5c', 'carta': 'coelho', 'casa': [482, 206], 'move': 'CLICK', 'ponto': 'OK', 'valor': 'COISA', '_level': 1, 'tempo': 1727964556132},
